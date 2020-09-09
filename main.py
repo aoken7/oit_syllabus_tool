@@ -4,9 +4,21 @@ import requests
 import pandas as pd
 from bs4 import BeautifulSoup
 
+def export_list_csv(export_list, csv_dir):
+
+    with open(csv_dir, "w") as f:
+        writer = csv.writer(f, lineterminator='\n')
+
+        if isinstance(export_list[0], list): #多次元の場合
+            writer.writerows(export_list)
+
+        else:
+            writer.writerow(export_list)
+
 csv_file = open("number.csv", "r", encoding="UTF-8", errors="", newline="" )
 number_data = csv.reader(csv_file)
 
+ans = []
 
 for i in number_data:
     for j in i:
@@ -22,21 +34,32 @@ for i in number_data:
         #soup=BeautifulSoup(html,"html.parser")
         soup=BeautifulSoup(localhtml,"html.parser")
 
-        for script in soup(["script", "style"]):
-            script.decompose()
+        elmes = soup.select('.kougi')
 
-        text = soup.get_text()
+        keystring = ""
 
-        lines= [line.strip() for line in text.splitlines()]
+        for elem in elmes:
+            #print(elem.get_text())    
+            #text = script.get_text()
+            keystring += elem.get_text()
+        
+        lines= [line.strip() for line in keystring.splitlines()]
 
-        #print(lines)
         text=",".join(line for line in lines if line)
-        print(text)
 
-        #with urllib.request.urlopen(req) as res:
-            #body = res.read()
+        text = text.split(',')
 
-        #print(body)
-        with open(r'outhtml/'+str(number)+'.html','w') as file:
-            #file.write(body.decode())
-            file.write(text)
+        if len(text) < 7:
+            continue
+
+        csvtext = []
+        csvtext.append(text[0])
+        csvtext.append(text[3])
+        csvtext.append(text[5])
+        csvtext.append(text[6].replace('\u3000', ''))
+        csvtext.append(str(number))
+
+
+        #print(csvtext)
+
+        export_list_csv(csvtext, r"./outcsv/" + number + ".csv")
