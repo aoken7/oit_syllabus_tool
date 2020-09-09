@@ -3,7 +3,7 @@
 - pdfconvret.pyを実行するとpdfから講義コードを抽出する
 
 - csvのデータ例
-コンピュータ入門,１年次,前期,牧野博之(マキノヒロシ),1AAB01A0
+  -コンピュータ入門,１年次,前期,牧野博之(マキノヒロシ),1AAB01A0
 
 
 - [htmlデータ](https://oskit-my.sharepoint.com/:u:/g/personal/e1q18051_oit_ac_jp/ERc-I_9SYNtKvdlpbZw-qy4BlRpFJVzIRU1Mjf37E-RzGA?e=EYIW6a)
