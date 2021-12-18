@@ -17,7 +17,7 @@ def export_list_csv(export_list, csv_dir):
             writer.writerow(export_list)
 
 
-csv_file = open("number.csv", "r", encoding="UTF-8", errors="", newline="")
+csv_file = open("2021/number.csv", "r", encoding="UTF-8", errors="", newline="")
 number_data = csv.reader(csv_file)
 
 ans = []
