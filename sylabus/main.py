@@ -24,12 +24,12 @@ for i in number_data:
     for j in i:
         number = str(j)
         print(number)
-        
-        url = "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2020&value(semekikn)=1&value(kougicd)=" + number + "&value(crclumcd)=10201200"
+
+        url = "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=" + number + "&value(crclumcd)=10201200"
 
         #req = urllib.request.Request(url)
         #html = requests.get(url).text
-        path = "./html/"  + number + ".html" 
+        path = "./html/"  + number + ".html"
         localhtml = open(path, "r", encoding="UTF-8", errors="", newline="" )
         #soup=BeautifulSoup(html,"html.parser")
         soup=BeautifulSoup(localhtml,"html.parser")
@@ -39,10 +39,10 @@ for i in number_data:
         keystring = ""
 
         for elem in elmes:
-            #print(elem.get_text())    
+            #print(elem.get_text())
             #text = script.get_text()
             keystring += elem.get_text()
-        
+
         lines= [line.strip() for line in keystring.splitlines()]
 
         text=",".join(line for line in lines if line)
