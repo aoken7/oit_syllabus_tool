@@ -212,30 +212,30 @@ export default function ReactVirtualizedTable() {
                 columns={[
                     {
                         width: 200,
-                        label: 'Dessert',
+                        label: '講義名',
                         dataKey: 'dessert',
                     },
                     {
                         width: 120,
-                        label: 'Calories\u00A0(g)',
+                        label: '年次',
                         dataKey: 'calories',
                         numeric: true,
                     },
                     {
                         width: 120,
-                        label: 'Fat\u00A0(g)',
+                        label: '期間',
                         dataKey: 'fat',
                         numeric: true,
                     },
                     {
                         width: 120,
-                        label: 'Carbs\u00A0(g)',
+                        label: 'ナンバリング',
                         dataKey: 'carbs',
                         numeric: true,
                     },
                     {
                         width: 120,
-                        label: 'Protein\u00A0(g)',
+                        label: '担当者',
                         dataKey: 'protein',
                         numeric: true,
                     },
