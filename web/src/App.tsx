@@ -7,7 +7,7 @@ export const App = () => {
   const [users, setUsers] = useState<Syllabus[]>([]);
 
   useEffect(() => {
-    axios.get<Syllabus[]>("https://gist.githubusercontent.com/yashikota/1acd6ebfdcb9008af898ef9cb38f6782/raw/9534eb9c2aa2fec44211ccabfe592291e31f2994/oit").then((res) => {
+    axios.get<Syllabus[]>("https://gist.githubusercontent.com/yashikota/1acd6ebfdcb9008af898ef9cb38f6782/raw/0199392bcdd50f0dcc07990de616469f20b44b4d/oit").then((res) => {
       setUsers(res.data);
     })
   }, []);
