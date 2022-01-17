@@ -6,7 +6,7 @@ export const List: FC<Syllabus> = props => {
     return (
         <p>
             {kougi},
-            {nenji}<span>年次</span>,
+            {nenji}年次,
             {kikan},
             {numbering},
             {tantousya},
