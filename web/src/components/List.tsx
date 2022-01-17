@@ -5,7 +5,12 @@ export const List: FC<Syllabus> = props => {
     const { kougi, nenji, kikan, numbering, tantousya, link } = props;
     return (
         <p>
-            {kougi},{nenji},{kikan},{numbering},{tantousya},<a href={link}>公式シラバスへ</a>
+            {kougi},
+            {nenji}年次,
+            {kikan},
+            {numbering},
+            {tantousya},
+            <a href={link}>公式シラバスへ</a>
         </p >
     );
 };
