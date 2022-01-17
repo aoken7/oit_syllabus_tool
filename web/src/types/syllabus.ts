@@ -1,6 +1,6 @@
 export type Syllabus = {
     kougi: string;
-    nenji: number;
+    nenji: string;
     kikan: string;
     numbering: string;
     tantousya: string;
