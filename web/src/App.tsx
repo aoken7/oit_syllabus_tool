@@ -1,18 +1,16 @@
 import { List } from "./components/List";
-import { ThemeProvider, createTheme } from '@mui/material/styles';
-import CssBaseline from '@mui/material/CssBaseline';
 import datas from "./data.json"
-const darkTheme = createTheme({
-  palette: {
-    mode: 'dark',
-  },
-});
+import SearchAppBar from "./components/SearchBar";
+import { GlobalStyles } from "@mui/material";
 
 export const App = () => {
   return (
-    <div>
+    <>
+      <GlobalStyles styles={{body: {margin:0,padding:0}}} />
+      <div className="App">
+        <SearchAppBar />
+      </div>
       {datas.map(data => (
-        <>
           <List
             kougi={data.kougi}
             nenji={data.nenji}
@@ -21,11 +19,7 @@ export const App = () => {
             tantousya={data.tantousya}
             link={data.link}
           />
-          <ThemeProvider theme={darkTheme}>
-            <CssBaseline />
-          </ThemeProvider>
-        </>
       ))}
-    </div>
+    </>
   );
 };
