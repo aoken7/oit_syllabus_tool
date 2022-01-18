@@ -13,7 +13,7 @@ export const List: FC<Syllabus> = props => {
             {numbering},
             {tantousya},
             <Stack spacing={10} direction="row">
-                <Button variant="outlined" color="info" size="small" href={link}>
+                <Button variant="outlined" color="info" size="small" href={link} target="_balnk">
                     公式シラバス
                 </Button>
             </Stack>
