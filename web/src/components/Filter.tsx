@@ -10,22 +10,23 @@ import Select, { SelectChangeEvent } from '@mui/material/Select';
 
 export default function Filter() {
 
-    const [age, setAge] = React.useState('');
+    const [area, setArea] = React.useState('');
     const handleChange = (event: SelectChangeEvent) => {
-        setAge(event.target.value);
+        setArea(event.target.value);
     };
 
     return (
         <>
             <FormControl sx={{ m: 3, minWidth: 120 }}>
-                <InputLabel id="demo-simple-select-autowidth-label">学部/学科</InputLabel>
+                <InputLabel id="Area">学部/学科</InputLabel>
                 <Select
-                    labelId="demo-simple-select-autowidth-label"
-                    id="demo-simple-select-autowidth"
-                    value={age}
+                    labelId="Area"
+                    id="Area"
+                    value={area}
                     onChange={handleChange}
                     autoWidth
-                    label="Age"
+                    label="Area"
+                    //disabled={true}
                 >
                     <MenuItem value="">
                         <em>指定しない</em>
