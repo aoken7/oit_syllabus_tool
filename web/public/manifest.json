@@ -3,12 +3,12 @@
   "name": "OITシラバスアプリ",
   "icons": [
     {
-      "src": "oitlogo.png",
+      "src": "oitlogo.webp",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "oitlogo.png",
+      "src": "oitlogo.webp",
       "type": "image/png",
       "sizes": "441x441"
     }
