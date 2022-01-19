@@ -1,5 +1,3 @@
-import type { FC } from "react";
-import type { Syllabus } from "../types/syllabus";
 import Button from "@mui/material/Button";
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -8,39 +6,39 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
+import datas from "../data.json"
 
-export const List: FC<Syllabus> = props => {
-    const { kougi, nenji, kikan, numbering, tantousya, link } = props;
+export default function List() {
     return (
-        <>
-            <TableContainer component={Paper} >
-                <Table sx={{ minWidth: 650 }} arial-label="Syllabus">
-                    <TableHead>
+        <TableContainer component={Paper} >
+            <Table sx={{ minWidth: 650 }} arial-label="Syllabus">
+                <TableHead>
+                    <TableRow>
+                        <TableCell>講義名</TableCell>
+                        <TableCell>年次</TableCell>
+                        <TableCell>期間</TableCell>
+                        <TableCell>ナンバリング</TableCell>
+                        <TableCell>担当者</TableCell>
+                        <TableCell>URL</TableCell>
+                    </TableRow>
+                </TableHead>
+                <TableBody>
+                    {datas.map(data => (
                         <TableRow>
-                            <TableCell>講義名</TableCell>
-                            <TableCell>年次</TableCell>
-                            <TableCell>期間</TableCell>
-                            <TableCell>ナンバリング</TableCell>
-                            <TableCell>担当者</TableCell>
-                            <TableCell>URL</TableCell>
-                        </TableRow>
-                    </TableHead>
-                    <TableBody>
-                        <TableRow>
-                            <TableCell>{kougi}</TableCell>
-                            <TableCell>{nenji}</TableCell>
-                            <TableCell>{kikan}</TableCell>
-                            <TableCell>{numbering}</TableCell>
-                            <TableCell>{tantousya}</TableCell>
+                            <TableCell>{data.kougi}</TableCell>
+                            <TableCell>{data.nenji}</TableCell>
+                            <TableCell>{data.kikan}</TableCell>
+                            <TableCell>{data.numbering}</TableCell>
+                            <TableCell>{data.tantousya}</TableCell>
                             <TableCell>
-                                <Button variant="contained" color="info" size="small" href={link} target="_balnk">
+                                <Button variant="contained" color="info" size="small" href={data.link} target="_balnk">
                                     公式シラバス
                                 </Button>
                             </TableCell>
                         </TableRow>
-                    </TableBody>
-                </Table>
-            </TableContainer >
-        </>
+                    ))}
+                </TableBody>
+            </Table>
+        </TableContainer >
     );
 };
