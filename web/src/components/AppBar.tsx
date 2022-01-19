@@ -13,7 +13,7 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import { MenuItem } from '@mui/material';
 
-const pages = ['使い方', '更新履歴', 'コンタクト'];
+const pages = ["ブックマーク",'使い方', 'その他'];
 
 const Search = styled('div')(({ theme }) => ({
     position: 'relative',
