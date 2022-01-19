@@ -17,8 +17,8 @@ export default function List() {
                         <TableCell>講義名</TableCell>
                         <TableCell>年次</TableCell>
                         <TableCell>期間</TableCell>
-                        <TableCell>ナンバリング</TableCell>
                         <TableCell>担当者</TableCell>
+                        <TableCell>ナンバリング</TableCell>
                         <TableCell>URL</TableCell>
                     </TableRow>
                 </TableHead>
@@ -28,10 +28,10 @@ export default function List() {
                             <TableCell>{data.kougi}</TableCell>
                             <TableCell>{data.nenji}</TableCell>
                             <TableCell>{data.kikan}</TableCell>
-                            <TableCell>{data.numbering}</TableCell>
                             <TableCell>{data.tantousya}</TableCell>
+                            <TableCell>{data.numbering}</TableCell>
                             <TableCell>
-                                <Button variant="contained" color="info" size="small" href={data.link} target="_balnk">
+                                <Button variant="contained" color="primary" size="small" href={data.link} target="_balnk">
                                     公式シラバス
                                 </Button>
                             </TableCell>
