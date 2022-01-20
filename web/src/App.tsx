@@ -1,9 +1,8 @@
-import List from "./components/List";
+import { List } from "./components/List";
 import AppBar from "./components/AppBar";
 import { GlobalStyles } from "@mui/material";
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
-import Filter from "./components/Filter";
 
 const darkTheme = createTheme({
   palette: {
@@ -18,7 +17,6 @@ export const App = () => {
       <ThemeProvider theme={darkTheme}>
         <CssBaseline />
         <AppBar />
-        <Filter />
         <List />
       </ThemeProvider>
     </>
