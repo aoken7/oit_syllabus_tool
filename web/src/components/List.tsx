@@ -1,9 +1,7 @@
 import MaterialTableCore from '@material-table/core';
-import type { FC } from 'react';
-import type { Syllabus } from "../types/syllabus"
+import React from 'react';
 
-export const List: FC<Syllabus> = props => {
-    const { kougi, nenji, kikan, numbering, tantousya, link } = props;
+export const List = () => {
     return (
         <div style={{ maxWidth: '100%' }}>
             <MaterialTableCore
@@ -72,17 +70,16 @@ export const List: FC<Syllabus> = props => {
                         filtering: false,
                         sorting: false
                     }
-                ]}
-                data={[
+                ]} data={[
                     {
-                        kougi: { kougi },
-                        nenji: { nenji },
-                        kikan: { kikan },
-                        //tani: { tani },
-                        tantousya: { tantousya },
-                        //gakka: { gakka },
-                        numbering: { numbering },
-                        link: { link }
+                        kougi: 'あああ',
+                        nenji: '1',
+                        kikan: "前期",
+                        tani: 1,
+                        tantousya: 'いいい',
+                        gakka: "情報科学",
+                        numbering: "ううう",
+                        link: "https://"
                     }
                 ]}
                 title="OIT Syllabus App"
