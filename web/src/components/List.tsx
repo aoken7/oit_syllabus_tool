@@ -1,8 +1,9 @@
 import MaterialTableCore from '@material-table/core';
-import React from 'react';
-import datas from "../data.json"
+import type { FC } from 'react';
+import type { Syllabus } from "../types/syllabus"
 
-export const List = () => {
+export const List: FC<Syllabus> = props => {
+    const { kougi, nenji, kikan, numbering, tantousya, link } = props;
     return (
         <div style={{ maxWidth: '100%' }}>
             <MaterialTableCore
@@ -71,21 +72,18 @@ export const List = () => {
                         filtering: false,
                         sorting: false
                     }
-                ]} data={[
+                ]}
+                data={[
                     {
-                        name: 'Mehmet',
-                        surname: 'Baran',
-                        birthYear: 1987,
-                        birthCity: 63,
-                        imageUrl: 'https://avatars0.githubusercontent.com/u/7895451?s=460&v=4'
-                    },
-                    {
-                        name: 'Zerya Betül',
-                        surname: 'Baran',
-                        birthYear: 2017,
-                        birthCity: 34,
-                        imageUrl: 'https://avatars0.githubusercontent.com/u/7895451?s=460&v=4'
-                    },
+                        kougi: { kougi },
+                        nenji: { nenji },
+                        kikan: { kikan },
+                        //tani: { tani },
+                        tantousya: { tantousya },
+                        //gakka: { gakka },
+                        numbering: { numbering },
+                        link: { link }
+                    }
                 ]}
                 title="OIT Syllabus App"
                 options={{
