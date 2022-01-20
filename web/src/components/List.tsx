@@ -26,7 +26,6 @@ export const List = () => {
                         align: "left",
                         lookup: { 前期: "前期", 後期: "後期" }
                     },
-
                     {
                         title: '単位',
                         field: 'tani',
