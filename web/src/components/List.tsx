@@ -1,44 +1,95 @@
-import Button from "@mui/material/Button";
-import Table from '@mui/material/Table';
-import TableBody from '@mui/material/TableBody';
-import TableCell from '@mui/material/TableCell';
-import TableContainer from '@mui/material/TableContainer';
-import TableHead from '@mui/material/TableHead';
-import TableRow from '@mui/material/TableRow';
-import Paper from '@mui/material/Paper';
-import datas from "../data.json"
+import MaterialTableCore from '@material-table/core';
+import React from 'react';
 
-export default function List() {
+export const List = () => {
     return (
-        <TableContainer component={Paper} >
-            <Table sx={{ minWidth: 650 }} arial-label="Syllabus">
-                <TableHead>
-                    <TableRow>
-                        <TableCell>講義名</TableCell>
-                        <TableCell>年次</TableCell>
-                        <TableCell>期間</TableCell>
-                        <TableCell>担当者</TableCell>
-                        <TableCell>ナンバリング</TableCell>
-                        <TableCell>URL</TableCell>
-                    </TableRow>
-                </TableHead>
-                <TableBody>
-                    {datas.map(data => (
-                        <TableRow>
-                            <TableCell>{data.kougi}</TableCell>
-                            <TableCell>{data.nenji}</TableCell>
-                            <TableCell>{data.kikan}</TableCell>
-                            <TableCell>{data.tantousya}</TableCell>
-                            <TableCell>{data.numbering}</TableCell>
-                            <TableCell>
-                                <Button variant="contained" color="primary" size="small" href={data.link} target="_balnk">
-                                    公式シラバス
-                                </Button>
-                            </TableCell>
-                        </TableRow>
-                    ))}
-                </TableBody>
-            </Table>
-        </TableContainer >
+        <div style={{ maxWidth: '100%' }}>
+            <MaterialTableCore
+                columns={[
+                    {
+                        title: '講義名',
+                        field: 'kougi',
+                        align: "left",
+                        defaultSort: 'asc'
+                    },
+                    {
+                        title: '年次',
+                        field: 'nenji',
+                        align: "left",
+                        type: 'numeric',
+                        lookup: { 1: "1", 2: "2", 3: "3", 4: "4" }
+                    },
+                    {
+                        title: '期間',
+                        field: 'kikan',
+                        align: "left",
+                        lookup: { 前期: "前期", 後期: "後期" }
+                    },
+                    {
+                        title: '単位',
+                        field: 'tani',
+                        align: "left",
+                        type: 'numeric',
+                        lookup: { 1: "1", 2: "2", 3: "3", 4: "4" }
+                    },
+                    {
+                        title: '担当者',
+                        field: 'tantousya',
+                        align: "left"
+                    },
+                    {
+                        title: '学部/学科',
+                        field: 'gakka',
+                        align: "left",
+                        lookup: {
+                            情報科学: "情報科学",
+                            工学: "工学",
+                            都市デザイン: "都市デザイン",
+                            建築: "建築",
+                            機械: "機械",
+                            電気電子: "電気電子",
+                            電子情報: "電子情報",
+                            応用化学: "応用化学",
+                            環境: "環境",
+                            生命: "生命",
+                            ロボティクスデザイン: "ロボティクスデザイン",
+                            ロボット: "ロボット",
+                            ステムデザイン: "システムデザイン",
+                            空間デザイン: "空間デザイン",
+                            知的財産: "知的財産"
+                        }
+                    },
+                    {
+                        title: 'ナンバリング',
+                        field: 'numbering',
+                        align: "left"
+                    },
+                    {
+                        title: 'リンク',
+                        field: 'link',
+                        filtering: false,
+                        sorting: false
+                    }
+                ]} data={[
+                    {
+                        kougi: 'あああ',
+                        nenji: '1',
+                        kikan: "前期",
+                        tani: 1,
+                        tantousya: 'いいい',
+                        gakka: "情報科学",
+                        numbering: "ううう",
+                        link: "https://"
+                    }
+                ]}
+                title="OIT Syllabus App"
+                options={{
+                    paging: false,
+                    maxBodyHeight: 600,
+                    headerStyle: { position: "sticky", top: 0, whiteSpace: 'nowrap' },
+                    filtering: true,
+                }}
+            />
+        </div>
     );
-};
+}
