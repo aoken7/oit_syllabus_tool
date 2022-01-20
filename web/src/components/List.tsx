@@ -1,7 +1,17 @@
 import MaterialTableCore from '@material-table/core';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 export const List = () => {
+
+    const [data, setData] = useState([])
+    useEffect(() => {
+        fetch("https://gist.githubusercontent.com/yashikota/1acd6ebfdcb9008af898ef9cb38f6782/raw/4016b1d6654b1a4b04e0422f410ac46b49e04ea6/oit")
+            .then(resp => resp.json())
+            .then(resp => {
+                setData(resp)
+            })
+    }, [])
+
     return (
         <div style={{ maxWidth: '100%' }}>
             <MaterialTableCore
@@ -10,14 +20,17 @@ export const List = () => {
                         title: '講義名',
                         field: 'kougi',
                         align: "left",
-                        defaultSort: 'asc'
+                        defaultSort: 'asc',
+                        headerStyle: {
+                            minWidth: 300,
+                        },
                     },
                     {
                         title: '年次',
                         field: 'nenji',
                         align: "left",
                         type: 'numeric',
-                        lookup: { 1: "1", 2: "2", 3: "3", 4: "4" }
+                        lookup: { 1: "1年次", 2: "2年次", 3: "3年次", 4: "4年次" }
                     },
                     {
                         title: '期間',
@@ -35,7 +48,10 @@ export const List = () => {
                     {
                         title: '担当者',
                         field: 'tantousya',
-                        align: "left"
+                        align: "left",
+                        headerStyle: {
+                            minWidth: 190,
+                        }
                     },
                     {
                         title: '学部/学科',
@@ -70,22 +86,12 @@ export const List = () => {
                         filtering: false,
                         sorting: false
                     }
-                ]} data={[
-                    {
-                        kougi: 'あああ',
-                        nenji: '1',
-                        kikan: "前期",
-                        tani: 1,
-                        tantousya: 'いいい',
-                        gakka: "情報科学",
-                        numbering: "ううう",
-                        link: "https://"
-                    }
                 ]}
+                data={data}
                 title="OIT Syllabus App"
                 options={{
                     paging: false,
-                    maxBodyHeight: 600,
+                    maxBodyHeight: "100%",
                     headerStyle: { position: "sticky", top: 0, whiteSpace: 'nowrap' },
                     filtering: true,
                 }}
