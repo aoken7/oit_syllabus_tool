@@ -15,6 +15,7 @@ export const List = () => {
     return (
         <div style={{ maxWidth: '100%' }}>
             <MaterialTableCore
+                icons={{ Filter: React.Fragment }}
                 columns={[
                     {
                         title: '講義名',
@@ -22,27 +23,25 @@ export const List = () => {
                         align: "left",
                         defaultSort: 'asc',
                         headerStyle: {
-                            minWidth: 210,
+                            minWidth: 180,
                         },
                     },
                     {
                         title: '年次',
                         field: 'nenji',
                         align: "left",
+                        defaultSort: 'asc',
+                        headerStyle: {
+                            minWidth: 20,
+                        },
                         type: 'numeric',
                         lookup: { 1: "1年次", 2: "2年次", 3: "3年次", 4: "4年次" }
                     },
                     {
                         title: '期間',
                         field: 'kikan',
-                        align: "left"
-                    },
-                    {
-                        title: '単位',
-                        field: 'tani',
                         align: "left",
-                        type: 'numeric',
-                        lookup: { 1: "1単位", 2: "2単位", 3: "3単位", 4: "4単位" }
+                        defaultSort: 'asc'
                     },
                     {
                         title: '担当者',
@@ -52,6 +51,14 @@ export const List = () => {
                             minWidth: 190,
                         }
                     },
+                    {
+                        title: '単位',
+                        field: 'tani',
+                        align: "left",
+                        type: 'numeric',
+                        lookup: { 1: "1単位", 2: "2単位", 3: "3単位", 4: "4単位" }
+                    },
+
                     {
                         title: '学部/学科',
                         field: 'gakka',
