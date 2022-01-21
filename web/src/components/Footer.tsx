@@ -45,7 +45,7 @@ const Footer = () => {
             &nbsp;のデータに基づきます
             <br />
             <a
-                href="https://github.com/yashikota/oit-syllabus/blob/master/web/public/hyouki.txt"
+                href="https://raw.githubusercontent.com/yashikota/oit-syllabus/master/web/public/hyouki.txt"
                 target="_blank"
                 rel="noreferrer">
                 知的財産の表記
