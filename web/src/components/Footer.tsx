@@ -43,6 +43,13 @@ const Footer = () => {
                 大阪工業大学公式シラバス
             </a>
             &nbsp;のデータに基づきます
+            <br />
+            <a
+                href="https://github.com/yashikota/oit-syllabus/blob/master/web/public/hyouki.txt"
+                target="_blank"
+                rel="noreferrer">
+                知的財産の表記
+            </a>
         </div>
     )
 
