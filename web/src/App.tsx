@@ -2,6 +2,7 @@ import { List } from "./components/List";
 import { GlobalStyles } from "@mui/material";
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
+import Footer from "./components/Footer";
 
 const darkTheme = createTheme({
   palette: {
@@ -16,6 +17,7 @@ export const App = () => {
       <ThemeProvider theme={darkTheme}>
         <CssBaseline />
         <List />
+        <Footer />
       </ThemeProvider>
     </>
   );
