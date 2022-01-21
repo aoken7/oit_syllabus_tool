@@ -31,9 +31,6 @@ export const List = () => {
                         field: 'nenji',
                         align: "left",
                         defaultSort: 'asc',
-                        headerStyle: {
-                            minWidth: 20,
-                        },
                         type: 'numeric',
                         lookup: { 1: "1年次", 2: "2年次", 3: "3年次", 4: "4年次" }
                     },
@@ -89,6 +86,9 @@ export const List = () => {
                     {
                         title: 'リンク',
                         field: 'link',
+                        headerStyle: {
+                            minWidth: 100,
+                        },
                         filtering: false,
                         sorting: false
                     }
