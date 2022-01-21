@@ -97,8 +97,9 @@ export const List = () => {
                 title="OIT Syllabus App"
                 options={{
                     paging: false,
-                    maxBodyHeight: "100%",
+                    maxBodyHeight: "95vh",
                     headerStyle: { position: "sticky", top: 0, whiteSpace: 'nowrap' },
+                    filterCellStyle: { position: "sticky", top: "54px", backgroundColor: "white"},
                     filtering: true,
                 }}
             />
