@@ -1,7 +1,7 @@
 import MaterialTableCore from '@material-table/core';
 import React, { useEffect, useState } from 'react';
 
-export const List = () => {
+export const Table = () => {
 
     const [data, setData] = useState([])
     useEffect(() => {

@@ -1,4 +1,4 @@
-import { List } from "./components/List";
+import { Table } from "./components/Table";
 import { GlobalStyles } from "@mui/material";
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -16,7 +16,7 @@ export const App = () => {
       <GlobalStyles styles={{ body: { margin: 0, padding: 0 } }} />
       <ThemeProvider theme={darkTheme}>
         <CssBaseline />
-        <List />
+        <Table />
         <Footer />
       </ThemeProvider>
     </>
