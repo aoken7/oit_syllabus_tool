@@ -1,8 +1,8 @@
 import MaterialTableCore from '@material-table/core';
+import { Link } from '@material-ui/core';
 import React, { useEffect, useState } from 'react';
 
 export const Table = () => {
-
     const [data, setData] = useState([])
     useEffect(() => {
         fetch("https://gist.githubusercontent.com/yashikota/1acd6ebfdcb9008af898ef9cb38f6782/raw/4016b1d6654b1a4b04e0422f410ac46b49e04ea6/oit")
@@ -85,6 +85,12 @@ export const Table = () => {
                     {
                         title: 'リンク',
                         field: 'link',
+                        render: row =>
+                        <Link
+                            href={row.link}
+                            target="_balnk">
+                            公式シラバスへ
+                        </Link>,
                         headerStyle: {
                             minWidth: 100,
                         },
