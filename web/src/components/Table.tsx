@@ -78,7 +78,7 @@ export const Table = () => {
                         }
                     },
                     {
-                        title: 'ナンバリング',
+                        title: '講義コード',
                         field: 'numbering',
                         align: "left"
                     },
