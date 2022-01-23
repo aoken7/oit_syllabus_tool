@@ -55,7 +55,7 @@ export const Table = () => {
                         type: 'numeric',
                         lookup: { 1: "1単位", 2: "2単位", 3: "3単位", 4: "4単位" }
                     },
-
+                    /*
                     {
                         title: '学部/学科',
                         field: 'gakka',
@@ -81,6 +81,7 @@ export const Table = () => {
                             Pin: "専門職大学院知的財産研究科",
                         }
                     },
+                    */
                     {
                         title: '講義コード',
                         field: 'numbering',
@@ -96,7 +97,7 @@ export const Table = () => {
                             公式シラバスへ
                         </Link>,
                         headerStyle: {
-                            minWidth: 100,
+                            minWidth: 150,
                         },
                         filtering: false,
                         sorting: false
