@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react';
 export const Table = () => {
     const [data, setData] = useState([])
     useEffect(() => {
-        fetch("https://gist.githubusercontent.com/yashikota/1acd6ebfdcb9008af898ef9cb38f6782/raw/4016b1d6654b1a4b04e0422f410ac46b49e04ea6/oit")
+        fetch("https://gist.githubusercontent.com/yashikota/1acd6ebfdcb9008af898ef9cb38f6782/raw/66e8c8103bc0b0b06f736114366204196d5854c0/oit")
             .then(resp => resp.json())
             .then(resp => {
                 setData(resp)
@@ -53,7 +53,13 @@ export const Table = () => {
                         field: 'tani',
                         align: "left",
                         type: 'numeric',
-                        lookup: { 1: "1単位", 2: "2単位", 3: "3単位", 4: "4単位" }
+                        lookup: {
+                            1: "1単位",
+                            2: "2単位",
+                            3: "3単位",
+                            4: "4単位",
+                            5: "5単位"
+                        }
                     },
                     /*
                     {
@@ -91,11 +97,11 @@ export const Table = () => {
                         title: 'リンク',
                         field: 'link',
                         render: row =>
-                        <Link
-                            href={row.link}
-                            target="_balnk">
-                            公式シラバスへ
-                        </Link>,
+                            <Link
+                                href={row.link}
+                                target="_balnk">
+                                公式シラバスへ
+                            </Link>,
                         headerStyle: {
                             minWidth: 150,
                         },
@@ -109,7 +115,7 @@ export const Table = () => {
                     paging: false,
                     maxBodyHeight: "95vh",
                     headerStyle: { position: "sticky", top: 0, whiteSpace: 'nowrap' },
-                    filterCellStyle: { position: "sticky", top: "54px", backgroundColor: "white"},
+                    filterCellStyle: { position: "sticky", top: "54px", backgroundColor: "white" },
                     filtering: true,
                 }}
             />
