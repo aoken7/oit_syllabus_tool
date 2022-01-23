@@ -32,7 +32,19 @@ const Footer = () => {
                 href="https://github.com/yashikota"
                 target="_blank"
                 rel="noreferrer">
-                yashikota
+                kota
+            </a>&nbsp;
+            <a
+                href="https://github.com/aoken7"
+                target="_blank"
+                rel="noreferrer">
+                aoken
+            </a>&nbsp;
+            <a
+                href="https://github.com/Akirtn"
+                target="_blank"
+                rel="noreferrer">
+                Akirtn
             </a>
             <br />
             2022/1/21 時点での&nbsp;
