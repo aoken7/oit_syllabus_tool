@@ -1,67 +1,74 @@
-import urllib.request
-import csv
+import argparse
+import json
 import requests
-import pandas as pd
+
 from bs4 import BeautifulSoup
+from email import parser
+from tqdm import tqdm
+from typing import List, Dict
 
 
-def export_list_csv(export_list, csv_dir):
-
-    with open(csv_dir, "w") as f:
-        writer = csv.writer(f, lineterminator='\n')
-
-        if isinstance(export_list[0], list):  # 多次元の場合
-            writer.writerows(export_list)
-
-        else:
-            writer.writerow(export_list)
+# 入力ファイルは一行で','区切りの文字列を想定
+def import_syllabus_number(filepath: str) -> List[str]:
+    with open(filepath, 'r') as fp:
+        numbers = fp.readline().strip().split(',')  # strip()は改行コード除去用
+    return numbers
 
 
-csv_file = open("number.csv", "r", encoding="UTF-8", errors="", newline="")
-number_data = csv.reader(csv_file)
+def extract_element(html: str) -> Dict[str, str]:
+    soup = BeautifulSoup(html, "html.parser")
+    elmes = soup.select('.kougi')
 
-ans = []
+    element_buff = ""
+    for elem in elmes:
+        element_buff += elem.get_text()
 
-for i in number_data:
-    for j in i:
-        number = str(j)
-        print(number)
+    lines = [line.strip() for line in element_buff.splitlines()]
+    text = ",".join(line for line in lines if line).split(',')
 
-        url = "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2020&value(semekikn)=1&value(kougicd)=" + \
-            number + "&value(crclumcd)=10201200"
+    # ページがない時のエラー処理
+    try:
+        syllabus_dict = dict(
+            kougi=text[0],
+            nenji=text[3],
+            tani=text[4],
+            kikan=text[5],
+            tantousya=text[6],
+        )
+    except:
+        syllabus_dict = dict()
+    return syllabus_dict
 
-        #req = urllib.request.Request(url)
-        #html = requests.get(url).text
-        path = "./html/" + number + ".html"
-        localhtml = open(path, "r", encoding="UTF-8", errors="", newline="")
-        #soup=BeautifulSoup(html,"html.parser")
-        soup = BeautifulSoup(localhtml, "html.parser")
 
-        elmes = soup.select('.kougi')
+def scraping_syllabus(number: str) -> Dict[str, str]:
+    url = "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=" + \
+        number + "&value(crclumcd)=10201200"
 
-        keystring = ""
+    html = requests.get(url).text
+    syllabus_dict = extract_element(html)
+    syllabus_dict['link'] = url
+    syllabus_dict['numbering'] = number
 
-        for elem in elmes:
-            #print(elem.get_text())
-            #text = script.get_text()
-            keystring += elem.get_text()
+    return syllabus_dict
 
-        lines = [line.strip() for line in keystring.splitlines()]
 
-        text = ",".join(line for line in lines if line)
+def main(input: str, output: str) -> None:
+    numbers = import_syllabus_number(input)
+    syllabus_dict_list = list()
 
-        text = text.split(',')
-
-        if len(text) < 7:
+    for number in tqdm(numbers):
+        syllabus_dict = scraping_syllabus(number)
+        # ページがない時のエラー処理，もう少し上手くやりたい
+        if len(syllabus_dict) < 3:
             continue
+        syllabus_dict_list.append(syllabus_dict)
+    with open(output, 'w') as fp:
+        json.dump(syllabus_dict_list, fp, ensure_ascii=False, indent=4)
 
-        csvtext = []
-        csvtext.append(text[0])
-        csvtext.append(text[3])
-        csvtext.append(text[5])
-        csvtext.append(text[6].replace('\u3000', ''))
-        csvtext.append(str(number))
 
-        #print(csvtext)
-
-        export_list_csv(csvtext, r"./outcsv/" + number + ".csv")
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--input', type=str, required=True, help="")
+    parser.add_argument('--output', type=str, required=True, help="")
+    args = parser.parse_args()
+    main(**vars(parser.parse_args()))
