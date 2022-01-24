@@ -45,6 +45,12 @@ const Footer = () => {
                 target="_blank"
                 rel="noreferrer">
                 Akirtn
+            </a>&nbsp;
+            <a
+                href="https://github.com/GenichiMaruo"
+                target="_blank"
+                rel="noreferrer">
+                maru
             </a>
             <br />
             2022/1/21 時点での&nbsp;
