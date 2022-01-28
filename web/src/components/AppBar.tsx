@@ -14,7 +14,7 @@ const CustomToolbar = styled(Toolbar)({
     backgroundColor: '#cccccc'
 });
 
-export default function ButtonAppBar() {
+export default function Bar() {
     const [theme, setTheme] = React.useState(false);
     const onClickSwitch = () => setTheme(!theme);
 
@@ -31,12 +31,12 @@ export default function ButtonAppBar() {
                     <Button>
                         使い方
                     </Button>
-
                     <IconButton
                         onClick={onClickSwitch}
                         color="inherit"
                         size='small'>
-                    </IconButton>{theme ? <Brightness7Icon /> : <Brightness2Icon />}
+                        {theme ? <Brightness7Icon /> : <Brightness2Icon />}
+                    </IconButton>
                 </CustomToolbar>
             </AppBar>
         </Box>
