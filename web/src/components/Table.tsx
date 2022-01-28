@@ -38,7 +38,10 @@ export const Table = () => {
                         title: '期間',
                         field: 'kikan',
                         align: "left",
-                        defaultSort: 'asc'
+                        defaultSort: 'asc',
+                        headerStyle: {
+                            minWidth: 100,
+                        },
                     },
                     {
                         title: '担当者',
