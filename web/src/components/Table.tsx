@@ -110,12 +110,22 @@ export const Table = () => {
                     }
                 ]}
                 data={data}
-                title="OIT Syllabus App"
+                title="Syllabus App"
                 options={{
                     paging: false,
                     maxBodyHeight: "95vh",
-                    headerStyle: { position: "sticky", top: 0, whiteSpace: 'nowrap' },
-                    filterCellStyle: { position: "sticky", top: "54px", backgroundColor: "white" },
+                    headerStyle:
+                    {
+                        position: "sticky",
+                        top: 0,
+                        whiteSpace: 'nowrap'
+                    },
+                    filterCellStyle:
+                    {
+                        position: "sticky",
+                        top: "54px",
+                        backgroundColor: "white"
+                    },
                     filtering: true,
                 }}
             />
