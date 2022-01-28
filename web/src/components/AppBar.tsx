@@ -10,7 +10,7 @@ import Brightness2Icon from "@mui/icons-material/Brightness3";
 import IconButton from '@mui/material/IconButton/IconButton';
 
 const CustomToolbar = styled(Toolbar)({
-    minHeight: '32px',
+    minHeight: '48px',
     backgroundColor: '#cccccc'
 });
 
@@ -28,13 +28,13 @@ export default function Bar() {
                         sx={{ flexGrow: 1 }}>
                         OIT Tools
                     </Typography>
-                    <Button>
+                    <Button
+                        sx={{ mx:"auto" }}>
                         使い方
                     </Button>
                     <IconButton
                         onClick={onClickSwitch}
-                        color="inherit"
-                        size='small'>
+                        color="inherit">
                         {theme ? <Brightness7Icon /> : <Brightness2Icon />}
                     </IconButton>
                 </CustomToolbar>
