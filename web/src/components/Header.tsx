@@ -14,7 +14,7 @@ const CustomToolbar = styled(Toolbar)({
     backgroundColor: '#cccccc'
 });
 
-export default function Bar() {
+export default function Header() {
     const [theme, setTheme] = React.useState(false);
     const onClickSwitch = () => setTheme(!theme);
 
