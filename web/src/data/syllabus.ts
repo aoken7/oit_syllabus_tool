@@ -3515,7 +3515,7 @@ const syllabus: SyllabusData[] =
         {
             "kougi": "中学校教育実習",
             "nenji": 4,
-            "tani": "5",
+            "tani": 5,
             "kikan": "集中",
             "tantousya": "疋田　祥人(ヒキダ　ヨシト)",
             "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=BTD016A1&value(crclumcd)=10201200",
@@ -5018,7 +5018,7 @@ const syllabus: SyllabusData[] =
         {
             "kougi": "中学校教育実習",
             "nenji": 4,
-            "tani": "5",
+            "tani": 5,
             "kikan": "集中",
             "tantousya": "疋田　祥人(ヒキダ　ヨシト)",
             "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=BTD016A1&value(crclumcd)=10201200",
@@ -9977,7 +9977,7 @@ const syllabus: SyllabusData[] =
         {
             "kougi": "中学校教育実習",
             "nenji": 4,
-            "tani": "5",
+            "tani": 5,
             "kikan": "集中",
             "tantousya": "疋田　祥人(ヒキダ　ヨシト)",
             "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=BTD016A1&value(crclumcd)=10201200",
