@@ -1,6 +1,7 @@
 import MaterialTableCore from '@material-table/core';
 import { Link } from '@material-ui/core';
 import React, { useEffect, useState } from 'react';
+import { SyllabusData } from '../data/syllabus';
 
 export const Table = () => {
     const [data, setData] = useState([])
