@@ -62,7 +62,7 @@ def main(input: str, output: str) -> None:
         if len(syllabus_dict) < 3:
             continue
         syllabus_dict_list.append(syllabus_dict)
-    with open(output, 'w') as fp:
+    with open(output, 'w', encoding='utf-8') as fp:
         json.dump(syllabus_dict_list, fp, ensure_ascii=False, indent=4)
 
 
