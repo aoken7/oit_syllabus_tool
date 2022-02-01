@@ -33,7 +33,12 @@ export const Table = () => {
                         align: "left",
                         defaultSort: 'asc',
                         type: 'numeric',
-                        lookup: { 1: "1年次", 2: "2年次", 3: "3年次", 4: "4年次" }
+                        lookup: {
+                            1: "1年次",
+                            2: "2年次",
+                            3: "3年次",
+                            4: "4年次"
+                        }
                     },
                     {
                         title: '期間',
