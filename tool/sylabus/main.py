@@ -2,6 +2,7 @@ import argparse
 import json
 import requests
 import unicodedata
+import re
 
 from bs4 import BeautifulSoup
 from email import parser
@@ -30,11 +31,12 @@ def extract_element(html: str) -> Dict[str, str]:
     # ページがない時のエラー処理
     try:
         syllabus_dict = dict(
-            kougi=unicodedata.normalize("NFKD",text[0]),
-            nenji=unicodedata.normalize("NFKD", text[3]),
+            kougi=unicodedata.normalize("NFKD", text[0]),
+            nenji=unicodedata.normalize("NFKD", (text[3].replace('年次', ''))),
             tani=unicodedata.normalize("NFKD", text[4]),
-            kikan=unicodedata.normalize("NFKD", text[5]),
-            tantousya=unicodedata.normalize("NFKD", text[6]),
+            kikan=re.sub("[()]", "", unicodedata.normalize("NFKD", text[5])),
+            tantousya=re.sub(
+                "\(.+?\)", "", unicodedata.normalize("NFKD", text[6])),
         )
     except:
         syllabus_dict = dict()
