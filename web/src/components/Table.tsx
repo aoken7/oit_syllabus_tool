@@ -6,7 +6,7 @@ import { SyllabusData } from '../data/syllabus';
 export const Table = () => {
     const [data, setData] = useState([])
     useEffect(() => {
-        fetch("https://gist.githubusercontent.com/yashikota/1acd6ebfdcb9008af898ef9cb38f6782/raw/66e8c8103bc0b0b06f736114366204196d5854c0/oit")
+        fetch("https://gist.githubusercontent.com/yashikota/1acd6ebfdcb9008af898ef9cb38f6782/raw/e33bb4297ddd94e8071bfe9cd8e8dce52472b899/oit")
             .then(resp => resp.json())
             .then(resp => {
                 setData(resp)
