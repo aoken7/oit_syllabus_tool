@@ -1,18 +1,9 @@
 import MaterialTableCore from '@material-table/core';
 import { Link } from '@material-ui/core';
-import React, { useEffect, useState } from 'react';
-import { SyllabusData } from '../data/syllabus';
+import React from 'react';
+import data from '../data.json';
 
 export const Table = () => {
-    const [data, setData] = useState([])
-    useEffect(() => {
-        fetch("https://gist.githubusercontent.com/yashikota/1acd6ebfdcb9008af898ef9cb38f6782/raw/5df0420a1e08a3943b6c03c605ba219e6b793473/oit")
-            .then(resp => resp.json())
-            .then(resp => {
-                setData(resp)
-            })
-    }, [])
-
     return (
         <div style={{ maxWidth: '100%' }}>
             <MaterialTableCore
@@ -118,7 +109,7 @@ export const Table = () => {
                         sorting: false
                     }
                 ]}
-                data={data}
+                data={data} //インポートしたjsonファイルを表示
                 title="Syllabus App"
                 options={{
                     paging: false,
