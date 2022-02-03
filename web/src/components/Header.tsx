@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -18,6 +19,9 @@ export default function Header() {
     const [theme, setTheme] = React.useState(false);
     const onClickSwitch = () => setTheme(!theme);
 
+    const [returntop, setReturntop] = React.useState(false);
+    const onClickReturnTop = () => setReturntop(!returntop);
+
     return (
         <Box>
             <AppBar position="static">
@@ -29,8 +33,14 @@ export default function Header() {
                         OIT Tools
                     </Typography>
                     <Button
-                        sx={{ mx:"auto" }}>
-                        使い方
+                        onClick={onClickReturnTop}
+                        variant="outlined"
+                        size='small'
+                        component={Link}
+                        {...returntop ? { to: './' } : { to: '/about' }}
+                        sx={{ mx: "auto" }}
+                    >
+                        {returntop ? "戻る" : "使い方"}
                     </Button>
                     <IconButton
                         onClick={onClickSwitch}

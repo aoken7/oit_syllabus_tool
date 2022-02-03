@@ -126,7 +126,7 @@ export const Table = () => {
                 title="Syllabus App"
                 options={{
                     paging: false,
-                    maxBodyHeight: "95vh",
+                    maxBodyHeight: "91vh",
                     headerStyle:
                     {
                         position: "sticky",
