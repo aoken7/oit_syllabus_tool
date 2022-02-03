@@ -128,6 +128,7 @@ export const Table = () => {
                     headerStyle:
                     {
                         position: "sticky",
+                        border: "none",
                         top: 0,
                         whiteSpace: 'nowrap',
                         zIndex:2
@@ -135,9 +136,10 @@ export const Table = () => {
                     filterCellStyle:
                     {
                         position: "sticky",
-                        top: "54px",
+                        border: "none",
+                        top: "55.5px",
                         backgroundColor: "white",
-                        zIndex:2
+                        zIndex: 2,
                     },
                     filtering: true,
                 }}
