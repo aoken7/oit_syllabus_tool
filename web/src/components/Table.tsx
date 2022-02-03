@@ -1,9 +1,17 @@
 import MaterialTableCore from '@material-table/core';
-import { Link } from '@material-ui/core';
+import Button from '@material-ui/core/Button';
+import { makeStyles } from "@material-ui/core";
 import React from 'react';
 import data from '../data.json';
 
+const useStyles = makeStyles({
+    button: {
+        zIndex: 1,
+    },
+});
+
 export const Table = () => {
+    const classes = useStyles();
     return (
         <div style={{ maxWidth: '100%' }}>
             <MaterialTableCore
@@ -97,13 +105,16 @@ export const Table = () => {
                         title: 'リンク',
                         field: 'link',
                         render: row =>
-                            <Link
+                            <Button
+                                className={classes.button}                                variant="outlined"
                                 href={row.link}
-                                target="_balnk">
-                                公式シラバスへ
-                            </Link>,
+                                color="primary"
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                公式シラバス
+                            </Button>,
                         headerStyle: {
-                            minWidth: 150,
+                            minWidth: 160,
                         },
                         filtering: false,
                         sorting: false
@@ -118,13 +129,15 @@ export const Table = () => {
                     {
                         position: "sticky",
                         top: 0,
-                        whiteSpace: 'nowrap'
+                        whiteSpace: 'nowrap',
+                        zIndex:2
                     },
                     filterCellStyle:
                     {
                         position: "sticky",
                         top: "54px",
-                        backgroundColor: "white"
+                        backgroundColor: "white",
+                        zIndex:2
                     },
                     filtering: true,
                 }}
