@@ -106,7 +106,9 @@ export const Table = () => {
                         field: 'link',
                         render: row =>
                             <Button
-                                className={classes.button}                                variant="outlined"
+                                className={classes.button}
+                                variant="outlined"
+                                size='small'
                                 href={row.link}
                                 color="primary"
                                 target="_blank"
@@ -131,7 +133,7 @@ export const Table = () => {
                         border: "none",
                         top: 0,
                         whiteSpace: 'nowrap',
-                        zIndex:2
+                        zIndex: 2
                     },
                     filterCellStyle:
                     {
