@@ -13,12 +13,15 @@
 
 ※ホーム画面への追加方法は以下のリンクをご参照ください。  
 [iOSの追加方法](https://support.bccks.jp/faq/pwa_2020/)  
-[PC・Androidの追加方法](https://support.bccks.jp/faq/pwa_2020/)  
+[PC・Androidの追加方法](https://support.google.com/chrome/answer/9658361)  
 
 ## 仕様
 
 ソースコードは[GitHub](https://github.com/yashikota/oit-syllabus)で公開してます  
-Contributed by [kota](https://github.com/yashikota) [aoken](https://github.com/aoken7) [Akirtn](https://github.com/Akirtn) [maru](https://github.com/GenichiMaruo)  
+Contributed by [kota](https://github.com/yashikota)
+[aoken](https://github.com/aoken7)
+[Akirtn](https://github.com/Akirtn)
+[maru](https://github.com/GenichiMaruo)  
 2022/2/3時点での[大阪工業大学公式シラバス](https://www.oit.ac.jp/japanese/syllabus/)のデータに基づきます  
 [知的財産の表記](https://raw.githubusercontent.com/yashikota/oit-syllabus/master/web/public/hyouki.txt)
 
