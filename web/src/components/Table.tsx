@@ -138,7 +138,6 @@ export const Table = () => {
                     filterCellStyle:
                     {
                         position: "sticky",
-                        border: "none",
                         top: "55.5px",
                         backgroundColor: "white",
                         zIndex: 2,

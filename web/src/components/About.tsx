@@ -15,7 +15,7 @@ const useStyles = makeStyles({
 const About = () => {
     const [mdText, setMdText] = useState('');
     useEffect(() => {
-        fetch("https://raw.githubusercontent.com/yashikota/oit-syllabus/web/README.md")
+        fetch("https://raw.githubusercontent.com/yashikota/oit-syllabus/master/README.md")
             .then((response) => {
                 return response.text();
             })

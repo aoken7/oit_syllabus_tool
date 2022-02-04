@@ -12,7 +12,8 @@ import IconButton from '@mui/material/IconButton/IconButton';
 
 const CustomToolbar = styled(Toolbar)({
     minHeight: '48px',
-    backgroundColor: '#cccccc'
+    backgroundColor: '#cccccc',
+    color: "black"
 });
 
 export default function Header() {
