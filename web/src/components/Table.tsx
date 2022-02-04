@@ -144,6 +144,11 @@ export const Table = () => {
                     },
                     filtering: true,
                 }}
+                localization={{
+                    body: {
+                        emptyDataSourceMessage: '該当するシラバスはありません',
+                    }
+                }}
             />
         </div>
     );
