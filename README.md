@@ -29,7 +29,7 @@ Contributed by
 ## 使い方
 
 **ver0.2.0の画面**  
-![トップページ](web/public/top.png)
+![トップページ](https://raw.githubusercontent.com/yashikota/oit-syllabus/master/web/public/top.png)
 右上の検索窓はテーブル全体を検索し、各列の一番上にある検索窓はその列のみ検索可能です。  
 各列の検索結果は重複して適応できるため、例えば1年次の2単位のシラバスのみを表示することも可能です。  
 また、各列一番上の↑↓を押せば昇順降順のソートができます。  
