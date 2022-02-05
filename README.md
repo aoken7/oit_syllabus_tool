@@ -20,10 +20,12 @@ Contributed by
 [大阪工業大学公式シラバス](https://www.oit.ac.jp/japanese/syllabus/index.html)
 のデータに基づきます。  
 バグ、データの不備、機能要望、その他問い合わせは
-[Twitter](https://twitter.com/awwoit)のリプ・DMか
-[マシュマロ](https://marshmallow-qa.com/awwoit)(匿名)、
+[Twitter](https://twitter.com/awwoit)
+のリプ・DMか
+[マシュマロ](https://marshmallow-qa.com/awwoit)
+(匿名)、
 [GitHubのissues](https://github.com/yashikota/oit-syllabus/issues)
-までお願いします。  
+のいずれかにお願いします。  
 [知的財産の表記](https://raw.githubusercontent.com/yashikota/oit-syllabus/master/web/public/hyouki.txt)
 
 ## 使い方
