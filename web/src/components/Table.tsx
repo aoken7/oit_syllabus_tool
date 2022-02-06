@@ -1,30 +1,21 @@
 import MaterialTableCore from '@material-table/core';
 import Button from '@material-ui/core/Button';
-import { makeStyles } from "@material-ui/core";
+import { VariableSizeList as List } from 'react-window';
 import React from 'react';
 import data from '../data.json';
 
-const useStyles = makeStyles({
-    button: {
-        zIndex: 1,
-    },
-});
-
 export const Table = () => {
-    const classes = useStyles();
     return (
-        <div style={{ maxWidth: '100%' }}>
+        <div style={{
+            whiteSpace: 'nowrap', //改行しないように
+        }}>
             <MaterialTableCore
-                icons={{ Filter: React.Fragment }}
                 columns={[
                     {
                         title: '講義名',
                         field: 'kougi',
                         align: "left",
-                        defaultSort: 'asc',
-                        headerStyle: {
-                            minWidth: 180,
-                        },
+                        defaultSort: 'asc'
                     },
                     {
                         title: '年次',
@@ -43,18 +34,12 @@ export const Table = () => {
                         title: '期間',
                         field: 'kikan',
                         align: "left",
-                        defaultSort: 'asc',
-                        headerStyle: {
-                            minWidth: 100,
-                        },
+                        defaultSort: 'asc'
                     },
                     {
                         title: '担当者',
                         field: 'tantousya',
-                        align: "left",
-                        headerStyle: {
-                            minWidth: 120,
-                        }
+                        align: "left"
                     },
                     {
                         title: '単位',
@@ -106,7 +91,6 @@ export const Table = () => {
                         field: 'link',
                         render: row =>
                             <Button
-                                className={classes.button}
                                 variant="outlined"
                                 size='small'
                                 href={row.link}
@@ -115,9 +99,6 @@ export const Table = () => {
                                 rel="noopener noreferrer">
                                 公式シラバス
                             </Button>,
-                        headerStyle: {
-                            minWidth: 160,
-                        },
                         filtering: false,
                         sorting: false
                     }
@@ -133,17 +114,18 @@ export const Table = () => {
                         border: "none",
                         top: 0,
                         whiteSpace: 'nowrap',
-                        zIndex: 2
+                        zIndex: 1,
                     },
                     filterCellStyle:
                     {
                         position: "sticky",
                         top: "55.7px",
                         backgroundColor: "white",
-                        zIndex: 2,
+                        zIndex: 1,
                     },
                     filtering: true,
                 }}
+                icons={{ Filter: React.Fragment }}
                 localization={{
                     body: {
                         emptyDataSourceMessage: '該当するシラバスはありません',
