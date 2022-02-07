@@ -1,9 +1,23 @@
 import MaterialTableCore from '@material-table/core';
 import Button from '@material-ui/core/Button';
 import { VariableSizeList as List } from 'react-window';
-import React from 'react';
+import React, { forwardRef } from 'react';
 import data from '../data.json';
 import Theme from "../components/Theme";
+
+import SearchIcon from '@mui/icons-material/Search';
+import CloseIcon from '@mui/icons-material/Close';
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+const icons = {
+    Filter: React.Fragment,
+    Search: forwardRef((props, ref: React.Ref<SVGSVGElement>) => <SearchIcon {...props} ref={ref} />),
+    Close: forwardRef((props, ref: React.Ref<SVGSVGElement>) => <CloseIcon {...props} ref={ref} />),
+    ArrowUpwardIcon: forwardRef((props, ref: React.Ref<SVGSVGElement>) => <ArrowUpwardIcon {...props} ref={ref} />),
+    ArrowDownwardIcon: forwardRef((props, ref: React.Ref<SVGSVGElement>) => <ArrowDownwardIcon {...props} ref={ref} />),
+    ArrouwDropDownIcon: forwardRef((props, ref: React.Ref<SVGSVGElement>) => <ArrowDropDownIcon {...props} ref={ref} />),
+};
 
 export const Table = () => {
     return (
@@ -126,7 +140,7 @@ export const Table = () => {
                     },
                     filtering: true,
                 }}
-                icons={{ Filter: React.Fragment }}
+                icons={icons}
                 localization={{
                     body: {
                         emptyDataSourceMessage: '該当するシラバスはありません',
