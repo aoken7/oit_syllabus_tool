@@ -31,7 +31,8 @@ def extract_element(html: str) -> Dict[str, str]:
     # ページがない時のエラー処理
     try:
         syllabus_dict = dict(
-            kougi=unicodedata.normalize("NFKD", text[0]),
+            kougi=re.sub(
+                "\【.+?\】", "", unicodedata.normalize("NFKD", text[0])),
             nenji=unicodedata.normalize("NFKD", (text[3].replace('年次', ''))),
             tani=unicodedata.normalize("NFKD", text[4]),
             kikan=re.sub("[()]", "", unicodedata.normalize("NFKD", text[5])),
