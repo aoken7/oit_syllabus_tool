@@ -25,7 +25,7 @@ export default function Header() {
 
     return (
         <Box>
-            <AppBar position="static">
+            <AppBar position="fixed">
                 <CustomToolbar>
                     <Typography
                         variant="h6"
@@ -50,6 +50,7 @@ export default function Header() {
                     </IconButton>
                 </CustomToolbar>
             </AppBar>
+            <CustomToolbar />
         </Box>
     );
 }
