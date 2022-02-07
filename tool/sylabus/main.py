@@ -59,6 +59,7 @@ def scraping_syllabus(number: str) -> Dict[str, str]:
 def main(input: str, output: str) -> None:
     numbers = import_syllabus_number(input)
     numbers = list(set(numbers))  # 重複削除
+    numbers.sort()  # 昇順にソート
     syllabus_dict_list = list()
 
     for number in tqdm(numbers):
