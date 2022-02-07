@@ -3,6 +3,7 @@ import Button from '@material-ui/core/Button';
 import { VariableSizeList as List } from 'react-window';
 import React from 'react';
 import data from '../data.json';
+import Theme from "../components/Theme";
 
 export const Table = () => {
     return (
@@ -94,7 +95,7 @@ export const Table = () => {
                                 variant="outlined"
                                 size='small'
                                 href={row.link}
-                                color="primary"
+                                color="default"
                                 target="_blank"
                                 rel="noopener noreferrer">
                                 公式シラバス
@@ -120,7 +121,7 @@ export const Table = () => {
                     {
                         position: "sticky",
                         top: "55.7px",
-                        backgroundColor: "white",
+                        backgroundColor: Theme.palette.background.paper,
                         zIndex: 1,
                     },
                     filtering: true,

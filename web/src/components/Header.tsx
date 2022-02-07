@@ -5,15 +5,21 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import { styled } from '@material-ui/core';
+import { styled } from '@mui/material';
 import Brightness7Icon from "@mui/icons-material/Brightness7";
 import Brightness2Icon from "@mui/icons-material/Brightness3";
 import IconButton from '@mui/material/IconButton/IconButton';
+import Theme from "../components/Theme";
 
-const CustomToolbar = styled(Toolbar)({
-    minHeight: '48px',
-    backgroundColor: '#cccccc',
-    color: "black"
+const CustomAppBar = styled(AppBar)({
+    position: "fixed",
+    minHeight: "35px",
+    backgroundColor: Theme.palette.background.default,
+});
+
+const CustomToolBar = styled(Toolbar)({
+    minHeight: '35px',
+    color: Theme.palette.text.primary,
 });
 
 export default function Header() {
@@ -24,16 +30,19 @@ export default function Header() {
     const onClickReturnTop = () => setReturntop(!returntop);
 
     return (
-        <Box>
-            <AppBar position="fixed">
-                <CustomToolbar>
+        <>
+            <Box>
+                <CustomAppBar>
+                <CustomToolBar>
                     <Typography
-                        variant="h6"
+                        variant="h5"
                         component="div"
+                        color="inherit"
                         sx={{ flexGrow: 1 }}>
                         OIT Tools
                     </Typography>
                     <Button
+                        color="inherit"
                         onClick={onClickReturnTop}
                         variant="outlined"
                         size='small'
@@ -48,9 +57,10 @@ export default function Header() {
                         color="inherit">
                         {theme ? <Brightness7Icon /> : <Brightness2Icon />}
                     </IconButton>
-                </CustomToolbar>
-            </AppBar>
-            <CustomToolbar />
+                </CustomToolBar>
+            </CustomAppBar>
+            <CustomToolBar />
         </Box>
+        </>
     );
 }

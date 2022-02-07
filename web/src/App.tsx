@@ -2,15 +2,10 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import About from './components/About';
 import { Table } from "./components/Table";
 import { GlobalStyles } from "@mui/material";
-import { ThemeProvider, createTheme } from '@mui/material/styles';
-import CssBaseline from '@mui/material/CssBaseline';
+import { ThemeProvider } from '@material-ui/core/styles';
+import CssBaseline from '@material-ui/core/CssBaseline';
 import Header from "./components/Header";
-
-const Theme = createTheme({
-  palette: {
-    mode: 'light',
-  },
-});
+import Theme from "./components/Theme";
 
 export const App = () => {
   return (

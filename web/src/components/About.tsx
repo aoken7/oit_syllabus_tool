@@ -1,21 +1,22 @@
 import React, { useEffect, useState } from "react";
 import Markdown from 'markdown-to-jsx';
-import { makeStyles } from "@material-ui/core";
+import { Box, styled } from '@mui/material';
+import Theme from "../components/Theme";
 
-const useStyles = makeStyles({
-    about: {
-        color: "#000000",
-        backgroundColor: "#ffffff",
-        width: "100%",
-        lineHeight: 2,
-        textAlign: "center"
-    },
+const CustomBox = styled(Box)({
+    color: Theme.palette.text.primary,
+    backgroundColor: Theme.palette.background.default,
+    width: "100%",
+    lineHeight: 2,
+    textAlign: "center",
+    a: { color: "skyblue" },
+    fontSize: "1.1rem",
 });
 
 const About = () => {
     const [mdText, setMdText] = useState('');
     useEffect(() => {
-        fetch("https://raw.githubusercontent.com/yashikota/oit-syllabus/master/README.md")
+        fetch("https://raw.githubusercontent.com/yashikota/oit-syllabus/web/README.md")
             .then((response) => {
                 return response.text();
             })
@@ -23,13 +24,12 @@ const About = () => {
                 setMdText(text);
             })
     });
-    const classes = useStyles();
     return (
-        <div className={classes.about}>
+        <CustomBox>
             <Markdown>
                 {mdText}
             </Markdown>
-        </div>
+        </CustomBox>
     );
 }
 
