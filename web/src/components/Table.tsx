@@ -95,7 +95,7 @@ export const Table = () => {
                                 variant="outlined"
                                 size='small'
                                 href={row.link}
-                                color="default"
+                                color="inherit"
                                 target="_blank"
                                 rel="noopener noreferrer">
                                 公式シラバス
