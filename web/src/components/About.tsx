@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Markdown from 'markdown-to-jsx';
 import { Box, styled } from '@mui/material';
-import Theme from "../components/Theme";
 
 const CustomBox = styled(Box)({
-    color: Theme.palette.text.primary,
-    backgroundColor: Theme.palette.background.default,
+    color: "inherit",
+    backgroundColor: "inherit",
     width: "100%",
     lineHeight: 2,
     textAlign: "center",

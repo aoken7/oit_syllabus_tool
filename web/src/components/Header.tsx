@@ -9,22 +9,22 @@ import { styled } from '@mui/material';
 import Brightness7Icon from "@mui/icons-material/Brightness7";
 import Brightness2Icon from "@mui/icons-material/Brightness3";
 import IconButton from '@mui/material/IconButton/IconButton';
-import Theme from "../components/Theme";
 
 const CustomAppBar = styled(AppBar)({
     position: "fixed",
     minHeight: "35px",
-    backgroundColor: Theme.palette.background.paper,
 });
 
 const CustomToolBar = styled(Toolbar)({
     minHeight: '35px',
-    color: Theme.palette.text.primary,
+    backgroundColor: "inherit"
 });
 
 export default function Header() {
-    const [theme, setTheme] = React.useState(false);
-    const onClickSwitch = () => setTheme(!theme);
+    const [darkMode, setDarkMode] = React.useState(false);
+    const toggleDarkMode = () => {
+        setDarkMode(!darkMode);
+    };
 
     const [returntop, setReturntop] = React.useState(false);
     const onClickReturnTop = () => setReturntop(!returntop);
@@ -53,9 +53,9 @@ export default function Header() {
                             {returntop ? "戻る" : "使い方"}
                         </Button>
                         <IconButton
-                            onClick={onClickSwitch}
+                            onClick={toggleDarkMode}
                             color="inherit">
-                            {theme ? <Brightness7Icon /> : <Brightness2Icon />}
+                            {darkMode ? <Brightness7Icon /> : <Brightness2Icon />}
                         </IconButton>
                     </CustomToolBar>
                 </CustomAppBar>
@@ -64,3 +64,7 @@ export default function Header() {
         </>
     );
 }
+function useColorMode(): { colorMode: any; toggleColorMode: any; } {
+    throw new Error('Function not implemented.');
+}
+

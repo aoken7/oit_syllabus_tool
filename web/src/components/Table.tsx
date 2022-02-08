@@ -3,7 +3,7 @@ import Button from '@material-ui/core/Button';
 import { VariableSizeList as List } from 'react-window';
 import React, { forwardRef } from 'react';
 import data from '../data.json';
-import Theme from "../components/Theme";
+import { useTheme } from '@material-ui/core/styles';
 
 import SearchIcon from '@mui/icons-material/Search';
 import CloseIcon from '@mui/icons-material/Close';
@@ -135,7 +135,7 @@ export const Table = () => {
                     {
                         position: "sticky",
                         top: "55.7px",
-                        backgroundColor: Theme.palette.background.paper,
+                        backgroundColor: useTheme().palette.background.paper,
                         zIndex: 1,
                     },
                     filtering: true,
