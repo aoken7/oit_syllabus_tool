@@ -11,7 +11,7 @@ export const App = () => {
   return (
     <>
       <GlobalStyles styles={{ body: { margin: 0, padding: 0 } }} />
-      <ThemeProvider theme={Theme}>
+      <ThemeProvider theme={Theme} >
         <CssBaseline />
         <Header />
         <Routes>

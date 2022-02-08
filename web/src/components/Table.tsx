@@ -14,9 +14,9 @@ const icons = {
     Filter: React.Fragment,
     Search: forwardRef((props, ref: React.Ref<SVGSVGElement>) => <SearchIcon {...props} ref={ref} />),
     Close: forwardRef((props, ref: React.Ref<SVGSVGElement>) => <CloseIcon {...props} ref={ref} />),
-    ArrowUpwardIcon: forwardRef((props, ref: React.Ref<SVGSVGElement>) => <ArrowUpwardIcon {...props} ref={ref} />),
-    ArrowDownwardIcon: forwardRef((props, ref: React.Ref<SVGSVGElement>) => <ArrowDownwardIcon {...props} ref={ref} />),
-    ArrouwDropDownIcon: forwardRef((props, ref: React.Ref<SVGSVGElement>) => <ArrowDropDownIcon {...props} ref={ref} />),
+    ArrowUpward: forwardRef((props, ref: React.Ref<SVGSVGElement>) => <ArrowUpwardIcon {...props} ref={ref} />),
+    ArrowDownward: forwardRef((props, ref: React.Ref<SVGSVGElement>) => <ArrowDownwardIcon {...props} ref={ref} />),
+    ArrouwDropDown: forwardRef((props, ref: React.Ref<SVGSVGElement>) => <ArrowDropDownIcon {...props} ref={ref} />),
 };
 
 export const Table = () => {

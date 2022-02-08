@@ -14,7 +14,7 @@ import Theme from "../components/Theme";
 const CustomAppBar = styled(AppBar)({
     position: "fixed",
     minHeight: "35px",
-    backgroundColor: Theme.palette.background.default,
+    backgroundColor: Theme.palette.background.paper,
 });
 
 const CustomToolBar = styled(Toolbar)({
@@ -33,34 +33,34 @@ export default function Header() {
         <>
             <Box>
                 <CustomAppBar>
-                <CustomToolBar>
-                    <Typography
-                        variant="h5"
-                        component="div"
-                        color="inherit"
-                        sx={{ flexGrow: 1 }}>
-                        OIT Tools
-                    </Typography>
-                    <Button
-                        color="inherit"
-                        onClick={onClickReturnTop}
-                        variant="outlined"
-                        size='small'
-                        component={Link}
-                        {...returntop ? { to: './' } : { to: '/about' }}
-                        sx={{ mx: "auto" }}
-                    >
-                        {returntop ? "戻る" : "使い方"}
-                    </Button>
-                    <IconButton
-                        onClick={onClickSwitch}
-                        color="inherit">
-                        {theme ? <Brightness7Icon /> : <Brightness2Icon />}
-                    </IconButton>
-                </CustomToolBar>
-            </CustomAppBar>
-            <CustomToolBar />
-        </Box>
+                    <CustomToolBar>
+                        <Typography
+                            variant="h5"
+                            component="div"
+                            color="inherit"
+                            sx={{ flexGrow: 1 }}>
+                            OIT Tools
+                        </Typography>
+                        <Button
+                            color="inherit"
+                            onClick={onClickReturnTop}
+                            variant="outlined"
+                            size='small'
+                            component={Link}
+                            {...returntop ? { to: './' } : { to: '/about' }}
+                            sx={{ mx: "auto" }}
+                        >
+                            {returntop ? "戻る" : "使い方"}
+                        </Button>
+                        <IconButton
+                            onClick={onClickSwitch}
+                            color="inherit">
+                            {theme ? <Brightness7Icon /> : <Brightness2Icon />}
+                        </IconButton>
+                    </CustomToolBar>
+                </CustomAppBar>
+                <CustomToolBar />
+            </Box>
         </>
     );
 }
