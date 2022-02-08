@@ -9,7 +9,6 @@ import { styled } from '@mui/material';
 import Brightness7Icon from "@mui/icons-material/Brightness7";
 import Brightness2Icon from "@mui/icons-material/Brightness3";
 import IconButton from '@mui/material/IconButton/IconButton';
-import { App } from '../App';
 
 const CustomAppBar = styled(AppBar)({
     position: "fixed",
@@ -19,6 +18,11 @@ const CustomAppBar = styled(AppBar)({
 const CustomToolBar = styled(Toolbar)({
     minHeight: '35px',
     backgroundColor: "inherit"
+});
+
+const CustomLink = styled(Link)({
+    textDecoration: "none",
+    color: "inherit",
 });
 
 export default function Header() {
@@ -38,7 +42,10 @@ export default function Header() {
                             component="div"
                             color="inherit"
                             sx={{ flexGrow: 1 }}>
-                            OIT Tools
+                            <CustomLink
+                                to="https://oit.yashikota.com">
+                                OIT Tools
+                            </CustomLink>
                         </Typography>
                         <Button
                             color="inherit"
@@ -47,16 +54,16 @@ export default function Header() {
                             size='small'
                             component={Link}
                             {...returntop ? { to: './' } : { to: '/about' }}
-                            sx={{ mr: "20px"  }}
+                            sx={{ mr: "20px" }}
                         >
                             {returntop ? "戻る" : "使い方"}
                         </Button>
                         <IconButton
+                            {...console.log(Theme)}
                             onClick={toggleTheme}
                             color="inherit">
                             {Theme ? <Brightness7Icon /> : <Brightness2Icon />}
                         </IconButton>
-                        <App Theme={Theme} />
                     </CustomToolBar>
                 </CustomAppBar>
                 <CustomToolBar />
