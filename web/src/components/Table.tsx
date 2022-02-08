@@ -1,30 +1,35 @@
 import MaterialTableCore from '@material-table/core';
-import { Link } from '@material-ui/core';
-import React, { useEffect, useState } from 'react';
+import Button from '@material-ui/core/Button';
+import React, { forwardRef } from 'react';
+import data from '../data.json';
+import { useTheme } from '@material-ui/core/styles';
+
+import SearchIcon from '@mui/icons-material/Search';
+import CloseIcon from '@mui/icons-material/Close';
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+const icons = {
+    Filter: React.Fragment,
+    Search: forwardRef((props, ref: React.Ref<SVGSVGElement>) => <SearchIcon {...props} ref={ref} />),
+    Close: forwardRef((props, ref: React.Ref<SVGSVGElement>) => <CloseIcon {...props} ref={ref} />),
+    ArrowUpward: forwardRef((props, ref: React.Ref<SVGSVGElement>) => <ArrowUpwardIcon {...props} ref={ref} />),
+    ArrowDownward: forwardRef((props, ref: React.Ref<SVGSVGElement>) => <ArrowDownwardIcon {...props} ref={ref} />),
+    ArrouwDropDown: forwardRef((props, ref: React.Ref<SVGSVGElement>) => <ArrowDropDownIcon {...props} ref={ref} />),
+};
 
 export const Table = () => {
-    const [data, setData] = useState([])
-    useEffect(() => {
-        fetch("https://gist.githubusercontent.com/yashikota/1acd6ebfdcb9008af898ef9cb38f6782/raw/66e8c8103bc0b0b06f736114366204196d5854c0/oit")
-            .then(resp => resp.json())
-            .then(resp => {
-                setData(resp)
-            })
-    }, [])
-
     return (
-        <div style={{ maxWidth: '100%' }}>
+        <div style={{
+            whiteSpace: 'nowrap', //改行しないように
+        }}>
             <MaterialTableCore
-                icons={{ Filter: React.Fragment }}
                 columns={[
                     {
                         title: '講義名',
                         field: 'kougi',
                         align: "left",
-                        defaultSort: 'asc',
-                        headerStyle: {
-                            minWidth: 180,
-                        },
+                        defaultSort: 'asc'
                     },
                     {
                         title: '年次',
@@ -32,7 +37,12 @@ export const Table = () => {
                         align: "left",
                         defaultSort: 'asc',
                         type: 'numeric',
-                        lookup: { 1: "1年次", 2: "2年次", 3: "3年次", 4: "4年次" }
+                        lookup: {
+                            1: "1年次",
+                            2: "2年次",
+                            3: "3年次",
+                            4: "4年次"
+                        }
                     },
                     {
                         title: '期間',
@@ -43,10 +53,7 @@ export const Table = () => {
                     {
                         title: '担当者',
                         field: 'tantousya',
-                        align: "left",
-                        headerStyle: {
-                            minWidth: 190,
-                        }
+                        align: "left"
                     },
                     {
                         title: '単位',
@@ -97,26 +104,46 @@ export const Table = () => {
                         title: 'リンク',
                         field: 'link',
                         render: row =>
-                            <Link
+                            <Button
+                                variant="outlined"
+                                size='small'
                                 href={row.link}
-                                target="_balnk">
-                                公式シラバスへ
-                            </Link>,
-                        headerStyle: {
-                            minWidth: 150,
-                        },
+                                color="inherit"
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                公式シラバス
+                            </Button>,
                         filtering: false,
                         sorting: false
                     }
                 ]}
-                data={data}
-                title="OIT Syllabus App"
+                data={data} //インポートしたjsonファイルを表示
+                title="Syllabus App"
                 options={{
                     paging: false,
-                    maxBodyHeight: "95vh",
-                    headerStyle: { position: "sticky", top: 0, whiteSpace: 'nowrap' },
-                    filterCellStyle: { position: "sticky", top: "54px", backgroundColor: "white" },
+                    maxBodyHeight: "91vh",
+                    headerStyle:
+                    {
+                        position: "sticky",
+                        border: "none",
+                        top: 0,
+                        whiteSpace: 'nowrap',
+                        zIndex: 1,
+                    },
+                    filterCellStyle:
+                    {
+                        position: "sticky",
+                        top: "55.7px",
+                        backgroundColor: useTheme().palette.background.paper,
+                        zIndex: 1,
+                    },
                     filtering: true,
+                }}
+                icons={icons}
+                localization={{
+                    body: {
+                        emptyDataSourceMessage: '該当するシラバスはありません',
+                    }
                 }}
             />
         </div>
