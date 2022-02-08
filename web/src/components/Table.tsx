@@ -1,7 +1,7 @@
 import MaterialTableCore from '@material-table/core';
 import Button from '@material-ui/core/Button';
 import React, { forwardRef } from 'react';
-import data from '../data.json';
+import data from '../data/2021.json';
 import { useTheme } from '@material-ui/core/styles';
 
 import SearchIcon from '@mui/icons-material/Search';
