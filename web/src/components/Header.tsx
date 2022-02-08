@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link as MuiLink } from '@mui/material';
 import { Link } from 'react-router-dom';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -20,7 +21,7 @@ const CustomToolBar = styled(Toolbar)({
     backgroundColor: "inherit"
 });
 
-const CustomLink = styled(Link)({
+const CustomLink = styled(MuiLink)({
     textDecoration: "none",
     color: "inherit",
 });
@@ -43,7 +44,9 @@ export default function Header() {
                             color="inherit"
                             sx={{ flexGrow: 1 }}>
                             <CustomLink
-                                to="https://oit.yashikota.com">
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://oit.yashikota.com">
                                 OIT Tools
                             </CustomLink>
                         </Typography>
