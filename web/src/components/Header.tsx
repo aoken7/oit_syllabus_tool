@@ -9,6 +9,8 @@ import Button from '@mui/material/Button';
 import Brightness7Icon from "@mui/icons-material/Brightness7";
 import Brightness2Icon from "@mui/icons-material/Brightness3";
 import IconButton from '@mui/material/IconButton/IconButton';
+import { useTheme } from "@material-ui/core/styles";
+import { ColorModeContext } from '../App';
 
 const CustomAppBar = styled(AppBar)({
     position: "fixed",
@@ -26,11 +28,11 @@ const CustomLink = styled(MuiLink)({
 });
 
 export default function Header() {
-    const [Theme, setTheme] = React.useState(false);
-    const toggleTheme = () => setTheme(!Theme);
-
     const [returntop, setReturntop] = React.useState(false);
     const onClickReturnTop = () => setReturntop(!returntop);
+
+    const theme = useTheme();
+    const colorMode = React.useContext(ColorModeContext);
 
     return (
         <>
@@ -61,10 +63,9 @@ export default function Header() {
                             {returntop ? "戻る" : "使い方"}
                         </Button>
                         <IconButton
-                            {...console.log(Theme)}
-                            onClick={toggleTheme}
+                            onClick={colorMode.toggleColorMode}
                             color="inherit">
-                            {Theme ? <Brightness7Icon /> : <Brightness2Icon />}
+                            {theme.palette.type === 'dark' ? <Brightness7Icon /> : <Brightness2Icon />}
                         </IconButton>
                     </CustomToolBar>
                 </CustomAppBar>

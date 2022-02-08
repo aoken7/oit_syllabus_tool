@@ -9,7 +9,9 @@ import createMuiTheme from "@material-ui/core/styles/createMuiTheme";
 import useMediaQuery from '@material-ui/core/useMediaQuery/useMediaQuery';
 import React from 'react';
 
-export const App = props => {
+export const ColorModeContext = React.createContext({ toggleColorMode: () => { } });
+
+export const App = () => {
   //システム環境に合わせたテーマに設定（優先度低）
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
   const SysTheme = React.useMemo(
@@ -23,25 +25,45 @@ export const App = props => {
   );
 
   //トグルボタンでテーマを切り替える（優先度高）
-  const { Theme } = props;
+  const [mode, setMode] = React.useState<'light' | 'dark'>('dark');
+  const colorMode = React.useMemo(
+    () => ({
+      toggleColorMode: () => {
+        setMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light'));
+      },
+    }),
+    [],
+  );
+
+  const Theme = React.useMemo(
+    () =>
+      createMuiTheme({
+        palette: {
+          type: mode,
+        },
+      }),
+    [mode],
+  );
 
   return (
     <>
       <GlobalStyles styles={{ body: { margin: 0, padding: 0 } }} />
-      <ThemeProvider theme={SysTheme} >
-        <ThemeProvider theme={Theme} >
-          <CssBaseline />
-          <Header />
-          <Routes>
-            <Route path="/" element={<Table />} />
-            <Route path="/about" element={<About />} />
-            <Route
-              path="*"
-              element={<Navigate to="/" />}
-            />
-          </Routes>
+      <ColorModeContext.Provider value={colorMode}>
+        <ThemeProvider theme={SysTheme} >
+          <ThemeProvider theme={Theme} >
+            <CssBaseline />
+            <Header />
+            <Routes>
+              <Route path="/" element={<Table />} />
+              <Route path="/about" element={<About />} />
+              <Route
+                path="*"
+                element={<Navigate to="/" />}
+              />
+            </Routes>
+          </ThemeProvider>
         </ThemeProvider>
-      </ThemeProvider>
+      </ColorModeContext.Provider>
     </>
   );
 };
