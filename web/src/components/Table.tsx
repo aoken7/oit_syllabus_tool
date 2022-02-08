@@ -48,7 +48,18 @@ export const Table = () => {
                         title: '期間',
                         field: 'kikan',
                         align: "left",
-                        defaultSort: 'asc'
+                        defaultSort: 'asc',
+                        lookup: {
+                            前期: "前期",
+                            後期: "後期",
+                            前期前半: "前期前半",
+                            前期後半: "前期後半",
+                            後期前半: "後期前半",
+                            後期後半: "後期後半",
+                            前期集中: "前期集中",
+                            後期集中: "後期集中",
+                            集中: "集中"
+                        }
                     },
                     {
                         title: '担当者',
@@ -68,7 +79,6 @@ export const Table = () => {
                             5: "5単位"
                         }
                     },
-                    /*
                     {
                         title: '学部/学科',
                         field: 'gakka',
@@ -94,7 +104,6 @@ export const Table = () => {
                             T: "専門職大学院知的財産研究科",
                         }
                     },
-                    */
                     {
                         title: '講義コード',
                         field: 'numbering',

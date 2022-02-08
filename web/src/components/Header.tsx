@@ -60,7 +60,7 @@ export default function Header() {
                             {...returntop ? { to: './' } : { to: '/about' }}
                             sx={{ mr: "20px" }}
                         >
-                            {returntop ? "戻る" : "使い方"}
+                            {returntop ? "戻る" : "about"}
                         </Button>
                         <IconButton
                             onClick={colorMode.toggleColorMode}

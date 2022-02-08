@@ -11,11 +11,8 @@ from email import parser
 from tqdm import tqdm
 from typing import List, Dict
 
-year = "2021"  # スクレイピングする年度を指定
 
 # 入力ファイルは一行で','区切りの文字列を想定
-
-
 def import_syllabus_number(filepath: str) -> List[str]:
     with open(filepath, 'r') as fp:
         numbers = fp.readline().strip().split(',')  # strip()は改行コード除去用
@@ -64,22 +61,22 @@ def scraping_syllabus(number: str) -> Dict[str, str]:
 
 
 def main() -> None:
-    global csv
-    csv = list()
+    global csv , year
+    year = "2021"  # スクレイピングする年度を指定
     csvlist = ([os.path.basename(p) for p in glob.glob("./timetable/" + year + "/csv/*.csv", recursive=True)
                 if os.path.isfile(p)])  # csvファイルを全て取得
+    syllabus_dict_list = list()
     for csv in tqdm(csvlist):
         numbers = import_syllabus_number("./timetable/" + year + "/csv/" + csv)
         numbers = list(set(numbers))  # 重複削除
         numbers.sort()  # 昇順にソート
-        syllabus_dict_list = list()
 
         for number in tqdm(numbers):
             syllabus_dict = scraping_syllabus(number)
             # ページがない時のエラー処理，もう少し上手くやりたい
-        if len(syllabus_dict) < 3:
-            continue
-        syllabus_dict_list.append(syllabus_dict)
+            if len(syllabus_dict) < 5:
+                continue
+            syllabus_dict_list.append(syllabus_dict)
     with open("../web/src/data/" + year + ".json", 'w', encoding='utf-8') as fp:
         json.dump(syllabus_dict_list, fp, ensure_ascii=False, indent=4)
 
