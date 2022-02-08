@@ -9,6 +9,7 @@ import { styled } from '@mui/material';
 import Brightness7Icon from "@mui/icons-material/Brightness7";
 import Brightness2Icon from "@mui/icons-material/Brightness3";
 import IconButton from '@mui/material/IconButton/IconButton';
+import { App } from '../App';
 
 const CustomAppBar = styled(AppBar)({
     position: "fixed",
@@ -21,10 +22,8 @@ const CustomToolBar = styled(Toolbar)({
 });
 
 export default function Header() {
-    const [darkMode, setDarkMode] = React.useState(false);
-    const toggleDarkMode = () => {
-        setDarkMode(!darkMode);
-    };
+    const [Theme, setTheme] = React.useState(false);
+    const toggleTheme = () => setTheme(!Theme);
 
     const [returntop, setReturntop] = React.useState(false);
     const onClickReturnTop = () => setReturntop(!returntop);
@@ -48,15 +47,16 @@ export default function Header() {
                             size='small'
                             component={Link}
                             {...returntop ? { to: './' } : { to: '/about' }}
-                            sx={{ mx: "auto" }}
+                            sx={{ mr: "20px"  }}
                         >
                             {returntop ? "戻る" : "使い方"}
                         </Button>
                         <IconButton
-                            onClick={toggleDarkMode}
+                            onClick={toggleTheme}
                             color="inherit">
-                            {darkMode ? <Brightness7Icon /> : <Brightness2Icon />}
+                            {Theme ? <Brightness7Icon /> : <Brightness2Icon />}
                         </IconButton>
+                        <App Theme={Theme} />
                     </CustomToolBar>
                 </CustomAppBar>
                 <CustomToolBar />
@@ -64,7 +64,3 @@ export default function Header() {
         </>
     );
 }
-function useColorMode(): { colorMode: any; toggleColorMode: any; } {
-    throw new Error('Function not implemented.');
-}
-

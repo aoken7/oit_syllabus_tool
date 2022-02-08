@@ -1,6 +1,5 @@
 import MaterialTableCore from '@material-table/core';
 import Button from '@material-ui/core/Button';
-import { VariableSizeList as List } from 'react-window';
 import React, { forwardRef } from 'react';
 import data from '../data.json';
 import { useTheme } from '@material-ui/core/styles';
