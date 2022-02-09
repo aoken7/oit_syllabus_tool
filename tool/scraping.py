@@ -46,7 +46,7 @@ def extract_element(html: str) -> Dict[str, str]:
     return syllabus_dict
 
 
-def scraping_syllabus(number: str) -> Dict[str, str]:
+def scraping_syllabus(number: str, year: str, csv: str) -> Dict[str, str]:
     url = "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=" + year + "&value(semekikn)=1&value(kougicd)=" + \
         number + "&value(crclumcd)=10201200"
 
@@ -60,8 +60,7 @@ def scraping_syllabus(number: str) -> Dict[str, str]:
     return syllabus_dict
 
 
-def main() -> None:
-    global csv , year
+def main():
     year = "2021"  # スクレイピングする年度を指定
     csvlist = ([os.path.basename(p) for p in glob.glob("./timetable/" + year + "/csv/*.csv", recursive=True)
                 if os.path.isfile(p)])  # csvファイルを全て取得
@@ -72,7 +71,7 @@ def main() -> None:
         numbers.sort()  # 昇順にソート
 
         for number in tqdm(numbers):
-            syllabus_dict = scraping_syllabus(number)
+            syllabus_dict = scraping_syllabus(number, year, csv)
             # ページがない時のエラー処理，もう少し上手くやりたい
             if len(syllabus_dict) < 5:
                 continue
