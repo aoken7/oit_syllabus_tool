@@ -1,7 +1,7 @@
 # OIT Syllabus App
 
 大阪工業大学**非公式**のシラバスアプリです。  
-<https://oit.yashikota.com>で公開しています。  
+<https://syllabus.oit.yashikota.com>で公開しています。  
 現時点では情報科学部のみ対応しています。(将来的には全学部・大学院に対応予定)  
 各自で必ず
 [公式のシラバス](https://www.oit.ac.jp/japanese/syllabus/index.html)

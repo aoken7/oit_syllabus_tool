@@ -1,8 +1,17 @@
 import os
 from pathlib import Path
+import cv2
+from cv2 import threshold
+import numpy as np
 from pdf2image import convert_from_path
 import glob
 from tqdm import tqdm
+
+
+def get_file_list(year: str, path: str) -> list[str]:
+    file_list = ([os.path.basename(p) for p in glob.glob("./timetable/" + year + path, recursive=True)
+                  if os.path.isfile(p)])
+    return file_list
 
 
 def pdf2png(year: str):
@@ -15,7 +24,7 @@ def pdf2png(year: str):
         pdf_path = Path(x)
 
         # pdfから画像に変換
-        pages = convert_from_path(str(pdf_path), dpi=200)
+        pages = convert_from_path(str(pdf_path), dpi=300)
 
     # 画像ファイルを１ページずつ保存
     image_dir = Path("./timetable/" + year + "/png")
@@ -26,18 +35,47 @@ def pdf2png(year: str):
         page.save(str(image_path), "PNG")
 
 
-# def png2num(year: str):
-#     pass
+def png2num(year: str):
+    path = "/png/*.png"
 
-# def num2csv(year: str):
+    lower_pink = np.array([140, 30, 180])  # 下限のしきい値(HSV)
+    upper_pink = np.array([180, 255, 255])  # 上限のしきい値(HSV)
+
+    red = ["R", "S", "W", "Z"]
+    lower_red = np.array([160, 50, 200])  # 下限のしきい値(HSV)
+    upper_red = np.array([180, 255, 255])  # 上限のしきい値(HSV)
+
+    red2 = ["I", "X"]
+    lower_i = np.array([0, 70, 200])  # 下限のしきい値(HSV)
+    upper_i = np.array([40, 255, 255])  # 上限のしきい値(HSV)
+
+    png_list = get_file_list(year, path)
+    for png in tqdm(png_list):
+        img = cv2.imread("./timetable/" + year + "/png/" + png) # 画像の読み込み
+        img_hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV) # HSVに変換
+        if png[0] in red:  # 講義コードが赤のもの
+            img_mask = cv2.inRange(img_hsv, lower_red, upper_red) # 色のしきい値を指定してマスク画像を生成
+        elif png[0] in red2:  # 情報科学部用
+            img_mask = cv2.inRange(img_hsv, lower_i, upper_i)
+        else: # それ以外の学科等
+            img_mask = cv2.inRange(img_hsv, lower_pink, upper_pink)
+        img_extract = cv2.bitwise_and(img, img, mask=img_mask) # マスク画像を適用して講義コードを抽出
+        img_bgr = cv2.cvtColor(img_extract, cv2.COLOR_HSV2BGR) # BGRに変換
+        img_gray = cv2.cvtColor(img_bgr, cv2.COLOR_BGR2GRAY) # グレースケールに変換
+        th, img_threshold = threshold(img_gray, 10, 255, cv2.THRESH_BINARY) # 二値化
+        img_return = cv2.bitwise_not(img_threshold)  # 画像を反転
+        cv2.imwrite("./timetable/" + year + "/num/" + png, img_return) # 画像を保存
+
+
+# def num2csv() -> None:
 #     pass
 
 
 def main():
-    year = '2021'
-    pdf2png(year)
-#    png2num(year)
-#    num2csv(year)
+    year = "2021"
+#    pdf2png(year)  # PDFファイルをPNGに変換
+    png2num(year)  # PNGファイルを講義コードを抜き出した画像に変換
+#    num2csv(year) # 画像をOCRしてCSVに出力
 
 
 if __name__ == "__main__":
