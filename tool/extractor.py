@@ -46,18 +46,18 @@ def png2num(year: str):
     upper_red = np.array([180, 255, 255])  # 上限のしきい値(HSV)
 
     red2 = ["I", "X"]
-    lower_i = np.array([0, 70, 200])  # 下限のしきい値(HSV)
-    upper_i = np.array([40, 255, 255])  # 上限のしきい値(HSV)
+    lower_red2 = np.array([0, 70, 200])  # 下限のしきい値(HSV)
+    upper_red2 = np.array([40, 255, 255])  # 上限のしきい値(HSV)
 
     png_list = get_file_list(year, path)
     for png in tqdm(png_list):
         img = cv2.imread("./timetable/" + year + "/png/" + png) # 画像の読み込み
         img_hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV) # HSVに変換
-        if png[0] in red:  # 講義コードが赤のもの
-            img_mask = cv2.inRange(img_hsv, lower_red, upper_red) # 色のしきい値を指定してマスク画像を生成
-        elif png[0] in red2:  # 情報科学部用
-            img_mask = cv2.inRange(img_hsv, lower_i, upper_i)
-        else: # それ以外の学科等
+        if png[0] in red:
+            img_mask = cv2.inRange(img_hsv, lower_red, upper_red) # マスク画像の生成
+        elif png[0] in red2:
+            img_mask = cv2.inRange(img_hsv, lower_red2, upper_red2)
+        else:
             img_mask = cv2.inRange(img_hsv, lower_pink, upper_pink)
         img_extract = cv2.bitwise_and(img, img, mask=img_mask) # マスク画像を適用して講義コードを抽出
         img_bgr = cv2.cvtColor(img_extract, cv2.COLOR_HSV2BGR) # BGRに変換
