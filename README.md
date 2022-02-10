@@ -17,7 +17,8 @@ Contributed by
 [aoken](https://github.com/aoken7)
 [Akirtn](https://github.com/Akirtn)
 [maru](https://github.com/GenichiMaruo)  
-2022/2/3時点での
+2022/02/10
+時点での
 [大阪工業大学公式シラバス](https://www.oit.ac.jp/japanese/syllabus/index.html)
 のデータに基づきます。  
 バグ、データの不備、機能要望、その他問い合わせは
@@ -40,13 +41,58 @@ Contributed by
 [iOS・Androidの追加方法](https://support.bccks.jp/faq/pwa_2020/)  
 [PC(Chrome・Edge)の追加方法](https://support.google.com/chrome/answer/9658361)  
 
-## Scraping Tool
+## Scraping
 
 ・Pythonで時間割PDFより講義コードを抽出  
 ・抽出した講義コードを元にスクレイピング  
 ・スクレイピング結果をJSONファイルに保存
 
-## Web App
+## Web
 
 ・React+MUI+Material-Tableで構築  
 ・Cloudflare Pagesにホスティング
+
+## 仕様
+
+<pre>
+
+./
+├── README.md
+├── tool
+│   ├── extract.py
+│   ├── main.py
+│   ├── pdfconvert.py
+│   ├── requirements.txt
+│   ├── scraping.py
+│   └── timetable
+│       ├── 2021
+│       │   ├── csv
+│       │   ├── num
+│       │   ├── pdf
+│       │   └── png
+│       └── poppler
+└── web
+    ├── package-lock.json
+    ├── package.json
+    ├── public
+    │   ├── hyouki.txt
+    │   ├── index.html
+    │   ├── manifest.json
+    │   ├── oitlogo.webp
+    │   └── robots.txt
+    ├── src
+    │   ├── App.tsx
+    │   ├── components
+    │   │   ├── About.tsx
+    │   │   ├── Header.tsx
+    │   │   └── Table.tsx
+    │   ├── data
+    │   │   └── 2021.json
+    │   ├── index.tsx
+    │   ├── react-app-env.d.ts
+    │   ├── service-worker.ts
+    │   └── serviceWorker
+    │           -Registration.ts
+    └── tsconfig.json
+
+</pre>

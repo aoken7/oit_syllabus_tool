@@ -5,6 +5,7 @@ import unicodedata
 import re
 import glob
 import os
+import datetime
 
 from bs4 import BeautifulSoup
 from email import parser
@@ -78,6 +79,15 @@ def main():
             syllabus_dict_list.append(syllabus_dict)
     with open("../web/src/data/" + year + ".json", 'w', encoding='utf-8') as fp:
         json.dump(syllabus_dict_list, fp, ensure_ascii=False, indent=4)
+
+    # READMEの更新日時書き換え
+    date = datetime.datetime.now(datetime.timezone(
+        datetime.timedelta(hours=+9))).strftime("%Y/%m/%d")
+    file_name = "../README.md"
+    with open(file_name, 'r', encoding="utf-8") as fp:
+        s = re.sub("\d{4}/\d{2}/\d{2}", date, fp.read())
+    with open(file_name, 'w', encoding="utf-8") as fp:
+        fp.write(s)
 
 
 if __name__ == "__main__":

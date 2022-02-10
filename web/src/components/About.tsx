@@ -10,6 +10,12 @@ const CustomBox = styled(Box)({
     textAlign: "center",
     a: { color: "skyblue" },
     fontSize: "1.1rem",
+    pre: {
+        fontSize: "1.0rem",
+        lineHeight: 1,
+        display: "inline-block",
+        textAlign: "left",
+    },
 });
 
 const About = () => {

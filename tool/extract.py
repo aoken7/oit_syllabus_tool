@@ -1,3 +1,4 @@
+from importlib.resources import path
 import os
 from pathlib import Path
 import cv2
@@ -6,6 +7,10 @@ import numpy as np
 from pdf2image import convert_from_path
 import glob
 from tqdm import tqdm
+from PIL import Image
+import sys
+import pyocr
+import pyocr.builders
 
 
 def get_file_list(year: str, path: str) -> list[str]:
@@ -24,7 +29,7 @@ def pdf2png(year: str):
         pdf_path = Path(x)
 
         # pdfから画像に変換
-        pages = convert_from_path(str(pdf_path), dpi=300)
+        pages = convert_from_path(str(pdf_path), dpi=600)
 
     # 画像ファイルを１ページずつ保存
     image_dir = Path("./timetable/" + year + "/png")
@@ -69,14 +74,33 @@ def png2num(year: str):
         cv2.imwrite("./timetable/" + year + "/num/" + png, img_return)  # 画像を保存
 
 
-#  def num2csv():
+def num2csv(year: str):
+    path = "/num/*.png"
+    num_list = get_file_list(year, path)
+
+    tools = pyocr.get_available_tools()
+    if len(tools) == 0:
+        print("No OCR tool found")
+        sys.exit(1)
+
+    tool = tools[0]
+    print("Will use tool '%s'" % (tool.get_name()))
+
+
+    langs = tool.get_available_languages()
+    print("Available languages: %s" % ", ".join(langs))
+    lang = langs[0]
+    print("Will use lang '%s'" % (lang))
+
+    # for num in tqdm(num_list):
+    #     pass
 
 
 def main():
     year = "2021"
-#    pdf2png(year)  # PDFファイルをPNGに変換
-    png2num(year)  # PNGファイルを講義コードを抜き出した画像に変換
-#    num2csv(year) # 画像をOCRしてCSVに出力
+ #   pdf2png(year)  # PDFファイルをPNGに変換
+ #   png2num(year)  # PNGファイルを講義コードを抜き出した画像に変換
+    num2csv(year)  # 画像をOCRしてCSVに出力
 
 
 if __name__ == "__main__":
