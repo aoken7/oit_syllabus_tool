@@ -51,7 +51,7 @@ def scraping_syllabus(number: str, year: str, csv: str) -> Dict[str, str]:
     url = "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=" + year + "&value(semekikn)=1&value(kougicd)=" + \
         number + "&value(crclumcd)=10201200"
 
-    html = requests.get(url).text
+    html = requests.get(url, timeout=9.0).text
     syllabus_dict = extract_element(html)
     syllabus_dict['link'] = url
     syllabus_dict['numbering'] = number
@@ -73,7 +73,7 @@ def main():
         numbers = list(set(numbers) - set(duplicate_check))  # 重複削除
         duplicate_check.extend(numbers)
         numbers.sort()  # 昇順にソート
-        print(" ",csv)
+        print(" ", csv)
         for number in tqdm(numbers):
             syllabus_dict = scraping_syllabus(number, year, csv)
             # ページがない時のエラー処理，もう少し上手くやりたい

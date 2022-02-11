@@ -1,10 +1,10 @@
 # OIT Syllabus App
 
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/yashikota/oit-syllabus?label=version&style=plastic)
 [![Scraping](https://github.com/yashikota/oit-syllabus/actions/workflows/main.yml/badge.svg)](https://github.com/yashikota/oit-syllabus/actions/workflows/main.yml)  
 
 大阪工業大学**非公式**のシラバスアプリです。  
 <https://syllabus.oit.yashikota.com>で公開しています。  
-現時点では情報科学部のみ対応しています。(将来的には全学部・大学院に対応予定)  
 各自で必ず
 [公式のシラバス](https://www.oit.ac.jp/japanese/syllabus/index.html)
 も合わせて確認してください。  
@@ -19,7 +19,7 @@ Contributed by
 [aoken](https://github.com/aoken7)
 [Akirtn](https://github.com/Akirtn)
 [maru](https://github.com/GenichiMaruo)  
-2022/02/11
+2022/02/12
 時点での
 [大阪工業大学公式シラバス](https://www.oit.ac.jp/japanese/syllabus/index.html)
 のデータに基づきます。  
@@ -43,21 +43,44 @@ Contributed by
 [iOS・Androidの追加方法](https://support.bccks.jp/faq/pwa_2020/)  
 [PC(Chrome・Edge)の追加方法](https://support.google.com/chrome/answer/9658361)  
 
-## Scraping
+## プログラムの説明
 
-・Pythonで時間割PDFより講義コードを抽出  
-・抽出した講義コードを元にスクレイピング  
-・スクレイピング結果をJSONファイルに保存
+下にあるディレクトリ構造を見ながら読むとわかりやすいかも
 
-## Web
+### Tool
 
-・React+MUI+Material-Tableで構築  
-・Cloudflare Pagesにホスティング
+・extract.py  
+時間割PDFを画像に変換し、画像から講義コードを抜き出した画像を生成し、その画像をOCRしたものをCSVに保存  
+OCRにはTesseractを利用しているため別途インストールが必要。学習データは
+[これ](https://github.com/tesseract-ocr/tessdata_best/blob/main/eng.traineddata)
+を利用している  
+・pdfconvert.py  
+時間割PDFからテキストを抽出して正規表現で講義コードのみをCSVに保存  
+・scraping.py  
+CSVから講義コードを読み込み、公式のシラバスからスクレイピングし、結果をJSONに保存  
+・/202*/numbers.csv  
+スクレイピングの際にできる副産物のような物。今の所使用する予定はない  
 
-## 仕様
+### Web
 
+React+MUI+Material-Tableで構築  
+Cloudflare Pagesにホスティング  
+
+・public  
+ライセンス表記ファイルやファビコンファイル等を格納している  
+・src  
+主にソースコードを格納している  
+・src/components  
+今回使用しているReactというライブラリはコンポーネント指向という考え方に基づいて開発されている。  
+ファイル名を見て分かる通り、Header.tsxはヘッダー、Table.tsxはテーブル（シラバスデータを表示しているもの）といった感じで部品ごとにソースコードが分けられている。  
+これのメリットは機能単位で分けられているためメンテナンスがしやすいことや違うプロジェクトでも使い回しが容易であることが挙げられる。  
+・data/202*.json  
+表示しているシラバスの全データが入ったJSONファイル。利用はご自由にどうぞ  
+
+### ディレクトリ構造
+
+ver1.0現在
 <pre>
-
 ./
 ├── README.md
 ├── tool
@@ -93,9 +116,8 @@ Contributed by
     │   ├── react-app-env.d.ts
     │   ├── service-worker.ts
     │   └── serviceWorker
-    │           -Registration.ts
+    │           Registration.ts
     └── tsconfig.json
-
 </pre>
 
 <!-- エラー数=0-->

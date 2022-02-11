@@ -105,8 +105,8 @@ def num2csv(year: str):
         # 末尾にA0を付加
         if num[0] == "X":
             txt_del_symbol = re.sub(r"\w{6}", r"\g<0>A0", txt_del_symbol)
-        # 8文字のみ保存
-        txt_normalized = re.findall(r"\w{8}", txt_del_symbol)
+        # 英数字8文字のみ保存
+        txt_normalized = re.findall(r"(\w{8})(!\d{8})", txt_del_symbol)
         with open("./timetable/" + year + "/csv/" + num[:-4] + ".csv", 'w', encoding="utf-8") as f:
             f.write(",".join(txt_normalized))
 
