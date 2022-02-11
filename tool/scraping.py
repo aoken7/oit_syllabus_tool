@@ -63,30 +63,37 @@ def scraping_syllabus(number: str, year: str, csv: str) -> Dict[str, str]:
 
 def main():
     year = "2021"  # スクレイピングする年度を指定
-    csvlist = ([os.path.basename(p) for p in glob.glob("./timetable/" + year + "/csv/*.csv", recursive=True)
+    error = 0
+    csv_list = ([os.path.basename(p) for p in glob.glob("./timetable/" + year + "/csv/*.csv", recursive=True)
                 if os.path.isfile(p)])  # csvファイルを全て取得
     syllabus_dict_list = list()
-    for csv in tqdm(csvlist):
+    duplicate_check = list()
+    for csv in tqdm(csv_list):
         numbers = import_syllabus_number("./timetable/" + year + "/csv/" + csv)
-        numbers = list(set(numbers))  # 重複削除
+        numbers = list(set(numbers) - set(duplicate_check))  # 重複削除
+        duplicate_check.extend(numbers)
         numbers.sort()  # 昇順にソート
-
+        print(" ",csv)
         for number in tqdm(numbers):
             syllabus_dict = scraping_syllabus(number, year, csv)
             # ページがない時のエラー処理，もう少し上手くやりたい
             if len(syllabus_dict) < 5:
+                error += 1  # エラー数をカウント
                 continue
-            syllabus_dict_list.append(syllabus_dict)
+            syllabus_dict_list.append(syllabus_dict)  # リストに追加
     with open("../web/src/data/" + year + ".json", 'w', encoding='utf-8') as fp:
         json.dump(syllabus_dict_list, fp, ensure_ascii=False, indent=4)
+    with open("./timetable/" + year + "/numbers.csv", 'w', encoding='utf-8') as fp:
+        fp.write(",".join(duplicate_check))
 
-    # READMEの更新日時書き換え
+    # READMEの書き換え
     date = datetime.datetime.now(datetime.timezone(
         datetime.timedelta(hours=+9))).strftime("%Y/%m/%d")
-    file_name = "../README.md"
-    with open(file_name, 'r', encoding="utf-8") as fp:
-        s = re.sub("\d{4}/\d{2}/\d{2}", date, fp.read())
-    with open(file_name, 'w', encoding="utf-8") as fp:
+    with open("../README.md", 'r', encoding="utf-8") as fp:
+        s = re.sub("\d{4}/\d{2}/\d{2}", date, fp.read())  # 更新日の書き換え
+        s = re.sub("<!-- エラー数=\d{1,4} -->",
+                   "<!-- エラー数=" + str(error) + "-->", s)  # エラー数の書き換え
+    with open("../README.md", 'w', encoding="utf-8") as fp:
         fp.write(s)
 
 

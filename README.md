@@ -17,7 +17,7 @@ Contributed by
 [aoken](https://github.com/aoken7)
 [Akirtn](https://github.com/Akirtn)
 [maru](https://github.com/GenichiMaruo)  
-2022/02/10
+2022/02/11
 時点での
 [大阪工業大学公式シラバス](https://www.oit.ac.jp/japanese/syllabus/index.html)
 のデータに基づきます。  
@@ -60,7 +60,6 @@ Contributed by
 ├── README.md
 ├── tool
 │   ├── extract.py
-│   ├── main.py
 │   ├── pdfconvert.py
 │   ├── requirements.txt
 │   ├── scraping.py
@@ -96,3 +95,5 @@ Contributed by
     └── tsconfig.json
 
 </pre>
+
+<!-- エラー数=0-->

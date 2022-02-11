@@ -8,9 +8,9 @@ from pdf2image import convert_from_path
 import glob
 from tqdm import tqdm
 from PIL import Image
-import sys
 import pyocr
 import pyocr.builders
+import re
 
 
 def get_file_list(year: str, path: str) -> list[str]:
@@ -43,8 +43,9 @@ def pdf2png(year: str):
 def png2num(year: str):
     path = "/png/*.png"
 
-    lower_pink = np.array([140, 30, 180])  # 下限のしきい値(HSV)
-    upper_pink = np.array([180, 255, 255])  # 上限のしきい値(HSV)
+    # 下限のしきい値(HSV)と上限のしきい値(HSV)を設定
+    lower_pink = np.array([140, 30, 180])
+    upper_pink = np.array([180, 255, 255])
 
     red = ["R", "S", "W", "Z"]
     lower_red = np.array([160, 50, 200])
@@ -56,50 +57,64 @@ def png2num(year: str):
 
     png_list = get_file_list(year, path)
     for png in tqdm(png_list):
-        img = cv2.imread("./timetable/" + year + "/png/" + png)  # 画像の読み込み
-        img_hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)  # HSVに変換
+        # 画像の読み込み
+        img = cv2.imread("./timetable/" + year + "/png/" + png)
+        # HSVに変換
+        img_hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
+        # マスク画像の生成
         if png[0] in red:
-            img_mask = cv2.inRange(img_hsv, lower_red, upper_red)  # マスク画像の生成
+            img_mask = cv2.inRange(img_hsv, lower_red, upper_red)
         elif png[0] in red2:
             img_mask = cv2.inRange(img_hsv, lower_red2, upper_red2)
         else:
             img_mask = cv2.inRange(img_hsv, lower_pink, upper_pink)
+        # マスク画像を適用して講義コードを抽出
         img_extract = cv2.bitwise_and(
-            img, img, mask=img_mask)  # マスク画像を適用して講義コードを抽出
-        img_bgr = cv2.cvtColor(img_extract, cv2.COLOR_HSV2BGR)  # BGRに変換
-        img_gray = cv2.cvtColor(img_bgr, cv2.COLOR_BGR2GRAY)  # グレースケールに変換
+            img, img, mask=img_mask)
+        # BGRに変換
+        img_bgr = cv2.cvtColor(img_extract, cv2.COLOR_HSV2BGR)
+        # グレースケールに変換
+        img_gray = cv2.cvtColor(img_bgr, cv2.COLOR_BGR2GRAY)
+        # 二値化
         th, img_threshold = threshold(
-            img_gray, 10, 255, cv2.THRESH_BINARY)  # 二値化
-        img_return = cv2.bitwise_not(img_threshold)  # 画像を反転
-        cv2.imwrite("./timetable/" + year + "/num/" + png, img_return)  # 画像を保存
+            img_gray, 10, 255, cv2.THRESH_BINARY)
+        # 画像を反転
+        img_return = cv2.bitwise_not(img_threshold)
+        # 画像を保存
+        cv2.imwrite("./timetable/" + year + "/num/" + png, img_return)
 
 
 def num2csv(year: str):
     path = "/num/*.png"
     num_list = get_file_list(year, path)
-
     tools = pyocr.get_available_tools()
-    if len(tools) == 0:
-        print("No OCR tool found")
-        sys.exit(1)
-
     tool = tools[0]
-    print("Will use tool '%s'" % (tool.get_name()))
 
-
-    langs = tool.get_available_languages()
-    print("Available languages: %s" % ", ".join(langs))
-    lang = langs[0]
-    print("Will use lang '%s'" % (lang))
-
-    # for num in tqdm(num_list):
-    #     pass
+    for num in tqdm(num_list):
+        # OCR
+        txt = tool.image_to_string(
+            Image.open('./timetable/' + year + '/num/' + num),
+            lang="eng",
+            builder=pyocr.builders.TextBuilder(tesseract_layout=6)
+        )
+        # 変換
+        txt_convert = str.upper(txt).translate(str.maketrans(
+            {" ": "_", "\n": "_", "O": "0", "I": "1", "l": "1"}))
+        # 記号削除後、アンダースコアをコンマに変換
+        txt_del_symbol = (re.sub(r"\W", "", txt_convert)).replace("_", ",")
+        # 8文字or6文字のみ保存
+        if num[0] == "X":
+            txt_normalized = re.findall(r"\w{6}", txt_del_symbol)
+        else:
+            txt_normalized = re.findall(r"\w{8}", txt_del_symbol)
+        with open("./timetable/" + year + "/csv/" + num[:-4] + ".csv", 'w', encoding="utf-8") as f:
+            f.write(",".join(txt_normalized))
 
 
 def main():
     year = "2021"
- #   pdf2png(year)  # PDFファイルをPNGに変換
- #   png2num(year)  # PNGファイルを講義コードを抜き出した画像に変換
+    pdf2png(year)  # PDFファイルをPNGに変換
+    png2num(year)  # PNGファイルを講義コードを抜き出した画像に変換
     num2csv(year)  # 画像をOCRしてCSVに出力
 
 
