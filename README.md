@@ -1,5 +1,6 @@
 # OIT Syllabus App
 
+[![Scraping](https://github.com/yashikota/oit-syllabus/actions/workflows/main.yml/badge.svg)](https://github.com/yashikota/oit-syllabus/actions/workflows/main.yml)
 大阪工業大学**非公式**のシラバスアプリです。  
 <https://syllabus.oit.yashikota.com>で公開しています。  
 現時点では情報科学部のみ対応しています。(将来的には全学部・大学院に対応予定)  
