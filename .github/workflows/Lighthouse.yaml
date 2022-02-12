@@ -1,13 +1,20 @@
-name: Lighthouse CI
+name: "Lighthouse CI"
 on: [push]
 jobs:
-  lighthouseci:
+  lhci:
+    name: Lighthouse
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
-          node-version: 14
-      - run: npm install && npm install -g @lhci/cli@0.8.x
-      - run: npm run build
-      - run: lhci autorun
+          node-version: 12
+      - name: build
+        run: |
+           cd ./web
+           npm i
+           npm run build
+      - name: run Lighthouse CI
+        run: |
+          npm install -g @lhci/cli@0.6.x
+          lhci autorun
