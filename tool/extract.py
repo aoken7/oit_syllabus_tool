@@ -99,14 +99,16 @@ def num2csv(year: str):
         )
         # 変換
         txt_convert = str.upper(txt).translate(str.maketrans(
-            {" ": "_", "\n": "_", "O": "0", "I": "1", "l": "1"}))
+            {" ": "_", "\n": "_", "O": "0", "I": "1", "l": "1",
+            "À": "A", "Â": "A","Ï": "I", "Î": "I", "Û": "U", "Ù": "U",
+            "È": "E", "É": "E", "Ê": "E", "Ë": "E", "Ô": "O"}))
         # 記号削除後、アンダースコアをコンマに変換
         txt_del_symbol = (re.sub(r"\W", "", txt_convert)).replace("_", ",")
         # 末尾にA0を付加
         if num[0] == "X":
             txt_del_symbol = re.sub(r"\w{6}", r"\g<0>A0", txt_del_symbol)
         # 英数字8文字のみ保存
-        txt_normalized = re.findall(r"(\w{8})(!\d{8})", txt_del_symbol)
+        txt_normalized = re.findall(r"\w{8}", txt_del_symbol)
         with open("./timetable/" + year + "/csv/" + num[:-4] + ".csv", 'w', encoding="utf-8") as f:
             f.write(",".join(txt_normalized))
 
