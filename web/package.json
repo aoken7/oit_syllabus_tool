@@ -1,6 +1,7 @@
 {
   "name": "web",
   "version": "0.1.0",
+  "main": "server.js",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.7.1",
@@ -40,7 +41,10 @@
     "workbox-range-requests": "^5.1.4",
     "workbox-routing": "^5.1.4",
     "workbox-strategies": "^5.1.4",
-    "workbox-streams": "^5.1.4"
+    "workbox-streams": "^5.1.4",
+    "@lhci/server": "0.7.x",
+    "pg": "^7.12.1",
+    "pg-hstore": "^2.3.3"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -65,6 +69,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "engines": {
+    "node": "12.x"
   },
   "devDependencies": {
     "@types/react-virtualized": "^9.21.16"
