@@ -12,7 +12,7 @@ import React from 'react';
 export const ColorModeContext = React.createContext({ toggleColorMode: () => { } });
 
 export const App = () => {
-  const [mode, setMode] = React.useState("dark");
+  const [mode, setMode] = React.useState<'light' | 'dark'>('dark');
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)', { noSsr: true });
 
   // localStorageに保存されているならそれを使い、なければシステムの設定を使う
