@@ -8,8 +8,10 @@ const CustomBox = styled(Box)({
     width: "100%",
     lineHeight: 2,
     textAlign: "center",
-    a: { color: "skyblue" },
     fontSize: "1.1rem",
+    a: {
+        color: "skyblue"
+    },
     img: {
         maxWidth: "100%",
     },
