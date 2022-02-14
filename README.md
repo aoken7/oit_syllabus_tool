@@ -1,7 +1,7 @@
 # OIT Syllabus App
 
 ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/yashikota/oit-syllabus?label=version&style=plastic)
-[![Scraping](https://github.com/yashikota/oit-syllabus/actions/workflows/main.yml/badge.svg)](https://github.com/yashikota/oit-syllabus/actions/workflows/main.yml)  
+[![Scraping](https://github.com/yashikota/oit-syllabus/actions/workflows/Scraping.yaml/badge.svg)](https://github.com/yashikota/oit-syllabus/actions/workflows/Scraping.yaml)  
 
 大阪工業大学**非公式**のシラバスアプリです。  
 <https://syllabus.oit.yashikota.com>で公開しています。  
@@ -79,9 +79,8 @@ Cloudflare Pagesにホスティング
 
 ### ディレクトリ構造
 
-ver1.0現在
 <pre>
-./
+.
 ├── README.md
 ├── tool
 │   ├── extract.py
