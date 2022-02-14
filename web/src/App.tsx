@@ -13,23 +13,23 @@ export const ColorModeContext = React.createContext({ toggleColorMode: () => { }
 
 export const App = () => {
   //システム環境に合わせたテーマに設定（優先度低）
-  const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
-  const SysTheme = React.useMemo(
-    () =>
-      createMuiTheme({
-        palette: {
-          type: prefersDarkMode ? 'dark' : 'light',
-        },
-      }),
-    [prefersDarkMode],
-  );
+  const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)', { noSsr: true });
+  let theme: any;
+  function SysTheme() {
+    if (prefersDarkMode === true) {
+      theme = "dark";
+    } else {
+      theme = "light";
+    }
+    return theme;
+  }
 
   //トグルボタンでテーマを切り替える（優先度高）
-  const [mode, setMode] = React.useState<'light' | 'dark'>('dark');
+  const [mode, setMode] = React.useState(SysTheme());
   const colorMode = React.useMemo(
     () => ({
       toggleColorMode: () => {
-        setMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light'));
+        setMode((prevMode: string) => (prevMode === 'light' ? 'dark' : 'light'));
       },
     }),
     [],
@@ -56,19 +56,14 @@ export const App = () => {
     <>
       <GlobalStyles styles={{ body: { margin: 0, padding: 0 } }} />
       <ColorModeContext.Provider value={colorMode}>
-        <ThemeProvider theme={SysTheme} >
-          <ThemeProvider theme={Theme} >
-            <CssBaseline />
-            <Header />
-            <Routes>
-              <Route path="/" element={<Table />} />
-              <Route path="/about" element={<About />} />
-              <Route
-                path="*"
-                element={<Navigate to="/" />}
-              />
-            </Routes>
-          </ThemeProvider>
+        <ThemeProvider theme={Theme} >
+          <CssBaseline />
+          <Header />
+          <Routes>
+            <Route path="/" element={<Table />} />
+            <Route path="/about" element={<About />} />
+            <Route path="*" element={<Navigate to="/" />} />
+          </Routes>
         </ThemeProvider>
       </ColorModeContext.Provider>
     </>
