@@ -34,7 +34,7 @@ Contributed by
 
 ## 使い方
 
-![トップ画面](./web/src/ss.webp)  
+![トップ画面](https://raw.githubusercontent.com/yashikota/oit-syllabus/master/web/src/ss.webp)  
 ①OIT Toolsへのリンクになってます  
 ②このページ。READMEを描画してます  
 ③タップするとライトテーマ・ダークテーマを切り替えます  
