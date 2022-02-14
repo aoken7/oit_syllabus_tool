@@ -34,11 +34,17 @@ Contributed by
 
 ## 使い方
 
-右上の検索窓はテーブル全体を検索し、各列の一番上にある検索窓はその列のみ検索可能です。  
-各列の検索結果は重複して適応できるため、例えば1年次の2単位のシラバスのみを表示することも可能です。  
-また、各列一番上の↑↓を押せば昇順降順のソートができます。  
-公式シラバスと書かれたボタンをタップすることで公式シラバスの該当するページを表示します。  
-右上のアイコンをタップすることでライトテーマ・ダークテーマに切り替わります。  
+![トップ画面](./web/src/ss.webp)  
+①OIT Toolsへのリンクになってます  
+②このページ。READMEを描画してます  
+③タップするとライトテーマ・ダークテーマを切り替えます  
+④タップするとテーブルの一番上の行に戻ります  
+⑤テーブル全体の要素を検索します  
+⑥昇順降順のソートを切り替えます  
+⑦この列だけを検索します。  
+また各列の検索結果は重複して適応できるため、例えば1年次の2単位のシラバスのみを表示することも可能です  
+⑧プルダウンメニューで絞り込みができます  
+⑨公式シラバスの該当するページを表示します  
 ※ホーム画面への追加方法は以下のリンクをご参照ください。  
 [iOS・Androidの追加方法](https://support.bccks.jp/faq/pwa_2020/)  
 [PC(Chrome・Edge)の追加方法](https://support.google.com/chrome/answer/9658361)  
@@ -81,28 +87,37 @@ Cloudflare Pagesにホスティング
 
 <pre>
 .
+├── .github
+│   └── workflows
+│       ├── Lighthouse.yaml
+│       └── Scraping.yaml
+├── .lighthouserc.js
 ├── README.md
 ├── tool
+│   ├── .gitignore
 │   ├── extract.py
 │   ├── pdfconvert.py
 │   ├── requirements.txt
 │   ├── scraping.py
-│   └── timetable
-│       ├── 2021
-│       │   ├── csv
-│       │   ├── num
-│       │   ├── pdf
-│       │   └── png
-│       └── poppler
+│   ├── timetable
+│   │   ├── 2021
+│   │   │   ├── csv
+│   │   │   ├── num
+│   │   │   ├── numbers.csv
+│   │   │   ├── pdf
+│   │   │   └── png
+│   │   └── poppler
 └── web
+    ├── .gitignore
     ├── package-lock.json
     ├── package.json
     ├── public
     │   ├── hyouki.txt
     │   ├── index.html
     │   ├── manifest.json
-    │   ├── oitlogo.webp
+    │   ├── icon.webp
     │   └── robots.txt
+    ├── server.js
     ├── src
     │   ├── App.tsx
     │   ├── components
@@ -114,8 +129,9 @@ Cloudflare Pagesにホスティング
     │   ├── index.tsx
     │   ├── react-app-env.d.ts
     │   ├── service-worker.ts
-    │   └── serviceWorker
-    │           Registration.ts
+    │   ├── serviceWorker
+    │   │       Registration.ts
+    │   └── ss.webp
     └── tsconfig.json
 </pre>
 
