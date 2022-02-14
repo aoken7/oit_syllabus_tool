@@ -12,29 +12,40 @@ import React from 'react';
 export const ColorModeContext = React.createContext({ toggleColorMode: () => { } });
 
 export const App = () => {
-  //システム環境に合わせたテーマに設定（優先度低）
+  const [mode, setMode] = React.useState("dark");
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)', { noSsr: true });
-  let theme: any;
-  function SysTheme() {
-    if (prefersDarkMode === true) {
-      theme = "dark";
+
+  // localStorageに保存されているならそれを使い、なければシステムの設定を使う
+  React.useEffect(() => {
+    if (localStorage.getItem('colorMode') === "dark") {
+      setMode("dark");
+    } else if (localStorage.getItem('colorMode') === "light") {
+      setMode("light");
+    } else if ((prefersDarkMode) === true) {
+      setMode("dark");
     } else {
-      theme = "light";
+      setMode("light");
     }
-    return theme;
+  }, [prefersDarkMode]);
+
+  //トグルボタンでテーマを切り替える
+  const colorMode = React.useMemo(() => ({
+    toggleColorMode: () => {
+      setMode((prevMode: string) => (prevMode === 'light' ? 'dark' : 'light'));
+    },
   }
+  ), []);
 
-  //トグルボタンでテーマを切り替える（優先度高）
-  const [mode, setMode] = React.useState(SysTheme());
-  const colorMode = React.useMemo(
-    () => ({
-      toggleColorMode: () => {
-        setMode((prevMode: string) => (prevMode === 'light' ? 'dark' : 'light'));
-      },
-    }),
-    [],
-  );
+  //localStorageに保存
+  React.useEffect(() => {
+    if (mode === "dark") {
+      localStorage.setItem("colorMode", "dark");
+    } else {
+      localStorage.setItem("colorMode", "light");
+    }
+  }, [mode]);
 
+  // テーマの適応とダークモード時の背景
   const Theme = React.useMemo(
     () =>
       createMuiTheme({
