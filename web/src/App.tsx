@@ -40,9 +40,13 @@ export const App = () => {
       createMuiTheme({
         palette: {
           type: mode,
-          primary: {
-            main: '#00a1ea',
-          },
+          ...(mode === 'dark'
+            ? {
+              mode: 'dark',
+              background: {
+                default: '#424242',
+              },
+            } : {}),
         }
       }),
     [mode],

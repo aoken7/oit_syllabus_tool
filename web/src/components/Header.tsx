@@ -19,12 +19,12 @@ const CustomAppBar = styled(AppBar)({
 
 const CustomToolBar = styled(Toolbar)({
     minHeight: '35px',
-    backgroundColor: "inherit"
+    backgroundColor: "#00a1ea",
 });
 
 const CustomLink = styled(MuiLink)({
     textDecoration: "none",
-    color: "inherit",
+    color: "black",
 });
 
 export default function Header() {
@@ -42,7 +42,6 @@ export default function Header() {
                         <Typography
                             variant="h5"
                             component="div"
-                            color="inherit"
                             sx={{ flexGrow: 1 }}>
                             <CustomLink
                                 target="_blank"
@@ -52,19 +51,18 @@ export default function Header() {
                             </CustomLink>
                         </Typography>
                         <Button
-                            color="inherit"
                             onClick={onClickReturnTop}
                             variant="outlined"
                             size='small'
                             component={Link}
                             {...returntop ? { to: './' } : { to: '/about' }}
-                            sx={{ mr: "20px" }}
-                        >
+                            sx={{ mr: "20px", color: "black", borderColor: "black" }}>
                             {returntop ? "戻る" : "about"}
                         </Button>
                         <IconButton
                             onClick={colorMode.toggleColorMode}
-                            color="inherit">
+                            color="secondary"
+                            sx={{ color: "black" }}>
                             {theme.palette.type === 'dark' ? <Brightness7Icon /> : <Brightness2Icon />}
                         </IconButton>
                     </CustomToolBar>
