@@ -92,7 +92,7 @@ def main():
     with open("../README.md", 'r', encoding="utf-8") as fp:
         s = re.sub("\d{4}/\d{2}/\d{2}", date, fp.read())  # 更新日の書き換え
         s = re.sub("<!-- エラー数=\d{1,4} -->",
-                   "<!-- エラー数=" + str(error) + "-->", s)  # エラー数の書き換え
+                   "<!-- エラー数=" + str(error) + " -->", s)  # エラー数の書き換え
     with open("../README.md", 'w', encoding="utf-8") as fp:
         fp.write(s)
 
