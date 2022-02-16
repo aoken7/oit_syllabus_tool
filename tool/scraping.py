@@ -55,7 +55,6 @@ def scraping_syllabus(number: str, year: str, csv: str) -> Dict[str, str]:
     syllabus_dict = extract_element(html)
     syllabus_dict['link'] = url
     syllabus_dict['numbering'] = number
-    syllabus_dict['year'] = year
     syllabus_dict['gakka'] = csv[0]
 
     return syllabus_dict
