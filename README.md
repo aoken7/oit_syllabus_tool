@@ -4,7 +4,8 @@
 [![Scraping](https://github.com/yashikota/oit-syllabus/actions/workflows/Scraping.yaml/badge.svg)](https://github.com/yashikota/oit-syllabus/actions/workflows/Scraping.yaml)  
 
 大阪工業大学**非公式**のシラバスアプリです。  
-<https://syllabus.oit.yashikota.com>で公開しています。  
+<https://syllabus.oit.yashikota.com>
+で公開しています。  
 各自で必ず
 [公式のシラバス](https://www.oit.ac.jp/japanese/syllabus/index.html)
 も合わせて確認してください。  
@@ -26,14 +27,13 @@ Contributed by
 バグ、データの不備、機能要望、その他問い合わせは
 [Google Forms](https://docs.google.com/forms/d/e/1FAIpQLSc08BgQQiNqXeFjcECLKlfzmoOygvv1gglc_j7xnGdUmBeYLg/viewform?usp=sf_link)
 か
-[GitHubのissues](https://github.com/yashikota/oit-syllabus/issues)
+[GitHub issues](https://github.com/yashikota/oit-syllabus/issues)
 のどちらかにお願いします。  
 [知的財産の表記](https://raw.githubusercontent.com/yashikota/oit-syllabus/master/web/public/hyouki.txt)
 
 ## 使い方
 
 <img src="https://raw.githubusercontent.com/yashikota/oit-syllabus/master/web/src/ss.webp" alt="トップ画面">
-
 ①OIT Toolsへのリンクになってます  
 ②このページ。READMEを描画してます  
 ③タップするとライトテーマ・ダークテーマを切り替えます  

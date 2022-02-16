@@ -1,7 +1,7 @@
 name: "Scraping"
 on:
   schedule:
-    - cron: "0 15 * * *" #毎日0時に実行(JST)
+    - cron: "0 13 * * *" #毎日10時に実行(JST)
 
 env:
   PR_TITLE: Syllabus_Data_Update_$(date +'%Y/%m/%d')
