@@ -65,6 +65,7 @@ def main():
     error = 0
     csv_list = ([os.path.basename(p) for p in glob.glob("./timetable/" + year + "/csv/*.csv", recursive=True)
                 if os.path.isfile(p)])  # csvファイルを全て取得
+    csv_list.sort()
     syllabus_dict_list = list()
     duplicate_check = list()
     for csv in tqdm(csv_list, desc="全体の進捗率"):
