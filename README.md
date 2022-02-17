@@ -20,7 +20,7 @@ Contributed by
 [aoken](https://github.com/aoken7)
 [Akirtn](https://github.com/Akirtn)
 [maru](https://github.com/GenichiMaruo)  
-2022/02/12
+2022/02/18
 時点での
 [大阪工業大学公式シラバス](https://www.oit.ac.jp/japanese/syllabus/index.html)
 のデータに基づきます。  
@@ -135,4 +135,4 @@ Cloudflare Pagesにホスティング
     └── tsconfig.json
 </pre>
 
-<!-- エラー数=0 -->
+<!-- エラー数=2102 -->
