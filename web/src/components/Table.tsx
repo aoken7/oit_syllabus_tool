@@ -4,6 +4,7 @@ import React, { forwardRef } from 'react';
 import data from '../data/2021.json';
 import { useTheme } from '@material-ui/core/styles';
 
+// アイコンの置き換え
 import SearchIcon from '@mui/icons-material/Search';
 import CloseIcon from '@mui/icons-material/Close';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
@@ -77,7 +78,7 @@ export const Table = () => {
                             3: "3単位",
                             4: "4単位",
                             5: "5単位"
-                        }
+                        },
                     },
                     {
                         title: '学部/学科',
@@ -100,9 +101,9 @@ export const Table = () => {
                             P: "知的財産学部",
                             X: "大学院情報科学研究科",
                             Y: "大学院工学研究科",
-                            Z: "大学院ロボティクス＆デザイン工学研究科",
-                            T: "専門職大学院知的財産研究科",
-                        }
+                            Z: "大学院R&D工学研究科",
+                            T: "大学院知的財産研究科",
+                        },
                     },
                     {
                         title: '講義コード',

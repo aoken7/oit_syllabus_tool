@@ -61,7 +61,6 @@ export default function Header() {
                         </Button>
                         <IconButton
                             onClick={colorMode.toggleColorMode}
-                            color="secondary"
                             sx={{ color: "black" }}>
                             {theme.palette.type === 'dark' ? <Brightness7Icon /> : <Brightness2Icon />}
                         </IconButton>

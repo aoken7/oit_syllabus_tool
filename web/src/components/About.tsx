@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Markdown from 'markdown-to-jsx';
 import { Box, styled } from '@mui/material';
 
