@@ -3,8 +3,6 @@ import Markdown from 'markdown-to-jsx';
 import { Box, styled } from '@mui/material';
 
 const CustomBox = styled(Box)({
-    color: "inherit",
-    backgroundColor: "inherit",
     width: "100%",
     lineHeight: 2,
     textAlign: "center",
@@ -26,7 +24,7 @@ const CustomBox = styled(Box)({
 const About = () => {
     const [mdText, setMdText] = useState('');
     useEffect(() => {
-        fetch("https://raw.githubusercontent.com/yashikota/oit-syllabus/master/README.md")
+        fetch("https://raw.githubusercontent.com/OIT-Tools/syllabus/master/README.md")
             .then((response) => {
                 return response.text();
             })

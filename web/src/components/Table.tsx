@@ -134,6 +134,7 @@ export const Table = () => {
                     maxBodyHeight: "91vh",
                     headerStyle:
                     {
+                        backgroundColor: useTheme().palette.background.default,
                         position: "sticky",
                         border: "none",
                         top: 0,
@@ -142,9 +143,9 @@ export const Table = () => {
                     },
                     filterCellStyle:
                     {
+                        backgroundColor: useTheme().palette.background.default,
                         position: "sticky",
                         top: "55.7px",
-                        backgroundColor: useTheme().palette.background.paper,
                         zIndex: 1,
                     },
                     filtering: true,
