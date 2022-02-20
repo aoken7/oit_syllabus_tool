@@ -72,8 +72,8 @@ def main():
         numbers = import_syllabus_number("./timetable/" + year + "/csv/" + csv)
         numbers = list(set(numbers) - set(duplicate_check))  # 重複削除
         duplicate_check.extend(numbers)
-        numbers.sort()  # 昇順にソート
-        duplicate_check.sort() # 昇順にソート
+        numbers.sort()
+        duplicate_check.sort()
         for number in tqdm(numbers, desc=csv):
             syllabus_dict = scraping_syllabus(number, year, csv)
             # ページがない時のエラー処理，もう少し上手くやりたい

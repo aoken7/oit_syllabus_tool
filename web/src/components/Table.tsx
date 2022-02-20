@@ -131,10 +131,10 @@ export const Table = () => {
                 title="Syllabus App"
                 options={{
                     paging: false,
-                    maxBodyHeight: "91vh",
+                    maxBodyHeight: "90vh",
                     headerStyle:
                     {
-                        backgroundColor: useTheme().palette.background.default,
+                        backgroundColor: useTheme().palette.background.paper,
                         position: "sticky",
                         border: "none",
                         top: 0,
@@ -143,7 +143,7 @@ export const Table = () => {
                     },
                     filterCellStyle:
                     {
-                        backgroundColor: useTheme().palette.background.default,
+                        backgroundColor: useTheme().palette.background.paper,
                         position: "sticky",
                         top: "55.7px",
                         zIndex: 1,

@@ -53,22 +53,9 @@ export const App = () => {
           type: mode,
           background: {
             default: mode === "dark" ? "#121212" : "#fafafa",
+            paper: mode === "dark" ? "#121212" : "#fafafa",
           },
         },
-        overrides: {
-          MuiPaper: {
-            root: {
-              backgroundColor: mode === "dark" ? "#121212" : "#fafafa",
-            },
-          },
-          MuiCssBaseline: {
-            "@global": {
-              body: {
-                backgroundColor: mode === "dark" ? "#121212" : "#fafafa",
-              }
-            },
-          },
-        }
       }),
     [mode],
   );
