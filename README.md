@@ -14,7 +14,8 @@
 か
 [GitHub issues](https://github.com/OIT-Tools/syllabus/issues)
 のどちらかにお願いします  
-アプリケーションは <https://syllabus.oit.yashikota.com>
+アプリケーションは
+[syllabus.oit.yashikota.com](https://syllabus.oit.yashikota.com)
 で、ソースコードは
 [GitHub](https://github.com/OIT-Tools/syllabus)
 で公開してます  
