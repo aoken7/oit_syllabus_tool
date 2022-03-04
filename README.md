@@ -1,7 +1,7 @@
 # OIT Syllabus App
 
-![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/OIT-Tools/oit-syllabus?label=version&style=plastic)
-[![Scraping](https://github.com/OIT-Tools/syllabus/actions/workflows/Scraping.yaml/badge.svg)](https://github.com/OIT-Tools/syllabus/actions/workflows/Scraping.yaml)  
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/yashikota/OIT-Tools_syllabus?label=version&style=plastic)
+[![Scraping](https://github.com/yashikota/OIT-Tools_syllabus/actions/workflows/Scraping.yaml/badge.svg)](https://github.com/yashikota/OIT-Tools_syllabus/actions/workflows/Scraping.yaml)  
 
 大阪工業大学**非公式**のシラバスアプリです  
 2022/02/28
@@ -12,12 +12,12 @@
 バグ、データの不備、機能要望、その他問い合わせは
 [Google Forms](https://docs.google.com/forms/d/e/1FAIpQLSc08BgQQiNqXeFjcECLKlfzmoOygvv1gglc_j7xnGdUmBeYLg/viewform?usp=sf_link)
 か
-[GitHub issues](https://github.com/OIT-Tools/syllabus/issues)
+[GitHub issues](https://github.com/yashikota/OIT-Tools_syllabus/issues)
 のどちらかにお願いします  
 アプリケーションは
 [syllabus.oit.yashikota.com](https://syllabus.oit.yashikota.com)
 で、ソースコードは
-[GitHub](https://github.com/OIT-Tools/syllabus)
+[GitHub](https://github.com/yashikota/OIT-Tools_syllabus)
 で公開してます  
 Contributed by
 [kota](https://github.com/yashikota)
@@ -28,11 +28,11 @@ Contributed by
 本アプリケーションに記載されている情報の正確性、最新性、有用性等その他一切の事項について、いかなる保証をするものではありません  
 このような場合において、記載が不正確であったこと等により生じた、いかなる損害に関しても、一切の責任を負いかねます  
 また、本アプリケーションではアクセス状況の把握やサイト改善に役立てるため、Google Analytics及びCloudflare Web Analyticsを利用しています  
-[知的財産の表記](https://raw.githubusercontent.com/OIT-Tools/syllabus/master/web/public/hyouki.txt)
+[知的財産の表記](https://raw.githubusercontent.com/yashikota/OIT-Tools_syllabus/master/web/public/hyouki.txt)
 
 ## 使い方
 
-<img src="https://raw.githubusercontent.com/OIT-Tools/syllabus/master/web/src/ss.webp" alt="トップ画面">
+<img src="https://raw.githubusercontent.com/yashikota/OIT-Tools_syllabus/master/web/src/ss.webp" alt="トップ画面">
 
 ①OIT-Toolsホームページへのリンクになってます  
 ②使い方やプログラムの説明をしているこのページ  
@@ -49,7 +49,7 @@ Contributed by
 (手順1は飛ばす)  
 [PC(Chrome・Edge)の追加方法](https://support.google.com/chrome/answer/9658361)  
 
-## 質問と回答
+## Q&A
 
 ## プログラムの説明
 
