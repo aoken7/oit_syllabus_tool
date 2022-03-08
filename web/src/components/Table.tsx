@@ -130,7 +130,7 @@ export const Table = () => {
                 data={data} //インポートしたjsonファイルを表示
                 title="Syllabus App"
                 options={{
-                    paging: false,
+                    paging: true,
                     maxBodyHeight: "90vh",
                     headerStyle:
                     {
