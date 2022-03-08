@@ -61,7 +61,7 @@ def scraping_syllabus(number: str, year: str, csv: str) -> Dict[str, str]:
 
 
 def main():
-    year = "2021"  # スクレイピングする年度を指定
+    year = "2022"  # スクレイピングする年度を指定
     error = 0
     csv_list = ([os.path.basename(p) for p in glob.glob("./timetable/" + year + "/csv/*.csv", recursive=True)
                 if os.path.isfile(p)])  # csvファイルを全て取得
