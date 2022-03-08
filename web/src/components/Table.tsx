@@ -113,7 +113,7 @@ export const Table = () => {
                     {
                         title: 'リンク',
                         field: 'link',
-                        render: row =>
+                        render: (row: { link: string; }) =>
                             <Button
                                 variant="outlined"
                                 size='small'
@@ -131,7 +131,10 @@ export const Table = () => {
                 title="Syllabus App"
                 options={{
                     paging: true,
-                    maxBodyHeight: "90vh",
+                    pageSize: 100,
+                    pageSizeOptions: [30, 50, 100, 300],
+                    emptyRowsWhenPaging: false,
+                    maxBodyHeight: "85vh",
                     headerStyle:
                     {
                         backgroundColor: useTheme().palette.background.paper,

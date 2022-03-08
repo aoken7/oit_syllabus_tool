@@ -1,15 +1,17 @@
 {
-  "name": "oit-syllabus-app",
+  "name": "web",
   "version": "0.1.0",
   "main": "server.js",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.8.1",
     "@emotion/styled": "^11.8.1",
+    "@lhci/server": "0.7.x",
     "@material-table/core": "^4.3.35",
-    "@mui/icons-material": "^5.5.0",
     "@material-ui/core": "^4.12.3",
+    "@mui/icons-material": "^5.5.0",
     "@mui/material": "^5.5.0",
+    "@mui/styles": "^5.5.0",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
@@ -19,6 +21,8 @@
     "@types/react-dom": "^16.9.14",
     "markdown-to-jsx": "^7.1.7",
     "mini-css-extract-plugin": "^2.4.5",
+    "pg": "^7.12.1",
+    "pg-hstore": "^2.3.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^6.2.2",
@@ -35,10 +39,7 @@
     "workbox-range-requests": "^5.1.4",
     "workbox-routing": "^5.1.4",
     "workbox-strategies": "^5.1.4",
-    "workbox-streams": "^5.1.4",
-    "@lhci/server": "0.7.x",
-    "pg": "^7.12.1",
-    "pg-hstore": "^2.3.3"
+    "workbox-streams": "^5.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
