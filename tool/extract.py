@@ -43,17 +43,17 @@ def pdf2png(year: str):
 def png2num(year: str):
     path = "/png/*.png"
 
-    # 下限のしきい値(HSV)と上限のしきい値(HSV)を設定
-    lower_pink = np.array([140, 30, 180])
-    upper_pink = np.array([180, 255, 255])
+    # 下限と上限のしきい値(HSV)を設定
+    lower_omiya = np.array([140, 30, 180])
+    upper_omiya = np.array([180, 255, 255])
 
-    red = ["R", "S", "W", "Z"]
-    lower_red = np.array([160, 50, 200])
-    upper_red = np.array([180, 255, 255])
+    umeda = ["R", "S", "W", "Z"]
+    lower_umeda = np.array([160, 50, 200])
+    upper_umeda = np.array([180, 255, 255])
 
-    red2 = ["I", "X"]
-    lower_red2 = np.array([0, 70, 200])
-    upper_red2 = np.array([40, 255, 255])
+    hirakata = ["I", "X"]
+    lower_hirakata = np.array([0, 70, 200])
+    upper_hirakata = np.array([40, 255, 255])
 
     png_list = get_file_list(year, path)
     for png in tqdm(png_list):
@@ -62,12 +62,12 @@ def png2num(year: str):
         # HSVに変換
         img_hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
         # マスク画像の生成
-        if png[0] in red:
-            img_mask = cv2.inRange(img_hsv, lower_red, upper_red)
-        elif png[0] in red2:
-            img_mask = cv2.inRange(img_hsv, lower_red2, upper_red2)
+        if png[0] in umeda:
+            img_mask = cv2.inRange(img_hsv, lower_umeda, upper_umeda)
+        elif png[0] in hirakata:
+            img_mask = cv2.inRange(img_hsv, lower_hirakata, upper_hirakata)
         else:
-            img_mask = cv2.inRange(img_hsv, lower_pink, upper_pink)
+            img_mask = cv2.inRange(img_hsv, lower_omiya, upper_omiya)
         # マスク画像を適用して講義コードを抽出
         img_extract = cv2.bitwise_and(
             img, img, mask=img_mask)
@@ -114,7 +114,7 @@ def num2csv(year: str):
 
 
 def main():
-    year = "2021"
+    year = "2022"
     pdf2png(year)  # PDFファイルをPNGに変換
     png2num(year)  # PNGファイルを講義コードを抜き出した画像に変換
     num2csv(year)  # 画像をOCRしてCSVに出力

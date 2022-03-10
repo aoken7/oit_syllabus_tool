@@ -15,7 +15,7 @@ def export_list_csv(export_list, csv_dir):
             writer.writerow(export_list)
 
 
-s = str(extract_text('./timetable/2021/I.pdf'))
+s = str(extract_text('./timetable/2022/I.pdf'))
 
 l = []
 
@@ -49,4 +49,4 @@ for i in t:
 
 print(l)
 print(len(l))
-export_list_csv(l, r"./timetable/2021/number.csv")
+export_list_csv(l, r"./timetable/2022/number.csv")
