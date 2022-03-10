@@ -11,6 +11,8 @@ from PIL import Image
 import pyocr
 import pyocr.builders
 import re
+from pdfminer.high_level import extract_text
+import csv
 
 
 # ファイル一覧を取得
@@ -35,8 +37,8 @@ def pdf2png(year: str):
         # 画像ファイルを１ページずつ保存
         image_dir = Path("./timetable/" + year + "/png")
         for i, page in enumerate(pages):
-            file_name = f'{pdf_path.stem}_{i + 1}.png'
-            image_path = f'{image_dir}/{file_name}'
+            file_name = f"{pdf_path.stem}_{i + 1}.png"
+            image_path = f"{image_dir}/{file_name}"
 
             # PNGで保存
             page.save(str(image_path), "PNG")
@@ -105,7 +107,7 @@ def num2csv(year: str):
 
         # OCR
         txt = tool.image_to_string(
-            Image.open('./timetable/' + year + '/num/' + num),
+            Image.open("./timetable/" + year + "/num/" + num),
             lang="eng",
             builder=pyocr.builders.TextBuilder(tesseract_layout=6)
         )
@@ -121,12 +123,34 @@ def num2csv(year: str):
 
         # 末尾にA0を付加
         if num[0] == "X":
-            txt_del_symbol = re.sub(r"\w{6}", r"\g<0>A0", txt_del_symbol)
+            txt_del_symbol = re.sub(
+                r"[a-zA-Z_0-9]{6}", r"\g<0>A0", txt_del_symbol)
 
         # 英数字8文字のみ保存
-        txt_normalized = re.findall(r"\w{8}", txt_del_symbol)
-        with open("./timetable/" + year + "/csv/" + num[:-4] + ".csv", 'w', encoding="utf-8") as f:
+        txt_normalized = re.findall(r"[a-zA-Z_0-9]{8}", txt_del_symbol)
+        with open("./timetable/" + year + "/csv/" + num[:-4] + ".csv", "w", encoding="utf-8") as f:
             f.write(",".join(txt_normalized))
+
+
+def pdf2csv(year: str):
+    path = "/pdf/*.pdf"
+    file_list = get_file_list(year, path)
+
+    for file in tqdm(file_list):
+
+        # テキストの抽出
+        text = extract_text("./timetable/" + year + "/pdf/" + file)
+
+        # 末尾にA0を付加
+        if file[0] == "X":
+            text = re.sub(r"[a-zA-Z_0-9]{6}", r"\g<0>A0", text)
+
+        # 英数字8桁のみを抽出
+        re_text = re.findall(r"[a-zA-Z_0-9]{8}", text)
+
+    with open("./timetable/" + year + "/csv/" + file[0] + ".csv", "w", encoding="utf_8") as f:
+        writer = csv.writer(f, lineterminator="\n")
+        writer.writerow(re_text)
 
 
 def main():
@@ -134,6 +158,7 @@ def main():
     pdf2png(year)  # PDFファイルをPNGに変換
     png2num(year)  # PNGファイルを講義コードを抜き出した画像に変換
     num2csv(year)  # 画像をOCRしてCSVに出力
+    pdf2csv(year)  # PDFファイルをCSVに出力
 
 
 if __name__ == "__main__":
