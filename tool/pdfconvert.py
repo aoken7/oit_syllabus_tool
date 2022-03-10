@@ -1,52 +1,27 @@
+import glob
+import os
 from pdfminer.high_level import extract_text
 import re
 import csv
+from tqdm import tqdm
 
+year = "2021"
 
-def export_list_csv(export_list, csv_dir):
+# PDFファイル一覧を取得
+file_list = ([os.path.basename(p) for p in glob.glob("./timetable/" + year + "/pdf/*.pdf", recursive=True)
+              if os.path.isfile(p)])
 
-    with open(csv_dir, "w") as f:
+for file in tqdm(file_list):
+    # テキストの抽出
+    text = extract_text("./timetable/" + year + "/pdf/" + file)
+
+    # 末尾にA0を付加
+    if file[0] == "X":
+        text = re.sub(r"[a-zA-Z_0-9]{6}", r"\g<0>A0", text)
+
+    # 英数字8桁のみを抽出
+    re_text = re.findall(r'[a-zA-Z_0-9]{8}', text)
+
+    with open("./timetable/" + year + "/csv/" + file[0] + ".csv", "w", encoding="utf_8") as f:
         writer = csv.writer(f, lineterminator='\n')
-
-        if isinstance(export_list[0], list):  # 多次元の場合
-            writer.writerows(export_list)
-
-        else:
-            writer.writerow(export_list)
-
-
-s = str(extract_text('./timetable/2022/I.pdf'))
-
-l = []
-
-t = list(s.split())
-x = ''
-for i in t:
-    for j in i:
-        alnumReg = re.compile(r'^[A-Z0-9]+$')
-        if alnumReg.match(j):
-            x += j
-
-            if x[0] != '1' and x[0] != 'B':
-                x = ''
-
-            flag = re.compile(r'^[A-F]')
-            if len(x) > 1 and x[0] == '1' and not flag.match(x[1]):
-                x = ''
-
-            flag = re.compile(r'^[0-4ZTR]')
-            if len(x) > 1 and x[0] == 'B' and not flag.match(x[1]):
-                x = ''
-
-            if len(x) > 2 and x[2] != 'A' and x[2] != 'B' and x[2] != 'C' and x[2] != 'D':
-                x = ''
-
-            if len(x) == 8:
-                l.append(x)
-                x = ''
-        else:
-            x = ''
-
-print(l)
-print(len(l))
-export_list_csv(l, r"./timetable/2022/number.csv")
+        writer.writerow(re_text)

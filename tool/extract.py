@@ -13,6 +13,7 @@ import pyocr.builders
 import re
 
 
+# ファイル一覧を取得
 def get_file_list(year: str, path: str) -> list[str]:
     file_list = ([os.path.basename(p) for p in glob.glob("./timetable/" + year + path, recursive=True)
                   if os.path.isfile(p)])
@@ -31,13 +32,14 @@ def pdf2png(year: str):
         # pdfから画像に変換
         pages = convert_from_path(str(pdf_path), dpi=600)
 
-    # 画像ファイルを１ページずつ保存
-    image_dir = Path("./timetable/" + year + "/png")
-    for i, page in enumerate(pages):
-        file_name = f'{pdf_path.stem}_{i + 1}.png'
-        image_path = f'{image_dir}/{file_name}'
-        # PNGで保存
-        page.save(str(image_path), "PNG")
+        # 画像ファイルを１ページずつ保存
+        image_dir = Path("./timetable/" + year + "/png")
+        for i, page in enumerate(pages):
+            file_name = f'{pdf_path.stem}_{i + 1}.png'
+            image_path = f'{image_dir}/{file_name}'
+
+            # PNGで保存
+            page.save(str(image_path), "PNG")
 
 
 def png2num(year: str):
@@ -53,14 +55,17 @@ def png2num(year: str):
 
     hirakata = ["I", "X"]
     lower_hirakata = np.array([0, 70, 200])
-    upper_hirakata = np.array([40, 255, 255])
+    upper_hirakata = np.array([255, 255, 255])
 
     png_list = get_file_list(year, path)
     for png in tqdm(png_list):
+
         # 画像の読み込み
         img = cv2.imread("./timetable/" + year + "/png/" + png)
+
         # HSVに変換
         img_hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
+
         # マスク画像の生成
         if png[0] in umeda:
             img_mask = cv2.inRange(img_hsv, lower_umeda, upper_umeda)
@@ -68,18 +73,24 @@ def png2num(year: str):
             img_mask = cv2.inRange(img_hsv, lower_hirakata, upper_hirakata)
         else:
             img_mask = cv2.inRange(img_hsv, lower_omiya, upper_omiya)
+
         # マスク画像を適用して講義コードを抽出
         img_extract = cv2.bitwise_and(
             img, img, mask=img_mask)
+
         # BGRに変換
         img_bgr = cv2.cvtColor(img_extract, cv2.COLOR_HSV2BGR)
+
         # グレースケールに変換
         img_gray = cv2.cvtColor(img_bgr, cv2.COLOR_BGR2GRAY)
+
         # 二値化
         th, img_threshold = threshold(
             img_gray, 10, 255, cv2.THRESH_BINARY)
+
         # 画像を反転
         img_return = cv2.bitwise_not(img_threshold)
+
         # 画像を保存
         cv2.imwrite("./timetable/" + year + "/num/" + png, img_return)
 
@@ -91,22 +102,27 @@ def num2csv(year: str):
     tool = tools[0]
 
     for num in tqdm(num_list):
+
         # OCR
         txt = tool.image_to_string(
             Image.open('./timetable/' + year + '/num/' + num),
             lang="eng",
             builder=pyocr.builders.TextBuilder(tesseract_layout=6)
         )
+
         # 変換
         txt_convert = str.upper(txt).translate(str.maketrans(
             {" ": "_", "\n": "_", "O": "0", "I": "1", "l": "1",
-            "À": "A", "Â": "A","Ï": "I", "Î": "I", "Û": "U", "Ù": "U",
-            "È": "E", "É": "E", "Ê": "E", "Ë": "E", "Ô": "O"}))
+             "À": "A", "Â": "A", "Ï": "I", "Î": "I", "Û": "U", "Ù": "U",
+             "È": "E", "É": "E", "Ê": "E", "Ë": "E", "Ô": "O"}))
+
         # 記号削除後、アンダースコアをコンマに変換
         txt_del_symbol = (re.sub(r"\W", "", txt_convert)).replace("_", ",")
+
         # 末尾にA0を付加
         if num[0] == "X":
             txt_del_symbol = re.sub(r"\w{6}", r"\g<0>A0", txt_del_symbol)
+
         # 英数字8文字のみ保存
         txt_normalized = re.findall(r"\w{8}", txt_del_symbol)
         with open("./timetable/" + year + "/csv/" + num[:-4] + ".csv", 'w', encoding="utf-8") as f:
