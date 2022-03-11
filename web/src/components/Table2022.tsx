@@ -1,5 +1,6 @@
 import MaterialTableCore from '@material-table/core';
-import { Button, Select, MenuItem, FormControl, Link } from '@material-ui/core';
+import { Button, Select, MenuItem, FormControl } from '@material-ui/core';
+import { Link } from 'react-router-dom';
 import React, { forwardRef } from 'react';
 import data from '../data/2022.json';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
@@ -155,18 +156,22 @@ export const Table2022 = () => {
                         >
                             <MenuItem value={2021}>
                                 <Link
-                                    href="/2021"
-                                    color="inherit"
-                                    underline="none"
+                                    to="/2021"
+                                    style={{
+                                        textDecoration: 'none',
+                                        color: 'inherit'
+                                    }}
                                 >
                                     2021
                                 </Link>
                             </MenuItem>
                             <MenuItem value={2022}>
                                 <Link
-                                    href="/2022"
-                                    color="inherit"
-                                    underline="none"
+                                    to="/2022"
+                                    style={{
+                                        textDecoration: 'none',
+                                        color: 'inherit'
+                                    }}
                                 >
                                     2022
                                 </Link>
