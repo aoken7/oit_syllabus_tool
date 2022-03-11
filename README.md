@@ -23,7 +23,8 @@ Contributed by
 [kota](https://github.com/yashikota)
 [aoken](https://github.com/aoken7)
 [Akirtn](https://github.com/Akirtn)
-[maru](https://github.com/GenichiMaruo)  
+[maru](https://github.com/GenichiMaruo)
+[Jin](https://github.com/MatsuJin000)  
 
 本アプリケーションに記載されている情報の正確性、最新性、有用性等その他一切の事項について、いかなる保証をするものではありません  
 このような場合において、記載が不正確であったこと等により生じた、いかなる損害に関しても、一切の責任を負いかねます  
@@ -37,12 +38,17 @@ Contributed by
 ①OIT-Toolsホームページへのリンクになってます  
 ②使い方やプログラムの説明をしているこのページ  
 ③タップするとライトテーマ・ダークテーマを切り替えます  
-④タップするとテーブルの一番上の行に戻ります  
+④表示するシラバスの年度を指定できます  
 ⑤テーブル全体の要素を検索します  
 ⑥昇順降順のソートを切り替えます  
-⑦この下の列だけを検索します。各列の検索結果は重複して適応可能  
+⑦この下の列だけを検索します。各列の検索結果は重複して適応可能です  
 ⑧プルダウンメニューで絞り込みができます  
 ⑨公式シラバスの該当するページを表示します  
+⑩表示する行数を変更できます
+⑪一番最初のページに戻る
+⑫一つ前のページに戻る
+⑬一つ次のページに進む
+⑭一番最後のページに進む
 
 ※ホーム画面への追加方法は以下のリンクをご参照ください  
 [iOS・Androidの追加方法](https://support.bccks.jp/faq/pwa_2020/)
@@ -58,14 +64,17 @@ Contributed by
 ### Tool
 
 ・extract.py  
-時間割PDFを画像に変換し、画像から講義コードを抜き出した画像を生成し、その画像をOCRしたものをCSVに保存  
+2通りのアプローチをして講義コードを抽出している
+①時間割PDFを画像に変換し、画像から講義コードを抜き出した画像を生成し、その画像をOCRしたものをCSVに保存  
 OCRにはTesseractを利用しているため別途インストールが必要。学習データは
 [これ](https://github.com/tesseract-ocr/tessdata_best/blob/main/eng.traineddata)
 を利用している  
-・pdfconvert.py  
-時間割PDFからテキストを抽出して正規表現で講義コードのみをCSVに保存  
+②pdfminer.sixを使いPDFからテキストデータを抽出し、正規表現で英数字8桁のみを保存する処理を行う
+この2つを組み合わせることで精度を高めている  
+
 ・scraping.py  
 CSVから講義コードを読み込み、公式のシラバスからスクレイピングし、結果をJSONに保存  
+
 ・numbers.csv  
 スクレイピングの際にできる副産物のような物。今の所使用する予定はない  
 
@@ -76,12 +85,12 @@ Cloudflare Pagesにホスティング
 
 ・public  
 ライセンス表記ファイルやファビコンファイル等を格納している  
-・src  
-主にソースコードを格納している  
-・components  
+
+・/components  
 今回使用しているReactというライブラリはコンポーネント指向という考え方に基づいて開発されている。  
 ファイル名を見て分かる通り、Header.tsxはヘッダー、Table.tsxはテーブル（シラバスデータを表示しているもの）といった感じで部品ごとにソースコードが分けられている。  
 これのメリットは機能単位で分けられているためメンテナンスがしやすいことや違うプロジェクトでも使い回しが容易であることが挙げられる  
+
 ・202*.json  
 表示しているシラバスの全データが入ったJSONファイル。利用はご自由にどうぞ  
 
@@ -98,11 +107,16 @@ Cloudflare Pagesにホスティング
 ├── tool
 │   ├── .gitignore
 │   ├── extract.py
-│   ├── pdfconvert.py
 │   ├── requirements.txt
 │   ├── scraping.py
 │   ├── timetable
 │   │   ├── 2021
+│   │   │   ├── csv
+│   │   │   ├── num
+│   │   │   ├── numbers.csv
+│   │   │   ├── pdf
+│   │   │   └── png
+│   │   ├── 2022
 │   │   │   ├── csv
 │   │   │   ├── num
 │   │   │   ├── numbers.csv
@@ -124,10 +138,12 @@ Cloudflare Pagesにホスティング
     │   ├── App.tsx
     │   ├── components
     │   │   ├── About.tsx
+    │   │   ├── Bookmark.tsx
     │   │   ├── Header.tsx
     │   │   └── Table.tsx
     │   ├── data
-    │   │   └── 2021.json
+    │   │   ├── 2021.json
+    │   │   └── 2022.json
     │   ├── index.tsx
     │   ├── react-app-env.d.ts
     │   ├── service-worker.ts

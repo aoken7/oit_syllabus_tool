@@ -1,8 +1,9 @@
 import MaterialTableCore from '@material-table/core';
-import Button from '@material-ui/core/Button';
+import { Button, Select, MenuItem, FormControl } from '@material-ui/core';
+import { Link } from 'react-router-dom';
 import React, { forwardRef } from 'react';
-import data from '../data/2021.json';
-import { useTheme } from '@material-ui/core/styles';
+import data from '../data/2022.json';
+import { makeStyles, useTheme } from '@material-ui/core/styles';
 
 // アイコンの置き換え
 import SearchIcon from '@mui/icons-material/Search';
@@ -19,7 +20,25 @@ const icons = {
     ArrouwDropDown: forwardRef((props, ref: React.Ref<SVGSVGElement>) => <ArrowDropDownIcon {...props} ref={ref} />),
 };
 
-export const Table = () => {
+const useStyles = makeStyles((theme) => ({
+    formControl: {
+        margin: theme.spacing(1),
+        minWidth: 60,
+    },
+    selectEmpty: {
+        marginTop: theme.spacing(2),
+    },
+}));
+
+export const Table2022 = () => {
+    const classes = useStyles();
+
+    const [year, setYear] = React.useState('2022');
+
+    const handleChange = (event: React.ChangeEvent<{ value: unknown }>) => {
+        setYear(event.target.value as string);
+    };
+
     return (
         <div style={{
             whiteSpace: 'nowrap', //改行しないように
@@ -128,7 +147,38 @@ export const Table = () => {
                     }
                 ]}
                 data={data} //インポートしたjsonファイルを表示
-                title="Syllabus App"
+                title={
+                    <FormControl className={classes.formControl}>
+                        <Select
+                            id="year"
+                            value={year}
+                            onChange={handleChange}
+                        >
+                            <MenuItem value={2021}>
+                                <Link
+                                    to="/2021"
+                                    style={{
+                                        textDecoration: 'none',
+                                        color: 'inherit'
+                                    }}
+                                >
+                                    2021
+                                </Link>
+                            </MenuItem>
+                            <MenuItem value={2022}>
+                                <Link
+                                    to="/2022"
+                                    style={{
+                                        textDecoration: 'none',
+                                        color: 'inherit'
+                                    }}
+                                >
+                                    2022
+                                </Link>
+                            </MenuItem>
+                        </Select>
+                    </FormControl>
+                }
                 options={{
                     paging: true,
                     pageSize: 100,
