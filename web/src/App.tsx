@@ -1,7 +1,6 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 import About from './components/About';
-import { Table2021 } from "./components/Table2021";
-import { Table2022 } from "./components/Table2022";
+import { Table } from "./components/Table";
 import { GlobalStyles } from "@mui/material";
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -68,9 +67,9 @@ export const App = () => {
           <CssBaseline />
           <Header />
           <Routes>
-            <Route path="/" element={<Table2022 />} />
-            <Route path="/2021" element={<Table2021 />} />
-            <Route path="/2022" element={<Table2022 />} />
+            <Route path="/" element={<Table year="2022" />} />
+            <Route path="/2021" element={<Table year="2021" />} />
+            <Route path="/2022" element={<Table year="2022" />} />
             <Route path="/about" element={<About />} />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>

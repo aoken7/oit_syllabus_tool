@@ -2,7 +2,8 @@ import MaterialTableCore from '@material-table/core';
 import { Button, Select, MenuItem, FormControl } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import React, { forwardRef } from 'react';
-import data from '../data/2022.json';
+import data2021 from '../data/2021.json';
+import data2022 from '../data/2022.json';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 
 // アイコンの置き換え
@@ -30,10 +31,17 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-export const Table2022 = () => {
+export const Table = (props: any) => {
+    let data = data2022;
+    if (props.year === '2021') {
+        data = data2021;
+    } else {
+        data = data2022;
+    }
+
     const classes = useStyles();
 
-    const [year, setYear] = React.useState('2022');
+    const [year, setYear] = React.useState('2021');
 
     const handleChange = (event: React.ChangeEvent<{ value: unknown }>) => {
         setYear(event.target.value as string);
