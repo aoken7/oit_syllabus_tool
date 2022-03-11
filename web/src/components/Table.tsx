@@ -41,7 +41,7 @@ export const Table = (props: any) => {
 
     const classes = useStyles();
 
-    const [year, setYear] = React.useState('2021');
+    const [year, setYear] = React.useState('2022');
 
     const handleChange = (event: React.ChangeEvent<{ value: unknown }>) => {
         setYear(event.target.value as string);
