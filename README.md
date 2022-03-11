@@ -1,5 +1,7 @@
 # OIT Syllabus App
 
+<img src="https://raw.githubusercontent.com/yashikota/OIT-Tools_syllabus/master/web/public/icon.webp" alt="ロゴ">
+
 ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/yashikota/OIT-Tools_syllabus?label=version&style=plastic)
 [![Scraping](https://github.com/yashikota/OIT-Tools_syllabus/actions/workflows/Scraping.yaml/badge.svg)](https://github.com/yashikota/OIT-Tools_syllabus/actions/workflows/Scraping.yaml)  
 
