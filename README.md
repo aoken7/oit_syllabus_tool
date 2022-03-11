@@ -130,19 +130,20 @@ Cloudflare Pagesにホスティング
     ├── package-lock.json
     ├── package.json
     ├── public
+    │   ├── favicon.ico
     │   ├── hyouki.txt
+    │   ├── icon.webp
     │   ├── index.html
     │   ├── manifest.json
-    │   ├── icon.webp
     │   └── robots.txt
     ├── server.js
     ├── src
     │   ├── App.tsx
     │   ├── components
     │   │   ├── About.tsx
-    │   │   ├── Bookmark.tsx
     │   │   ├── Header.tsx
-    │   │   └── Table.tsx
+    │   │   ├── Table2021.tsx
+    │   │   └── Table2022.tsx
     │   ├── data
     │   │   ├── 2021.json
     │   │   └── 2022.json
