@@ -1,7 +1,7 @@
 import MaterialTableCore from '@material-table/core';
-import { Button, Select, MenuItem, FormControl } from '@material-ui/core';
+import { Button, Select, MenuItem, FormControl, Link } from '@material-ui/core';
 import React, { forwardRef } from 'react';
-import data from '../data/2021.json';
+import data from '../data/2022.json';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 
 // アイコンの置き換え
@@ -22,14 +22,14 @@ const icons = {
 const useStyles = makeStyles((theme) => ({
     formControl: {
         margin: theme.spacing(1),
-        minWidth: 80,
+        minWidth: 60,
     },
     selectEmpty: {
         marginTop: theme.spacing(2),
     },
 }));
 
-export const Table = () => {
+export const Table2022 = () => {
     const classes = useStyles();
 
     const [year, setYear] = React.useState('2022');
@@ -153,8 +153,24 @@ export const Table = () => {
                             value={year}
                             onChange={handleChange}
                         >
-                            <MenuItem value={2021}>2021</MenuItem>
-                            <MenuItem value={2022}>2022</MenuItem>
+                            <MenuItem value={2021}>
+                                <Link
+                                    href="/2021"
+                                    color="inherit"
+                                    underline="none"
+                                >
+                                    2021
+                                </Link>
+                            </MenuItem>
+                            <MenuItem value={2022}>
+                                <Link
+                                    href="/2022"
+                                    color="inherit"
+                                    underline="none"
+                                >
+                                    2022
+                                </Link>
+                            </MenuItem>
                         </Select>
                     </FormControl>
                 }
