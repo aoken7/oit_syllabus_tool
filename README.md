@@ -23,8 +23,8 @@ Contributed by
 [kota](https://github.com/yashikota)
 [aoken](https://github.com/aoken7)
 [Akirtn](https://github.com/Akirtn)
-[maru](https://github.com/GenichiMaruo)  
-[JIN](https://github.com/MatsuJin000)  
+[maru](https://github.com/GenichiMaruo)
+[Jin](https://github.com/MatsuJin000)  
 
 本アプリケーションに記載されている情報の正確性、最新性、有用性等その他一切の事項について、いかなる保証をするものではありません  
 このような場合において、記載が不正確であったこと等により生じた、いかなる損害に関しても、一切の責任を負いかねます  
