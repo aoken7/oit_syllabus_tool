@@ -133,11 +133,6 @@ export const Table = (props: any) => {
                         },
                     },
                     {
-                        title: '講義コード',
-                        field: 'numbering',
-                        align: "left"
-                    },
-                    {
                         title: 'リンク',
                         field: 'link',
                         render: (row: { link: string; }) =>
@@ -152,7 +147,12 @@ export const Table = (props: any) => {
                             </Button>,
                         filtering: false,
                         sorting: false
-                    }
+                    },
+                    {
+                        title: '講義コード',
+                        field: 'numbering',
+                        align: "left"
+                    },
                 ]}
                 data={data} //インポートしたjsonファイルを表示
                 title={
