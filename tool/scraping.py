@@ -80,7 +80,7 @@ class SyllabusTool:
                syllabus_dict["kikan"] == check_syllabus_dict["kikan"] and \
                syllabus_dict["tantousya"] == check_syllabus_dict["tantousya"] and \
                syllabus_dict["tani"] == check_syllabus_dict["tani"]:
-                syllabus_dict_list[i]["numbering"] += "," + number
+                syllabus_dict_list[i]["numbering"] += " , " + number
                 return syllabus_dict_list, None
         return syllabus_dict_list, check_syllabus_dict
 
