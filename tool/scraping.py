@@ -86,7 +86,7 @@ class SyllabusTool:
 
 
     def main(self, *args):
-        year = "2021"  # スクレイピングする年度を指定
+        year = "2022"  # スクレイピングする年度を指定
         error = 0
         csv_list = ([os.path.basename(p) for p in glob.glob("./timetable/" + year + "/csv/*.csv", recursive=True)
                     if os.path.isfile(p)])  # csvファイルを全て取得
