@@ -140,8 +140,7 @@ Cloudflare Pagesにホスティング
     │   ├── components
     │   │   ├── About.tsx
     │   │   ├── Header.tsx
-    │   │   ├── Table2021.tsx
-    │   │   └── Table2022.tsx
+    │   │   ├── Table.tsx
     │   ├── data
     │   │   ├── 2021.json
     │   │   └── 2022.json
