@@ -105,7 +105,7 @@ class SyllabusTool:
                 if syllabus_dict is None:
                     continue
                 # ページがない時のエラー処理，もう少し上手くやりたい
-                if len(syllabus_dict) < 5:
+                if len(syllabus_dict) < 4:
                     error += 1  # エラー数をカウント
                     continue
                 syllabus_dict_list.append(syllabus_dict)  # リストに追加
