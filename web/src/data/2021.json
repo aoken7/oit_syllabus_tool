@@ -46,7 +46,7 @@
         "kikan": "前期",
         "tantousya": "藤井 伸介",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=11AA07A0&value(crclumcd)=10201200",
-        "numbering": "11AA07A0,11AA07B0",
+        "numbering": "11AA07A0 , 11AA07B0",
         "gakka": "A"
     },
     {
@@ -56,7 +56,7 @@
         "kikan": "後期",
         "tantousya": "藤井 伸介",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=11AA08A0&value(crclumcd)=10201200",
-        "numbering": "11AA08A0,11AA11A0",
+        "numbering": "11AA08A0 , 11AA11A0",
         "gakka": "A"
     },
     {
@@ -66,7 +66,7 @@
         "kikan": "後期",
         "tantousya": "河野 良坪",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=11AA08B0&value(crclumcd)=10201200",
-        "numbering": "11AA08B0,11AA11B0",
+        "numbering": "11AA08B0 , 11AA11B0",
         "gakka": "A"
     },
     {
@@ -76,7 +76,7 @@
         "kikan": "後期",
         "tantousya": "林 暁光",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=11AA08C0&value(crclumcd)=10201200",
-        "numbering": "11AA08C0,11AA11C0",
+        "numbering": "11AA08C0 , 11AA11C0",
         "gakka": "A"
     },
     {
@@ -676,7 +676,7 @@
         "kikan": "前期",
         "tantousya": "寺地 洋之",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=11BF10A0&value(crclumcd)=10201200",
-        "numbering": "11BF10A0,11CA01A0",
+        "numbering": "11BF10A0 , 11CA01A0",
         "gakka": "A"
     },
     {
@@ -686,7 +686,7 @@
         "kikan": "前期",
         "tantousya": "寺地 洋之",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=11BF10B0&value(crclumcd)=10201200",
-        "numbering": "11BF10B0,11CA01B0",
+        "numbering": "11BF10B0 , 11CA01B0",
         "gakka": "A"
     },
     {
@@ -1396,7 +1396,7 @@
         "kikan": "前期",
         "tantousya": "瀧本 真己",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=A2C0011A&value(crclumcd)=10201200",
-        "numbering": "A2C0011A,C0C005B0,E2C0011A",
+        "numbering": "A2C0011A , C0C005B0 , E2C0011A",
         "gakka": "A"
     },
     {
@@ -1416,7 +1416,7 @@
         "kikan": "後期",
         "tantousya": "瀧本 真己",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=A2C0021A&value(crclumcd)=10201200",
-        "numbering": "A2C0021A,C0C006B0,E2C0021A",
+        "numbering": "A2C0021A , C0C006B0 , E2C0021A",
         "gakka": "A"
     },
     {
@@ -1856,7 +1856,7 @@
         "kikan": "後期",
         "tantousya": "寺地 洋之",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=A3C029B0&value(crclumcd)=10201200",
-        "numbering": "A3C029B0,A3C033B0",
+        "numbering": "A3C029B0 , A3C033B0",
         "gakka": "A"
     },
     {
@@ -1946,7 +1946,7 @@
         "kikan": "前期",
         "tantousya": "内田 浩明",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=10AA16A0&value(crclumcd)=10201200",
-        "numbering": "10AA16A0,10CA16A0",
+        "numbering": "10AA16A0 , 10CA16A0",
         "gakka": "C"
     },
     {
@@ -1956,7 +1956,7 @@
         "kikan": "前期",
         "tantousya": "内田 浩明",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=10AA16B0&value(crclumcd)=10201200",
-        "numbering": "10AA16B0,10CA16B0",
+        "numbering": "10AA16B0 , 10CA16B0",
         "gakka": "C"
     },
     {
@@ -1966,7 +1966,7 @@
         "kikan": "後期",
         "tantousya": "田中 一成",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=10AB01A0&value(crclumcd)=10201200",
-        "numbering": "10AB01A0,10BB01A0",
+        "numbering": "10AB01A0 , 10BB01A0",
         "gakka": "C"
     },
     {
@@ -1976,7 +1976,7 @@
         "kikan": "前期",
         "tantousya": "山口 行一",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=10AB06A0&value(crclumcd)=10201200",
-        "numbering": "10AB06A0,10BB06A0",
+        "numbering": "10AB06A0 , 10BB06A0",
         "gakka": "C"
     },
     {
@@ -2016,7 +2016,7 @@
         "kikan": "後期",
         "tantousya": "三方 康弘",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=10AD01A0&value(crclumcd)=10201200",
-        "numbering": "10AD01A0,10BD01A0",
+        "numbering": "10AD01A0 , 10BD01A0",
         "gakka": "C"
     },
     {
@@ -2026,7 +2026,7 @@
         "kikan": "前期",
         "tantousya": "日置 和昭",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=10AE01A0&value(crclumcd)=10201200",
-        "numbering": "10AE01A0,10BE01A0",
+        "numbering": "10AE01A0 , 10BE01A0",
         "gakka": "C"
     },
     {
@@ -2036,7 +2036,7 @@
         "kikan": "後期",
         "tantousya": "藤本 哲生",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=10AE03A0&value(crclumcd)=10201200",
-        "numbering": "10AE03A0,10BE03A0",
+        "numbering": "10AE03A0 , 10BE03A0",
         "gakka": "C"
     },
     {
@@ -2046,7 +2046,7 @@
         "kikan": "前期",
         "tantousya": "東 良慶",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=10AF01A0&value(crclumcd)=10201200",
-        "numbering": "10AF01A0,10BF01A0",
+        "numbering": "10AF01A0 , 10BF01A0",
         "gakka": "C"
     },
     {
@@ -2056,7 +2056,7 @@
         "kikan": "後期",
         "tantousya": "東 良慶",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=10AF01B0&value(crclumcd)=10201200",
-        "numbering": "10AF01B0,10BF01B0",
+        "numbering": "10AF01B0 , 10BF01B0",
         "gakka": "C"
     },
     {
@@ -2066,7 +2066,7 @@
         "kikan": "後期",
         "tantousya": "田中 耕司",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=10AF03A0&value(crclumcd)=10201200",
-        "numbering": "10AF03A0,10BF03A0",
+        "numbering": "10AF03A0 , 10BF03A0",
         "gakka": "C"
     },
     {
@@ -2106,7 +2106,7 @@
         "kikan": "前期",
         "tantousya": "山口 行一",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=10BB07A0&value(crclumcd)=10201200",
-        "numbering": "10BB07A0,10CB07A0",
+        "numbering": "10BB07A0 , 10CB07A0",
         "gakka": "C"
     },
     {
@@ -2116,7 +2116,7 @@
         "kikan": "前期",
         "tantousya": "西堀 泰英",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=10BB07B0&value(crclumcd)=10201200",
-        "numbering": "10BB07B0,10CB07B0",
+        "numbering": "10BB07B0 , 10CB07B0",
         "gakka": "C"
     },
     {
@@ -2206,7 +2206,7 @@
         "kikan": "前期",
         "tantousya": "井上 晋",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=10BD03A0&value(crclumcd)=10201200",
-        "numbering": "10BD03A0,10CD03A0",
+        "numbering": "10BD03A0 , 10CD03A0",
         "gakka": "C"
     },
     {
@@ -2216,7 +2216,7 @@
         "kikan": "前期",
         "tantousya": "三方 康弘",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=10BD03B0&value(crclumcd)=10201200",
-        "numbering": "10BD03B0,10CD03B0",
+        "numbering": "10BD03B0 , 10CD03B0",
         "gakka": "C"
     },
     {
@@ -2226,7 +2226,7 @@
         "kikan": "前期",
         "tantousya": "日置 和昭",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=10BE02A0&value(crclumcd)=10201200",
-        "numbering": "10BE02A0,10CE02A0",
+        "numbering": "10BE02A0 , 10CE02A0",
         "gakka": "C"
     },
     {
@@ -2236,7 +2236,7 @@
         "kikan": "後期",
         "tantousya": "藤本 哲生",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=10BE04A0&value(crclumcd)=10201200",
-        "numbering": "10BE04A0,10CE04A0",
+        "numbering": "10BE04A0 , 10CE04A0",
         "gakka": "C"
     },
     {
@@ -2246,7 +2246,7 @@
         "kikan": "前期",
         "tantousya": "東 良慶",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=10BF02A0&value(crclumcd)=10201200",
-        "numbering": "10BF02A0,10CF02A0",
+        "numbering": "10BF02A0 , 10CF02A0",
         "gakka": "C"
     },
     {
@@ -2256,7 +2256,7 @@
         "kikan": "後期",
         "tantousya": "田中 耕司",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=10BF04A0&value(crclumcd)=10201200",
-        "numbering": "10BF04A0,10CF04A0",
+        "numbering": "10BF04A0 , 10CF04A0",
         "gakka": "C"
     },
     {
@@ -2366,7 +2366,7 @@
         "kikan": "前期",
         "tantousya": "竿本 隆彦",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=10CA19A0&value(crclumcd)=10201200",
-        "numbering": "10CA19A0,10DG05A0",
+        "numbering": "10CA19A0 , 10DG05A0",
         "gakka": "C"
     },
     {
@@ -2376,7 +2376,7 @@
         "kikan": "後期",
         "tantousya": "鯉田 裕行",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=10CA20A0&value(crclumcd)=10201200",
-        "numbering": "10CA20A0,10DG06A0",
+        "numbering": "10CA20A0 , 10DG06A0",
         "gakka": "C"
     },
     {
@@ -3216,7 +3216,7 @@
         "kikan": "後期",
         "tantousya": "大山 理",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=A3C029A0&value(crclumcd)=10201200",
-        "numbering": "A3C029A0,A3C033A0",
+        "numbering": "A3C029A0 , A3C033A0",
         "gakka": "C"
     },
     {
@@ -3286,7 +3286,7 @@
         "kikan": "通年卒研",
         "tantousya": "卒研担当者",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=15A001A0&value(crclumcd)=10201200",
-        "numbering": "15A001A0,12A001A0,14A001A0,13A001A0,17A001A0,16A001A0",
+        "numbering": "15A001A0 , 12A001A0 , 14A001A0 , 13A001A0 , 17A001A0 , 16A001A0",
         "gakka": "D"
     },
     {
@@ -3296,7 +3296,7 @@
         "kikan": "通年卒研",
         "tantousya": "卒研担当者",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=15A002A0&value(crclumcd)=10201200",
-        "numbering": "15A002A0,20A001A0,12A002A0,14A002A0,13A002A0,17A002A0,16A002A0",
+        "numbering": "15A002A0 , 20A001A0 , 12A002A0 , 14A002A0 , 13A002A0 , 17A002A0 , 16A002A0",
         "gakka": "D"
     },
     {
@@ -3386,7 +3386,7 @@
         "kikan": "後期",
         "tantousya": "熊本 和夫",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=15AA05A0&value(crclumcd)=10201200",
-        "numbering": "15AA05A0,20AA05A0",
+        "numbering": "15AA05A0 , 20AA05A0",
         "gakka": "D"
     },
     {
@@ -3396,7 +3396,7 @@
         "kikan": "後期",
         "tantousya": "熊本 和夫",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=15AA05B0&value(crclumcd)=10201200",
-        "numbering": "15AA05B0,20AA05B0",
+        "numbering": "15AA05B0 , 20AA05B0",
         "gakka": "D"
     },
     {
@@ -3406,7 +3406,7 @@
         "kikan": "後期",
         "tantousya": "周 虹",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=15AA06A0&value(crclumcd)=10201200",
-        "numbering": "15AA06A0,20AA06A0",
+        "numbering": "15AA06A0 , 20AA06A0",
         "gakka": "D"
     },
     {
@@ -3426,7 +3426,7 @@
         "kikan": "前期",
         "tantousya": "西口 彰夫",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=15AA07A0&value(crclumcd)=10201200",
-        "numbering": "15AA07A0,20AA07A0",
+        "numbering": "15AA07A0 , 20AA07A0",
         "gakka": "D"
     },
     {
@@ -3436,7 +3436,7 @@
         "kikan": "後期",
         "tantousya": "西口 彰夫",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=15AA07B0&value(crclumcd)=10201200",
-        "numbering": "15AA07B0,20AA07B0",
+        "numbering": "15AA07B0 , 20AA07B0",
         "gakka": "D"
     },
     {
@@ -3446,7 +3446,7 @@
         "kikan": "前期",
         "tantousya": "奥 宏史",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=15CA08A0&value(crclumcd)=10201200",
-        "numbering": "15CA08A0,20CA08A0",
+        "numbering": "15CA08A0 , 20CA08A0",
         "gakka": "D"
     },
     {
@@ -3456,7 +3456,7 @@
         "kikan": "後期",
         "tantousya": "西口 彰夫",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=15CA09A0&value(crclumcd)=10201200",
-        "numbering": "15CA09A0,20CA09A0",
+        "numbering": "15CA09A0 , 20CA09A0",
         "gakka": "D"
     },
     {
@@ -3466,7 +3466,7 @@
         "kikan": "前期",
         "tantousya": "廣芝 伸哉",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=15CA10A0&value(crclumcd)=10201200",
-        "numbering": "15CA10A0,20CA10A0",
+        "numbering": "15CA10A0 , 20CA10A0",
         "gakka": "D"
     },
     {
@@ -3476,7 +3476,7 @@
         "kikan": "後期",
         "tantousya": "小池 一歩",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=15CA11A0&value(crclumcd)=10201200",
-        "numbering": "15CA11A0,20CA11A0",
+        "numbering": "15CA11A0 , 20CA11A0",
         "gakka": "D"
     },
     {
@@ -3486,7 +3486,7 @@
         "kikan": "前期",
         "tantousya": "小寺 正敏",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=15CA12A0&value(crclumcd)=10201200",
-        "numbering": "15CA12A0,20CA12A0",
+        "numbering": "15CA12A0 , 20CA12A0",
         "gakka": "D"
     },
     {
@@ -3496,7 +3496,7 @@
         "kikan": "前期",
         "tantousya": "原嶋 勝美",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=15CA13A0&value(crclumcd)=10201200",
-        "numbering": "15CA13A0,20CA13A0",
+        "numbering": "15CA13A0 , 20CA13A0",
         "gakka": "D"
     },
     {
@@ -3506,7 +3506,7 @@
         "kikan": "前期",
         "tantousya": "原嶋 勝美",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=15CA14A0&value(crclumcd)=10201200",
-        "numbering": "15CA14A0,20CA14A0",
+        "numbering": "15CA14A0 , 20CA14A0",
         "gakka": "D"
     },
     {
@@ -3516,7 +3516,7 @@
         "kikan": "後期",
         "tantousya": "上野 未貴",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=15CA15A0&value(crclumcd)=10201200",
-        "numbering": "15CA15A0,20CA15A0",
+        "numbering": "15CA15A0 , 20CA15A0",
         "gakka": "D"
     },
     {
@@ -3526,7 +3526,7 @@
         "kikan": "後期",
         "tantousya": "神村 共住",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=15CA16A0&value(crclumcd)=10201200",
-        "numbering": "15CA16A0,20CA16A0",
+        "numbering": "15CA16A0 , 20CA16A0",
         "gakka": "D"
     },
     {
@@ -3536,7 +3536,7 @@
         "kikan": "前期",
         "tantousya": "西口 彰夫",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=15CA17A0&value(crclumcd)=10201200",
-        "numbering": "15CA17A0,20CA17A0",
+        "numbering": "15CA17A0 , 20CA17A0",
         "gakka": "D"
     },
     {
@@ -3546,7 +3546,7 @@
         "kikan": "前期",
         "tantousya": "上野 未貴",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=15CA18A0&value(crclumcd)=10201200",
-        "numbering": "15CA18A0,20CA18A0",
+        "numbering": "15CA18A0 , 20CA18A0",
         "gakka": "D"
     },
     {
@@ -3556,7 +3556,7 @@
         "kikan": "後期",
         "tantousya": "吉田 福蔵",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=15CA19A0&value(crclumcd)=10201200",
-        "numbering": "15CA19A0,20CA19A0",
+        "numbering": "15CA19A0 , 20CA19A0",
         "gakka": "D"
     },
     {
@@ -3566,7 +3566,7 @@
         "kikan": "前期",
         "tantousya": "西口 彰夫",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=15CA21A0&value(crclumcd)=10201200",
-        "numbering": "15CA21A0,20CA20A0",
+        "numbering": "15CA21A0 , 20CA20A0",
         "gakka": "D"
     },
     {
@@ -3576,7 +3576,7 @@
         "kikan": "後期",
         "tantousya": "越智 徹",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=15CB01A0&value(crclumcd)=10201200",
-        "numbering": "15CB01A0,20CB01A0",
+        "numbering": "15CB01A0 , 20CB01A0",
         "gakka": "D"
     },
     {
@@ -3586,7 +3586,7 @@
         "kikan": "前期",
         "tantousya": "西口 彰夫",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=15CB02A0&value(crclumcd)=10201200",
-        "numbering": "15CB02A0,20CB02A0",
+        "numbering": "15CB02A0 , 20CB02A0",
         "gakka": "D"
     },
     {
@@ -3596,7 +3596,7 @@
         "kikan": "前期",
         "tantousya": "山田 耕嗣",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=15CB03A0&value(crclumcd)=10201200",
-        "numbering": "15CB03A0,20CB03A0",
+        "numbering": "15CB03A0 , 20CB03A0",
         "gakka": "D"
     },
     {
@@ -3606,7 +3606,7 @@
         "kikan": "前期",
         "tantousya": "藤村 真生",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=15CC01A0&value(crclumcd)=10201200",
-        "numbering": "15CC01A0,20CC01A0",
+        "numbering": "15CC01A0 , 20CC01A0",
         "gakka": "D"
     },
     {
@@ -3616,7 +3616,7 @@
         "kikan": "前期",
         "tantousya": "西口 彰夫",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=15CC02A0&value(crclumcd)=10201200",
-        "numbering": "15CC02A0,20CC02A0",
+        "numbering": "15CC02A0 , 20CC02A0",
         "gakka": "D"
     },
     {
@@ -3626,7 +3626,7 @@
         "kikan": "前期",
         "tantousya": "神村 共住",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=15CC03A0&value(crclumcd)=10201200",
-        "numbering": "15CC03A0,20CC03A0",
+        "numbering": "15CC03A0 , 20CC03A0",
         "gakka": "D"
     },
     {
@@ -3636,7 +3636,7 @@
         "kikan": "後期",
         "tantousya": "神村 共住",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=15CC04A0&value(crclumcd)=10201200",
-        "numbering": "15CC04A0,20CC04A0",
+        "numbering": "15CC04A0 , 20CC04A0",
         "gakka": "D"
     },
     {
@@ -3646,7 +3646,7 @@
         "kikan": "後期",
         "tantousya": "吉田 福蔵",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=15CC05A0&value(crclumcd)=10201200",
-        "numbering": "15CC05A0,20CC05A0",
+        "numbering": "15CC05A0 , 20CC05A0",
         "gakka": "D"
     },
     {
@@ -3656,7 +3656,7 @@
         "kikan": "前期",
         "tantousya": "小池 一歩",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=15CC06A0&value(crclumcd)=10201200",
-        "numbering": "15CC06A0,20CC06A0",
+        "numbering": "15CC06A0 , 20CC06A0",
         "gakka": "D"
     },
     {
@@ -3666,7 +3666,7 @@
         "kikan": "後期",
         "tantousya": "吉田 福蔵",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=15CC07A0&value(crclumcd)=10201200",
-        "numbering": "15CC07A0,20CC07A0",
+        "numbering": "15CC07A0 , 20CC07A0",
         "gakka": "D"
     },
     {
@@ -3676,7 +3676,7 @@
         "kikan": "後期",
         "tantousya": "小池 一歩",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=15CC08A0&value(crclumcd)=10201200",
-        "numbering": "15CC08A0,20CC08A0",
+        "numbering": "15CC08A0 , 20CC08A0",
         "gakka": "D"
     },
     {
@@ -3686,7 +3686,7 @@
         "kikan": "後期",
         "tantousya": "小寺 正敏",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=15CC09A0&value(crclumcd)=10201200",
-        "numbering": "15CC09A0,20CC09A0",
+        "numbering": "15CC09A0 , 20CC09A0",
         "gakka": "D"
     },
     {
@@ -3696,7 +3696,7 @@
         "kikan": "前期",
         "tantousya": "廣芝 伸哉",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=15CC10A0&value(crclumcd)=10201200",
-        "numbering": "15CC10A0,20CC10A0",
+        "numbering": "15CC10A0 , 20CC10A0",
         "gakka": "D"
     },
     {
@@ -3706,7 +3706,7 @@
         "kikan": "後期",
         "tantousya": "廣芝 伸哉",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=15CC11A0&value(crclumcd)=10201200",
-        "numbering": "15CC11A0,20CC11A0",
+        "numbering": "15CC11A0 , 20CC11A0",
         "gakka": "D"
     },
     {
@@ -3716,7 +3716,7 @@
         "kikan": "前期",
         "tantousya": "淀 徳男",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=15CC12A0&value(crclumcd)=10201200",
-        "numbering": "15CC12A0,20CC12A0",
+        "numbering": "15CC12A0 , 20CC12A0",
         "gakka": "D"
     },
     {
@@ -3726,7 +3726,7 @@
         "kikan": "前期",
         "tantousya": "奥 宏史",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=15CC13A0&value(crclumcd)=10201200",
-        "numbering": "15CC13A0,20CC13A0",
+        "numbering": "15CC13A0 , 20CC13A0",
         "gakka": "D"
     },
     {
@@ -3736,7 +3736,7 @@
         "kikan": "後期",
         "tantousya": "原嶋 勝美",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=15CD01A0&value(crclumcd)=10201200",
-        "numbering": "15CD01A0,20CD01A0",
+        "numbering": "15CD01A0 , 20CD01A0",
         "gakka": "D"
     },
     {
@@ -3746,7 +3746,7 @@
         "kikan": "前期",
         "tantousya": "藤村 真生",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=15CD02A0&value(crclumcd)=10201200",
-        "numbering": "15CD02A0,20CD02A0",
+        "numbering": "15CD02A0 , 20CD02A0",
         "gakka": "D"
     },
     {
@@ -3756,7 +3756,7 @@
         "kikan": "後期",
         "tantousya": "藤村 真生",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=15CD03A0&value(crclumcd)=10201200",
-        "numbering": "15CD03A0,20CD03A0",
+        "numbering": "15CD03A0 , 20CD03A0",
         "gakka": "D"
     },
     {
@@ -3766,7 +3766,7 @@
         "kikan": "後期",
         "tantousya": "藤村 真生",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=15CD04A0&value(crclumcd)=10201200",
-        "numbering": "15CD04A0,20CD04A0",
+        "numbering": "15CD04A0 , 20CD04A0",
         "gakka": "D"
     },
     {
@@ -3776,7 +3776,7 @@
         "kikan": "後期",
         "tantousya": "奥 宏史",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=15CD05A0&value(crclumcd)=10201200",
-        "numbering": "15CD05A0,20CD05A0",
+        "numbering": "15CD05A0 , 20CD05A0",
         "gakka": "D"
     },
     {
@@ -3786,7 +3786,7 @@
         "kikan": "後期",
         "tantousya": "周 虹",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=15CD06A0&value(crclumcd)=10201200",
-        "numbering": "15CD06A0,20CD06A0",
+        "numbering": "15CD06A0 , 20CD06A0",
         "gakka": "D"
     },
     {
@@ -3796,7 +3796,7 @@
         "kikan": "前期",
         "tantousya": "熊本 和夫",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=15CD07A0&value(crclumcd)=10201200",
-        "numbering": "15CD07A0,20CD07A0",
+        "numbering": "15CD07A0 , 20CD07A0",
         "gakka": "D"
     },
     {
@@ -3816,7 +3816,7 @@
         "kikan": "前期",
         "tantousya": "熊本 和夫",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=15CD09A0&value(crclumcd)=10201200",
-        "numbering": "15CD09A0,20CD09A0",
+        "numbering": "15CD09A0 , 20CD09A0",
         "gakka": "D"
     },
     {
@@ -3826,7 +3826,7 @@
         "kikan": "後期",
         "tantousya": "田村 安彦",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=15CD10A0&value(crclumcd)=10201200",
-        "numbering": "15CD10A0,20CD10A0",
+        "numbering": "15CD10A0 , 20CD10A0",
         "gakka": "D"
     },
     {
@@ -3836,7 +3836,7 @@
         "kikan": "後期",
         "tantousya": "熊本 和夫",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=15CD11A0&value(crclumcd)=10201200",
-        "numbering": "15CD11A0,20CD11A0",
+        "numbering": "15CD11A0 , 20CD11A0",
         "gakka": "D"
     },
     {
@@ -3846,7 +3846,7 @@
         "kikan": "前期",
         "tantousya": "周 虹",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=15CD12A0&value(crclumcd)=10201200",
-        "numbering": "15CD12A0,20CD12A0",
+        "numbering": "15CD12A0 , 20CD12A0",
         "gakka": "D"
     },
     {
@@ -3856,7 +3856,7 @@
         "kikan": "後期",
         "tantousya": "重里 達郎",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=15CD13A0&value(crclumcd)=10201200",
-        "numbering": "15CD13A0,20CD13A0",
+        "numbering": "15CD13A0 , 20CD13A0",
         "gakka": "D"
     },
     {
@@ -4616,7 +4616,7 @@
         "kikan": "後期",
         "tantousya": "上野 未貴",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=A3C030F0&value(crclumcd)=10201200",
-        "numbering": "A3C030F0,A3C034F0",
+        "numbering": "A3C030F0 , A3C034F0",
         "gakka": "D"
     },
     {
@@ -4956,7 +4956,7 @@
         "kikan": "前期",
         "tantousya": "佐々 誠彦",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=12BC05A0&value(crclumcd)=10201200",
-        "numbering": "12BC05A0,12BC05B0",
+        "numbering": "12BC05A0 , 12BC05B0",
         "gakka": "E"
     },
     {
@@ -5016,7 +5016,7 @@
         "kikan": "前期",
         "tantousya": "加瀬 渡",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=12BF08A0&value(crclumcd)=10201200",
-        "numbering": "12BF08A0,12BG08A0",
+        "numbering": "12BF08A0 , 12BG08A0",
         "gakka": "E"
     },
     {
@@ -5216,7 +5216,7 @@
         "kikan": "後期",
         "tantousya": "木原 崇雄",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=12CF01A0&value(crclumcd)=10201200",
-        "numbering": "12CF01A0,12CG01A0",
+        "numbering": "12CF01A0 , 12CG01A0",
         "gakka": "E"
     },
     {
@@ -5226,7 +5226,7 @@
         "kikan": "後期",
         "tantousya": "重弘 裕二",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=12CF02A0&value(crclumcd)=10201200",
-        "numbering": "12CF02A0,12CG02A0",
+        "numbering": "12CF02A0 , 12CG02A0",
         "gakka": "E"
     },
     {
@@ -5236,7 +5236,7 @@
         "kikan": "後期",
         "tantousya": "田村 安彦",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=12CF03A0&value(crclumcd)=10201200",
-        "numbering": "12CF03A0,12CG03A0",
+        "numbering": "12CF03A0 , 12CG03A0",
         "gakka": "E"
     },
     {
@@ -5246,7 +5246,7 @@
         "kikan": "前期",
         "tantousya": "山田 耕嗣",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=12CF04A0&value(crclumcd)=10201200",
-        "numbering": "12CF04A0,12CG04A0",
+        "numbering": "12CF04A0 , 12CG04A0",
         "gakka": "E"
     },
     {
@@ -5256,7 +5256,7 @@
         "kikan": "前期",
         "tantousya": "辻田 勝吉",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=12CF06A0&value(crclumcd)=10201200",
-        "numbering": "12CF06A0,12CG06A0",
+        "numbering": "12CF06A0 , 12CG06A0",
         "gakka": "E"
     },
     {
@@ -5266,7 +5266,7 @@
         "kikan": "前期",
         "tantousya": "重弘 裕二",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=12CF07A0&value(crclumcd)=10201200",
-        "numbering": "12CF07A0,12CG07A0",
+        "numbering": "12CF07A0 , 12CG07A0",
         "gakka": "E"
     },
     {
@@ -5276,7 +5276,7 @@
         "kikan": "後期",
         "tantousya": "加瀬 渡",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=12CF09A0&value(crclumcd)=10201200",
-        "numbering": "12CF09A0,12CG09A0",
+        "numbering": "12CF09A0 , 12CG09A0",
         "gakka": "E"
     },
     {
@@ -5286,7 +5286,7 @@
         "kikan": "後期",
         "tantousya": "田熊 隆史",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=12CF10A0&value(crclumcd)=10201200",
-        "numbering": "12CF10A0,12CG10A0",
+        "numbering": "12CF10A0 , 12CG10A0",
         "gakka": "E"
     },
     {
@@ -5296,7 +5296,7 @@
         "kikan": "前期",
         "tantousya": "新規採用教員",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1GAB36A0&value(crclumcd)=10201200",
-        "numbering": "1GAB36A0,1GAB32A0",
+        "numbering": "1GAB36A0 , 1GAB32A0",
         "gakka": "E"
     },
     {
@@ -5926,7 +5926,7 @@
         "kikan": "後期",
         "tantousya": "木原 崇雄",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=A3C030D0&value(crclumcd)=10201200",
-        "numbering": "A3C030D0,A3C034D0",
+        "numbering": "A3C030D0 , A3C034D0",
         "gakka": "E"
     },
     {
@@ -5986,7 +5986,7 @@
         "kikan": "前期",
         "tantousya": "牧野 博之",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1AAB01A0&value(crclumcd)=10201200",
-        "numbering": "1AAB01A0,1EAB01A0",
+        "numbering": "1AAB01A0 , 1EAB01A0",
         "gakka": "I"
     },
     {
@@ -5996,7 +5996,7 @@
         "kikan": "後期",
         "tantousya": "鎌倉 良成",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1AAB05A0&value(crclumcd)=10201200",
-        "numbering": "1AAB05A0,1AAB05B0,1EAB05A0,1EAB05B0",
+        "numbering": "1AAB05A0 , 1AAB05B0 , 1EAB05A0 , 1EAB05B0",
         "gakka": "I"
     },
     {
@@ -6006,7 +6006,7 @@
         "kikan": "後期",
         "tantousya": "牧野 博之",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1AAB07A0&value(crclumcd)=10201200",
-        "numbering": "1AAB07A0,1EAB07A0",
+        "numbering": "1AAB07A0 , 1EAB07A0",
         "gakka": "I"
     },
     {
@@ -6016,7 +6016,7 @@
         "kikan": "後期",
         "tantousya": "布村 泰浩",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1AAB18A0&value(crclumcd)=10201200",
-        "numbering": "1AAB18A0,1AAD10A0,1EAB18A0",
+        "numbering": "1AAB18A0 , 1AAD10A0 , 1EAB18A0",
         "gakka": "I"
     },
     {
@@ -6026,7 +6026,7 @@
         "kikan": "後期",
         "tantousya": "平岡 一剛",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1AAB18B0&value(crclumcd)=10201200",
-        "numbering": "1AAB18B0,1AAD10B0,1BCB18A0,1BCB18B0,1BCD10A0,1BCD10B0,1CCD10B0,1DCD10B0,1EAB18B0",
+        "numbering": "1AAB18B0 , 1AAD10B0 , 1BCB18A0 , 1BCB18B0 , 1BCD10A0 , 1BCD10B0 , 1CCD10B0 , 1DCD10B0 , 1EAB18B0",
         "gakka": "I"
     },
     {
@@ -6036,7 +6036,7 @@
         "kikan": "前期",
         "tantousya": "小松 信雄",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1AAB23A0&value(crclumcd)=10201200",
-        "numbering": "1AAB23A0,1EAB23A0",
+        "numbering": "1AAB23A0 , 1EAB23A0",
         "gakka": "I"
     },
     {
@@ -6046,7 +6046,7 @@
         "kikan": "前期",
         "tantousya": "中西 知嘉子",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1AAC03A0&value(crclumcd)=10201200",
-        "numbering": "1AAC03A0,1AAL02A0,1EAL02A0",
+        "numbering": "1AAC03A0 , 1AAL02A0 , 1EAL02A0",
         "gakka": "I"
     },
     {
@@ -6056,7 +6056,7 @@
         "kikan": "後期",
         "tantousya": "牧野 博之",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1AAD06A0&value(crclumcd)=10201200",
-        "numbering": "1AAD06A0,1AAL07A0,1EAL07A0",
+        "numbering": "1AAD06A0 , 1AAL07A0 , 1EAL07A0",
         "gakka": "I"
     },
     {
@@ -6076,7 +6076,7 @@
         "kikan": "後期",
         "tantousya": "牧野 博之",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1AAG14A0&value(crclumcd)=10201200",
-        "numbering": "1AAG14A0,1AAL27A0,1BAG14A0,1BAL27A0,1CAG14A0,1CAL27A0,1DAG14A0,1DAL27A0,1EAL27A0,1FAL27A0",
+        "numbering": "1AAG14A0 , 1AAL27A0 , 1BAG14A0 , 1BAL27A0 , 1CAG14A0 , 1CAL27A0 , 1DAG14A0 , 1DAL27A0 , 1EAL27A0 , 1FAL27A0",
         "gakka": "I"
     },
     {
@@ -6086,7 +6086,7 @@
         "kikan": "後期",
         "tantousya": "水谷 泰治",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1AAH03A0&value(crclumcd)=10201200",
-        "numbering": "1AAH03A0,1BAH03A0,1CAH03A0,1DAH03A0",
+        "numbering": "1AAH03A0 , 1BAH03A0 , 1CAH03A0 , 1DAH03A0",
         "gakka": "I"
     },
     {
@@ -6116,7 +6116,7 @@
         "kikan": "後期",
         "tantousya": "尾崎 敦夫",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1AAK01A0&value(crclumcd)=10201200",
-        "numbering": "1AAK01A0,1AAL29A0,1BAK01A0,1BAL29A0,1CAK01A0,1CAL29A0,1DAK01A0,1DAL29A0,1EAL29A0,1FAL29A0",
+        "numbering": "1AAK01A0 , 1AAL29A0 , 1BAK01A0 , 1BAL29A0 , 1CAK01A0 , 1CAL29A0 , 1DAK01A0 , 1DAL29A0 , 1EAL29A0 , 1FAL29A0",
         "gakka": "I"
     },
     {
@@ -6136,7 +6136,7 @@
         "kikan": "後期",
         "tantousya": "神納 貴生",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1AAN07A0&value(crclumcd)=10201200",
-        "numbering": "1AAN07A0,1EAN07A0",
+        "numbering": "1AAN07A0 , 1EAN07A0",
         "gakka": "I"
     },
     {
@@ -6146,7 +6146,7 @@
         "kikan": "前期",
         "tantousya": "布村 泰浩",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1AAN08A0&value(crclumcd)=10201200",
-        "numbering": "1AAN08A0,1EAN08A0",
+        "numbering": "1AAN08A0 , 1EAN08A0",
         "gakka": "I"
     },
     {
@@ -6156,7 +6156,7 @@
         "kikan": "後期",
         "tantousya": "鎌倉 良成",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1AAN09A0&value(crclumcd)=10201200",
-        "numbering": "1AAN09A0,1EAN09A0",
+        "numbering": "1AAN09A0 , 1EAN09A0",
         "gakka": "I"
     },
     {
@@ -6166,7 +6166,7 @@
         "kikan": "前期",
         "tantousya": "新規採用教員",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1ABA01A0&value(crclumcd)=10201200",
-        "numbering": "1ABA01A0,1EBA01A0",
+        "numbering": "1ABA01A0 , 1EBA01A0",
         "gakka": "I"
     },
     {
@@ -6176,7 +6176,7 @@
         "kikan": "前期",
         "tantousya": "尾形 尚子",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1ABA01B0&value(crclumcd)=10201200",
-        "numbering": "1ABA01B0,1BBA01B0,1CBA01B0,1DBA01B0,1EBA01B0,1FBA01B0",
+        "numbering": "1ABA01B0 , 1BBA01B0 , 1CBA01B0 , 1DBA01B0 , 1EBA01B0 , 1FBA01B0",
         "gakka": "I"
     },
     {
@@ -6186,7 +6186,7 @@
         "kikan": "後期",
         "tantousya": "齋藤 洋介",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1ABA01C0&value(crclumcd)=10201200",
-        "numbering": "1ABA01C0,1CBA01C0,1EBA01C0",
+        "numbering": "1ABA01C0 , 1CBA01C0 , 1EBA01C0",
         "gakka": "I"
     },
     {
@@ -6196,7 +6196,7 @@
         "kikan": "前期",
         "tantousya": "真貝 寿明",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1ABA03A0&value(crclumcd)=10201200",
-        "numbering": "1ABA03A0,1BBA03A0,1CBA03A0,1EBA03A0",
+        "numbering": "1ABA03A0 , 1BBA03A0 , 1CBA03A0 , 1EBA03A0",
         "gakka": "I"
     },
     {
@@ -6206,7 +6206,7 @@
         "kikan": "前期",
         "tantousya": "齋藤 洋介",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1ABA03B0&value(crclumcd)=10201200",
-        "numbering": "1ABA03B0,1BBA03B0,1CBA03B0,1DBA03B0,1FBA03B0",
+        "numbering": "1ABA03B0 , 1BBA03B0 , 1CBA03B0 , 1DBA03B0 , 1FBA03B0",
         "gakka": "I"
     },
     {
@@ -6216,7 +6216,7 @@
         "kikan": "後期",
         "tantousya": "尾形 尚子",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1ABA03C0&value(crclumcd)=10201200",
-        "numbering": "1ABA03C0,1CBA03C0,1EBA03C0",
+        "numbering": "1ABA03C0 , 1CBA03C0 , 1EBA03C0",
         "gakka": "I"
     },
     {
@@ -6226,7 +6226,7 @@
         "kikan": "後期",
         "tantousya": "地嵜 頌子",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1ABA05A0&value(crclumcd)=10201200",
-        "numbering": "1ABA05A0,1CBA05A0,1DBA05A0,1EBA05A0,1FBA05A0",
+        "numbering": "1ABA05A0 , 1CBA05A0 , 1DBA05A0 , 1EBA05A0 , 1FBA05A0",
         "gakka": "I"
     },
     {
@@ -6236,7 +6236,7 @@
         "kikan": "前期",
         "tantousya": "地嵜 頌子",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1ABA08A0&value(crclumcd)=10201200",
-        "numbering": "1ABA08A0,1BBA08A0,1DBA08A0,1EBA08A0,1FBA08A0",
+        "numbering": "1ABA08A0 , 1BBA08A0 , 1DBA08A0 , 1EBA08A0 , 1FBA08A0",
         "gakka": "I"
     },
     {
@@ -6246,7 +6246,7 @@
         "kikan": "前期",
         "tantousya": "新規採用教員",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1ABA11A0&value(crclumcd)=10201200",
-        "numbering": "1ABA11A0,1CBA11A0,1EBA11A0",
+        "numbering": "1ABA11A0 , 1CBA11A0 , 1EBA11A0",
         "gakka": "I"
     },
     {
@@ -6256,7 +6256,7 @@
         "kikan": "前期",
         "tantousya": "樫原 茂",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1ABB02A0&value(crclumcd)=10201200",
-        "numbering": "1ABB02A0,1CBB02A0,1EBB02A0",
+        "numbering": "1ABB02A0 , 1CBB02A0 , 1EBB02A0",
         "gakka": "I"
     },
     {
@@ -6266,7 +6266,7 @@
         "kikan": "前期",
         "tantousya": "布村 泰浩",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1ABB04A0&value(crclumcd)=10201200",
-        "numbering": "1ABB04A0,1ABL01A0,1BBB04A0,1EBL01A0",
+        "numbering": "1ABB04A0 , 1ABL01A0 , 1BBB04A0 , 1EBL01A0",
         "gakka": "I"
     },
     {
@@ -6276,7 +6276,7 @@
         "kikan": "前期",
         "tantousya": "小西 将人",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1ABB13A0&value(crclumcd)=10201200",
-        "numbering": "1ABB13A0,1ABD02A0,1CBB13A0,1CBD02A0,1EBB13A0",
+        "numbering": "1ABB13A0 , 1ABD02A0 , 1CBB13A0 , 1CBD02A0 , 1EBB13A0",
         "gakka": "I"
     },
     {
@@ -6286,7 +6286,7 @@
         "kikan": "後期",
         "tantousya": "尾花 将輝",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1ABB21A0&value(crclumcd)=10201200",
-        "numbering": "1ABB21A0,1ABD13A0,1CBB21A0,1CBD13A0,1EBB21A0",
+        "numbering": "1ABB21A0 , 1ABD13A0 , 1CBB21A0 , 1CBD13A0 , 1EBB21A0",
         "gakka": "I"
     },
     {
@@ -6296,7 +6296,7 @@
         "kikan": "前期",
         "tantousya": "小西 将人",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1ABC04A0&value(crclumcd)=10201200",
-        "numbering": "1ABC04A0,1ABL03A0,1EBL03A0",
+        "numbering": "1ABC04A0 , 1ABL03A0 , 1EBL03A0",
         "gakka": "I"
     },
     {
@@ -6316,7 +6316,7 @@
         "kikan": "前期",
         "tantousya": "牧野 博之",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1ABC07A0&value(crclumcd)=10201200",
-        "numbering": "1ABC07A0,1ABL04A0,1EBL04A0",
+        "numbering": "1ABC07A0 , 1ABL04A0 , 1EBL04A0",
         "gakka": "I"
     },
     {
@@ -6326,7 +6326,7 @@
         "kikan": "前期",
         "tantousya": "布村 泰浩",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1ABD09A0&value(crclumcd)=10201200",
-        "numbering": "1ABD09A0,1ABL08A0,1EBL08A0",
+        "numbering": "1ABD09A0 , 1ABL08A0 , 1EBL08A0",
         "gakka": "I"
     },
     {
@@ -6336,7 +6336,7 @@
         "kikan": "後期",
         "tantousya": "水谷 泰治",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1ABD11A0&value(crclumcd)=10201200",
-        "numbering": "1ABD11A0,1ABL09A0,1BAD11A0,1BAL09A0,1EBL09A0",
+        "numbering": "1ABD11A0 , 1ABL09A0 , 1BAD11A0 , 1BAL09A0 , 1EBL09A0",
         "gakka": "I"
     },
     {
@@ -6346,7 +6346,7 @@
         "kikan": "前期",
         "tantousya": "井垣 宏",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1ABD14A0&value(crclumcd)=10201200",
-        "numbering": "1ABD14A0,1ABL11A0,1CBB22A0,1CBD14A0,1EBL11A0",
+        "numbering": "1ABD14A0 , 1ABL11A0 , 1CBB22A0 , 1CBD14A0 , 1EBL11A0",
         "gakka": "I"
     },
     {
@@ -6356,7 +6356,7 @@
         "kikan": "前期",
         "tantousya": "水谷 泰治",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1ABH04A0&value(crclumcd)=10201200",
-        "numbering": "1ABH04A0,1BBH04A0,1CBH04A0,1DBH04A0",
+        "numbering": "1ABH04A0 , 1BBH04A0 , 1CBH04A0 , 1DBH04A0",
         "gakka": "I"
     },
     {
@@ -6366,7 +6366,7 @@
         "kikan": "後期",
         "tantousya": "安留 誠吾",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1ABH05A0&value(crclumcd)=10201200",
-        "numbering": "1ABH05A0,1BBH05A0,1CBH05A0",
+        "numbering": "1ABH05A0 , 1BBH05A0 , 1CBH05A0",
         "gakka": "I"
     },
     {
@@ -6376,7 +6376,7 @@
         "kikan": "前期",
         "tantousya": "奥野 弘嗣",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1ABH06A0&value(crclumcd)=10201200",
-        "numbering": "1ABH06A0,1ABN06A0,1CBH06A0,1CBN06A0,1EBN06A0",
+        "numbering": "1ABH06A0 , 1ABN06A0 , 1CBH06A0 , 1CBN06A0 , 1EBN06A0",
         "gakka": "I"
     },
     {
@@ -6386,7 +6386,7 @@
         "kikan": "前期",
         "tantousya": "酒澤 茂之",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1ABL32A0&value(crclumcd)=10201200",
-        "numbering": "1ABL32A0,1EBL32A0",
+        "numbering": "1ABL32A0 , 1EBL32A0",
         "gakka": "I"
     },
     {
@@ -6396,7 +6396,7 @@
         "kikan": "前期",
         "tantousya": "水谷 泰治",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1ABN04A0&value(crclumcd)=10201200",
-        "numbering": "1ABN04A0,1BBN04A0,1CBN04A0,1DBN04A0,1EBN04A0,1FBN04A0",
+        "numbering": "1ABN04A0 , 1BBN04A0 , 1CBN04A0 , 1DBN04A0 , 1EBN04A0 , 1FBN04A0",
         "gakka": "I"
     },
     {
@@ -6406,7 +6406,7 @@
         "kikan": "後期",
         "tantousya": "安留 誠吾",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1ABN05A0&value(crclumcd)=10201200",
-        "numbering": "1ABN05A0,1BBN05A0,1CBN05A0,1EBN05A0",
+        "numbering": "1ABN05A0 , 1BBN05A0 , 1CBN05A0 , 1EBN05A0",
         "gakka": "I"
     },
     {
@@ -6416,7 +6416,7 @@
         "kikan": "前期集中",
         "tantousya": "小谷 直樹",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1ABN11A0&value(crclumcd)=10201200",
-        "numbering": "1ABN11A0,1BBN11A0,1CBN11A0,1DBN11A0",
+        "numbering": "1ABN11A0 , 1BBN11A0 , 1CBN11A0 , 1DBN11A0",
         "gakka": "I"
     },
     {
@@ -6426,7 +6426,7 @@
         "kikan": "後期",
         "tantousya": "齋藤 洋介",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1ACA02A0&value(crclumcd)=10201200",
-        "numbering": "1ACA02A0,1BCA02A0,1ECA02A0",
+        "numbering": "1ACA02A0 , 1BCA02A0 , 1ECA02A0",
         "gakka": "I"
     },
     {
@@ -6436,7 +6436,7 @@
         "kikan": "後期",
         "tantousya": "鎌倉 良成",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1ACA04A0&value(crclumcd)=10201200",
-        "numbering": "1ACA04A0,1BCA04A0,1ECA04A0",
+        "numbering": "1ACA04A0 , 1BCA04A0 , 1ECA04A0",
         "gakka": "I"
     },
     {
@@ -6446,7 +6446,7 @@
         "kikan": "前期",
         "tantousya": "鎌倉 良成",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1ACA06A0&value(crclumcd)=10201200",
-        "numbering": "1ACA06A0,1BCA06A0,1CCA06A0,1DCA06A0,1ECA06A0",
+        "numbering": "1ACA06A0 , 1BCA06A0 , 1CCA06A0 , 1DCA06A0 , 1ECA06A0",
         "gakka": "I"
     },
     {
@@ -6456,7 +6456,7 @@
         "kikan": "後期",
         "tantousya": "平 博順",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1ACA07A0&value(crclumcd)=10201200",
-        "numbering": "1ACA07A0,1CCA07A0,1ECA07A0",
+        "numbering": "1ACA07A0 , 1CCA07A0 , 1ECA07A0",
         "gakka": "I"
     },
     {
@@ -6466,7 +6466,7 @@
         "kikan": "後期",
         "tantousya": "奥野 弘嗣",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1ACA07B0&value(crclumcd)=10201200",
-        "numbering": "1ACA07B0,1CCA07B0,1ECA07B0",
+        "numbering": "1ACA07B0 , 1CCA07B0 , 1ECA07B0",
         "gakka": "I"
     },
     {
@@ -6486,7 +6486,7 @@
         "kikan": "後期",
         "tantousya": "布村 泰浩",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1ACB03A0&value(crclumcd)=10201200",
-        "numbering": "1ACB03A0,1ECB03A0",
+        "numbering": "1ACB03A0 , 1ECB03A0",
         "gakka": "I"
     },
     {
@@ -6496,7 +6496,7 @@
         "kikan": "後期集中",
         "tantousya": "安留 誠吾",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1ACB08A0&value(crclumcd)=10201200",
-        "numbering": "1ACB08A0,1BCB08A0,1CCB08A0,1DCB08A0,1ECB08A0,1FCB08A0",
+        "numbering": "1ACB08A0 , 1BCB08A0 , 1CCB08A0 , 1DCB08A0 , 1ECB08A0 , 1FCB08A0",
         "gakka": "I"
     },
     {
@@ -6506,7 +6506,7 @@
         "kikan": "前期",
         "tantousya": "中西 知嘉子",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1ACB10A0&value(crclumcd)=10201200",
-        "numbering": "1ACB10A0,1ACD01A0,1ECB10A0",
+        "numbering": "1ACB10A0 , 1ACD01A0 , 1ECB10A0",
         "gakka": "I"
     },
     {
@@ -6516,7 +6516,7 @@
         "kikan": "前期",
         "tantousya": "布村 泰浩",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1ACB10B0&value(crclumcd)=10201200",
-        "numbering": "1ACB10B0,1ACD01B0,1ECB10B0",
+        "numbering": "1ACB10B0 , 1ACD01B0 , 1ECB10B0",
         "gakka": "I"
     },
     {
@@ -6526,7 +6526,7 @@
         "kikan": "前期",
         "tantousya": "平岡 一剛",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1ACB26A0&value(crclumcd)=10201200",
-        "numbering": "1ACB26A0,1ACB26B0,1ACH02A0,1ACH02B0,1ECB26B0",
+        "numbering": "1ACB26A0 , 1ACB26B0 , 1ACH02A0 , 1ACH02B0 , 1ECB26B0",
         "gakka": "I"
     },
     {
@@ -6556,7 +6556,7 @@
         "kikan": "後期",
         "tantousya": "牧野 博之",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1ACC08A0&value(crclumcd)=10201200",
-        "numbering": "1ACC08A0,1ACC08B0,1ACM04A0,1ACM04B0,1ECM04A0,1ECM04B0",
+        "numbering": "1ACC08A0 , 1ACC08B0 , 1ACM04A0 , 1ACM04B0 , 1ECM04A0 , 1ECM04B0",
         "gakka": "I"
     },
     {
@@ -6566,7 +6566,7 @@
         "kikan": "前期",
         "tantousya": "大井 翔",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1ACD03A0&value(crclumcd)=10201200",
-        "numbering": "1ACD03A0,1ACL05A0,1CCB14A0,1CCD03A0,1ECL05A0",
+        "numbering": "1ACD03A0 , 1ACL05A0 , 1CCB14A0 , 1CCD03A0 , 1ECL05A0",
         "gakka": "I"
     },
     {
@@ -6576,7 +6576,7 @@
         "kikan": "前期",
         "tantousya": "西口 敏司",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1ACD05A0&value(crclumcd)=10201200",
-        "numbering": "1ACD05A0,1BCD05A0,1CCD05A0,1DCD05A0",
+        "numbering": "1ACD05A0 , 1BCD05A0 , 1CCD05A0 , 1DCD05A0",
         "gakka": "I"
     },
     {
@@ -6586,7 +6586,7 @@
         "kikan": "後期",
         "tantousya": "越智 徹",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1ACD15A0&value(crclumcd)=10201200",
-        "numbering": "1ACD15A0,1ACL16A0,1ECL16A0",
+        "numbering": "1ACD15A0 , 1ACL16A0 , 1ECL16A0",
         "gakka": "I"
     },
     {
@@ -6596,7 +6596,7 @@
         "kikan": "後期",
         "tantousya": "河合 紀彦",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1ACE02A0&value(crclumcd)=10201200",
-        "numbering": "1ACE02A0,1ACE02B0",
+        "numbering": "1ACE02A0 , 1ACE02B0",
         "gakka": "I"
     },
     {
@@ -6606,7 +6606,7 @@
         "kikan": "後期",
         "tantousya": "神納 貴生",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1ACE19A0&value(crclumcd)=10201200",
-        "numbering": "1ACE19A0,1ACM06A0,1ECM06A0",
+        "numbering": "1ACE19A0 , 1ACM06A0 , 1ECM06A0",
         "gakka": "I"
     },
     {
@@ -6616,7 +6616,7 @@
         "kikan": "後期",
         "tantousya": "神納 貴生",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1ACF04A0&value(crclumcd)=10201200",
-        "numbering": "1ACF04A0,1BCF04A0,1CCF04A0",
+        "numbering": "1ACF04A0 , 1BCF04A0 , 1CCF04A0",
         "gakka": "I"
     },
     {
@@ -6676,7 +6676,7 @@
         "kikan": "後期集中",
         "tantousya": "平山 亮",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1ACH10A0&value(crclumcd)=10201200",
-        "numbering": "1ACH10A0,1ACM30A0,1BCH10A0,1BCM30A0,1CCH10A0,1CCM30A0,1DCH10A0,1ECM30A0,1FCM30A0",
+        "numbering": "1ACH10A0 , 1ACM30A0 , 1BCH10A0 , 1BCM30A0 , 1CCH10A0 , 1CCM30A0 , 1DCH10A0 , 1ECM30A0 , 1FCM30A0",
         "gakka": "I"
     },
     {
@@ -6686,7 +6686,7 @@
         "kikan": "前期",
         "tantousya": "荒木 英夫",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1ACL30A0&value(crclumcd)=10201200",
-        "numbering": "1ACL30A0,1ECL30A0",
+        "numbering": "1ACL30A0 , 1ECL30A0",
         "gakka": "I"
     },
     {
@@ -6696,7 +6696,7 @@
         "kikan": "前期",
         "tantousya": "小松 信雄",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1ACM01A0&value(crclumcd)=10201200",
-        "numbering": "1ACM01A0,1ECM01A0",
+        "numbering": "1ACM01A0 , 1ECM01A0",
         "gakka": "I"
     },
     {
@@ -6706,7 +6706,7 @@
         "kikan": "後期",
         "tantousya": "神納 貴生",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1ACM07A0&value(crclumcd)=10201200",
-        "numbering": "1ACM07A0,1ECM07A0",
+        "numbering": "1ACM07A0 , 1ECM07A0",
         "gakka": "I"
     },
     {
@@ -6716,7 +6716,7 @@
         "kikan": "後期",
         "tantousya": "河合 紀彦",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1ACM08A0&value(crclumcd)=10201200",
-        "numbering": "1ACM08A0,1ACM08B0,1ECM08B0",
+        "numbering": "1ACM08A0 , 1ACM08B0 , 1ECM08B0",
         "gakka": "I"
     },
     {
@@ -6726,7 +6726,7 @@
         "kikan": "後期",
         "tantousya": "尾崎 敦夫",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1ACM09A0&value(crclumcd)=10201200",
-        "numbering": "1ACM09A0,1ECM09A0",
+        "numbering": "1ACM09A0 , 1ECM09A0",
         "gakka": "I"
     },
     {
@@ -6736,7 +6736,7 @@
         "kikan": "後期",
         "tantousya": "小松 信雄",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1ACM10A0&value(crclumcd)=10201200",
-        "numbering": "1ACM10A0,1ECM10A0",
+        "numbering": "1ACM10A0 , 1ECM10A0",
         "gakka": "I"
     },
     {
@@ -6746,7 +6746,7 @@
         "kikan": "後期",
         "tantousya": "小松 信雄",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1ACN10A0&value(crclumcd)=10201200",
-        "numbering": "1ACN10A0,1ECN10A0",
+        "numbering": "1ACN10A0 , 1ECN10A0",
         "gakka": "I"
     },
     {
@@ -6766,7 +6766,7 @@
         "kikan": "後期",
         "tantousya": "須永 宏",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1BAB05A0&value(crclumcd)=10201200",
-        "numbering": "1BAB05A0,1BAB05B0",
+        "numbering": "1BAB05A0 , 1BAB05B0",
         "gakka": "I"
     },
     {
@@ -6776,7 +6776,7 @@
         "kikan": "前期",
         "tantousya": "須永 宏",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1BAB11A0&value(crclumcd)=10201200",
-        "numbering": "1BAB11A0,1BAC03A0",
+        "numbering": "1BAB11A0 , 1BAC03A0",
         "gakka": "I"
     },
     {
@@ -6786,7 +6786,7 @@
         "kikan": "後期",
         "tantousya": "佐野 睦夫",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1BAB16A0&value(crclumcd)=10201200",
-        "numbering": "1BAB16A0,1BAD06A0,1CAB16A0,1CAD06A0",
+        "numbering": "1BAB16A0 , 1BAD06A0 , 1CAB16A0 , 1CAD06A0",
         "gakka": "I"
     },
     {
@@ -6796,7 +6796,7 @@
         "kikan": "後期",
         "tantousya": "須永 宏",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1BAD13A0&value(crclumcd)=10201200",
-        "numbering": "1BAD13A0,1BAL10A0",
+        "numbering": "1BAD13A0 , 1BAL10A0",
         "gakka": "I"
     },
     {
@@ -6816,7 +6816,7 @@
         "kikan": "前期",
         "tantousya": "福安 直樹",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1BAH08A0&value(crclumcd)=10201200",
-        "numbering": "1BAH08A0,1BAN08A0",
+        "numbering": "1BAH08A0 , 1BAN08A0",
         "gakka": "I"
     },
     {
@@ -6826,7 +6826,7 @@
         "kikan": "後期",
         "tantousya": "水谷 泰治",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1BAN03A0&value(crclumcd)=10201200",
-        "numbering": "1BAN03A0,1CAN03A0,1DAN03A0,1EAN03A0,1FAN03A0,1GAN03A0",
+        "numbering": "1BAN03A0 , 1CAN03A0 , 1DAN03A0 , 1EAN03A0 , 1FAN03A0 , 1GAN03A0",
         "gakka": "I"
     },
     {
@@ -6846,7 +6846,7 @@
         "kikan": "前期",
         "tantousya": "鎌倉 良成",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1BBA01A0&value(crclumcd)=10201200",
-        "numbering": "1BBA01A0,1CBA01A0",
+        "numbering": "1BBA01A0 , 1CBA01A0",
         "gakka": "I"
     },
     {
@@ -6876,7 +6876,7 @@
         "kikan": "前期",
         "tantousya": "島野 顕継",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1BBB02A0&value(crclumcd)=10201200",
-        "numbering": "1BBB02A0,1DAB02A0,1FAB02A0",
+        "numbering": "1BBB02A0 , 1DAB02A0 , 1FAB02A0",
         "gakka": "I"
     },
     {
@@ -6886,7 +6886,7 @@
         "kikan": "前期",
         "tantousya": "西口 敏司",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1BBB13A0&value(crclumcd)=10201200",
-        "numbering": "1BBB13A0,1BBD02A0,1DBB13A0,1DBD02A0,1FBB13A0",
+        "numbering": "1BBB13A0 , 1BBD02A0 , 1DBB13A0 , 1DBD02A0 , 1FBB13A0",
         "gakka": "I"
     },
     {
@@ -6896,7 +6896,7 @@
         "kikan": "前期",
         "tantousya": "福澤 寧子",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1BBC06A0&value(crclumcd)=10201200",
-        "numbering": "1BBC06A0,1CBC06A0",
+        "numbering": "1BBC06A0 , 1CBC06A0",
         "gakka": "I"
     },
     {
@@ -6906,7 +6906,7 @@
         "kikan": "前期",
         "tantousya": "井垣 宏",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1BBD09A0&value(crclumcd)=10201200",
-        "numbering": "1BBD09A0,1BBL08A0",
+        "numbering": "1BBD09A0 , 1BBL08A0",
         "gakka": "I"
     },
     {
@@ -6916,7 +6916,7 @@
         "kikan": "前期",
         "tantousya": "山田 隆亮",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1BBD14A0&value(crclumcd)=10201200",
-        "numbering": "1BBD14A0,1BBL11A0,1DBD14A0,1DBM15A0,1FBM15A0",
+        "numbering": "1BBD14A0 , 1BBL11A0 , 1DBD14A0 , 1DBM15A0 , 1FBM15A0",
         "gakka": "I"
     },
     {
@@ -6926,7 +6926,7 @@
         "kikan": "前期",
         "tantousya": "山内 雪路",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1BBF06A0&value(crclumcd)=10201200",
-        "numbering": "1BBF06A0,1BBL19A0",
+        "numbering": "1BBF06A0 , 1BBL19A0",
         "gakka": "I"
     },
     {
@@ -6936,7 +6936,7 @@
         "kikan": "前期",
         "tantousya": "山田 隆亮",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1BBG16A0&value(crclumcd)=10201200",
-        "numbering": "1BBG16A0,1BBL28A0",
+        "numbering": "1BBG16A0 , 1BBL28A0",
         "gakka": "I"
     },
     {
@@ -6946,7 +6946,7 @@
         "kikan": "前期",
         "tantousya": "山田 隆亮",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1BBG17A0&value(crclumcd)=10201200",
-        "numbering": "1BBG17A0,1BBL31A0",
+        "numbering": "1BBG17A0 , 1BBL31A0",
         "gakka": "I"
     },
     {
@@ -6956,7 +6956,7 @@
         "kikan": "前期",
         "tantousya": "安留 誠吾",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1BBH06A0&value(crclumcd)=10201200",
-        "numbering": "1BBH06A0,1BBN06A0,1DBH06A0,1DBN06A0,1FBN06A0",
+        "numbering": "1BBH06A0 , 1BBN06A0 , 1DBH06A0 , 1DBN06A0 , 1FBN06A0",
         "gakka": "I"
     },
     {
@@ -6966,7 +6966,7 @@
         "kikan": "前期",
         "tantousya": "福澤 寧子",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1BBL32A0&value(crclumcd)=10201200",
-        "numbering": "1BBL32A0,1CBB12A0",
+        "numbering": "1BBL32A0 , 1CBB12A0",
         "gakka": "I"
     },
     {
@@ -6986,7 +6986,7 @@
         "kikan": "後期",
         "tantousya": "真貝 寿明",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1BCA07A0&value(crclumcd)=10201200",
-        "numbering": "1BCA07A0,1DCA07A0,1FCA07A0",
+        "numbering": "1BCA07A0 , 1DCA07A0 , 1FCA07A0",
         "gakka": "I"
     },
     {
@@ -6996,7 +6996,7 @@
         "kikan": "後期",
         "tantousya": "塚本 勝俊",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1BCA07B0&value(crclumcd)=10201200",
-        "numbering": "1BCA07B0,1DCA07B0,1FCA07B0",
+        "numbering": "1BCA07B0 , 1DCA07B0 , 1FCA07B0",
         "gakka": "I"
     },
     {
@@ -7006,7 +7006,7 @@
         "kikan": "後期",
         "tantousya": "新規採用教員",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1BCA09A0&value(crclumcd)=10201200",
-        "numbering": "1BCA09A0,1CCA09A0,1DCA09A0,1FCA09A0",
+        "numbering": "1BCA09A0 , 1CCA09A0 , 1DCA09A0 , 1FCA09A0",
         "gakka": "I"
     },
     {
@@ -7016,7 +7016,7 @@
         "kikan": "後期",
         "tantousya": "水谷 泰治",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1BCB03A0&value(crclumcd)=10201200",
-        "numbering": "1BCB03A0,1CCB03A0,1DCB03A0",
+        "numbering": "1BCB03A0 , 1CCB03A0 , 1DCB03A0",
         "gakka": "I"
     },
     {
@@ -7036,7 +7036,7 @@
         "kikan": "前期",
         "tantousya": "西口 敏司",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1BCB15A0&value(crclumcd)=10201200",
-        "numbering": "1BCB15A0,1CCB15A0,1DCM13A0,1FCM13A0",
+        "numbering": "1BCB15A0 , 1CCB15A0 , 1DCM13A0 , 1FCM13A0",
         "gakka": "I"
     },
     {
@@ -7046,7 +7046,7 @@
         "kikan": "前期",
         "tantousya": "地嵜 頌子",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1BCB26A0&value(crclumcd)=10201200",
-        "numbering": "1BCB26A0,1BCH02A0",
+        "numbering": "1BCB26A0 , 1BCH02A0",
         "gakka": "I"
     },
     {
@@ -7056,7 +7056,7 @@
         "kikan": "前期",
         "tantousya": "鎌倉 快之",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1BCB26B0&value(crclumcd)=10201200",
-        "numbering": "1BCB26B0,1BCH02B0",
+        "numbering": "1BCB26B0 , 1BCH02B0",
         "gakka": "I"
     },
     {
@@ -7066,7 +7066,7 @@
         "kikan": "前期",
         "tantousya": "山内 建二",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1BCB27A0&value(crclumcd)=10201200",
-        "numbering": "1BCB27A0,1BCD08A0",
+        "numbering": "1BCB27A0 , 1BCD08A0",
         "gakka": "I"
     },
     {
@@ -7076,7 +7076,7 @@
         "kikan": "前期",
         "tantousya": "本田 澄",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1BCB27B0&value(crclumcd)=10201200",
-        "numbering": "1BCB27B0,1BCD08B0",
+        "numbering": "1BCB27B0 , 1BCD08B0",
         "gakka": "I"
     },
     {
@@ -7086,7 +7086,7 @@
         "kikan": "後期",
         "tantousya": "福安 直樹",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1BCD12A0&value(crclumcd)=10201200",
-        "numbering": "1BCD12A0,1BCM02A0",
+        "numbering": "1BCD12A0 , 1BCM02A0",
         "gakka": "I"
     },
     {
@@ -7096,7 +7096,7 @@
         "kikan": "後期",
         "tantousya": "福安 直樹",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1BCD15A0&value(crclumcd)=10201200",
-        "numbering": "1BCD15A0,1BCM03A0",
+        "numbering": "1BCD15A0 , 1BCM03A0",
         "gakka": "I"
     },
     {
@@ -7106,7 +7106,7 @@
         "kikan": "後期",
         "tantousya": "宮脇 健三郎",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1BCE02A0&value(crclumcd)=10201200",
-        "numbering": "1BCE02A0,1BCE02B0",
+        "numbering": "1BCE02A0 , 1BCE02B0",
         "gakka": "I"
     },
     {
@@ -7116,7 +7116,7 @@
         "kikan": "後期",
         "tantousya": "大井 翔",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1BCE05A0&value(crclumcd)=10201200",
-        "numbering": "1BCE05A0,1BCM16A0,1CCE05A0,1CCM16A0",
+        "numbering": "1BCE05A0 , 1BCM16A0 , 1CCE05A0 , 1CCM16A0",
         "gakka": "I"
     },
     {
@@ -7126,7 +7126,7 @@
         "kikan": "前期",
         "tantousya": "神田 智子",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1BCE06A0&value(crclumcd)=10201200",
-        "numbering": "1BCE06A0,1BCL15A0,1CCE06A0,1CCL15A0,1DCE06A0,1DCM18A0,1FCM18A0",
+        "numbering": "1BCE06A0 , 1BCL15A0 , 1CCE06A0 , 1CCL15A0 , 1DCE06A0 , 1DCM18A0 , 1FCM18A0",
         "gakka": "I"
     },
     {
@@ -7146,7 +7146,7 @@
         "kikan": "後期",
         "tantousya": "島野 顕継",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1BCF11A0&value(crclumcd)=10201200",
-        "numbering": "1BCF11A0,1DCF11A0",
+        "numbering": "1BCF11A0 , 1DCF11A0",
         "gakka": "I"
     },
     {
@@ -7156,7 +7156,7 @@
         "kikan": "前期",
         "tantousya": "椎原 正次",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1BCG04A0&value(crclumcd)=10201200",
-        "numbering": "1BCG04A0,1BCL20A0,1DCG04A0,1DCM20A0,1FCM20A0",
+        "numbering": "1BCG04A0 , 1BCL20A0 , 1DCG04A0 , 1DCM20A0 , 1FCM20A0",
         "gakka": "I"
     },
     {
@@ -7196,7 +7196,7 @@
         "kikan": "後期",
         "tantousya": "平嶋 洋一",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1BCG09A0&value(crclumcd)=10201200",
-        "numbering": "1BCG09A0,1BCM21A0,1DCG09A0,1DCM21A0,1FCM21A0",
+        "numbering": "1BCG09A0 , 1BCM21A0 , 1DCG09A0 , 1DCM21A0 , 1FCM21A0",
         "gakka": "I"
     },
     {
@@ -7206,7 +7206,7 @@
         "kikan": "後期",
         "tantousya": "須永 宏",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1BCG15A0&value(crclumcd)=10201200",
-        "numbering": "1BCG15A0,1BCM22A0",
+        "numbering": "1BCG15A0 , 1BCM22A0",
         "gakka": "I"
     },
     {
@@ -7216,7 +7216,7 @@
         "kikan": "前期",
         "tantousya": "安留 誠吾",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1BCL05A0&value(crclumcd)=10201200",
-        "numbering": "1BCL05A0,1DCD03A0,1DCM12A0,1FCM12A0,1BCD03A0",
+        "numbering": "1BCL05A0 , 1DCD03A0 , 1DCM12A0 , 1FCM12A0 , 1BCD03A0",
         "gakka": "I"
     },
     {
@@ -7236,7 +7236,7 @@
         "kikan": "後期",
         "tantousya": "宮脇 健三郎",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1BCM04A0&value(crclumcd)=10201200",
-        "numbering": "1BCM04A0,1BCM04B0",
+        "numbering": "1BCM04A0 , 1BCM04B0",
         "gakka": "I"
     },
     {
@@ -7266,7 +7266,7 @@
         "kikan": "後期",
         "tantousya": "河合 紀彦",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1CAB05A0&value(crclumcd)=10201200",
-        "numbering": "1CAB05A0,1CAB05B0",
+        "numbering": "1CAB05A0 , 1CAB05B0",
         "gakka": "I"
     },
     {
@@ -7276,7 +7276,7 @@
         "kikan": "前期",
         "tantousya": "橋本 渉",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1CAB11A0&value(crclumcd)=10201200",
-        "numbering": "1CAB11A0,1CAC03A0",
+        "numbering": "1CAB11A0 , 1CAC03A0",
         "gakka": "I"
     },
     {
@@ -7366,7 +7366,7 @@
         "kikan": "前期",
         "tantousya": "尾崎 敦夫",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1CBB04A0&value(crclumcd)=10201200",
-        "numbering": "1CBB04A0,1DBB04A0,1DBM11A0,1FBM11A0",
+        "numbering": "1CBB04A0 , 1DBB04A0 , 1DBM11A0 , 1FBM11A0",
         "gakka": "I"
     },
     {
@@ -7376,7 +7376,7 @@
         "kikan": "後期",
         "tantousya": "井垣 宏",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1CBB17A0&value(crclumcd)=10201200",
-        "numbering": "1CBB17A0,1CBD09A0",
+        "numbering": "1CBB17A0 , 1CBD09A0",
         "gakka": "I"
     },
     {
@@ -7386,7 +7386,7 @@
         "kikan": "後期",
         "tantousya": "福安 直樹",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1CBB20A0&value(crclumcd)=10201200",
-        "numbering": "1CBB20A0,1CBD11A0,1DBB20A0,1DBD11A0,1FBB20A0",
+        "numbering": "1CBB20A0 , 1CBD11A0 , 1DBB20A0 , 1DBD11A0 , 1FBB20A0",
         "gakka": "I"
     },
     {
@@ -7396,7 +7396,7 @@
         "kikan": "前期",
         "tantousya": "河北 真宏",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1CBE02A0&value(crclumcd)=10201200",
-        "numbering": "1CBE02A0,1CBE02B0,1CBL13A0,1CBL13B0",
+        "numbering": "1CBE02A0 , 1CBE02B0 , 1CBL13A0 , 1CBL13B0",
         "gakka": "I"
     },
     {
@@ -7406,7 +7406,7 @@
         "kikan": "後期",
         "tantousya": "村木 祐太",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1CBE07A0&value(crclumcd)=10201200",
-        "numbering": "1CBE07A0,1CBL21A0",
+        "numbering": "1CBE07A0 , 1CBL21A0",
         "gakka": "I"
     },
     {
@@ -7416,7 +7416,7 @@
         "kikan": "前期",
         "tantousya": "鈴木 基之",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1CBE10A0&value(crclumcd)=10201200",
-        "numbering": "1CBE10A0,1CBL22A0",
+        "numbering": "1CBE10A0 , 1CBL22A0",
         "gakka": "I"
     },
     {
@@ -7426,7 +7426,7 @@
         "kikan": "後期",
         "tantousya": "鎌倉 良成",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1CCA02A0&value(crclumcd)=10201200",
-        "numbering": "1CCA02A0,1DCA02A0,1FCA02A0",
+        "numbering": "1CCA02A0 , 1DCA02A0 , 1FCA02A0",
         "gakka": "I"
     },
     {
@@ -7436,7 +7436,7 @@
         "kikan": "後期",
         "tantousya": "尾形 尚子",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1CCA04A0&value(crclumcd)=10201200",
-        "numbering": "1CCA04A0,1DCA04A0,1FCA04A0",
+        "numbering": "1CCA04A0 , 1DCA04A0 , 1FCA04A0",
         "gakka": "I"
     },
     {
@@ -7486,7 +7486,7 @@
         "kikan": "前期",
         "tantousya": "山内 建二",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1CCB26A0&value(crclumcd)=10201200",
-        "numbering": "1CCB26A0,1CCB26B0,1CCH02A0,1CCH02B0",
+        "numbering": "1CCB26A0 , 1CCB26B0 , 1CCH02A0 , 1CCH02B0",
         "gakka": "I"
     },
     {
@@ -7516,7 +7516,7 @@
         "kikan": "前期",
         "tantousya": "神田 智子",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1CCE04A0&value(crclumcd)=10201200",
-        "numbering": "1CCE04A0,1CCL14A0",
+        "numbering": "1CCE04A0 , 1CCL14A0",
         "gakka": "I"
     },
     {
@@ -7526,7 +7526,7 @@
         "kikan": "前期",
         "tantousya": "佐野 睦夫",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1CCE08A0&value(crclumcd)=10201200",
-        "numbering": "1CCE08A0,1CCM25A0",
+        "numbering": "1CCE08A0 , 1CCM25A0",
         "gakka": "I"
     },
     {
@@ -7536,7 +7536,7 @@
         "kikan": "後期",
         "tantousya": "河北 真宏",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1CCE09A0&value(crclumcd)=10201200",
-        "numbering": "1CCE09A0,1CCM26A0",
+        "numbering": "1CCE09A0 , 1CCM26A0",
         "gakka": "I"
     },
     {
@@ -7546,7 +7546,7 @@
         "kikan": "前期",
         "tantousya": "鈴木 基之",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1CCE11A0&value(crclumcd)=10201200",
-        "numbering": "1CCE11A0,1CCM27A0",
+        "numbering": "1CCE11A0 , 1CCM27A0",
         "gakka": "I"
     },
     {
@@ -7576,7 +7576,7 @@
         "kikan": "後期",
         "tantousya": "能口 祥子",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1CCE14A0&value(crclumcd)=10201200",
-        "numbering": "1CCE14A0,1CCL24A0",
+        "numbering": "1CCE14A0 , 1CCL24A0",
         "gakka": "I"
     },
     {
@@ -7586,7 +7586,7 @@
         "kikan": "後期",
         "tantousya": "橋本 渉",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1CCE15A0&value(crclumcd)=10201200",
-        "numbering": "1CCE15A0,1CCM28A0",
+        "numbering": "1CCE15A0 , 1CCM28A0",
         "gakka": "I"
     },
     {
@@ -7596,7 +7596,7 @@
         "kikan": "前期",
         "tantousya": "平山 亮",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1CCE17A0&value(crclumcd)=10201200",
-        "numbering": "1CCE17A0,1CCE17B0,1CCM29A0,1CCM29B0",
+        "numbering": "1CCE17A0 , 1CCE17B0 , 1CCM29A0 , 1CCM29B0",
         "gakka": "I"
     },
     {
@@ -7666,7 +7666,7 @@
         "kikan": "前期",
         "tantousya": "樫原 茂",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1DAB01A0&value(crclumcd)=10201200",
-        "numbering": "1DAB01A0,1FAB01A0",
+        "numbering": "1DAB01A0 , 1FAB01A0",
         "gakka": "I"
     },
     {
@@ -7676,7 +7676,7 @@
         "kikan": "後期",
         "tantousya": "樫原 茂",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1DAB05A0&value(crclumcd)=10201200",
-        "numbering": "1DAB05A0,1DAB05B0,1FAB05A0,1FAB05B0",
+        "numbering": "1DAB05A0 , 1DAB05B0 , 1FAB05A0 , 1FAB05B0",
         "gakka": "I"
     },
     {
@@ -7686,7 +7686,7 @@
         "kikan": "前期",
         "tantousya": "酒澤 茂之",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1DAB11A0&value(crclumcd)=10201200",
-        "numbering": "1DAB11A0,1DAC03A0,1FAB11A0",
+        "numbering": "1DAB11A0 , 1DAC03A0 , 1FAB11A0",
         "gakka": "I"
     },
     {
@@ -7696,7 +7696,7 @@
         "kikan": "後期",
         "tantousya": "西口 敏司",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1DAB16A0&value(crclumcd)=10201200",
-        "numbering": "1DAB16A0,1DAD06A0,1FAB16A0",
+        "numbering": "1DAB16A0 , 1DAD06A0 , 1FAB16A0",
         "gakka": "I"
     },
     {
@@ -7756,7 +7756,7 @@
         "kikan": "前期",
         "tantousya": "平嶋 洋一",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1DBA01A0&value(crclumcd)=10201200",
-        "numbering": "1DBA01A0,1FBA01A0,1GAA01A0,1GAA01B0",
+        "numbering": "1DBA01A0 , 1FBA01A0 , 1GAA01A0 , 1GAA01B0",
         "gakka": "I"
     },
     {
@@ -7766,7 +7766,7 @@
         "kikan": "後期",
         "tantousya": "尾形 尚子",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1DBA01C0&value(crclumcd)=10201200",
-        "numbering": "1DBA01C0,1FBA01C0",
+        "numbering": "1DBA01C0 , 1FBA01C0",
         "gakka": "I"
     },
     {
@@ -7776,7 +7776,7 @@
         "kikan": "前期",
         "tantousya": "新規採用教員",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1DBA03A0&value(crclumcd)=10201200",
-        "numbering": "1DBA03A0,1FBA03A0,1GAA03A0,1GAA03B0",
+        "numbering": "1DBA03A0 , 1FBA03A0 , 1GAA03A0 , 1GAA03B0",
         "gakka": "I"
     },
     {
@@ -7786,7 +7786,7 @@
         "kikan": "前期",
         "tantousya": "真貝 寿明",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1DBA11A0&value(crclumcd)=10201200",
-        "numbering": "1DBA11A0,1FBA11A0",
+        "numbering": "1DBA11A0 , 1FBA11A0",
         "gakka": "I"
     },
     {
@@ -7796,7 +7796,7 @@
         "kikan": "後期",
         "tantousya": "安留 誠吾",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1DBB21A0&value(crclumcd)=10201200",
-        "numbering": "1DBB21A0,1DBD13A0,1FBB21A0",
+        "numbering": "1DBB21A0 , 1DBD13A0 , 1FBB21A0",
         "gakka": "I"
     },
     {
@@ -7816,7 +7816,7 @@
         "kikan": "後期",
         "tantousya": "福澤 寧子",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1DBB31A0&value(crclumcd)=10201200",
-        "numbering": "1DBB31A0,1FBB31A0",
+        "numbering": "1DBB31A0 , 1FBB31A0",
         "gakka": "I"
     },
     {
@@ -7836,7 +7836,7 @@
         "kikan": "前期",
         "tantousya": "西口 敏司",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1DBD09A0&value(crclumcd)=10201200",
-        "numbering": "1DBD09A0,1DBM14A0,1FBM14A0",
+        "numbering": "1DBD09A0 , 1DBM14A0 , 1FBM14A0",
         "gakka": "I"
     },
     {
@@ -7846,7 +7846,7 @@
         "kikan": "後期",
         "tantousya": "山内 雪路",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1DBF06A0&value(crclumcd)=10201200",
-        "numbering": "1DBF06A0,1DBL19A0,1FBL19A0",
+        "numbering": "1DBF06A0 , 1DBL19A0 , 1FBL19A0",
         "gakka": "I"
     },
     {
@@ -7856,7 +7856,7 @@
         "kikan": "後期",
         "tantousya": "酒澤 茂之",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1DBF09A0&value(crclumcd)=10201200",
-        "numbering": "1DBF09A0,1DBL26A0,1FBL26A0",
+        "numbering": "1DBF09A0 , 1DBL26A0 , 1FBL26A0",
         "gakka": "I"
     },
     {
@@ -7876,7 +7876,7 @@
         "kikan": "後期",
         "tantousya": "島野 顕継",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1DBN05A0&value(crclumcd)=10201200",
-        "numbering": "1DBN05A0,1FBN05A0",
+        "numbering": "1DBN05A0 , 1FBN05A0",
         "gakka": "I"
     },
     {
@@ -7886,7 +7886,7 @@
         "kikan": "後期",
         "tantousya": "塚本 勝俊",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1DCB07A0&value(crclumcd)=10201200",
-        "numbering": "1DCB07A0,1FCB07A0",
+        "numbering": "1DCB07A0 , 1FCB07A0",
         "gakka": "I"
     },
     {
@@ -7896,7 +7896,7 @@
         "kikan": "前期前半",
         "tantousya": "島野 顕継",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1DCB19A0&value(crclumcd)=10201200",
-        "numbering": "1DCB19A0,1FCB19A0",
+        "numbering": "1DCB19A0 , 1FCB19A0",
         "gakka": "I"
     },
     {
@@ -7906,7 +7906,7 @@
         "kikan": "前期",
         "tantousya": "豊浦 由浩",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1DCB26A0&value(crclumcd)=10201200",
-        "numbering": "1DCB26A0,1DCB26B0,1DCH02A0,1DCH02B0,1FCB26A0,1FCB26B0",
+        "numbering": "1DCB26A0 , 1DCB26B0 , 1DCH02A0 , 1DCH02B0 , 1FCB26A0 , 1FCB26B0",
         "gakka": "I"
     },
     {
@@ -7916,7 +7916,7 @@
         "kikan": "前期",
         "tantousya": "大島 一能",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1DCB28A0&value(crclumcd)=10201200",
-        "numbering": "1DCB28A0,1FCB28A0",
+        "numbering": "1DCB28A0 , 1FCB28A0",
         "gakka": "I"
     },
     {
@@ -7926,7 +7926,7 @@
         "kikan": "前期後半",
         "tantousya": "杉川 智",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1DCB29A0&value(crclumcd)=10201200",
-        "numbering": "1DCB29A0,1FCB29A0",
+        "numbering": "1DCB29A0 , 1FCB29A0",
         "gakka": "I"
     },
     {
@@ -7936,7 +7936,7 @@
         "kikan": "後期後半",
         "tantousya": "杉川 智",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1DCB30A0&value(crclumcd)=10201200",
-        "numbering": "1DCB30A0,1FCB30A0",
+        "numbering": "1DCB30A0 , 1FCB30A0",
         "gakka": "I"
     },
     {
@@ -7956,7 +7956,7 @@
         "kikan": "後期",
         "tantousya": "酒澤 茂之",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1DCE05A0&value(crclumcd)=10201200",
-        "numbering": "1DCE05A0,1DCM16A0,1FCM16A0",
+        "numbering": "1DCE05A0 , 1DCM16A0 , 1FCM16A0",
         "gakka": "I"
     },
     {
@@ -7986,7 +7986,7 @@
         "kikan": "前期",
         "tantousya": "塚本 勝俊",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1DCF05A0&value(crclumcd)=10201200",
-        "numbering": "1DCF05A0,1DCL18A0,1FCL18A0",
+        "numbering": "1DCF05A0 , 1DCL18A0 , 1FCL18A0",
         "gakka": "I"
     },
     {
@@ -7996,7 +7996,7 @@
         "kikan": "後期",
         "tantousya": "島野 顕継",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1DCF07A0&value(crclumcd)=10201200",
-        "numbering": "1DCF07A0,1DCL25A0,1FCL25A0",
+        "numbering": "1DCF07A0 , 1DCL25A0 , 1FCL25A0",
         "gakka": "I"
     },
     {
@@ -8036,7 +8036,7 @@
         "kikan": "前期",
         "tantousya": "山内 雪路",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1DCL17A0&value(crclumcd)=10201200",
-        "numbering": "1DCL17A0,1FCL17A0",
+        "numbering": "1DCL17A0 , 1FCL17A0",
         "gakka": "I"
     },
     {
@@ -8056,7 +8056,7 @@
         "kikan": "後期",
         "tantousya": "酒澤 茂之",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1DCM19A0&value(crclumcd)=10201200",
-        "numbering": "1DCM19A0,1FCM19A0",
+        "numbering": "1DCM19A0 , 1FCM19A0",
         "gakka": "I"
     },
     {
@@ -8066,7 +8066,7 @@
         "kikan": "後期",
         "tantousya": "島野 顕継",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1DCN09A0&value(crclumcd)=10201200",
-        "numbering": "1DCN09A0,1FCN09A0",
+        "numbering": "1DCN09A0 , 1FCN09A0",
         "gakka": "I"
     },
     {
@@ -8146,7 +8146,7 @@
         "kikan": "後期",
         "tantousya": "新規採用教員",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=1GCA07A0&value(crclumcd)=10201200",
-        "numbering": "1GCA07A0,1GCA07B0",
+        "numbering": "1GCA07A0 , 1GCA07B0",
         "gakka": "I"
     },
     {
@@ -8206,7 +8206,7 @@
         "kikan": "前期",
         "tantousya": "雨宮 徹",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B0B002A0&value(crclumcd)=10201200",
-        "numbering": "B0B002A0,B0B002B0",
+        "numbering": "B0B002A0 , B0B002B0",
         "gakka": "I"
     },
     {
@@ -8216,7 +8216,7 @@
         "kikan": "後期",
         "tantousya": "池田 知加",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B0B005A0&value(crclumcd)=10201200",
-        "numbering": "B0B005A0,B0B005B0",
+        "numbering": "B0B005A0 , B0B005B0",
         "gakka": "I"
     },
     {
@@ -8226,7 +8226,7 @@
         "kikan": "後期",
         "tantousya": "雨宮 徹",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B0B010A0&value(crclumcd)=10201200",
-        "numbering": "B0B010A0,B0B010B0",
+        "numbering": "B0B010A0 , B0B010B0",
         "gakka": "I"
     },
     {
@@ -8236,7 +8236,7 @@
         "kikan": "後期",
         "tantousya": "大村 拓生",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B0B012A0&value(crclumcd)=10201200",
-        "numbering": "B0B012A0,B0B012B0,B0B012C0",
+        "numbering": "B0B012A0 , B0B012B0 , B0B012C0",
         "gakka": "I"
     },
     {
@@ -8246,7 +8246,7 @@
         "kikan": "前期",
         "tantousya": "横山 恵理",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B0B014A0&value(crclumcd)=10201200",
-        "numbering": "B0B014A0,B0B014B0",
+        "numbering": "B0B014A0 , B0B014B0",
         "gakka": "I"
     },
     {
@@ -8256,7 +8256,7 @@
         "kikan": "後期",
         "tantousya": "横山 恵理",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B0B014C0&value(crclumcd)=10201200",
-        "numbering": "B0B014C0,B0B014D0",
+        "numbering": "B0B014C0 , B0B014D0",
         "gakka": "I"
     },
     {
@@ -8266,7 +8266,7 @@
         "kikan": "前期",
         "tantousya": "家本 真実",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B0B019A0&value(crclumcd)=10201200",
-        "numbering": "B0B019A0,B0B019B0",
+        "numbering": "B0B019A0 , B0B019B0",
         "gakka": "I"
     },
     {
@@ -8276,7 +8276,7 @@
         "kikan": "前期",
         "tantousya": "瀬野 陸見",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B0B020A0&value(crclumcd)=10201200",
-        "numbering": "B0B020A0,B0B020B0",
+        "numbering": "B0B020A0 , B0B020B0",
         "gakka": "I"
     },
     {
@@ -8296,7 +8296,7 @@
         "kikan": "前期",
         "tantousya": "池田 知加",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B0C004A0&value(crclumcd)=10201200",
-        "numbering": "B0C004A0,B0C004B0",
+        "numbering": "B0C004A0 , B0C004B0",
         "gakka": "I"
     },
     {
@@ -8306,7 +8306,7 @@
         "kikan": "前期",
         "tantousya": "雨宮 徹",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B0C007A0&value(crclumcd)=10201200",
-        "numbering": "B0C007A0,B0C007B0",
+        "numbering": "B0C007A0 , B0C007B0",
         "gakka": "I"
     },
     {
@@ -8316,7 +8316,7 @@
         "kikan": "後期",
         "tantousya": "雨宮 徹",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B0C007C0&value(crclumcd)=10201200",
-        "numbering": "B0C007C0,B0C007D0",
+        "numbering": "B0C007C0 , B0C007D0",
         "gakka": "I"
     },
     {
@@ -8326,7 +8326,7 @@
         "kikan": "前期",
         "tantousya": "大村 拓生",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B0C011A0&value(crclumcd)=10201200",
-        "numbering": "B0C011A0,B0C011B0,B0C011C0",
+        "numbering": "B0C011A0 , B0C011B0 , B0C011C0",
         "gakka": "I"
     },
     {
@@ -8346,7 +8346,7 @@
         "kikan": "後期",
         "tantousya": "横山 恵理",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B0C015B0&value(crclumcd)=10201200",
-        "numbering": "B0C015B0,B0C015C0",
+        "numbering": "B0C015B0 , B0C015C0",
         "gakka": "I"
     },
     {
@@ -8356,7 +8356,7 @@
         "kikan": "前期",
         "tantousya": "横山 恵理",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B0C016A0&value(crclumcd)=10201200",
-        "numbering": "B0C016A0,B0C016B0",
+        "numbering": "B0C016A0 , B0C016B0",
         "gakka": "I"
     },
     {
@@ -8366,7 +8366,7 @@
         "kikan": "後期",
         "tantousya": "横山 恵理",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B0C016C0&value(crclumcd)=10201200",
-        "numbering": "B0C016C0,B0C016D0",
+        "numbering": "B0C016C0 , B0C016D0",
         "gakka": "I"
     },
     {
@@ -8376,7 +8376,7 @@
         "kikan": "前期",
         "tantousya": "玄 哲浩",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B0C017A0&value(crclumcd)=10201200",
-        "numbering": "B0C017A0,B0C017B0",
+        "numbering": "B0C017A0 , B0C017B0",
         "gakka": "I"
     },
     {
@@ -8386,7 +8386,7 @@
         "kikan": "後期",
         "tantousya": "玄 哲浩",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B0C018A0&value(crclumcd)=10201200",
-        "numbering": "B0C018A0,B0C018B0",
+        "numbering": "B0C018A0 , B0C018B0",
         "gakka": "I"
     },
     {
@@ -8406,7 +8406,7 @@
         "kikan": "前期",
         "tantousya": "八木 成和",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B0C022A0&value(crclumcd)=10201200",
-        "numbering": "B0C022A0,B0C022B0",
+        "numbering": "B0C022A0 , B0C022B0",
         "gakka": "I"
     },
     {
@@ -8416,7 +8416,7 @@
         "kikan": "後期",
         "tantousya": "八木 成和",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B0C022C0&value(crclumcd)=10201200",
-        "numbering": "B0C022C0,B0C022D0",
+        "numbering": "B0C022C0 , B0C022D0",
         "gakka": "I"
     },
     {
@@ -8426,7 +8426,7 @@
         "kikan": "前期",
         "tantousya": "恩庄 澄",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B0C023A0&value(crclumcd)=10201200",
-        "numbering": "B0C023A0,A4C0121A,ETD0163A",
+        "numbering": "B0C023A0 , A4C0121A , ETD0163A",
         "gakka": "I"
     },
     {
@@ -8436,7 +8436,7 @@
         "kikan": "前期",
         "tantousya": "中西 淳",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B1C001A0&value(crclumcd)=10201200",
-        "numbering": "B1C001A0,B1C001D0,B1C001G0,B1C001K0",
+        "numbering": "B1C001A0 , B1C001D0 , B1C001G0 , B1C001K0",
         "gakka": "I"
     },
     {
@@ -8446,7 +8446,7 @@
         "kikan": "前期",
         "tantousya": "黒川 尚彦",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B1C001B0&value(crclumcd)=10201200",
-        "numbering": "B1C001B0,B1C001E0,B1C001H0,B1C001L0",
+        "numbering": "B1C001B0 , B1C001E0 , B1C001H0 , B1C001L0",
         "gakka": "I"
     },
     {
@@ -8456,7 +8456,7 @@
         "kikan": "前期",
         "tantousya": "田岡 育恵",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B1C001C0&value(crclumcd)=10201200",
-        "numbering": "B1C001C0,B1C001F0,B1C001I0,B1C001M0",
+        "numbering": "B1C001C0 , B1C001F0 , B1C001I0 , B1C001M0",
         "gakka": "I"
     },
     {
@@ -8466,7 +8466,7 @@
         "kikan": "前期",
         "tantousya": "菊池 由記",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B1C001J0&value(crclumcd)=10201200",
-        "numbering": "B1C001J0,B1C001N0",
+        "numbering": "B1C001J0 , B1C001N0",
         "gakka": "I"
     },
     {
@@ -8476,7 +8476,7 @@
         "kikan": "後期",
         "tantousya": "中西 淳",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B1C002A0&value(crclumcd)=10201200",
-        "numbering": "B1C002A0,B1C002D0,B1C002G0,B1C002K0",
+        "numbering": "B1C002A0 , B1C002D0 , B1C002G0 , B1C002K0",
         "gakka": "I"
     },
     {
@@ -8486,7 +8486,7 @@
         "kikan": "後期",
         "tantousya": "黒川 尚彦",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B1C002B0&value(crclumcd)=10201200",
-        "numbering": "B1C002B0,B1C002E0,B1C002H0,B1C002L0",
+        "numbering": "B1C002B0 , B1C002E0 , B1C002H0 , B1C002L0",
         "gakka": "I"
     },
     {
@@ -8496,7 +8496,7 @@
         "kikan": "後期",
         "tantousya": "田岡 育恵",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B1C002C0&value(crclumcd)=10201200",
-        "numbering": "B1C002C0,B1C002F0,B1C002I0,B1C002M0",
+        "numbering": "B1C002C0 , B1C002F0 , B1C002I0 , B1C002M0",
         "gakka": "I"
     },
     {
@@ -8506,7 +8506,7 @@
         "kikan": "後期",
         "tantousya": "菊池 由記",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B1C002J0&value(crclumcd)=10201200",
-        "numbering": "B1C002J0,B1C002N0",
+        "numbering": "B1C002J0 , B1C002N0",
         "gakka": "I"
     },
     {
@@ -8516,7 +8516,7 @@
         "kikan": "前期",
         "tantousya": "古樋 直己",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B1C003A0&value(crclumcd)=10201200",
-        "numbering": "B1C003A0,B1C003D0",
+        "numbering": "B1C003A0 , B1C003D0",
         "gakka": "I"
     },
     {
@@ -8526,7 +8526,7 @@
         "kikan": "前期",
         "tantousya": "中村 英江",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B1C003B0&value(crclumcd)=10201200",
-        "numbering": "B1C003B0,B1C003C0,B1C003E0",
+        "numbering": "B1C003B0 , B1C003C0 , B1C003E0",
         "gakka": "I"
     },
     {
@@ -8536,7 +8536,7 @@
         "kikan": "前期",
         "tantousya": "島田 浩之",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B1C003F0&value(crclumcd)=10201200",
-        "numbering": "B1C003F0,B1C003H0",
+        "numbering": "B1C003F0 , B1C003H0",
         "gakka": "I"
     },
     {
@@ -8566,7 +8566,7 @@
         "kikan": "前期",
         "tantousya": "アンドリュー メロウ",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B1C004A0&value(crclumcd)=10201200",
-        "numbering": "B1C004A0,B1C004E0,B1C004I0,B1C004M0",
+        "numbering": "B1C004A0 , B1C004E0 , B1C004I0 , B1C004M0",
         "gakka": "I"
     },
     {
@@ -8576,7 +8576,7 @@
         "kikan": "前期",
         "tantousya": "エルズベス ヘロン",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B1C004B0&value(crclumcd)=10201200",
-        "numbering": "B1C004B0,B1C004F0",
+        "numbering": "B1C004B0 , B1C004F0",
         "gakka": "I"
     },
     {
@@ -8586,7 +8586,7 @@
         "kikan": "前期",
         "tantousya": "ガブリエル ポーラス",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B1C004C0&value(crclumcd)=10201200",
-        "numbering": "B1C004C0,B1C004G0,B1C004J0,B1C004N0",
+        "numbering": "B1C004C0 , B1C004G0 , B1C004J0 , B1C004N0",
         "gakka": "I"
     },
     {
@@ -8596,7 +8596,7 @@
         "kikan": "前期",
         "tantousya": "新規採用教員",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B1C004D0&value(crclumcd)=10201200",
-        "numbering": "B1C004D0,B1C004H0,B1C004K0,B1C004L0,B1C004P0,B1C004Q0",
+        "numbering": "B1C004D0 , B1C004H0 , B1C004K0 , B1C004L0 , B1C004P0 , B1C004Q0",
         "gakka": "I"
     },
     {
@@ -8606,7 +8606,7 @@
         "kikan": "後期",
         "tantousya": "アンドリュー メロウ",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B1C005A0&value(crclumcd)=10201200",
-        "numbering": "B1C005A0,B1C005E0,B1C005I0,B1C005M0",
+        "numbering": "B1C005A0 , B1C005E0 , B1C005I0 , B1C005M0",
         "gakka": "I"
     },
     {
@@ -8616,7 +8616,7 @@
         "kikan": "後期",
         "tantousya": "エルズベス ヘロン",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B1C005B0&value(crclumcd)=10201200",
-        "numbering": "B1C005B0,B1C005F0",
+        "numbering": "B1C005B0 , B1C005F0",
         "gakka": "I"
     },
     {
@@ -8626,7 +8626,7 @@
         "kikan": "後期",
         "tantousya": "ガブリエル ポーラス",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B1C005C0&value(crclumcd)=10201200",
-        "numbering": "B1C005C0,B1C005G0,B1C005J0,B1C005N0",
+        "numbering": "B1C005C0 , B1C005G0 , B1C005J0 , B1C005N0",
         "gakka": "I"
     },
     {
@@ -8636,7 +8636,7 @@
         "kikan": "後期",
         "tantousya": "新規採用教員",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B1C005D0&value(crclumcd)=10201200",
-        "numbering": "B1C005D0,B1C005H0,B1C005K0,B1C005L0,B1C005P0,B1C005Q0",
+        "numbering": "B1C005D0 , B1C005H0 , B1C005K0 , B1C005L0 , B1C005P0 , B1C005Q0",
         "gakka": "I"
     },
     {
@@ -8666,7 +8666,7 @@
         "kikan": "前期",
         "tantousya": "久保田 真司",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B1C006C0&value(crclumcd)=10201200",
-        "numbering": "B1C006C0,B1C006D0",
+        "numbering": "B1C006C0 , B1C006D0",
         "gakka": "I"
     },
     {
@@ -8686,7 +8686,7 @@
         "kikan": "前期",
         "tantousya": "古樋 直己",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B1C007B0&value(crclumcd)=10201200",
-        "numbering": "B1C007B0,B1C007C0,B1C007E0,B1C007G0",
+        "numbering": "B1C007B0 , B1C007C0 , B1C007E0 , B1C007G0",
         "gakka": "I"
     },
     {
@@ -8736,7 +8736,7 @@
         "kikan": "後期",
         "tantousya": "古樋 直己",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B1C008B0&value(crclumcd)=10201200",
-        "numbering": "B1C008B0,B1C008C0,B1C008E0,B1C008G0",
+        "numbering": "B1C008B0 , B1C008C0 , B1C008E0 , B1C008G0",
         "gakka": "I"
     },
     {
@@ -8776,7 +8776,7 @@
         "kikan": "前期",
         "tantousya": "ガブリエル ポーラス",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B1C009A0&value(crclumcd)=10201200",
-        "numbering": "B1C009A0,B1C009B0",
+        "numbering": "B1C009A0 , B1C009B0",
         "gakka": "I"
     },
     {
@@ -8786,7 +8786,7 @@
         "kikan": "前期",
         "tantousya": "アンドリュー メロウ",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B1C009C0&value(crclumcd)=10201200",
-        "numbering": "B1C009C0,B1C009D0",
+        "numbering": "B1C009C0 , B1C009D0",
         "gakka": "I"
     },
     {
@@ -8796,7 +8796,7 @@
         "kikan": "後期",
         "tantousya": "ガブリエル ポーラス",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B1C010A0&value(crclumcd)=10201200",
-        "numbering": "B1C010A0,B1C010B0",
+        "numbering": "B1C010A0 , B1C010B0",
         "gakka": "I"
     },
     {
@@ -8806,7 +8806,7 @@
         "kikan": "後期",
         "tantousya": "アンドリュー メロウ",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B1C010C0&value(crclumcd)=10201200",
-        "numbering": "B1C010C0,B1C010D0",
+        "numbering": "B1C010C0 , B1C010D0",
         "gakka": "I"
     },
     {
@@ -8836,7 +8836,7 @@
         "kikan": "前期",
         "tantousya": "原田 佳代子",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B1C014A0&value(crclumcd)=10201200",
-        "numbering": "B1C014A0,C2C015A0,A1C0181A",
+        "numbering": "B1C014A0 , C2C015A0 , A1C0181A",
         "gakka": "I"
     },
     {
@@ -8856,7 +8856,7 @@
         "kikan": "前期",
         "tantousya": "井上 裕美子",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B2C001A0&value(crclumcd)=10201200",
-        "numbering": "B2C001A0,B2C001D0",
+        "numbering": "B2C001A0 , B2C001D0",
         "gakka": "I"
     },
     {
@@ -8866,7 +8866,7 @@
         "kikan": "前期",
         "tantousya": "望月 慎之",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B2C001B0&value(crclumcd)=10201200",
-        "numbering": "B2C001B0,B2C001E0",
+        "numbering": "B2C001B0 , B2C001E0",
         "gakka": "I"
     },
     {
@@ -8886,7 +8886,7 @@
         "kikan": "後期",
         "tantousya": "井上 裕美子",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B2C002A0&value(crclumcd)=10201200",
-        "numbering": "B2C002A0,B2C002D0",
+        "numbering": "B2C002A0 , B2C002D0",
         "gakka": "I"
     },
     {
@@ -8926,7 +8926,7 @@
         "kikan": "前期",
         "tantousya": "藤井 研一",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B3B003A0&value(crclumcd)=10201200",
-        "numbering": "B3B003A0,B3B003B0,B3B003C0,B3B003D0",
+        "numbering": "B3B003A0 , B3B003B0 , B3B003C0 , B3B003D0",
         "gakka": "I"
     },
     {
@@ -8936,7 +8936,7 @@
         "kikan": "後期",
         "tantousya": "藤 博之",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B3B007A0&value(crclumcd)=10201200",
-        "numbering": "B3B007A0,B3B007B0",
+        "numbering": "B3B007A0 , B3B007B0",
         "gakka": "I"
     },
     {
@@ -8946,7 +8946,7 @@
         "kikan": "後期",
         "tantousya": "横川 美和",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B3B014A0&value(crclumcd)=10201200",
-        "numbering": "B3B014A0,B3B014B0,B3B014C0",
+        "numbering": "B3B014A0 , B3B014B0 , B3B014C0",
         "gakka": "I"
     },
     {
@@ -8956,7 +8956,7 @@
         "kikan": "後期",
         "tantousya": "矢野 浩二朗",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B3B017A0&value(crclumcd)=10201200",
-        "numbering": "B3B017A0,B3B017B0,B3B017C0",
+        "numbering": "B3B017A0 , B3B017B0 , B3B017C0",
         "gakka": "I"
     },
     {
@@ -8966,7 +8966,7 @@
         "kikan": "前期",
         "tantousya": "藤 博之",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B3C004A0&value(crclumcd)=10201200",
-        "numbering": "B3C004A0,B3C004B0",
+        "numbering": "B3C004A0 , B3C004B0",
         "gakka": "I"
     },
     {
@@ -8976,7 +8976,7 @@
         "kikan": "前期",
         "tantousya": "藤 博之",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B3C005A0&value(crclumcd)=10201200",
-        "numbering": "B3C005A0,B3C005B0,B3C005C0,B3C005D0",
+        "numbering": "B3C005A0 , B3C005B0 , B3C005C0 , B3C005D0",
         "gakka": "I"
     },
     {
@@ -8986,7 +8986,7 @@
         "kikan": "後期",
         "tantousya": "藤井 研一",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B3C006A0&value(crclumcd)=10201200",
-        "numbering": "B3C006A0,B3C006B0,B3C006C0,B3C006D0",
+        "numbering": "B3C006A0 , B3C006B0 , B3C006C0 , B3C006D0",
         "gakka": "I"
     },
     {
@@ -8996,7 +8996,7 @@
         "kikan": "前期",
         "tantousya": "田中 龍一郎",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B3C009A0&value(crclumcd)=10201200",
-        "numbering": "B3C009A0,B3C009B0",
+        "numbering": "B3C009A0 , B3C009B0",
         "gakka": "I"
     },
     {
@@ -9026,7 +9026,7 @@
         "kikan": "後期",
         "tantousya": "太田 壮一",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B3C010B0&value(crclumcd)=10201200",
-        "numbering": "B3C010B0,B3C010C0",
+        "numbering": "B3C010B0 , B3C010C0",
         "gakka": "I"
     },
     {
@@ -9036,7 +9036,7 @@
         "kikan": "前期",
         "tantousya": "横川 美和",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B3C012A0&value(crclumcd)=10201200",
-        "numbering": "B3C012A0,B3C012B0,B3C012C0,B3C012D0",
+        "numbering": "B3C012A0 , B3C012B0 , B3C012C0 , B3C012D0",
         "gakka": "I"
     },
     {
@@ -9046,7 +9046,7 @@
         "kikan": "前期",
         "tantousya": "矢野 浩二朗",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=B3C015B0&value(crclumcd)=10201200",
-        "numbering": "B3C015B0,B3C015C0",
+        "numbering": "B3C015B0 , B3C015C0",
         "gakka": "I"
     },
     {
@@ -9216,7 +9216,7 @@
         "kikan": "後期",
         "tantousya": "疋田 祥人",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=BTD001A1&value(crclumcd)=10201200",
-        "numbering": "BTD001A1,ATD0031A,ATD0033A,ETD0043A",
+        "numbering": "BTD001A1 , ATD0031A , ATD0033A , ETD0043A",
         "gakka": "I"
     },
     {
@@ -9226,7 +9226,7 @@
         "kikan": "前期",
         "tantousya": "疋田 祥人",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=BTD002A1&value(crclumcd)=10201200",
-        "numbering": "BTD002A1,A4C0131A,A4C0133A,ETD0053A",
+        "numbering": "BTD002A1 , A4C0131A , A4C0133A , ETD0053A",
         "gakka": "I"
     },
     {
@@ -9236,7 +9236,7 @@
         "kikan": "後期",
         "tantousya": "酒井 恵子",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=BTD003A1&value(crclumcd)=10201200",
-        "numbering": "BTD003A1,ATD0041A,ETD0063A",
+        "numbering": "BTD003A1 , ATD0041A , ETD0063A",
         "gakka": "I"
     },
     {
@@ -9246,7 +9246,7 @@
         "kikan": "前期",
         "tantousya": "疋田 祥人",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=BTD004A1&value(crclumcd)=10201200",
-        "numbering": "BTD004A1,ATD0051A,ETD0073A",
+        "numbering": "BTD004A1 , ATD0051A , ETD0073A",
         "gakka": "I"
     },
     {
@@ -9256,7 +9256,7 @@
         "kikan": "後期",
         "tantousya": "北 秀和",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=BTD005A1&value(crclumcd)=10201200",
-        "numbering": "BTD005A1,ATD0061A",
+        "numbering": "BTD005A1 , ATD0061A",
         "gakka": "I"
     },
     {
@@ -9266,7 +9266,7 @@
         "kikan": "前期",
         "tantousya": "北 秀和",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=BTD006A1&value(crclumcd)=10201200",
-        "numbering": "BTD006A1,ATD0071A",
+        "numbering": "BTD006A1 , ATD0071A",
         "gakka": "I"
     },
     {
@@ -9276,7 +9276,7 @@
         "kikan": "後期",
         "tantousya": "北 秀和",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=BTD007A1&value(crclumcd)=10201200",
-        "numbering": "BTD007A1,ATD0081A",
+        "numbering": "BTD007A1 , ATD0081A",
         "gakka": "I"
     },
     {
@@ -9286,7 +9286,7 @@
         "kikan": "前期",
         "tantousya": "北 秀和",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=BTD008A1&value(crclumcd)=10201200",
-        "numbering": "BTD008A1,ATD0091A",
+        "numbering": "BTD008A1 , ATD0091A",
         "gakka": "I"
     },
     {
@@ -9296,7 +9296,7 @@
         "kikan": "前期",
         "tantousya": "大井 翔",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=BTD009A1&value(crclumcd)=10201200",
-        "numbering": "BTD009A1,ATD0161A",
+        "numbering": "BTD009A1 , ATD0161A",
         "gakka": "I"
     },
     {
@@ -9316,7 +9316,7 @@
         "kikan": "前期",
         "tantousya": "澤田 俊也",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=BTD011A1&value(crclumcd)=10201200",
-        "numbering": "BTD011A1,A4C0141A,ETD0173A",
+        "numbering": "BTD011A1 , A4C0141A , ETD0173A",
         "gakka": "I"
     },
     {
@@ -9326,7 +9326,7 @@
         "kikan": "前期",
         "tantousya": "澤田 俊也",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=BTD012A1&value(crclumcd)=10201200",
-        "numbering": "BTD012A1,ATD0181A,ETD0103A",
+        "numbering": "BTD012A1 , ATD0181A , ETD0103A",
         "gakka": "I"
     },
     {
@@ -9336,7 +9336,7 @@
         "kikan": "後期",
         "tantousya": "北 秀和",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=BTD013A1&value(crclumcd)=10201200",
-        "numbering": "BTD013A1,ATD0191A,ETD0113A",
+        "numbering": "BTD013A1 , ATD0191A , ETD0113A",
         "gakka": "I"
     },
     {
@@ -9346,7 +9346,7 @@
         "kikan": "前期",
         "tantousya": "酒井 恵子",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=BTD015A1&value(crclumcd)=10201200",
-        "numbering": "BTD015A1,ATD0211A",
+        "numbering": "BTD015A1 , ATD0211A",
         "gakka": "I"
     },
     {
@@ -9356,7 +9356,7 @@
         "kikan": "集中",
         "tantousya": "疋田 祥人",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=BTD016A1&value(crclumcd)=10201200",
-        "numbering": "BTD016A1,ATD0231A",
+        "numbering": "BTD016A1 , ATD0231A",
         "gakka": "I"
     },
     {
@@ -9366,7 +9366,7 @@
         "kikan": "集中",
         "tantousya": "疋田 祥人",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=BTD017A1&value(crclumcd)=10201200",
-        "numbering": "BTD017A1,ATD0241A,ETD0143A",
+        "numbering": "BTD017A1 , ATD0241A , ETD0143A",
         "gakka": "I"
     },
     {
@@ -9376,7 +9376,7 @@
         "kikan": "後期",
         "tantousya": "疋田 祥人",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=BTD018A1&value(crclumcd)=10201200",
-        "numbering": "BTD018A1,ATD0221A,ETD0153A",
+        "numbering": "BTD018A1 , ATD0221A , ETD0153A",
         "gakka": "I"
     },
     {
@@ -9386,7 +9386,7 @@
         "kikan": "集中",
         "tantousya": "酒井 恵子",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=BTD019A1&value(crclumcd)=10201200",
-        "numbering": "BTD019A1,ATD0251A",
+        "numbering": "BTD019A1 , ATD0251A",
         "gakka": "I"
     },
     {
@@ -9396,7 +9396,7 @@
         "kikan": "前期",
         "tantousya": "澤田 俊也",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=BTD020A1&value(crclumcd)=10201200",
-        "numbering": "BTD020A1,A4C0151A,A4D0271A,ETD0183A",
+        "numbering": "BTD020A1 , A4C0151A , A4D0271A , ETD0183A",
         "gakka": "I"
     },
     {
@@ -9406,7 +9406,7 @@
         "kikan": "前期",
         "tantousya": "酒井 恵子",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=BTD021A1&value(crclumcd)=10201200",
-        "numbering": "BTD021A1,ATD0271A,ETD0133A",
+        "numbering": "BTD021A1 , ATD0271A , ETD0133A",
         "gakka": "I"
     },
     {
@@ -9416,7 +9416,7 @@
         "kikan": "後期",
         "tantousya": "恩庄 澄",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=BTD022A1&value(crclumcd)=10201200",
-        "numbering": "BTD022A1,ATD0281A,ETD0193A",
+        "numbering": "BTD022A1 , ATD0281A , ETD0193A",
         "gakka": "I"
     },
     {
@@ -9426,7 +9426,7 @@
         "kikan": "後期",
         "tantousya": "澤田 俊也",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=BTD023A1&value(crclumcd)=10201200",
-        "numbering": "BTD023A1,ATD0291A,ETD0203A",
+        "numbering": "BTD023A1 , ATD0291A , ETD0203A",
         "gakka": "I"
     },
     {
@@ -9436,7 +9436,7 @@
         "kikan": "後期",
         "tantousya": "原 康行",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=BTD024A1&value(crclumcd)=10201200",
-        "numbering": "BTD024A1,ATD0301A,ETD0213A",
+        "numbering": "BTD024A1 , ATD0301A , ETD0213A",
         "gakka": "I"
     },
     {
@@ -9486,7 +9486,7 @@
         "kikan": "後期",
         "tantousya": "中村 吉伸",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=14AA05A0&value(crclumcd)=10201200",
-        "numbering": "14AA05A0,14AB14A0",
+        "numbering": "14AA05A0 , 14AB14A0",
         "gakka": "K"
     },
     {
@@ -9556,7 +9556,7 @@
         "kikan": "前期",
         "tantousya": "下村 修",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=14AA12A0&value(crclumcd)=10201200",
-        "numbering": "14AA12A0,14CA12A0",
+        "numbering": "14AA12A0 , 14CA12A0",
         "gakka": "K"
     },
     {
@@ -9566,7 +9566,7 @@
         "kikan": "後期",
         "tantousya": "下村 修",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=14AA12B0&value(crclumcd)=10201200",
-        "numbering": "14AA12B0,14CA12B0",
+        "numbering": "14AA12B0 , 14CA12B0",
         "gakka": "K"
     },
     {
@@ -9576,7 +9576,7 @@
         "kikan": "前期",
         "tantousya": "中村 吉伸",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=14AA13A0&value(crclumcd)=10201200",
-        "numbering": "14AA13A0,14CA13A0",
+        "numbering": "14AA13A0 , 14CA13A0",
         "gakka": "K"
     },
     {
@@ -9586,7 +9586,7 @@
         "kikan": "後期",
         "tantousya": "中村 吉伸",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=14AA13B0&value(crclumcd)=10201200",
-        "numbering": "14AA13B0,14CA13B0",
+        "numbering": "14AA13B0 , 14CA13B0",
         "gakka": "K"
     },
     {
@@ -9716,7 +9716,7 @@
         "kikan": "後期",
         "tantousya": "村田 理尚",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=14AA21A0&value(crclumcd)=10201200",
-        "numbering": "14AA21A0,14CC01A0",
+        "numbering": "14AA21A0 , 14CC01A0",
         "gakka": "K"
     },
     {
@@ -9726,7 +9726,7 @@
         "kikan": "後期",
         "tantousya": "小林 正治",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=14AA21B0&value(crclumcd)=10201200",
-        "numbering": "14AA21B0,14CC01B0",
+        "numbering": "14AA21B0 , 14CC01B0",
         "gakka": "K"
     },
     {
@@ -9736,7 +9736,7 @@
         "kikan": "前期集中",
         "tantousya": "森内 隆代",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=14CA20A0&value(crclumcd)=10201200",
-        "numbering": "14CA20A0,14CB15A0",
+        "numbering": "14CA20A0 , 14CB15A0",
         "gakka": "K"
     },
     {
@@ -9776,7 +9776,7 @@
         "kikan": "前期",
         "tantousya": "森内 隆代",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=14CB04A0&value(crclumcd)=10201200",
-        "numbering": "14CB04A0,14CB05A0,14CB13A0",
+        "numbering": "14CB04A0 , 14CB05A0 , 14CB13A0",
         "gakka": "K"
     },
     {
@@ -9886,7 +9886,7 @@
         "kikan": "後期",
         "tantousya": "路次 央",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=14CB12A0&value(crclumcd)=10201200",
-        "numbering": "14CB12A0,14CD12A0",
+        "numbering": "14CB12A0 , 14CD12A0",
         "gakka": "K"
     },
     {
@@ -10716,7 +10716,7 @@
         "kikan": "前期",
         "tantousya": "村岡 雅弘",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=A3C031G0&value(crclumcd)=10201200",
-        "numbering": "A3C031G0,A3C035G0",
+        "numbering": "A3C031G0 , A3C035G0",
         "gakka": "K"
     },
     {
@@ -10856,7 +10856,7 @@
         "kikan": "前期",
         "tantousya": "羽賀 俊雄",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=13AB09A0&value(crclumcd)=10201200",
-        "numbering": "13AB09A0,13CB09A0",
+        "numbering": "13AB09A0 , 13CB09A0",
         "gakka": "M"
     },
     {
@@ -11136,7 +11136,7 @@
         "kikan": "前期",
         "tantousya": "松島 栄次",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=13CA09A0&value(crclumcd)=10201200",
-        "numbering": "13CA09A0,13CA09B0",
+        "numbering": "13CA09A0 , 13CA09B0",
         "gakka": "M"
     },
     {
@@ -12306,7 +12306,7 @@
         "kikan": "後期",
         "tantousya": "羽賀 俊雄",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=A3C030C0&value(crclumcd)=10201200",
-        "numbering": "A3C030C0,A3C034C0",
+        "numbering": "A3C030C0 , A3C034C0",
         "gakka": "M"
     },
     {
@@ -12686,7 +12686,7 @@
         "kikan": "前期",
         "tantousya": "髙橋 寛",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=2AAB05A0&value(crclumcd)=10201200",
-        "numbering": "2AAB05A0,2ACB05A0",
+        "numbering": "2AAB05A0 , 2ACB05A0",
         "gakka": "P"
     },
     {
@@ -12696,7 +12696,7 @@
         "kikan": "後期",
         "tantousya": "尾茂 康雄",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=2AAB06A0&value(crclumcd)=10201200",
-        "numbering": "2AAB06A0,2ACB06A0",
+        "numbering": "2AAB06A0 , 2ACB06A0",
         "gakka": "P"
     },
     {
@@ -12786,7 +12786,7 @@
         "kikan": "通年",
         "tantousya": "松井 章浩",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=2AAE02I0&value(crclumcd)=10201200",
-        "numbering": "2AAE02I0,2AAE02T0",
+        "numbering": "2AAE02I0 , 2AAE02T0",
         "gakka": "P"
     },
     {
@@ -13326,7 +13326,7 @@
         "kikan": "前期",
         "tantousya": "廣田 義人",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=2ACC01A0&value(crclumcd)=10201200",
-        "numbering": "2ACC01A0,2ACF01A0",
+        "numbering": "2ACC01A0 , 2ACF01A0",
         "gakka": "P"
     },
     {
@@ -13336,7 +13336,7 @@
         "kikan": "前期",
         "tantousya": "廣田 義人",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=2ACC02A0&value(crclumcd)=10201200",
-        "numbering": "2ACC02A0,2ACF02A0",
+        "numbering": "2ACC02A0 , 2ACF02A0",
         "gakka": "P"
     },
     {
@@ -13346,7 +13346,7 @@
         "kikan": "後期",
         "tantousya": "西川 出",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=2ACC03A0&value(crclumcd)=10201200",
-        "numbering": "2ACC03A0,2ACF03A0",
+        "numbering": "2ACC03A0 , 2ACF03A0",
         "gakka": "P"
     },
     {
@@ -13356,7 +13356,7 @@
         "kikan": "後期",
         "tantousya": "箱田 聖二",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=2ACC04A0&value(crclumcd)=10201200",
-        "numbering": "2ACC04A0,2ACF04A0",
+        "numbering": "2ACC04A0 , 2ACF04A0",
         "gakka": "P"
     },
     {
@@ -13366,7 +13366,7 @@
         "kikan": "前期",
         "tantousya": "村川 一雄",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=2ACC05A0&value(crclumcd)=10201200",
-        "numbering": "2ACC05A0,2ACF05A0",
+        "numbering": "2ACC05A0 , 2ACF05A0",
         "gakka": "P"
     },
     {
@@ -13376,7 +13376,7 @@
         "kikan": "前期",
         "tantousya": "田原 強",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=2ACC06A0&value(crclumcd)=10201200",
-        "numbering": "2ACC06A0,2ACF06A0",
+        "numbering": "2ACC06A0 , 2ACF06A0",
         "gakka": "P"
     },
     {
@@ -13386,7 +13386,7 @@
         "kikan": "前期",
         "tantousya": "杉山 典正",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=2ACD01A0&value(crclumcd)=10201200",
-        "numbering": "2ACD01A0,2ACF07A0",
+        "numbering": "2ACD01A0 , 2ACF07A0",
         "gakka": "P"
     },
     {
@@ -13396,7 +13396,7 @@
         "kikan": "後期",
         "tantousya": "大塚 理彦",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=2ACD02A0&value(crclumcd)=10201200",
-        "numbering": "2ACD02A0,2ACF08A0",
+        "numbering": "2ACD02A0 , 2ACF08A0",
         "gakka": "P"
     },
     {
@@ -13406,7 +13406,7 @@
         "kikan": "後期",
         "tantousya": "西井 光治",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=2ACD03A0&value(crclumcd)=10201200",
-        "numbering": "2ACD03A0,2ACF09A0",
+        "numbering": "2ACD03A0 , 2ACF09A0",
         "gakka": "P"
     },
     {
@@ -13416,7 +13416,7 @@
         "kikan": "前期",
         "tantousya": "内藤 浩樹",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=2ACD04A0&value(crclumcd)=10201200",
-        "numbering": "2ACD04A0,2ACF10A0",
+        "numbering": "2ACD04A0 , 2ACF10A0",
         "gakka": "P"
     },
     {
@@ -13566,7 +13566,7 @@
         "kikan": "前期",
         "tantousya": "五丁 龍志",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=2ACF19A0&value(crclumcd)=10201200",
-        "numbering": "2ACF19A0,C3C017A0",
+        "numbering": "2ACF19A0 , C3C017A0",
         "gakka": "P"
     },
     {
@@ -13576,7 +13576,7 @@
         "kikan": "後期",
         "tantousya": "五丁 龍志",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=2ACF20A0&value(crclumcd)=10201200",
-        "numbering": "2ACF20A0,C3C018A0",
+        "numbering": "2ACF20A0 , C3C018A0",
         "gakka": "P"
     },
     {
@@ -14226,7 +14226,7 @@
         "kikan": "前期",
         "tantousya": "松枝 啓至",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=C2C002E0&value(crclumcd)=10201200",
-        "numbering": "C2C002E0,A0C0031C,A0C0031D",
+        "numbering": "C2C002E0 , A0C0031C , A0C0031D",
         "gakka": "P"
     },
     {
@@ -14236,7 +14236,7 @@
         "kikan": "後期",
         "tantousya": "松枝 啓至",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=C2C002F0&value(crclumcd)=10201200",
-        "numbering": "C2C002F0,A0C0031K,A0C0031L",
+        "numbering": "C2C002F0 , A0C0031K , A0C0031L",
         "gakka": "P"
     },
     {
@@ -14246,7 +14246,7 @@
         "kikan": "前期",
         "tantousya": "酒詰 悠太",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=C2C003A0&value(crclumcd)=10201200",
-        "numbering": "C2C003A0,C2C003B0,A0C0041A,A0C0041B",
+        "numbering": "C2C003A0 , C2C003B0 , A0C0041A , A0C0041B",
         "gakka": "P"
     },
     {
@@ -14256,7 +14256,7 @@
         "kikan": "前期",
         "tantousya": "内田 浩明",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=C2C003C0&value(crclumcd)=10201200",
-        "numbering": "C2C003C0,A0C0041C,A0C0041D",
+        "numbering": "C2C003C0 , A0C0041C , A0C0041D",
         "gakka": "P"
     },
     {
@@ -14266,7 +14266,7 @@
         "kikan": "後期",
         "tantousya": "酒詰 悠太",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=C2C003D0&value(crclumcd)=10201200",
-        "numbering": "C2C003D0,C2C003F0,A0C0041F,A0C0041G",
+        "numbering": "C2C003D0 , C2C003F0 , A0C0041F , A0C0041G",
         "gakka": "P"
     },
     {
@@ -14276,7 +14276,7 @@
         "kikan": "前期",
         "tantousya": "松浦 清",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=C2C004A0&value(crclumcd)=10201200",
-        "numbering": "C2C004A0,C2C004C0,C2C004D0,A0C0051A,A0C0051C,A0C0051D",
+        "numbering": "C2C004A0 , C2C004C0 , C2C004D0 , A0C0051A , A0C0051C , A0C0051D",
         "gakka": "P"
     },
     {
@@ -14286,7 +14286,7 @@
         "kikan": "前期",
         "tantousya": "小村 みち",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=C2C004B0&value(crclumcd)=10201200",
-        "numbering": "C2C004B0,A0C0051B",
+        "numbering": "C2C004B0 , A0C0051B",
         "gakka": "P"
     },
     {
@@ -14296,7 +14296,7 @@
         "kikan": "後期",
         "tantousya": "松浦 清",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=C2C004F0&value(crclumcd)=10201200",
-        "numbering": "C2C004F0,C2C004H0,C2C004J0,A0C0051F,A0C0051H,A0C0051J",
+        "numbering": "C2C004F0 , C2C004H0 , C2C004J0 , A0C0051F , A0C0051H , A0C0051J",
         "gakka": "P"
     },
     {
@@ -14306,7 +14306,7 @@
         "kikan": "後期",
         "tantousya": "小村 みち",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=C2C004G0&value(crclumcd)=10201200",
-        "numbering": "C2C004G0,A0C0051G",
+        "numbering": "C2C004G0 , A0C0051G",
         "gakka": "P"
     },
     {
@@ -14356,7 +14356,7 @@
         "kikan": "前期",
         "tantousya": "西山 由理花",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=C2C006A0&value(crclumcd)=10201200",
-        "numbering": "C2C006A0,C2C006B0,C2C006C0,A0C0111A,A0C0111B,A0C0111C",
+        "numbering": "C2C006A0 , C2C006B0 , C2C006C0 , A0C0111A , A0C0111B , A0C0111C",
         "gakka": "P"
     },
     {
@@ -14366,7 +14366,7 @@
         "kikan": "後期",
         "tantousya": "西山 由理花",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=C2C006D0&value(crclumcd)=10201200",
-        "numbering": "C2C006D0,C2C006F0,C2C006G0,A0C0111F,A0C0111G,A0C0111H",
+        "numbering": "C2C006D0 , C2C006F0 , C2C006G0 , A0C0111G , A0C0111H",
         "gakka": "P"
     },
     {
@@ -14376,7 +14376,7 @@
         "kikan": "前期",
         "tantousya": "大谷 真弓",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=C2C007A0&value(crclumcd)=10201200",
-        "numbering": "C2C007A0,C2C007B0,A0C0121A,A0C0121B",
+        "numbering": "C2C007A0 , C2C007B0 , A0C0121A , A0C0121B",
         "gakka": "P"
     },
     {
@@ -14386,7 +14386,7 @@
         "kikan": "前期",
         "tantousya": "打田 智幸",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=C2C007C0&value(crclumcd)=10201200",
-        "numbering": "C2C007C0,A0C0121C,A0C0121D",
+        "numbering": "C2C007C0 , A0C0121C , A0C0121D",
         "gakka": "P"
     },
     {
@@ -14396,7 +14396,7 @@
         "kikan": "後期",
         "tantousya": "大谷 真弓",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=C2C007D0&value(crclumcd)=10201200",
-        "numbering": "C2C007D0,C2C007F0,A0C0121F,A0C0121G",
+        "numbering": "C2C007D0 , C2C007F0 , A0C0121F , A0C0121G",
         "gakka": "P"
     },
     {
@@ -14406,7 +14406,7 @@
         "kikan": "後期",
         "tantousya": "打田 智幸",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=C2C007G0&value(crclumcd)=10201200",
-        "numbering": "C2C007G0,A0C0121K,A0C0121L",
+        "numbering": "C2C007G0 , A0C0121K , A0C0121L",
         "gakka": "P"
     },
     {
@@ -14466,7 +14466,7 @@
         "kikan": "前期",
         "tantousya": "禿 慧二",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=C2C013A0&value(crclumcd)=10201200",
-        "numbering": "C2C013A0,A2C0031A",
+        "numbering": "C2C013A0 , A2C0031A",
         "gakka": "P"
     },
     {
@@ -14476,7 +14476,7 @@
         "kikan": "前期",
         "tantousya": "伊藤 道郎",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=C2C013B0&value(crclumcd)=10201200",
-        "numbering": "C2C013B0,C2C013C0,A2C0031B,A2C0031C",
+        "numbering": "C2C013B0 , C2C013C0 , A2C0031B , A2C0031C",
         "gakka": "P"
     },
     {
@@ -14486,7 +14486,7 @@
         "kikan": "前期",
         "tantousya": "木内 真弘",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=C2C013D0&value(crclumcd)=10201200",
-        "numbering": "C2C013D0,A2C0031D",
+        "numbering": "C2C013D0 , A2C0031D",
         "gakka": "P"
     },
     {
@@ -14496,7 +14496,7 @@
         "kikan": "前期",
         "tantousya": "木内 真弘",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=C2C013F0&value(crclumcd)=10201200",
-        "numbering": "C2C013F0,A2C0031F",
+        "numbering": "C2C013F0 , A2C0031F",
         "gakka": "P"
     },
     {
@@ -14506,7 +14506,7 @@
         "kikan": "後期",
         "tantousya": "木内 真弘",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=C2C014A0&value(crclumcd)=10201200",
-        "numbering": "C2C014A0,A2C0041A",
+        "numbering": "C2C014A0 , A2C0041A",
         "gakka": "P"
     },
     {
@@ -14516,7 +14516,7 @@
         "kikan": "後期",
         "tantousya": "小田 啓之",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=C2C014B0&value(crclumcd)=10201200",
-        "numbering": "C2C014B0,A2C0041B",
+        "numbering": "C2C014B0 , A2C0041B",
         "gakka": "P"
     },
     {
@@ -14526,7 +14526,7 @@
         "kikan": "後期",
         "tantousya": "禿 慧二",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=C2C014C0&value(crclumcd)=10201200",
-        "numbering": "C2C014C0,A2C0041D",
+        "numbering": "C2C014C0 , A2C0041D",
         "gakka": "P"
     },
     {
@@ -14536,7 +14536,7 @@
         "kikan": "後期",
         "tantousya": "伊藤 道郎",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=C2C014D0&value(crclumcd)=10201200",
-        "numbering": "C2C014D0,A2C0041C",
+        "numbering": "C2C014D0 , A2C0041C",
         "gakka": "P"
     },
     {
@@ -14546,7 +14546,7 @@
         "kikan": "後期",
         "tantousya": "木内 真弘",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=C2C014F0&value(crclumcd)=10201200",
-        "numbering": "C2C014F0,A2C0041F",
+        "numbering": "C2C014F0 , A2C0041F",
         "gakka": "P"
     },
     {
@@ -14556,7 +14556,7 @@
         "kikan": "後期",
         "tantousya": "原田 佳代子",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=C2C016A0&value(crclumcd)=10201200",
-        "numbering": "C2C016A0,A1C0191A",
+        "numbering": "C2C016A0 , A1C0191A",
         "gakka": "P"
     },
     {
@@ -14566,7 +14566,7 @@
         "kikan": "前期",
         "tantousya": "大谷 真弓",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=C2C017A0&value(crclumcd)=10201200",
-        "numbering": "C2C017A0,A0C0151A",
+        "numbering": "C2C017A0 , A0C0151A",
         "gakka": "P"
     },
     {
@@ -14576,7 +14576,7 @@
         "kikan": "後期",
         "tantousya": "松浦 清",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=C2C018A0&value(crclumcd)=10201200",
-        "numbering": "C2C018A0,A0C0161A",
+        "numbering": "C2C018A0 , A0C0161A",
         "gakka": "P"
     },
     {
@@ -14696,7 +14696,7 @@
         "kikan": "前期",
         "tantousya": "川田 進",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=C3C011A0&value(crclumcd)=10201200",
-        "numbering": "C3C011A0,C3C011G0",
+        "numbering": "C3C011A0 , C3C011G0",
         "gakka": "P"
     },
     {
@@ -14726,7 +14726,7 @@
         "kikan": "後期",
         "tantousya": "川田 進",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=C3C012B0&value(crclumcd)=10201200",
-        "numbering": "C3C012B0,C3C012C0,C3C012F0,C3C012G0",
+        "numbering": "C3C012B0 , C3C012C0 , C3C012F0 , C3C012G0",
         "gakka": "P"
     },
     {
@@ -15446,7 +15446,7 @@
         "kikan": "前期",
         "tantousya": "山口 尚",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=A0C0031A&value(crclumcd)=10201200",
-        "numbering": "A0C0031A,A0C0031B",
+        "numbering": "A0C0031A , A0C0031B",
         "gakka": "Q"
     },
     {
@@ -15456,7 +15456,7 @@
         "kikan": "後期",
         "tantousya": "山口 尚",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=A0C0031F&value(crclumcd)=10201200",
-        "numbering": "A0C0031F,A0C0031G",
+        "numbering": "A0C0031F , A0C0031G",
         "gakka": "Q"
     },
     {
@@ -15476,7 +15476,7 @@
         "kikan": "前期",
         "tantousya": "中川 真弓",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=A0C0061A&value(crclumcd)=10201200",
-        "numbering": "A0C0061A,A0C0061B",
+        "numbering": "A0C0061A , A0C0061B",
         "gakka": "Q"
     },
     {
@@ -15486,7 +15486,7 @@
         "kikan": "後期",
         "tantousya": "中川 真弓",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=A0C0061C&value(crclumcd)=10201200",
-        "numbering": "A0C0061C,A0C0061D",
+        "numbering": "A0C0061C , A0C0061D",
         "gakka": "Q"
     },
     {
@@ -15496,7 +15496,7 @@
         "kikan": "前期",
         "tantousya": "米田 達郎",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=A0C0081A&value(crclumcd)=10201200",
-        "numbering": "A0C0081A,A0C0081B",
+        "numbering": "A0C0081A , A0C0081B",
         "gakka": "Q"
     },
     {
@@ -15506,7 +15506,7 @@
         "kikan": "後期",
         "tantousya": "米田 達郎",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=A0C0081D&value(crclumcd)=10201200",
-        "numbering": "A0C0081D,A0C0081F",
+        "numbering": "A0C0081D , A0C0081F",
         "gakka": "Q"
     },
     {
@@ -15516,7 +15516,7 @@
         "kikan": "前期",
         "tantousya": "甲野 正道",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=A0C0091A&value(crclumcd)=10201200",
-        "numbering": "A0C0091A,A0C0091B,A0C0091C,A0C0091J",
+        "numbering": "A0C0091A , A0C0091B , A0C0091C , A0C0091J",
         "gakka": "Q"
     },
     {
@@ -15526,7 +15526,7 @@
         "kikan": "後期",
         "tantousya": "甲野 正道",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=A0C0091F&value(crclumcd)=10201200",
-        "numbering": "A0C0091F,A0C0091G,A0C0091H,A0C0091K",
+        "numbering": "A0C0091F , A0C0091G , A0C0091H , A0C0091K",
         "gakka": "Q"
     },
     {
@@ -15536,7 +15536,7 @@
         "kikan": "前期",
         "tantousya": "上久保 敏",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=A0C0101A&value(crclumcd)=10201200",
-        "numbering": "A0C0101A,A0C0101F,A0C0101G",
+        "numbering": "A0C0101A , A0C0101F , A0C0101G",
         "gakka": "Q"
     },
     {
@@ -15556,7 +15556,7 @@
         "kikan": "後期",
         "tantousya": "上久保 敏",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=A0C0101H&value(crclumcd)=10201200",
-        "numbering": "A0C0101H,A0C0101J,A0C0101L,A0C0103A",
+        "numbering": "A0C0101H , A0C0101J , A0C0101L , A0C0103A",
         "gakka": "Q"
     },
     {
@@ -15626,7 +15626,7 @@
         "kikan": "前期",
         "tantousya": "辻本 智子",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=A1C0111A&value(crclumcd)=10201200",
-        "numbering": "A1C0111A,A1C0111C",
+        "numbering": "A1C0111A , A1C0111C",
         "gakka": "Q"
     },
     {
@@ -15636,7 +15636,7 @@
         "kikan": "後期",
         "tantousya": "辻本 智子",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=A1C0121A&value(crclumcd)=10201200",
-        "numbering": "A1C0121A,A1C0121C",
+        "numbering": "A1C0121A , A1C0121C",
         "gakka": "Q"
     },
     {
@@ -15666,7 +15666,7 @@
         "kikan": "前期",
         "tantousya": "川田 進",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=A1C0151A&value(crclumcd)=10201200",
-        "numbering": "A1C0151A,A1C0151B,A1C0151C,A1C0151F,A1C0151G",
+        "numbering": "A1C0151A , A1C0151B , A1C0151C , A1C0151F , A1C0151G",
         "gakka": "Q"
     },
     {
@@ -15676,7 +15676,7 @@
         "kikan": "後期",
         "tantousya": "川田 進",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=A1C0161B&value(crclumcd)=10201200",
-        "numbering": "A1C0161B,A1C0161C,A1C0161F,A1C0161G",
+        "numbering": "A1C0161B , A1C0161C , A1C0161F , A1C0161G",
         "gakka": "Q"
     },
     {
@@ -15686,7 +15686,7 @@
         "kikan": "前期集中",
         "tantousya": "アンドリュー メロウ",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=A1C0171A&value(crclumcd)=10201200",
-        "numbering": "A1C0171A,E1C0123A",
+        "numbering": "A1C0171A , E1C0123A",
         "gakka": "Q"
     },
     {
@@ -15696,7 +15696,7 @@
         "kikan": "後期集中",
         "tantousya": "アンドリュー メロウ",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=A1C0171B&value(crclumcd)=10201200",
-        "numbering": "A1C0171B,E1C0123B",
+        "numbering": "A1C0171B , E1C0123B",
         "gakka": "Q"
     },
     {
@@ -15856,7 +15856,7 @@
         "kikan": "前期",
         "tantousya": "皆川 健多郎",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=A3C0201A&value(crclumcd)=10201200",
-        "numbering": "A3C0201A,A3C0201B",
+        "numbering": "A3C0201A , A3C0201B",
         "gakka": "Q"
     },
     {
@@ -15876,7 +15876,7 @@
         "kikan": "後期",
         "tantousya": "皆川 健多郎",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=A3C0241A&value(crclumcd)=10201200",
-        "numbering": "A3C0241A,A3C0241B",
+        "numbering": "A3C0241A , A3C0241B",
         "gakka": "Q"
     },
     {
@@ -15886,7 +15886,7 @@
         "kikan": "前期",
         "tantousya": "岸本 健吾",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=A3C0251A&value(crclumcd)=10201200",
-        "numbering": "A3C0251A,A3C0251D",
+        "numbering": "A3C0251A , A3C0251D",
         "gakka": "Q"
     },
     {
@@ -15896,7 +15896,7 @@
         "kikan": "前期",
         "tantousya": "東海林 満",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=A3C0251B&value(crclumcd)=10201200",
-        "numbering": "A3C0251B,A3C0251F",
+        "numbering": "A3C0251B , A3C0251F",
         "gakka": "Q"
     },
     {
@@ -15946,7 +15946,7 @@
         "kikan": "前期",
         "tantousya": "林 正人",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=A3C0281A&value(crclumcd)=10201200",
-        "numbering": "A3C0281A,A3C0281B",
+        "numbering": "A3C0281A , A3C0281B",
         "gakka": "Q"
     },
     {
@@ -15956,7 +15956,7 @@
         "kikan": "2年次",
         "tantousya": "1",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=A3C0321A&value(crclumcd)=10201200",
-        "numbering": "A3C0321A,A3C0321B",
+        "numbering": "A3C0321A , A3C0321B",
         "gakka": "Q"
     },
     {
@@ -16006,7 +16006,7 @@
         "kikan": "前期",
         "tantousya": "高田 一郎",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=A4C0051B&value(crclumcd)=10201200",
-        "numbering": "A4C0051B,A4C0051A",
+        "numbering": "A4C0051B , A4C0051A",
         "gakka": "Q"
     },
     {
@@ -16016,7 +16016,7 @@
         "kikan": "後期",
         "tantousya": "妻鳥 淳彦",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=A4C0061B&value(crclumcd)=10201200",
-        "numbering": "A4C0061B,A4C0061A",
+        "numbering": "A4C0061B , A4C0061A",
         "gakka": "Q"
     },
     {
@@ -16196,7 +16196,7 @@
         "kikan": "後期",
         "tantousya": "荻野 和俊",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=ATD0011B&value(crclumcd)=10201200",
-        "numbering": "ATD0011B,ATD0013A,ETD0023A",
+        "numbering": "ATD0011B , ATD0013A , ETD0023A",
         "gakka": "Q"
     },
     {
@@ -16206,7 +16206,7 @@
         "kikan": "前期",
         "tantousya": "酒井 恵子",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=ATD0021A&value(crclumcd)=10201200",
-        "numbering": "ATD0021A,ATD0023A,ETD0033A",
+        "numbering": "ATD0021A , ATD0023A , ETD0033A",
         "gakka": "Q"
     },
     {
@@ -16256,7 +16256,7 @@
         "kikan": "前期",
         "tantousya": "荻野 和俊",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=ATD0141A&value(crclumcd)=10201200",
-        "numbering": "ATD0141A,ATD0143A,ETD0083A",
+        "numbering": "ATD0141A , ATD0143A , ETD0083A",
         "gakka": "Q"
     },
     {
@@ -16266,7 +16266,7 @@
         "kikan": "後期",
         "tantousya": "荻野 和俊",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=ATD0151A&value(crclumcd)=10201200",
-        "numbering": "ATD0151A,ATD0153A,ETD0093A",
+        "numbering": "ATD0151A , ATD0153A , ETD0093A",
         "gakka": "Q"
     },
     {
@@ -16286,7 +16286,7 @@
         "kikan": "後期",
         "tantousya": "恩庄 澄",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=ATD0201A&value(crclumcd)=10201200",
-        "numbering": "ATD0201A,ETD0123A",
+        "numbering": "ATD0201A , ETD0123A",
         "gakka": "Q"
     },
     {
@@ -16296,7 +16296,7 @@
         "kikan": "前期",
         "tantousya": "荻野 和俊",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=ATD0261A&value(crclumcd)=10201200",
-        "numbering": "ATD0261A,ETD0013A",
+        "numbering": "ATD0261A , ETD0013A",
         "gakka": "Q"
     },
     {
@@ -16426,7 +16426,7 @@
         "kikan": "後期前半",
         "tantousya": "倉前 宏行",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=3CAA02L0&value(crclumcd)=10201200",
-        "numbering": "3CAA02L0,3DCA02M0",
+        "numbering": "3CAA02L0 , 3DCA02M0",
         "gakka": "R"
     },
     {
@@ -16436,7 +16436,7 @@
         "kikan": "前期後半",
         "tantousya": "上田 悦子",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=3CAA04L0&value(crclumcd)=10201200",
-        "numbering": "3CAA04L0,3DAA04M0",
+        "numbering": "3CAA04L0 , 3DAA04M0",
         "gakka": "R"
     },
     {
@@ -16446,7 +16446,7 @@
         "kikan": "後期後半",
         "tantousya": "脇田 由実",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=3CCA03L0&value(crclumcd)=10201200",
-        "numbering": "3CCA03L0,3DCA03M0",
+        "numbering": "3CCA03L0 , 3DCA03M0",
         "gakka": "R"
     },
     {
@@ -16946,7 +16946,7 @@
         "kikan": "後期前半",
         "tantousya": "中泉 文孝",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=19CD03L0&value(crclumcd)=10201200",
-        "numbering": "19CD03L0,3DAA07M0",
+        "numbering": "19CD03L0 , 3DAA07M0",
         "gakka": "R"
     },
     {
@@ -16966,7 +16966,7 @@
         "kikan": "後期前半",
         "tantousya": "河合 俊和",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=19CD07L0&value(crclumcd)=10201200",
-        "numbering": "19CD07L0,3CAD05L0",
+        "numbering": "19CD07L0 , 3CAD05L0",
         "gakka": "R"
     },
     {
@@ -16996,7 +16996,7 @@
         "kikan": "後期後半",
         "tantousya": "中山 学之",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=3CAB04L0&value(crclumcd)=10201200",
-        "numbering": "3CAB04L0,3DAB04M0",
+        "numbering": "3CAB04L0 , 3DAB04M0",
         "gakka": "R"
     },
     {
@@ -17066,7 +17066,7 @@
         "kikan": "前期前半",
         "tantousya": "小林 裕之",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=3CCB02L0&value(crclumcd)=10201200",
-        "numbering": "3CCB02L0,3DAB02M0",
+        "numbering": "3CCB02L0 , 3DAB02M0",
         "gakka": "R"
     },
     {
@@ -17076,7 +17076,7 @@
         "kikan": "前期前半",
         "tantousya": "井上 雄紀",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=3CCB03L0&value(crclumcd)=10201200",
-        "numbering": "3CCB03L0,3DCB03M0",
+        "numbering": "3CCB03L0 , 3DCB03M0",
         "gakka": "R"
     },
     {
@@ -17756,7 +17756,7 @@
         "kikan": "前期前半",
         "tantousya": "河合 俊和",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=19CC01L0&value(crclumcd)=10201200",
-        "numbering": "19CC01L0,3CCB06L0,3DCB06M0",
+        "numbering": "19CC01L0 , 3CCB06L0 , 3DCB06M0",
         "gakka": "R"
     },
     {
@@ -17766,7 +17766,7 @@
         "kikan": "前期前半",
         "tantousya": "小林 裕之",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=19CC05L0&value(crclumcd)=10201200",
-        "numbering": "19CC05L0,3CCB05L0,3DCB05M0",
+        "numbering": "19CC05L0 , 3CCB05L0 , 3DCB05M0",
         "gakka": "R"
     },
     {
@@ -17776,7 +17776,7 @@
         "kikan": "前期前半",
         "tantousya": "河合 俊和",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=19CC07L0&value(crclumcd)=10201200",
-        "numbering": "19CC07L0,3CCB07L0,3DCB07M0",
+        "numbering": "19CC07L0 , 3CCB07L0 , 3DCB07M0",
         "gakka": "R"
     },
     {
@@ -17796,7 +17796,7 @@
         "kikan": "後期後半",
         "tantousya": "廣井 富",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=19CE02L0&value(crclumcd)=10201200",
-        "numbering": "19CE02L0,3CCB11L0,3DCB11M0",
+        "numbering": "19CE02L0 , 3CCB11L0 , 3DCB11M0",
         "gakka": "R"
     },
     {
@@ -17856,7 +17856,7 @@
         "kikan": "前期前半",
         "tantousya": "中山 学之",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=3CCB08L0&value(crclumcd)=10201200",
-        "numbering": "3CCB08L0,3DCB08M0",
+        "numbering": "3CCB08L0 , 3DCB08M0",
         "gakka": "R"
     },
     {
@@ -17866,7 +17866,7 @@
         "kikan": "後期前半",
         "tantousya": "上田 悦子",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=3CCB09L0&value(crclumcd)=10201200",
-        "numbering": "3CCB09L0,3DCB09M0",
+        "numbering": "3CCB09L0 , 3DCB09M0",
         "gakka": "R"
     },
     {
@@ -17876,7 +17876,7 @@
         "kikan": "後期後半",
         "tantousya": "倉前 宏行",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=3CCB10L0&value(crclumcd)=10201200",
-        "numbering": "3CCB10L0,3DCB10M0",
+        "numbering": "3CCB10L0 , 3DCB10M0",
         "gakka": "R"
     },
     {
@@ -17886,7 +17886,7 @@
         "kikan": "後期前半",
         "tantousya": "大須賀 美恵子",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=3CCB12L0&value(crclumcd)=10201200",
-        "numbering": "3CCB12L0,3DCB12M0",
+        "numbering": "3CCB12L0 , 3DCB12M0",
         "gakka": "R"
     },
     {
@@ -17896,7 +17896,7 @@
         "kikan": "後期前半",
         "tantousya": "吉川 雅博",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=3CCB13L0&value(crclumcd)=10201200",
-        "numbering": "3CCB13L0,3DCB13M0",
+        "numbering": "3CCB13L0 , 3DCB13M0",
         "gakka": "R"
     },
     {
@@ -18816,7 +18816,7 @@
         "kikan": "前期後半",
         "tantousya": "三浦 武範",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=MPAF01A0&value(crclumcd)=10201200",
-        "numbering": "MPAF01A0,MPAF01M0",
+        "numbering": "MPAF01A0 , MPAF01M0",
         "gakka": "T"
     },
     {
@@ -18836,7 +18836,7 @@
         "kikan": "前期",
         "tantousya": "杉浦 淳",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=MPCA01A0&value(crclumcd)=10201200",
-        "numbering": "MPCA01A0,MPCA01M0",
+        "numbering": "MPCA01A0 , MPCA01M0",
         "gakka": "T"
     },
     {
@@ -18846,7 +18846,7 @@
         "kikan": "前期",
         "tantousya": "小林 昭寛",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=MPCA02A0&value(crclumcd)=10201200",
-        "numbering": "MPCA02A0,MPCA02M0",
+        "numbering": "MPCA02A0 , MPCA02M0",
         "gakka": "T"
     },
     {
@@ -18926,7 +18926,7 @@
         "kikan": "後期",
         "tantousya": "髙橋 寛",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=MPCA10A0&value(crclumcd)=10201200",
-        "numbering": "MPCA10A0,MPCA10M0",
+        "numbering": "MPCA10A0 , MPCA10M0",
         "gakka": "T"
     },
     {
@@ -18996,7 +18996,7 @@
         "kikan": "前期前半",
         "tantousya": "大塚 理彦",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=MPCA19A0&value(crclumcd)=10201200",
-        "numbering": "MPCA19A0,MPCA19M0",
+        "numbering": "MPCA19A0 , MPCA19M0",
         "gakka": "T"
     },
     {
@@ -19006,7 +19006,7 @@
         "kikan": "後期",
         "tantousya": "杉浦 淳",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=MPCB01A0&value(crclumcd)=10201200",
-        "numbering": "MPCB01A0,MPCB01M0",
+        "numbering": "MPCB01A0 , MPCB01M0",
         "gakka": "T"
     },
     {
@@ -19016,7 +19016,7 @@
         "kikan": "後期",
         "tantousya": "小林 昭寛",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=MPCB02A0&value(crclumcd)=10201200",
-        "numbering": "MPCB02A0,MPCB02M0",
+        "numbering": "MPCB02A0 , MPCB02M0",
         "gakka": "T"
     },
     {
@@ -19056,7 +19056,7 @@
         "kikan": "前期",
         "tantousya": "小林 昭寛",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=MPCB06A0&value(crclumcd)=10201200",
-        "numbering": "MPCB06A0,MPCB06M0",
+        "numbering": "MPCB06A0 , MPCB06M0",
         "gakka": "T"
     },
     {
@@ -19076,7 +19076,7 @@
         "kikan": "前期",
         "tantousya": "三浦 武範",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=MPCB09A0&value(crclumcd)=10201200",
-        "numbering": "MPCB09A0,MPCB09M0",
+        "numbering": "MPCB09A0 , MPCB09M0",
         "gakka": "T"
     },
     {
@@ -19126,7 +19126,7 @@
         "kikan": "前期",
         "tantousya": "小林 昭寛",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=MPCB22A0&value(crclumcd)=10201200",
-        "numbering": "MPCB22A0,MPCB22M0",
+        "numbering": "MPCB22A0 , MPCB22M0",
         "gakka": "T"
     },
     {
@@ -19136,7 +19136,7 @@
         "kikan": "後期",
         "tantousya": "三浦 武範",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=MPCB23A0&value(crclumcd)=10201200",
-        "numbering": "MPCB23A0,MPCB23M0",
+        "numbering": "MPCB23A0 , MPCB23M0",
         "gakka": "T"
     },
     {
@@ -19176,7 +19176,7 @@
         "kikan": "前期",
         "tantousya": "松井 章浩",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=MPCC01A0&value(crclumcd)=10201200",
-        "numbering": "MPCC01A0,MPCC01M0",
+        "numbering": "MPCC01A0 , MPCC01M0",
         "gakka": "T"
     },
     {
@@ -19186,7 +19186,7 @@
         "kikan": "後期",
         "tantousya": "小林 昭寛",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=MPCC02A0&value(crclumcd)=10201200",
-        "numbering": "MPCC02A0,MPCC02M0",
+        "numbering": "MPCC02A0 , MPCC02M0",
         "gakka": "T"
     },
     {
@@ -19226,7 +19226,7 @@
         "kikan": "後期",
         "tantousya": "小林 昭寛",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=MPCC17M0&value(crclumcd)=10201200",
-        "numbering": "MPCC17M0,MPCC30M0",
+        "numbering": "MPCC17M0 , MPCC30M0",
         "gakka": "T"
     },
     {
@@ -19236,7 +19236,7 @@
         "kikan": "前期集中",
         "tantousya": "内藤 浩樹",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=MPCC19A0&value(crclumcd)=10201200",
-        "numbering": "MPCC19A0,MPCC26A0",
+        "numbering": "MPCC19A0 , MPCC26A0",
         "gakka": "T"
     },
     {
@@ -19246,7 +19246,7 @@
         "kikan": "前期集中",
         "tantousya": "内藤 浩樹",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=MPCC20A0&value(crclumcd)=10201200",
-        "numbering": "MPCC20A0,MPCC27A0",
+        "numbering": "MPCC20A0 , MPCC27A0",
         "gakka": "T"
     },
     {
@@ -19256,7 +19256,7 @@
         "kikan": "後期集中",
         "tantousya": "内藤 浩樹",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=MPCC21A0&value(crclumcd)=10201200",
-        "numbering": "MPCC21A0,MPCC28A0",
+        "numbering": "MPCC21A0 , MPCC28A0",
         "gakka": "T"
     },
     {
@@ -19266,7 +19266,7 @@
         "kikan": "集中",
         "tantousya": "村川 一雄",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=MPCC22A0&value(crclumcd)=10201200",
-        "numbering": "MPCC22A0,MPCC29A0",
+        "numbering": "MPCC22A0 , MPCC29A0",
         "gakka": "T"
     },
     {
@@ -19306,7 +19306,7 @@
         "kikan": "前期",
         "tantousya": "林 茂樹",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=MPCD04M0&value(crclumcd)=10201200",
-        "numbering": "MPCD04M0,MPCD20M0",
+        "numbering": "MPCD04M0 , MPCD20M0",
         "gakka": "T"
     },
     {
@@ -19316,7 +19316,7 @@
         "kikan": "前期",
         "tantousya": "村川 一雄",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=MPCD05M0&value(crclumcd)=10201200",
-        "numbering": "MPCD05M0,MPCD23M0",
+        "numbering": "MPCD05M0 , MPCD23M0",
         "gakka": "T"
     },
     {
@@ -19326,7 +19326,7 @@
         "kikan": "後期",
         "tantousya": "石川 克司",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=MPCD06M0&value(crclumcd)=10201200",
-        "numbering": "MPCD06M0,MPCD24M0",
+        "numbering": "MPCD06M0 , MPCD24M0",
         "gakka": "T"
     },
     {
@@ -19356,7 +19356,7 @@
         "kikan": "前期",
         "tantousya": "岡本 清秀",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=MPCD11M0&value(crclumcd)=10201200",
-        "numbering": "MPCD11M0,MPCD21M0",
+        "numbering": "MPCD11M0 , MPCD21M0",
         "gakka": "T"
     },
     {
@@ -19366,7 +19366,7 @@
         "kikan": "後期",
         "tantousya": "岡本 清秀",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=MPCD12M0&value(crclumcd)=10201200",
-        "numbering": "MPCD12M0,MPCD22M0",
+        "numbering": "MPCD12M0 , MPCD22M0",
         "gakka": "T"
     },
     {
@@ -19376,7 +19376,7 @@
         "kikan": "通年",
         "tantousya": "小林 昭寛",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=MPCD13A0&value(crclumcd)=10201200",
-        "numbering": "MPCD13A0,MPCD19A0,MPCD30A0",
+        "numbering": "MPCD13A0 , MPCD19A0 , MPCD30A0",
         "gakka": "T"
     },
     {
@@ -19386,7 +19386,7 @@
         "kikan": "前期",
         "tantousya": "長谷川 光一",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=MPCD14M0&value(crclumcd)=10201200",
-        "numbering": "MPCD14M0,MPCD26M0",
+        "numbering": "MPCD14M0 , MPCD26M0",
         "gakka": "T"
     },
     {
@@ -19396,7 +19396,7 @@
         "kikan": "前期",
         "tantousya": "小林 昭寛",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=MPCD15M0&value(crclumcd)=10201200",
-        "numbering": "MPCD15M0,MPCD27M0,MPCD31M0",
+        "numbering": "MPCD15M0 , MPCD27M0 , MPCD31M0",
         "gakka": "T"
     },
     {
@@ -19406,7 +19406,7 @@
         "kikan": "後期",
         "tantousya": "小林 昭寛",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=MPCD16M0&value(crclumcd)=10201200",
-        "numbering": "MPCD16M0,MPCD28M0,MPCD32M0",
+        "numbering": "MPCD16M0 , MPCD28M0 , MPCD32M0",
         "gakka": "T"
     },
     {
@@ -19436,7 +19436,7 @@
         "kikan": "後期前半",
         "tantousya": "山田 繁和",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=MPCD25A0&value(crclumcd)=10201200",
-        "numbering": "MPCD25A0,MPCD25M0,MPCD29A0,MPCD29M0",
+        "numbering": "MPCD25A0 , MPCD25M0 , MPCD29A0 , MPCD29M0",
         "gakka": "T"
     },
     {
@@ -20666,7 +20666,7 @@
         "kikan": "後期",
         "tantousya": "宇戸 禎仁",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=A3C031J0&value(crclumcd)=10201200",
-        "numbering": "A3C031J0,A3C035J0",
+        "numbering": "A3C031J0 , A3C035J0",
         "gakka": "U"
     },
     {
@@ -20866,7 +20866,7 @@
         "kikan": "前期",
         "tantousya": "松本 政秀",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=16BH01A0&value(crclumcd)=10201200",
-        "numbering": "16BH01A0,16CB03A0",
+        "numbering": "16BH01A0 , 16CB03A0",
         "gakka": "V"
     },
     {
@@ -20876,7 +20876,7 @@
         "kikan": "後期",
         "tantousya": "松本 政秀",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=16BH01B0&value(crclumcd)=10201200",
-        "numbering": "16BH01B0,16CB03B0",
+        "numbering": "16BH01B0 , 16CB03B0",
         "gakka": "V"
     },
     {
@@ -20986,7 +20986,7 @@
         "kikan": "前期",
         "tantousya": "髙山 成",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=16CA16A0&value(crclumcd)=10201200",
-        "numbering": "16CA16A0,16CB01A0",
+        "numbering": "16CA16A0 , 16CB01A0",
         "gakka": "V"
     },
     {
@@ -20996,7 +20996,7 @@
         "kikan": "前期",
         "tantousya": "粟田 貴宣",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=16CB02A0&value(crclumcd)=10201200",
-        "numbering": "16CB02A0,16CF03A0",
+        "numbering": "16CB02A0 , 16CF03A0",
         "gakka": "V"
     },
     {
@@ -21016,7 +21016,7 @@
         "kikan": "後期",
         "tantousya": "髙山 成",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=16CB05A0&value(crclumcd)=10201200",
-        "numbering": "16CB05A0,16CF04A0",
+        "numbering": "16CB05A0 , 16CF04A0",
         "gakka": "V"
     },
     {
@@ -21026,7 +21026,7 @@
         "kikan": "前期",
         "tantousya": "矢吹 芳教",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=16CB06A0&value(crclumcd)=10201200",
-        "numbering": "16CB06A0,16CF06A0",
+        "numbering": "16CB06A0 , 16CF06A0",
         "gakka": "V"
     },
     {
@@ -21036,7 +21036,7 @@
         "kikan": "前期",
         "tantousya": "田中 寿弥",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=16CC01A0&value(crclumcd)=10201200",
-        "numbering": "16CC01A0,16CG04A0",
+        "numbering": "16CC01A0 , 16CG04A0",
         "gakka": "V"
     },
     {
@@ -21046,7 +21046,7 @@
         "kikan": "前期",
         "tantousya": "小松 晃二",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=16CC02A0&value(crclumcd)=10201200",
-        "numbering": "16CC02A0,16CG05A0",
+        "numbering": "16CC02A0 , 16CG05A0",
         "gakka": "V"
     },
     {
@@ -21066,7 +21066,7 @@
         "kikan": "後期",
         "tantousya": "渡邊 信久",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=16CC04A0&value(crclumcd)=10201200",
-        "numbering": "16CC04A0,16CG01A0",
+        "numbering": "16CC04A0 , 16CG01A0",
         "gakka": "V"
     },
     {
@@ -21126,7 +21126,7 @@
         "kikan": "後期",
         "tantousya": "古崎 康哲",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=16CC12A0&value(crclumcd)=10201200",
-        "numbering": "16CC12A0,16CG07A0",
+        "numbering": "16CC12A0 , 16CG07A0",
         "gakka": "V"
     },
     {
@@ -21136,7 +21136,7 @@
         "kikan": "前期",
         "tantousya": "未定",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=16CC13A0&value(crclumcd)=10201200",
-        "numbering": "16CC13A0,16CE02A0",
+        "numbering": "16CC13A0 , 16CE02A0",
         "gakka": "V"
     },
     {
@@ -21146,7 +21146,7 @@
         "kikan": "前期",
         "tantousya": "小原 啓蔵",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=16CD01A0&value(crclumcd)=10201200",
-        "numbering": "16CD01A0,16CH02A0",
+        "numbering": "16CD01A0 , 16CH02A0",
         "gakka": "V"
     },
     {
@@ -21156,7 +21156,7 @@
         "kikan": "前期",
         "tantousya": "福岡 雅子",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=16CD03A0&value(crclumcd)=10201200",
-        "numbering": "16CD03A0,16CH04A0",
+        "numbering": "16CD03A0 , 16CH04A0",
         "gakka": "V"
     },
     {
@@ -21166,7 +21166,7 @@
         "kikan": "前期",
         "tantousya": "皆川 健多郎",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=16CD05A0&value(crclumcd)=10201200",
-        "numbering": "16CD05A0,16CH03A0",
+        "numbering": "16CD05A0 , 16CH03A0",
         "gakka": "V"
     },
     {
@@ -21216,7 +21216,7 @@
         "kikan": "前期",
         "tantousya": "上田 英雄",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=16CD09A0&value(crclumcd)=10201200",
-        "numbering": "16CD09A0,16CF02A0",
+        "numbering": "16CD09A0 , 16CF02A0",
         "gakka": "V"
     },
     {
@@ -21226,7 +21226,7 @@
         "kikan": "後期",
         "tantousya": "河村 耕史",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=16CD10A0&value(crclumcd)=10201200",
-        "numbering": "16CD10A0,16CF05A0",
+        "numbering": "16CD10A0 , 16CF05A0",
         "gakka": "V"
     },
     {
@@ -21236,7 +21236,7 @@
         "kikan": "前期",
         "tantousya": "渡邊 信久",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=16CD11A0&value(crclumcd)=10201200",
-        "numbering": "16CD11A0,16CE03A0",
+        "numbering": "16CD11A0 , 16CE03A0",
         "gakka": "V"
     },
     {
@@ -21756,7 +21756,7 @@
         "kikan": "後期",
         "tantousya": "古崎 康哲",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=A3C031H0&value(crclumcd)=10201200",
-        "numbering": "A3C031H0,A3C035H0",
+        "numbering": "A3C031H0 , A3C035H0",
         "gakka": "V"
     },
     {
@@ -21766,7 +21766,7 @@
         "kikan": "後期後半",
         "tantousya": "妻木 宣嗣",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=18CB08K0&value(crclumcd)=10201200",
-        "numbering": "18CB08K0,3BCB10K0",
+        "numbering": "18CB08K0 , 3BCB10K0",
         "gakka": "W"
     },
     {
@@ -21776,7 +21776,7 @@
         "kikan": "後期後半",
         "tantousya": "今井 美樹",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=18CC01K0&value(crclumcd)=10201200",
-        "numbering": "18CC01K0,3BCC14K0",
+        "numbering": "18CC01K0 , 3BCC14K0",
         "gakka": "W"
     },
     {
@@ -21786,7 +21786,7 @@
         "kikan": "前期前半",
         "tantousya": "三浦 慎司",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=18CC12K0&value(crclumcd)=10201200",
-        "numbering": "18CC12K0,3BCC11K0",
+        "numbering": "18CC12K0 , 3BCC11K0",
         "gakka": "W"
     },
     {
@@ -21796,7 +21796,7 @@
         "kikan": "前期前半",
         "tantousya": "久保 雅義",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=18CC13K0&value(crclumcd)=10201200",
-        "numbering": "18CC13K0,3BCC10K0",
+        "numbering": "18CC13K0 , 3BCC10K0",
         "gakka": "W"
     },
     {
@@ -22026,7 +22026,7 @@
         "kikan": "前期前半",
         "tantousya": "鎌野 健",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=A3C007K0&value(crclumcd)=10201200",
-        "numbering": "A3C007K0,E4C004K0",
+        "numbering": "A3C007K0 , E4C004K0",
         "gakka": "W"
     },
     {
@@ -22036,7 +22036,7 @@
         "kikan": "前期前半",
         "tantousya": "東海林 満",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=A3C007K1&value(crclumcd)=10201200",
-        "numbering": "A3C007K1,E4C004K1",
+        "numbering": "A3C007K1 , E4C004K1",
         "gakka": "W"
     },
     {
@@ -22046,7 +22046,7 @@
         "kikan": "後期後半",
         "tantousya": "妻鳥 淳彦",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=A3C008K0&value(crclumcd)=10201200",
-        "numbering": "A3C008K0,E4C005K0",
+        "numbering": "A3C008K0 , E4C005K0",
         "gakka": "W"
     },
     {
@@ -22056,7 +22056,7 @@
         "kikan": "後期後半",
         "tantousya": "鎌野 健",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=A3C008K1&value(crclumcd)=10201200",
-        "numbering": "A3C008K1,E4C005K1",
+        "numbering": "A3C008K1 , E4C005K1",
         "gakka": "W"
     },
     {
@@ -22346,7 +22346,7 @@
         "kikan": "後期前半",
         "tantousya": "白髪 誠一",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=18CB15K0&value(crclumcd)=10201200",
-        "numbering": "18CB15K0,3BCB12K0",
+        "numbering": "18CB15K0 , 3BCB12K0",
         "gakka": "W"
     },
     {
@@ -22356,7 +22356,7 @@
         "kikan": "前期前半",
         "tantousya": "今井 美樹",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=18CC09K0&value(crclumcd)=10201200",
-        "numbering": "18CC09K0,3BCC07K0",
+        "numbering": "18CC09K0 , 3BCC07K0",
         "gakka": "W"
     },
     {
@@ -22366,7 +22366,7 @@
         "kikan": "後期",
         "tantousya": "新 貴美子",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=18CD10K0&value(crclumcd)=10201200",
-        "numbering": "18CD10K0,3BCA06K0",
+        "numbering": "18CD10K0 , 3BCA06K0",
         "gakka": "W"
     },
     {
@@ -22786,7 +22786,7 @@
         "kikan": "前期前半",
         "tantousya": "朽木 順綱",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=18CB14K0&value(crclumcd)=10201200",
-        "numbering": "18CB14K0,3BCB11K0",
+        "numbering": "18CB14K0 , 3BCB11K0",
         "gakka": "W"
     },
     {
@@ -22796,7 +22796,7 @@
         "kikan": "前期前半",
         "tantousya": "山﨑 康正",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=18CC10K0&value(crclumcd)=10201200",
-        "numbering": "18CC10K0,3BCA09K0",
+        "numbering": "18CC10K0 , 3BCA09K0",
         "gakka": "W"
     },
     {
@@ -23076,7 +23076,7 @@
         "kikan": "前期後半",
         "tantousya": "益岡 了",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=18CD15K0&value(crclumcd)=10201200",
-        "numbering": "18CD15K0,3BCA19K0",
+        "numbering": "18CD15K0 , 3BCA19K0",
         "gakka": "W"
     },
     {
@@ -24326,7 +24326,7 @@
         "kikan": "前期",
         "tantousya": "長森 英二",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=52CC0900&value(crclumcd)=10201200",
-        "numbering": "52CC0900,F3C01500",
+        "numbering": "52CC0900 , F3C01500",
         "gakka": "Y"
     },
     {
@@ -24676,7 +24676,7 @@
         "kikan": "研究博士前期課程",
         "tantousya": "RD専攻幹事",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=MAA006A1&value(crclumcd)=10201200",
-        "numbering": "MAA006A1,MAA006A2",
+        "numbering": "MAA006A1 , MAA006A2",
         "gakka": "Z"
     },
     {
@@ -24686,7 +24686,7 @@
         "kikan": "研究博士前期課程",
         "tantousya": "RD専攻幹事",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2021&value(semekikn)=1&value(kougicd)=MAA00701&value(crclumcd)=10201200",
-        "numbering": "MAA00701,MAA00702",
+        "numbering": "MAA00701 , MAA00702",
         "gakka": "Z"
     },
     {
