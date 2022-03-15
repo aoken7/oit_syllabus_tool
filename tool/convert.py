@@ -17,11 +17,11 @@ def rename(element_list: list, path: str):
         elif (element[2] == "T院"):
             element[2] = "Y"
         elif (element[2] == "AC専攻"):
-            element[2] = "1"
+            element[2] = "ac"
         elif (element[2] == "EDM専攻"):
-            element[2] = "2"
+            element[2] = "edm"
         elif (element[2] == "KVU専攻"):
-            element[2] = "3"
+            element[2] = "kvu"
         elif (element[2] == "T部（共通）"):
             element[2] = "Q"
         else:
