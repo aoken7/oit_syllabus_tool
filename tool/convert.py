@@ -2,40 +2,40 @@ import re
 
 
 # 1行にするときに使用する
-def oneline(file):
-    with open(file, "r", encoding="utf-8") as f:
+def oneline(path: list):
+    with open(path, "r", encoding="utf-8") as f:
         text = f.read().replace("\n", ",")
-        with open(file, "w", encoding="utf-8") as f:
+        with open(path + "-oneline.csv", "w", encoding="utf-8") as f:
             f.write(text)
 
 
 # 学部/学科の名称を変更する
-def rename(file, path):
-    for element in file:
+def rename(element_list: list, path: str):
+    for element in element_list:
         if (element[2] == "P院"):
             element[2] = "T"
         elif (element[2] == "T院"):
             element[2] = "Y"
         elif (element[2] == "AC専攻"):
-            element[2] = "a"
+            element[2] = "1"
         elif (element[2] == "EDM専攻"):
-            element[2] = "e"
+            element[2] = "2"
         elif (element[2] == "KVU専攻"):
-            element[2] = "k"
+            element[2] = "3"
         elif (element[2] == "T部（共通）"):
             element[2] = "Q"
         else:
             element[2] = re.match(r'\w', element[2]).group()
-    with open(path, "w", encoding="utf-8") as f:
-        for element in file:
+    with open(path + ".csv", "w", encoding="utf-8") as f:
+        for element in element_list:
             f.write(",".join(element))
             f.write("\n")
 
 
 # インポートされたcsvをリストに変換する
-def convert_list(file):
+def convert_list(path: str):
     element_list = list()
-    with open(file, "r", encoding="utf-8") as f:
+    with open(path + "-original.csv", "r", encoding="utf-8") as f:
         for line in f:
             element = line.strip().split(",")
             element_list.append(element)
@@ -58,13 +58,13 @@ def extract(year: str, element_list: list):
 
 def main():
     year = "2022"
-    omiya = "./timetable/" + year + "/omiya.csv"
-    # umeda = "./timetable/" + year + "/umeda.csv"
-    # hirakata = "./timetable" + year + "/hirakata.csv"
+    omiya = "./timetable/" + year + "/omiya"
+    # umeda = "./timetable/" + year + "/umeda"
+    # hirakata = "./timetable" + year + "/hirakata"
 
     # for campus in [omiya,umeda,hirakata]:
     element_list = convert_list(omiya)
-    # rename(element_list, campus)
+    rename(element_list, omiya)
     extract(year, element_list)
 
 
