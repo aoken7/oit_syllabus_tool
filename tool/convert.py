@@ -2,11 +2,12 @@ import re
 
 
 # 1行にするときに使用する
-def oneline(path: list):
-    with open(path, "r", encoding="utf-8") as f:
-        text = f.read().replace("\n", ",")
-        with open(path + "-oneline.csv", "w", encoding="utf-8") as f:
-            f.write(text)
+def oneline(element_list: list, path: str):
+    num_list = list()
+    for element in element_list:
+        num_list.append((element)[0])
+    with open(path + "-oneline.csv", "w", encoding="utf-8") as f:
+        f.write(",".join(num_list))
 
 
 # 学部/学科の名称を変更する
@@ -52,6 +53,7 @@ def extract(year: str, element_list: list):
             with open("./timetable/" + year + "/csv/" + (str(element_list[i][2])) + "-official.csv", "w", encoding="utf-8") as f:
                 f.write(",".join(num_list))
             num_list.clear()
+    num_list.append((element_list[i+1])[0])
     with open("./timetable/" + year + "/csv/" + (str(element_list[i][2])) + "-official.csv", "w", encoding="utf-8") as f:
         f.write(",".join(num_list))
 
@@ -64,6 +66,7 @@ def main():
 
     # for campus in [omiya,umeda,hirakata]:
     element_list = convert_list(omiya)
+    oneline(element_list, omiya)
     rename(element_list, omiya)
     extract(year, element_list)
 
