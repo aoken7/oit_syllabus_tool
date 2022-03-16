@@ -8624,7 +8624,7 @@
         "nenji": "3",
         "tani": "2",
         "kikan": "前期",
-        "tantousya": "久保田 真司",
+        "tantousya": "田尾 俊輔",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=B1C006C0&value(crclumcd)=10201200",
         "numbering": "B1C006C0 , B1C006D0",
         "gakka": "I"
@@ -8634,7 +8634,7 @@
         "nenji": "3",
         "tani": "2",
         "kikan": "後期",
-        "tantousya": "久保田 真司",
+        "tantousya": "田尾 俊輔",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=B1C006F0&value(crclumcd)=10201200",
         "numbering": "B1C006F0",
         "gakka": "I"
@@ -9140,6 +9140,66 @@
         "gakka": "I"
     },
     {
+        "kougi": "数学科教育法a",
+        "nenji": "2",
+        "tani": "2",
+        "kikan": "後期",
+        "tantousya": "武藤 寿彰",
+        "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=BTD005A1&value(crclumcd)=10201200",
+        "numbering": "BTD005A1 , ATD0061A",
+        "gakka": "I"
+    },
+    {
+        "kougi": "数学科教育法b",
+        "nenji": "3",
+        "tani": "2",
+        "kikan": "前期",
+        "tantousya": "武藤 寿彰",
+        "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=BTD006A1&value(crclumcd)=10201200",
+        "numbering": "BTD006A1 , ATD0071A",
+        "gakka": "I"
+    },
+    {
+        "kougi": "数学科教育法c",
+        "nenji": "3",
+        "tani": "2",
+        "kikan": "後期",
+        "tantousya": "武藤 寿彰",
+        "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=BTD007A1&value(crclumcd)=10201200",
+        "numbering": "BTD007A1 , ATD0081A",
+        "gakka": "I"
+    },
+    {
+        "kougi": "数学科教育法d",
+        "nenji": "4",
+        "tani": "2",
+        "kikan": "前期",
+        "tantousya": "武藤 寿彰",
+        "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=BTD008A1&value(crclumcd)=10201200",
+        "numbering": "BTD008A1 , ATD0091A",
+        "gakka": "I"
+    },
+    {
+        "kougi": "情報科教育法a",
+        "nenji": "3",
+        "tani": "2",
+        "kikan": "前期",
+        "tantousya": "大井 翔",
+        "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=BTD009A1&value(crclumcd)=10201200",
+        "numbering": "BTD009A1 , ATD0161A",
+        "gakka": "I"
+    },
+    {
+        "kougi": "情報科教育法b",
+        "nenji": "3",
+        "tani": "2",
+        "kikan": "後期集中",
+        "tantousya": "大井 翔",
+        "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=BTD010A1&value(crclumcd)=10201200",
+        "numbering": "BTD010A1",
+        "gakka": "I"
+    },
+    {
         "kougi": "教育課程論",
         "nenji": "2",
         "tani": "2",
@@ -9150,13 +9210,13 @@
         "gakka": "I"
     },
     {
-        "kougi": "教育方法論(ICT活用含む)",
+        "kougi": "教育方法論",
         "nenji": "2",
         "tani": "2",
         "kikan": "前期",
         "tantousya": "澤田 俊也",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=BTD013A1&value(crclumcd)=10201200",
-        "numbering": "BTD013A1",
+        "numbering": "BTD013A1 , ATD0191A , ETD0113A",
         "gakka": "I"
     },
     {
@@ -15326,7 +15386,7 @@
         "kikan": "後期",
         "tantousya": "山口 尚",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=A0C0031F&value(crclumcd)=10201200",
-        "numbering": "A0C0031F",
+        "numbering": "A0C0031F , A0C0031G",
         "gakka": "Q"
     },
     {
@@ -16240,16 +16300,6 @@
         "gakka": "Q"
     },
     {
-        "kougi": "物理学d(エンジニアリング系)",
-        "nenji": "2",
-        "tani": "2",
-        "kikan": "後期",
-        "tantousya": "林 正人",
-        "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=A3C0141A&value(crclumcd)=10201200",
-        "numbering": "A3C0141A",
-        "gakka": "Q"
-    },
-    {
         "kougi": "物理学d(デザイン系・サイエンス系)",
         "nenji": "2",
         "tani": "2",
@@ -16940,13 +16990,73 @@
         "gakka": "Q"
     },
     {
-        "kougi": "教育方法論",
+        "kougi": "理科教育法a",
         "nenji": "2",
         "tani": "2",
+        "kikan": "後期",
+        "tantousya": "田中 謙介",
+        "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=ATD0101A&value(crclumcd)=10201200",
+        "numbering": "ATD0101A",
+        "gakka": "Q"
+    },
+    {
+        "kougi": "理科教育法b",
+        "nenji": "3",
+        "tani": "2",
         "kikan": "前期",
-        "tantousya": "澤田 俊也",
-        "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=ATD0191A&value(crclumcd)=10201200",
-        "numbering": "ATD0191A , ETD0113A",
+        "tantousya": "田中 謙介",
+        "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=ATD0111A&value(crclumcd)=10201200",
+        "numbering": "ATD0111A",
+        "gakka": "Q"
+    },
+    {
+        "kougi": "理科教育法c",
+        "nenji": "3",
+        "tani": "2",
+        "kikan": "後期",
+        "tantousya": "田中 謙介",
+        "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=ATD0121A&value(crclumcd)=10201200",
+        "numbering": "ATD0121A",
+        "gakka": "Q"
+    },
+    {
+        "kougi": "理科教育法d",
+        "nenji": "4",
+        "tani": "2",
+        "kikan": "前期",
+        "tantousya": "田中 謙介",
+        "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=ATD0131A&value(crclumcd)=10201200",
+        "numbering": "ATD0131A",
+        "gakka": "Q"
+    },
+    {
+        "kougi": "工業科教育法a",
+        "nenji": "3",
+        "tani": "2",
+        "kikan": "前期",
+        "tantousya": "辰巳 育男",
+        "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=ATD0141A&value(crclumcd)=10201200",
+        "numbering": "ATD0141A , ETD0083A",
+        "gakka": "Q"
+    },
+    {
+        "kougi": "工業科教育法b",
+        "nenji": "3",
+        "tani": "2",
+        "kikan": "後期",
+        "tantousya": "辰巳 育男",
+        "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=ATD0151A&value(crclumcd)=10201200",
+        "numbering": "ATD0151A , ETD0093A",
+        "gakka": "Q"
+    },
+    {
+        "kougi": "情報科教育法b",
+        "nenji": "3",
+        "tani": "2",
+        "kikan": "集中",
+        "tantousya": "大井 翔",
+        "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=ATD0171A&value(crclumcd)=10201200",
+        "numbering": "ATD0171A",
         "gakka": "Q"
     },
     {
@@ -19300,16 +19410,6 @@
         "gakka": "S"
     },
     {
-        "kougi": "解析学III<S科>",
-        "nenji": "2",
-        "tani": "2",
-        "kikan": "前期",
-        "tantousya": "東海林 満",
-        "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=E4C003M0&value(crclumcd)=10201200",
-        "numbering": "E4C003M0",
-        "gakka": "S"
-    },
-    {
         "kougi": "線形代数学Iイ組<S科>",
         "nenji": "1",
         "tani": "2",
@@ -20877,16 +20977,6 @@
         "tantousya": "長森 英二",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=17CA30A0&value(crclumcd)=10201200",
         "numbering": "17CA30A0",
-        "gakka": "U"
-    },
-    {
-        "kougi": "食品加工学",
-        "nenji": "3",
-        "tani": "2",
-        "kikan": "後期",
-        "tantousya": "川原 幸一",
-        "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=17CA31A0&value(crclumcd)=10201200",
-        "numbering": "17CA31A0",
         "gakka": "U"
     },
     {
