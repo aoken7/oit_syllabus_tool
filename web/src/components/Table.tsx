@@ -77,6 +77,7 @@ export const Table = (props: any) => {
                         field: 'kikan',
                         align: "left",
                         defaultSort: 'asc',
+                        /*
                         lookup: {
                             前期: "前期",
                             後期: "後期",
@@ -88,6 +89,7 @@ export const Table = (props: any) => {
                             後期集中: "後期集中",
                             集中: "集中"
                         }
+                        */
                     },
                     {
                         title: '担当者',
@@ -104,8 +106,10 @@ export const Table = (props: any) => {
                             2: "2単位",
                             3: "3単位",
                             4: "4単位",
-                            5: "5単位"
-                        },
+                            5: "5単位",
+                            6: "6単位",
+                            12: "12単位",
+                        }
                     },
                     {
                         title: '学部/学科',
@@ -140,7 +144,7 @@ export const Table = (props: any) => {
                             a: "AC専攻",
                             e: "EDM専攻",
                             k: "KVU専攻",
-                        },
+                        }
                     },
                     {
                         title: 'リンク',

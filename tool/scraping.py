@@ -44,8 +44,7 @@ class SyllabusTool:
                 nenji=unicodedata.normalize(
                     "NFKD", (text[3].replace('年次', ''))),
                 tani=unicodedata.normalize("NFKD", text[4]),
-                kikan=re.sub(
-                    "[()]", "", unicodedata.normalize("NFKD", text[5])),
+                kikan=unicodedata.normalize("NFKD", text[5]),
                 tantousya=re.sub(
                     "\(.+?\)", "", unicodedata.normalize("NFKD", text[6])),
             )
