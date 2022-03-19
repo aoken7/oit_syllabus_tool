@@ -57,8 +57,8 @@ class SyllabusTool:
             syllabus_dict = dict()
         return syllabus_dict
 
-    def scraping_syllabus(self, number: str, year: str, csv: str):
-        url = "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=" + year + "&value(semekikn)=1&value(kougicd)=" + \
+    def scraping_syllabus(self, number: str, csv: str):
+        url = "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=" + self.year + "&value(semekikn)=1&value(kougicd)=" + \
             number + "&value(crclumcd)=10201200"
 
         try:
@@ -102,7 +102,7 @@ class SyllabusTool:
             numbers.sort()
             duplicate_check.sort()
             for number in tqdm(numbers, desc=csv):
-                self.scraping_syllabus(number, self.year, csv)
+                self.scraping_syllabus(number, csv)
         return duplicate_check
 
     def main(self, *args):
