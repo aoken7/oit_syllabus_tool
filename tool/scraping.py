@@ -18,7 +18,12 @@ from typing import List, Dict
 
 class SyllabusTool:
     def __init__(self) -> None:
-        pass
+        self.year = "2022"  # スクレイピングする年度を指定
+        self.syllabus_dict_list = list()
+        self.error = 0
+        self.csv_list = [os.path.basename(p) for p in glob.glob("./timetable/" + self.year + "/csv/*.csv", recursive=True)
+                    if os.path.isfile(p)]  # csvファイルを全て取得
+        self.csv_list.sort()
 
     # 入力ファイルは一行で','区切りの文字列を想定
     def import_syllabus_number(self, filepath: str) -> List[str]:
@@ -52,8 +57,8 @@ class SyllabusTool:
             syllabus_dict = dict()
         return syllabus_dict
 
-    def scraping_syllabus(self, number: str, year: str, csv: str, syllabus_dict_list: list) -> Dict[str, str]:
-        url = "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=" + year + "&value(semekikn)=1&value(kougicd)=" + \
+    def scraping_syllabus(self, number: str, csv: str):
+        url = "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=" + self.year + "&value(semekikn)=1&value(kougicd)=" + \
             number + "&value(crclumcd)=10201200"
 
         try:
@@ -66,62 +71,45 @@ class SyllabusTool:
 
         syllabus_dict = self.extract_element(html)
         key_list = (list(syllabus_dict.keys()))
-        if syllabus_dict is not None and key_list != []:
-            syllabus_dict_list, syllabus_dict = self.duplicate_check(
-                syllabus_dict, number, syllabus_dict_list)
-            if syllabus_dict is not None:
-                syllabus_dict["link"] = url
-                syllabus_dict["numbering"] = number
-                syllabus_dict["gakka"] = csv[0]
-                return syllabus_dict
-            else:
-                return None
-        else:
+        if key_list != [] and self.duplicate_check(syllabus_dict, number):
             syllabus_dict["link"] = url
             syllabus_dict["numbering"] = number
             syllabus_dict["gakka"] = csv[0]
-            return syllabus_dict
+            self.syllabus_dict_list.append(syllabus_dict) # リストに追加
+        else:
+            # ページがない時のエラー処理，もう少し上手くやりたい
+            self.error += 1  # エラー数をカウント
 
-    def duplicate_check(self, check_syllabus_dict: list, number: str, syllabus_dict_list: list):
-        for i in range(len(syllabus_dict_list)):
-            syllabus_dict = syllabus_dict_list[i]
+    def duplicate_check(self, check_syllabus_dict: list, number: str):
+        for i in range(len(self.syllabus_dict_list)):
+            syllabus_dict = self.syllabus_dict_list[i]
             if syllabus_dict["kougi"] == check_syllabus_dict["kougi"] and \
                syllabus_dict["nenji"] == check_syllabus_dict["nenji"] and \
                syllabus_dict["kikan"] == check_syllabus_dict["kikan"] and \
                syllabus_dict["tantousya"] == check_syllabus_dict["tantousya"] and \
                syllabus_dict["tani"] == check_syllabus_dict["tani"]:
-                syllabus_dict_list[i]["numbering"] += " , " + number
-                return syllabus_dict_list, None
-        return syllabus_dict_list, check_syllabus_dict
+                self.syllabus_dict_list[i]["numbering"] += " , " + number
+                return False
+        return True
 
-    def main(self, *args):
-        year = "2022"  # スクレイピングする年度を指定
-        error = 0
-        csv_list = ([os.path.basename(p) for p in glob.glob("./timetable/" + year + "/csv/*.csv", recursive=True)
-                    if os.path.isfile(p)])  # csvファイルを全て取得
-        csv_list.sort()
-        syllabus_dict_list = list()
+    def make_syllabus_dict_list(self):
         duplicate_check = list()
-        for csv in tqdm(csv_list, desc="全体の進捗率"):
+        for csv in tqdm(self.csv_list, desc="全体の進捗率"):
             numbers = self.import_syllabus_number(
-                "./timetable/" + year + "/csv/" + csv)
+                "./timetable/" + self.year + "/csv/" + csv)
             numbers = list(set(numbers) - set(duplicate_check))  # 重複削除
             duplicate_check.extend(numbers)
             numbers.sort()
             duplicate_check.sort()
             for number in tqdm(numbers, desc=csv):
-                syllabus_dict = self.scraping_syllabus(
-                    number, year, csv, syllabus_dict_list)
-                if syllabus_dict is None:
-                    continue
-                # ページがない時のエラー処理，もう少し上手くやりたい
-                if len(syllabus_dict) < 4:
-                    error += 1  # エラー数をカウント
-                    continue
-                syllabus_dict_list.append(syllabus_dict)  # リストに追加
-        with open("../web/src/data/" + year + ".json", 'w', encoding='utf-8') as fp:
-            json.dump(syllabus_dict_list, fp, ensure_ascii=False, indent=4)
-        with open("./timetable/" + year + "/numbers.csv", 'w', encoding='utf-8') as fp:
+                self.scraping_syllabus(number, csv)
+        return duplicate_check
+
+    def main(self, *args):
+        duplicate_check = self.make_syllabus_dict_list()
+        with open("../web/src/data/" + self.year + ".json", 'w', encoding='utf-8') as fp:
+            json.dump(self.syllabus_dict_list, fp, ensure_ascii=False, indent=4)
+        with open("./timetable/" + self.year + "/numbers.csv", 'w', encoding='utf-8') as fp:
             fp.write(",".join(duplicate_check))
 
         # READMEの書き換え
@@ -130,7 +118,7 @@ class SyllabusTool:
         with open("../README.md", 'r', encoding="utf-8") as fp:
             s = re.sub("\d{4}/\d{2}/\d{2}", date, fp.read())  # 更新日の書き換え
             s = re.sub("<!-- エラー数=\d{1,4} -->",
-                       "<!-- エラー数=" + str(error) + " -->", s)  # エラー数の書き換え
+                       "<!-- エラー数=" + str(self.error) + " -->", s)  # エラー数の書き換え
         with open("../README.md", 'w', encoding="utf-8") as fp:
             fp.write(s)
 
