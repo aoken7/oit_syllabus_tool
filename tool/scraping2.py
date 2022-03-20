@@ -1,6 +1,5 @@
 import datetime
 import json
-from multiprocessing.reduction import duplicate
 from time import sleep
 import unicodedata
 import pandas as pd
@@ -12,6 +11,7 @@ import os
 import glob
 from tqdm import tqdm
 
+
 class SyllabusTool:
     # イニシャライザ
     def __init__(self) -> None:
@@ -22,14 +22,15 @@ class SyllabusTool:
         self.csv_list = self.get_files(self.path)
 
     # csvのファイル名一覧を取得
+
     def get_files(self, path: str):
         csv_list = ([os.path.basename(p) for p in glob.glob(path + "*.csv", recursive=True)
                     if os.path.isfile(p)])
         csv_list.sort()
         return csv_list
 
-
     # 入力ファイルは一行で','区切りの文字列を想定
+
     def get_number(self, filepath: str):
         with open(filepath, 'r') as fp:
             numbers = fp.readline().strip().split(',')  # strip()は改行コード除去用
@@ -37,8 +38,8 @@ class SyllabusTool:
         numbers.sort()
         return numbers
 
-
     # スクレイピングし、dataframeをリストに変換
+
     def scraping(self, number: str):
         df_list = list()
         url = "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=" + \
@@ -46,11 +47,13 @@ class SyllabusTool:
             number + "&value(crclumcd)=10201200"
 
         try:
-            dfs = pd.read_html(requests.get(url, timeout=9.0).text.replace(',', '、'))
+            dfs = pd.read_html(requests.get(
+                url, timeout=9.0).text.replace(',', '、'))
         except (Timeout, ConnectionError):
             print("\nError numbering:" + number)
             sleep(3)
-            dfs = pd.read_html(requests.get(url, timeout=9.0).text.replace(',', '、'))
+            dfs = pd.read_html(requests.get(
+                url, timeout=9.0).text.replace(',', '、'))
 
         if len(dfs) > 2:
             for i in range(1, len(dfs)):
@@ -66,77 +69,76 @@ class SyllabusTool:
 
         return df_list, url
 
-
     def convert(self, df_list: list, number: str, csv: str, url: str):
-        value_list = [None] * 63
+        value_list = list()
         jyugyo_list = list()
+        jyugyo_value_list = list()
+        jyugyo_key_list = list()
         hosei = 0
         text = "\n".join(df_list[1])
         key_list = ["kougi", "kougieng", "nenji", "tani", "kikan", "tantousya", "numbering",
-                    "gakka", "link", "nerai", "cs", "spiral", "theme1", "theme2",
-                    "theme3", "theme4", "theme5", "theme6", "theme7", "theme8", "theme9",
-                    "theme10", "theme11", "theme12", "theme13", "theme14", "naiyou1",
-                    "naiyou2", "naiyou3", "naiyou4", "naiyou5", "naiyou6", "naiyou7",
-                    "naiyou8", "naiyou9", "naiyou10", "naiyou11", "naiyou12", "naiyou13",
-                    "naiyou14", "yosyu1", "yosyu2", "yosyu3", "yosyu4", "yosyu5", "yosyu6",
-                    "yosyu7", "yosyu8", "yosyu9", "yosyu10", "yosyu11", "yosyu12", "yosyu13",
-                    "yosyu14", "mokuhyou", "hyoukahouhou", "hyoukakijyun", "kyoukasyo",
-                    "sankousyo", "kokoroe", "officehours", "jissen"]
+                    "gakka", "link", "nerai", "cs", "spiral", "mokuhyou", "hyoukahouhou",
+                    "hyoukakijyun", "kyoukasyo", "sankousyo", "kokoroe", "officehours", "jissen"]
 
         # 講義名等
         for i in range(len(df_list[0])):
-            value_list[i] = df_list[0][i]
-        value_list[2] = str(value_list[2]).replace("年次", "")  # 年次を削除
-        value_list[5] = re.sub("\(.+?\)", "", value_list[5])  # 担当者名のよみがな削除
-        value_list[6] = number  # 講義コード追加
-        value_list[7] = csv[0]  # 学科名追加
-        value_list[8] = url  # URL追加
+            value_list.append(df_list[0][i])
+        value_list[2] = (str(value_list[2]).replace("年次", ""))  # 年次を削除
+        value_list[5] = (re.sub("\(.+?\)", "", value_list[5]))  # 担当者名のよみがな削除
+        value_list.append(number)  # 講義コード追加
+        value_list.append(csv[0])  # 学科名追加
+        value_list.append(url)  # URL追加
 
         # 授業のねらい・概要
-        value_list[9] = df_list[2][0]
+        value_list.append(df_list[2][0])
 
         # CSコース
         if "CSコース" in text:
             spiral = re.search(r"CSコース,(.*)", text).group(1)
             if len(spiral) > 0:
-                value_list[10] = spiral
+                value_list.append(spiral)
                 hosei += 1  # 参照のズレを補正
+            else:
+                value_list.append("記載なし")
+        else:
+            value_list.append("記載なし")
 
         # スパイラル型教育
         if "スパイラル型教育" in text:
             spiral = re.search(r"スパイラル型教育,(.*)", text).group(1)
             if len(spiral) > 0:
-                value_list[11] = spiral
+                value_list.append(spiral)
                 hosei += 1
-
-        # 授業計画
-        for i in range(1, (len(df_list[3+hosei]))):
-            jyugyo_list.append(str(df_list[3+hosei][i]).split(","))  # ","で分割
-            for j in range(len(jyugyo_list)):
-                # テーマ
-                value_list[12+j] = jyugyo_list[j][1]
-                # 内容・方法等
-                value_list[26+j] = jyugyo_list[j][2]
-                # 予習/復習
-                value_list[40+j] = jyugyo_list[j][3]
+            else:
+                value_list.append("記載なし")
+        else:
+            value_list.append("記載なし")
 
         # 目標、評価方法、評価基準
         for i in range(3):
-            value_list[54+i] = df_list[(4+i)+hosei][0]
+            value_list.append(df_list[(4+i)+hosei][0])
 
         # 教科書
         if "教科書" in text:
             kyoukasyo = re.search(r"教科書,(.*)", text).group(1)
             if len(kyoukasyo) > 0:
-                value_list[57] = kyoukasyo
+                value_list.append(kyoukasyo)
                 hosei += 1  # 参照のズレを補正
+            else:
+                value_list.append("記載なし")
+        else:
+            value_list.append("記載なし")
 
         # 参考書
         if "参考書" in text:
             sankousyo = re.search(r"参考書,(.*)", text).group(1)
             if len(sankousyo) > 0:
-                value_list[58] = sankousyo
+                value_list.append(sankousyo)
                 hosei += 1
+            else:
+                value_list.append("記載なし")
+        else:
+            value_list.append("記載なし")
 
         # for i in range(1, len(df_list[7+list_num])):
         #     book_list = str(df_list[7+list_num][i]).split(",")
@@ -145,28 +147,47 @@ class SyllabusTool:
         #         value_list[58] += book
 
         # 受講心得
-        value_list[59] = df_list[7+hosei][0]
+        value_list.append(df_list[7+hosei][0])
 
         # オフィスアワー
-        value_list[60] = df_list[8+hosei][0]
+        value_list.append(df_list[8+hosei][0])
 
         # 実践的教育
         if len(df_list[9+hosei]) > 0:
-            value_list[61] = df_list[9+hosei][0]
+            value_list.append(df_list[9+hosei][0])
+        else:
+            value_list.append("記載なし")
 
-        # 値がnullを記載なしにする
-        for i in range(len(value_list)):
-            if value_list[i] == None:
-                value_list[i] = "記載なし"
+        # 授業計画
+        for i in range(1, (len(df_list[3+hosei]))):
+            jyugyo_list.append(str(df_list[3+hosei][i]).split(","))  # ","で分割
+            for j in range(len(jyugyo_list)):
+                # テーマ
+                jyugyo_key_list.append("theme"+str(j+1))
+                jyugyo_value_list.append(jyugyo_list[j][1])
+                # 内容・方法等
+                jyugyo_key_list.append("naiyou"+str(j+1))
+                jyugyo_value_list.append(jyugyo_list[j][2])
+                # 予習/復習
+                jyugyo_key_list.append("yosyu"+str(j+1))
+                jyugyo_value_list.append(jyugyo_list[j][3])
 
         # 正規化
         for i in range(len(value_list)):
             value_list[i] = unicodedata.normalize("NFKC", str(value_list[i]))
+        for i in range(len(jyugyo_value_list)):
+            jyugyo_value_list[i] = unicodedata.normalize(
+                "NFKC", str(jyugyo_value_list[i]))
 
+        # 辞書に変換
         df_dict = dict(zip(key_list, value_list))
+        jyugyo_dict = dict(zip(jyugyo_key_list, jyugyo_value_list))
+        if jyugyo_list != []:
+            df_dict.update(jyugyo_dict)
+        else:
+            df_dict.update({"theme1": "記載なし", "naiyou1": "記載なし", "yosyu1": "記載なし"})
 
         return df_dict
-
 
     def duplicate_check(self, check_df_dict: list, number: str):
         for i in range(len(self.df_dict_list)):
@@ -190,10 +211,9 @@ class SyllabusTool:
         with open("../README.md", 'r', encoding="utf-8") as fp:
             s = re.sub("\d{4}/\d{2}/\d{2}", date, fp.read())  # 更新日の書き換え
             s = re.sub("<!-- エラー数=\d{1,4} -->",
-                    "<!-- エラー数=" + str(self.error) + " -->", s)  # エラー数の書き換え
+                       "<!-- エラー数=" + str(self.error) + " -->", s)  # エラー数の書き換え
         with open("../README.md", 'w', encoding="utf-8") as fp:
             fp.write(s)
-
 
     def main(self):
         for csv in tqdm(self.csv_list, desc="全体の進捗率"):
