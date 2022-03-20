@@ -1,5 +1,6 @@
 import datetime
 import json
+from multiprocessing.reduction import duplicate
 from time import sleep
 import unicodedata
 import pandas as pd
@@ -167,18 +168,21 @@ class SyllabusTool:
         return df_dict
 
 
-    def duplicate_check(self, check_df_dict: list, number: str, df_dict_list: list):
-        for i in range(len(df_dict_list)):
-            df_dict = df_dict_list[i]
+    def duplicate_check(self, check_df_dict: list, number: str):
+        for i in range(len(self.df_dict_list)):
+            df_dict = self.df_dict_list[i]
             if df_dict["kougi"] == check_df_dict["kougi"] and \
                     df_dict["nenji"] == check_df_dict["nenji"] and \
                     df_dict["kikan"] == check_df_dict["kikan"] and \
                     df_dict["tantousya"] == check_df_dict["tantousya"] and \
                     df_dict["tani"] == check_df_dict["tani"]:
-                df_dict_list[i]["numbering"] += " , " + number
-            return df_dict_list, None
-        return df_dict_list, df_dict
+                self.df_dict_list[i]["numbering"] += " , " + number
+                return False
+        return True
 
+    def add_to_list(self, df_dict, number):
+        if self.duplicate_check(df_dict, number):
+            self.df_dict_list.append(df_dict)  # 辞書をリストに追加
 
     def rewrite_readme(self):
         date = datetime.datetime.now(datetime.timezone(
@@ -195,7 +199,6 @@ class SyllabusTool:
         for csv in tqdm(self.csv_list, desc="全体の進捗率"):
             numbers = self.get_number(self.path + csv)
             for number in tqdm(numbers, desc=csv):
-                print(number)
                 df_list, url = self.scraping(number)
                 if len(df_list) < 6:
                     self.error += 1
@@ -204,7 +207,7 @@ class SyllabusTool:
                 # if len(df_dict_list) > 0:
                 # df_dict_list, df_dict = duplicate_check(
                 #     df_dict, number, df_dict_list)
-                self.df_dict_list.append(df_dict)  # 辞書をリストに追加
+                self.add_to_list(df_dict, number)
 
             # jsonとして保存
             with open("./" + self.year + ".json", 'w', encoding='utf-8') as fp:
