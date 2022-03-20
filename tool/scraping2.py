@@ -12,6 +12,7 @@ import glob
 from tqdm import tqdm
 
 
+# csvのファイル名一覧を取得
 def get_files(path: str):
     csv_list = ([os.path.basename(p) for p in glob.glob(path + "*.csv", recursive=True)
                  if os.path.isfile(p)])
@@ -28,18 +29,21 @@ def get_number(filepath: str):
     return numbers
 
 
+# スクレイピングし、dataframeをリストに変換
 def scraping(year: str, number: str):
     df_list = list()
     url = "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=" + \
-        year+"&value(semekikn)=1&value(kougicd)=" + \
+        year + "&value(semekikn)=1&value(kougicd)=" + \
         number + "&value(crclumcd)=10201200"
 
     try:
         dfs = pd.read_html(requests.get(url, timeout=9.0).text)
     except (Timeout, ConnectionError):
-        print("\nTimeout numbering:" + number)
+        print("\nError numbering:" + number)
         sleep(3)
         dfs = pd.read_html(requests.get(url, timeout=9.0).text)
+
+    print(len(dfs))
 
     for i in range(1, len(dfs)):
         if i == 1:
@@ -56,9 +60,10 @@ def scraping(year: str, number: str):
 
 
 def convert(df_list: list, number: str, csv: str, url: str):
-    value_list = [0] * 63
+    value_list = [None] * 63
     jyugyo_list = list()
     hosei = 0
+    text = "\n".join(df_list[1])
     key_list = ["kougi", "kougieng", "nenji", "tani", "kikan", "tantousya", "numbering",
                 "gakka", "link", "nerai", "cs", "spiral", "theme1", "theme2",
                 "theme3", "theme4", "theme5", "theme6", "theme7", "theme8", "theme9",
@@ -69,11 +74,10 @@ def convert(df_list: list, number: str, csv: str, url: str):
                 "yosyu7", "yosyu8", "yosyu9", "yosyu10", "yosyu11", "yosyu12", "yosyu13",
                 "yosyu14", "mokuhyou", "hyoukahouhou", "hyoukakijyun", "kyoukasyo",
                 "sankousyo", "kokoroe", "officehours", "jissen"]
-    text = "\n".join(df_list[1])
 
     # 講義名等
     for i in range(len(df_list[0])):
-        value_list[i] = (df_list[0][i])
+        value_list[i] = df_list[0][i]
     value_list[2] = str(value_list[2]).replace("年次", "")  # 年次を削除
     value_list[5] = re.sub("\(.+?\)", "", value_list[5])  # 担当者名のよみがな削除
     value_list[6] = number  # 講義コード追加
@@ -89,10 +93,6 @@ def convert(df_list: list, number: str, csv: str, url: str):
         if len(spiral) > 0:
             value_list[10] = spiral
             hosei += 1  # 参照のズレを補正
-        else:
-            value_list[10] = "記載なし"
-    else:
-        value_list[10] = "記載なし"
 
     # スパイラル型教育
     if "スパイラル型教育" in text:
@@ -100,31 +100,21 @@ def convert(df_list: list, number: str, csv: str, url: str):
         if len(spiral) > 0:
             value_list[11] = spiral
             hosei += 1
-        else:
-            value_list[11] = "記載なし"
-    else:
-        value_list[11] = "記載なし"
 
     # 授業計画
     for i in range(1, (len(df_list[3+hosei]))):
-        jyugyo_list.append(str(df_list[3+hosei][i]).split(","))  # ,で分割
+        jyugyo_list.append(str(df_list[3+hosei][i]).split(","))  # ","で分割
         for j in range(len(jyugyo_list)):
-            if jyugyo_list[j] == "0":
-                print(jyugyo_list[j])
-                value_list[12+j] = "記載なし"
-            else:
-                # テーマ
-                value_list[12+j] = jyugyo_list[j][1]
-                # 内容・方法等
-                value_list[26+j] = jyugyo_list[j][2]
-                # 予習/復習
-                value_list[40+j] = jyugyo_list[j][3]
-
+            # テーマ
+            value_list[12+j] = jyugyo_list[j][1]
+            # 内容・方法等
+            value_list[26+j] = jyugyo_list[j][2]
+            # 予習/復習
+            value_list[40+j] = jyugyo_list[j][3]
 
     # 目標、評価方法、評価基準
     for i in range(3):
-        value_list[54 +
-                   i] = df_list[(4+i)+hosei][0]
+        value_list[54+i] = df_list[(4+i)+hosei][0]
 
     # 教科書
     if "教科書" in text:
@@ -132,10 +122,6 @@ def convert(df_list: list, number: str, csv: str, url: str):
         if len(kyoukasyo) > 0:
             value_list[57] = kyoukasyo
             hosei += 1  # 参照のズレを補正
-        else:
-            value_list[57] = "記載なし"
-    else:
-        value_list[57] = "記載なし"
 
     # 参考書
     if "参考書" in text:
@@ -143,10 +129,6 @@ def convert(df_list: list, number: str, csv: str, url: str):
         if len(sankousyo) > 0:
             value_list[58] = sankousyo
             hosei += 1
-        else:
-            value_list[58] = "記載なし"
-    else:
-        value_list[58] = "記載なし"
 
     # for i in range(1, len(df_list[7+list_num])):
     #     book_list = str(df_list[7+list_num][i]).split(",")
@@ -163,12 +145,15 @@ def convert(df_list: list, number: str, csv: str, url: str):
     # 実践的教育
     if len(df_list[9+hosei]) > 0:
         value_list[61] = df_list[9+hosei][0]
-    else:
-        value_list[61] = "記載なし"
+
+    # 値がnullを記載なしにする
+    for i in range(len(value_list)):
+        if value_list[i] == None:
+            value_list[i] = "記載なし"
 
     # 正規化
     for i in range(len(value_list)):
-        value_list[i] = unicodedata.normalize("NFKD", str(value_list[i]))
+        value_list[i] = unicodedata.normalize("NFKC", str(value_list[i]))
 
     df_dict = dict(zip(key_list, value_list))
 
@@ -184,8 +169,8 @@ def duplicate_check(check_df_dict: list, number: str, df_dict_list: list):
                 df_dict["tantousya"] == check_df_dict["tantousya"] and \
                 df_dict["tani"] == check_df_dict["tani"]:
             df_dict_list[i]["numbering"] += " , " + number
-        return df_dict_list , None
-    return df_dict_list , df_dict
+        return df_dict_list, None
+    return df_dict_list, df_dict
 
 
 def rewrite_readme(error: int):
@@ -209,14 +194,15 @@ def main():
     for csv in tqdm(csv_list, desc="全体の進捗率"):
         numbers = get_number(path + csv)
         for number in tqdm(numbers, desc=csv):
+            print(number)
             df_list, url = scraping(year, number)
             if len(df_list) < 6:
                 error += 1
                 continue
-            df_dict = convert(df_list, number, csv, url)  # dataframeをリストに変換
+            df_dict = convert(df_list, number, csv, url)  # 辞書に変換
             # if len(df_dict_list) > 0:
-                # df_dict_list, df_dict = duplicate_check(
-                #     df_dict, number, df_dict_list)
+            # df_dict_list, df_dict = duplicate_check(
+            #     df_dict, number, df_dict_list)
             df_dict_list.append(df_dict)  # 辞書をリストに追加
 
         # jsonとして保存
