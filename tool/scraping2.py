@@ -43,18 +43,17 @@ def scraping(year: str, number: str):
         sleep(3)
         dfs = pd.read_html(requests.get(url, timeout=9.0).text)
 
-    print(len(dfs))
-
-    for i in range(1, len(dfs)):
-        if i == 1:
-            df = (dfs[i]).dropna(how='all').dropna(
-                how='all', axis=1).drop(dfs[1].columns[0], axis=1).drop(dfs[1].index[4])
-        else:
-            df = (dfs[i]).dropna(how='all').dropna(how='all', axis=1)
-        df_text = ((df.to_csv(index=False, header=False, encoding='utf-8')
-                    ).replace('\u3000', ''))
-        df_line = df_text.splitlines()
-        df_list.append(df_line)
+    if len(dfs) > 2:
+        for i in range(1, len(dfs)):
+            if i == 1:
+                df = (dfs[i]).dropna(how='all').dropna(
+                    how='all', axis=1).drop(dfs[1].columns[0], axis=1).drop(dfs[1].index[4])
+            else:
+                df = (dfs[i]).dropna(how='all').dropna(how='all', axis=1)
+            df_text = ((df.to_csv(index=False, header=False, encoding='utf-8')
+                        ).replace('\u3000', ''))
+            df_line = df_text.splitlines()
+            df_list.append(df_line)
 
     return df_list, url
 
