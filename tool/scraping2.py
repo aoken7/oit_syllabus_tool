@@ -46,11 +46,11 @@ class SyllabusTool:
             number + "&value(crclumcd)=10201200"
 
         try:
-            dfs = pd.read_html(requests.get(url, timeout=9.0).text)
+            dfs = pd.read_html(requests.get(url, timeout=9.0).text.replace(',', '、'))
         except (Timeout, ConnectionError):
             print("\nError numbering:" + number)
             sleep(3)
-            dfs = pd.read_html(requests.get(url, timeout=9.0).text)
+            dfs = pd.read_html(requests.get(url, timeout=9.0).text.replace(',', '、'))
 
         if len(dfs) > 2:
             for i in range(1, len(dfs)):
