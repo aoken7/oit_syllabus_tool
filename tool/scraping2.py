@@ -29,13 +29,16 @@ class SyllabusTool:
         csv_list.sort()
         return csv_list
 
-    # 入力ファイルは一行で','区切りの文字列を想定
+    # 入力ファイルは一行で","区切りの文字列を想定
 
-    def get_number(self, filepath: str):
-        with open(filepath, 'r') as fp:
-            numbers = fp.readline().strip().split(',')  # strip()は改行コード除去用
-        numbers = list(set(numbers))  # 重複削除
+    def get_numbers(self, filepath: str):
+        numbers_duplicate_check = list()
+        with open(filepath, "r") as fp:
+            numbers = fp.readline().strip().split(",")  # strip()は改行コード除去用
+        numbers = list(set(numbers) - set(numbers_duplicate_check))  # 重複削除
+        numbers_duplicate_check.extend(numbers)
         numbers.sort()
+        numbers_duplicate_check.sort()
         return numbers
 
     # スクレイピングし、dataframeをリストに変換
@@ -48,28 +51,28 @@ class SyllabusTool:
 
         try:
             dfs = pd.read_html(requests.get(
-                url, timeout=9.0).text.replace(',', '、'))
+                url, timeout=9.0).text.replace(",", "、"))
         except (Timeout, ConnectionError):
             print("\nError numbering:" + number)
             sleep(3)
             dfs = pd.read_html(requests.get(
-                url, timeout=9.0).text.replace(',', '、'))
+                url, timeout=9.0).text.replace(",", "、"))
 
         if len(dfs) > 2:
             for i in range(1, len(dfs)):
                 if i == 1:
-                    df = (dfs[i]).dropna(how='all').dropna(
-                        how='all', axis=1).drop(dfs[1].columns[0], axis=1).drop(dfs[1].index[4])
+                    df = (dfs[i]).dropna(how="all").dropna(
+                        how="all", axis=1).drop(dfs[1].columns[0], axis=1).drop(dfs[1].index[4])
                 else:
-                    df = (dfs[i]).dropna(how='all').dropna(how='all', axis=1)
-                df_text = ((df.to_csv(index=False, header=False, encoding='utf-8')
-                            ).replace('\u3000', ''))
+                    df = (dfs[i]).dropna(how="all").dropna(how="all", axis=1)
+                df_text = ((df.to_csv(index=False, header=False, encoding="utf-8")
+                            ).replace("\u3000", ""))
                 df_line = df_text.splitlines()
                 df_list.append(df_line)
 
         return df_list, url
 
-    def convert(self, df_list: list, number: str, csv: str, url: str):
+    def convert(self, df_list: list, number: str, csv: str, url: str) -> dict:
         value_list = list()
         jyugyo_list = list()
         jyugyo_value_list = list()
@@ -122,7 +125,7 @@ class SyllabusTool:
         if "教科書" in text:
             kyoukasyo = re.search(r"教科書,(.*)", text).group(1)
             if len(kyoukasyo) > 0:
-                value_list.append(kyoukasyo)
+                value_list.append(re.search(r"出版社名(.*)", text).group(1))
                 hosei += 1  # 参照のズレを補正
             else:
                 value_list.append("記載なし")
@@ -133,18 +136,12 @@ class SyllabusTool:
         if "参考書" in text:
             sankousyo = re.search(r"参考書,(.*)", text).group(1)
             if len(sankousyo) > 0:
-                value_list.append(sankousyo)
+                value_list.append(re.search(r"出版社名(.*)", text).group(1))
                 hosei += 1
             else:
                 value_list.append("記載なし")
         else:
             value_list.append("記載なし")
-
-        # for i in range(1, len(df_list[7+list_num])):
-        #     book_list = str(df_list[7+list_num][i]).split(",")
-        #     for j in range(1, len(book_list)):
-        #         book = ",".join(book_list[j])
-        #         value_list[58] += book
 
         # 受講心得
         value_list.append(df_list[7+hosei][0])
@@ -185,7 +182,8 @@ class SyllabusTool:
         if jyugyo_list != []:
             df_dict.update(jyugyo_dict)
         else:
-            df_dict.update({"theme1": "記載なし", "naiyou1": "記載なし", "yosyu1": "記載なし"})
+            df_dict.update(
+                {"theme1": "記載なし", "naiyou1": "記載なし", "yosyu1": "記載なし"})
 
         return df_dict
 
@@ -197,7 +195,7 @@ class SyllabusTool:
                     df_dict["kikan"] == check_df_dict["kikan"] and \
                     df_dict["tantousya"] == check_df_dict["tantousya"] and \
                     df_dict["tani"] == check_df_dict["tani"]:
-                self.df_dict_list[i]["numbering"] += " , " + number
+                self.df_dict_list[i]["numbering"] += " " + number
                 return False
         return True
 
@@ -208,32 +206,30 @@ class SyllabusTool:
     def rewrite_readme(self):
         date = datetime.datetime.now(datetime.timezone(
             datetime.timedelta(hours=+9))).strftime("%Y/%m/%d")
-        with open("../README.md", 'r', encoding="utf-8") as fp:
+        with open("../README.md", "r", encoding="utf-8") as fp:
             s = re.sub("\d{4}/\d{2}/\d{2}", date, fp.read())  # 更新日の書き換え
             s = re.sub("<!-- エラー数=\d{1,4} -->",
                        "<!-- エラー数=" + str(self.error) + " -->", s)  # エラー数の書き換え
-        with open("../README.md", 'w', encoding="utf-8") as fp:
+        with open("../README.md", "w", encoding="utf-8") as fp:
             fp.write(s)
 
     def main(self):
         for csv in tqdm(self.csv_list, desc="全体の進捗率"):
-            numbers = self.get_number(self.path + csv)
+            numbers = self.get_numbers(self.path + csv)
             for number in tqdm(numbers, desc=csv):
                 df_list, url = self.scraping(number)
-                if len(df_list) < 6:
+                if len(df_list) < 6:  # エラー処理
                     self.error += 1
                     continue
                 df_dict = self.convert(df_list, number, csv, url)  # 辞書に変換
-                # if len(df_dict_list) > 0:
-                # df_dict_list, df_dict = duplicate_check(
-                #     df_dict, number, df_dict_list)
                 self.add_to_list(df_dict, number)
 
-            # jsonとして保存
-            with open("./" + self.year + ".json", 'w', encoding='utf-8') as fp:
-                json.dump(self.df_dict_list, fp, ensure_ascii=False, indent=4)
+        # jsonとして保存
+        with open("../web/src/data/" + self.year + ".json", "w", encoding="utf-8") as fp:
+            json.dump(self.df_dict_list, fp, ensure_ascii=False, indent=4)
 
-        self.rewrite_readme()  # READMEを書き換える
+        # READMEを書き換える
+        self.rewrite_readme()
 
 
 if __name__ == "__main__":
