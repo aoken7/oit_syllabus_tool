@@ -1,1 +1,0 @@
-ls ./build/static/js/*.gz | sed -e s/\.gz// | awk '{print $1 ".gz " $1}' | xargs -n 2 mv

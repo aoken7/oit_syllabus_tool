@@ -79,7 +79,7 @@ class SyllabusTool:
         jyugyo_key_list = list()
         hosei = 0
         text = "\n".join(df_list[1])
-        key_list = ["kougi", "kougieng", "nenji", "tani", "kikan", "tantousya", "numbering",
+        key_list = ["kougi", "kougien", "nenji", "tani", "kikan", "tantousya", "numbering",
                     "gakka", "link", "nerai", "cs", "spiral", "mokuhyou", "hyoukahouhou",
                     "hyoukakijyun", "kyoukasyo", "sankousyo", "kokoroe", "officehours", "jissen"]
 
@@ -87,7 +87,8 @@ class SyllabusTool:
         for i in range(len(df_list[0])):
             value_list.append(df_list[0][i])
         value_list[2] = (str(value_list[2]).replace("年次", ""))  # 年次を削除
-        value_list[5] = (re.sub("\(.+?\)", "", value_list[5]))  # 担当者名のよみがな削除
+        value_list[5] = (re.sub("\(.+?\)", "", value_list[5])
+                         ).replace("  ", " ")  # 担当者名のよみがな削除
         value_list.append(number)  # 講義コード追加
         value_list.append(csv[0])  # 学科名追加
         value_list.append(url)  # URL追加
