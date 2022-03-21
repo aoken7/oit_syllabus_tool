@@ -157,7 +157,10 @@ export const Table = (props: any) => {
                             公式シラバス
                         </Button>,
                     filtering: false,
-                    sorting: false
+                    sorting: false,
+                    headerStyle: {
+                        minWidth: '135px',
+                    },
                 },
                 {
                     title: '講義コード',
