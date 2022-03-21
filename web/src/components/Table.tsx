@@ -167,7 +167,7 @@ export const Table = (props: any) => {
             ]}
             data={data} //インポートしたjsonファイルを表示
             title={
-                <FormControl className={classes.formControl}>
+                <FormControl className={classes.formControl} disabled>
                     <Select
                         id="year"
                         value={year}
