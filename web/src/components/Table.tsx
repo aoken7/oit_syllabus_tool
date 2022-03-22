@@ -2,7 +2,8 @@ import MaterialTableCore from "@material-table/core";
 import { Button, Select, MenuItem, FormControl } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import React, { forwardRef } from "react";
-import data2022 from "../data/2022.json";
+import data2021 from "../data/2021mini.json";
+import data2022 from "../data/2022mini.json";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 
 // アイコンの置き換え
@@ -32,11 +33,11 @@ const useStyles = makeStyles((theme) => ({
 
 export const Table = (props: any) => {
     let data = data2022;
-    // if (props.year === "2021") {
-    //     data = data2021;
-    // } else {
-    //     data = data2022;
-    // }
+    if (props.year === "2021") {
+        data = data2021;
+    } else {
+        data = data2022;
+    }
 
     const classes = useStyles();
 
@@ -170,7 +171,7 @@ export const Table = (props: any) => {
             ]}
             data={data} //インポートしたjsonファイルを表示
             title={
-                <FormControl className={classes.formControl} disabled>
+                <FormControl className={classes.formControl}>
                     <Select
                         id="year"
                         value={year}

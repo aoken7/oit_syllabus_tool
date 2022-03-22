@@ -180,13 +180,16 @@ class SyllabusTool:
                 "NFKC", str(jyugyo_value_list[i]))
 
         # 辞書に変換
-        df_dict = dict(zip(key_list, value_list))
-        jyugyo_dict = dict(zip(jyugyo_key_list, jyugyo_value_list))
-        if jyugyo_list != []:
-            df_dict.update(jyugyo_dict)
-        else:
-            df_dict.update(
-                {"theme1": "記載なし", "naiyou1": "記載なし", "yosyu1": "記載なし"})
+        # df_dict = dict(zip(key_list, value_list))
+        # jyugyo_dict = dict(zip(jyugyo_key_list, jyugyo_value_list))
+        # if jyugyo_list != []:
+        #     df_dict.update(jyugyo_dict)
+        # else:
+        #     df_dict.update(
+        #         {"theme1": "記載なし", "naiyou1": "記載なし", "yosyu1": "記載なし"})
+
+        # 辞書に変換
+        df_dict = dict(zip(key_list[0:9], value_list[0:9]))
 
         return df_dict
 
@@ -231,7 +234,7 @@ class SyllabusTool:
                 self.add_to_list(df_dict, number)
 
         # jsonとして保存
-        with open("../web/src/data/" + self.year + ".json", "w", encoding="utf-8") as fp:
+        with open("../web/src/data/" + self.year + "mini.json", "w", encoding="utf-8") as fp:
             json.dump(self.df_dict_list, fp, ensure_ascii=False, indent=4)
 
         # READMEを書き換える
