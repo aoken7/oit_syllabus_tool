@@ -26,7 +26,7 @@ def rename(element_list: list, path: str):
         elif (element[2] == "T部（共通）"):
             element[2] = "Q"
         else:
-            element[2] = re.match(r'\w', element[2]).group()
+            element[2] = re.match(r"\w", element[2]).group()
     with open(path + ".csv", "w", encoding="utf-8") as f:
         for element in element_list:
             f.write(",".join(element))
@@ -71,5 +71,5 @@ def main():
         extract(year, element_list)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

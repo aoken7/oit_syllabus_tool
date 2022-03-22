@@ -1,16 +1,16 @@
-import MaterialTableCore from '@material-table/core';
-import { Button, Select, MenuItem, FormControl } from '@material-ui/core';
-import { Link } from 'react-router-dom';
-import React, { forwardRef } from 'react';
-import data2022 from '../data/2022.json';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
+import MaterialTableCore from "@material-table/core";
+import { Button, Select, MenuItem, FormControl } from "@material-ui/core";
+import { Link } from "react-router-dom";
+import React, { forwardRef } from "react";
+import data2022 from "../data/2022.json";
+import { makeStyles, useTheme } from "@material-ui/core/styles";
 
 // アイコンの置き換え
-import SearchIcon from '@mui/icons-material/Search';
-import CloseIcon from '@mui/icons-material/Close';
-import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
-import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import SearchIcon from "@mui/icons-material/Search";
+import CloseIcon from "@mui/icons-material/Close";
+import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
+import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 const icons = {
     Filter: React.Fragment,
     Search: forwardRef((props, ref: React.Ref<SVGSVGElement>) => <SearchIcon {...props} ref={ref} />),
@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
 
 export const Table = (props: any) => {
     let data = data2022;
-    // if (props.year === '2021') {
+    // if (props.year === "2021") {
     //     data = data2021;
     // } else {
     //     data = data2022;
@@ -40,7 +40,7 @@ export const Table = (props: any) => {
 
     const classes = useStyles();
 
-    const [year, setYear] = React.useState('2022');
+    const [year, setYear] = React.useState("2022");
 
     const handleChange = (event: React.ChangeEvent<{ value: unknown }>) => {
         setYear(event.target.value as string);
@@ -50,17 +50,17 @@ export const Table = (props: any) => {
         <MaterialTableCore
             columns={[
                 {
-                    title: '講義名',
-                    field: 'kougi',
+                    title: "講義名",
+                    field: "kougi",
                     align: "left",
-                    defaultSort: 'asc'
+                    defaultSort: "asc"
                 },
                 {
-                    title: '年次',
-                    field: 'nenji',
+                    title: "年次",
+                    field: "nenji",
                     align: "left",
-                    defaultSort: 'asc',
-                    type: 'numeric',
+                    defaultSort: "asc",
+                    type: "numeric",
                     lookup: {
                         1: "1年次",
                         2: "2年次",
@@ -69,10 +69,10 @@ export const Table = (props: any) => {
                     }
                 },
                 {
-                    title: '期間',
-                    field: 'kikan',
+                    title: "期間",
+                    field: "kikan",
                     align: "left",
-                    defaultSort: 'asc',
+                    defaultSort: "asc",
                     /*
                     lookup: {
                         前期: "前期",
@@ -88,10 +88,10 @@ export const Table = (props: any) => {
                     */
                 },
                 {
-                    title: '単位',
-                    field: 'tani',
+                    title: "単位",
+                    field: "tani",
                     align: "left",
-                    type: 'numeric',
+                    type: "numeric",
                     lookup: {
                         0: "0単位",
                         1: "1単位",
@@ -104,13 +104,13 @@ export const Table = (props: any) => {
                     }
                 },
                 {
-                    title: '担当者',
-                    field: 'tantousya',
+                    title: "担当者",
+                    field: "tantousya",
                     align: "left"
                 },
                 {
-                    title: '学部/学科',
-                    field: 'gakka',
+                    title: "学部/学科",
+                    field: "gakka",
                     align: "left",
                     lookup: {
                         I: "情報科学部",
@@ -144,12 +144,12 @@ export const Table = (props: any) => {
                     }
                 },
                 {
-                    title: 'リンク',
-                    field: 'link',
+                    title: "リンク",
+                    field: "link",
                     render: (row: { link: string; }) =>
                         <Button
                             variant="outlined"
-                            size='small'
+                            size="small"
                             href={row.link}
                             color="inherit"
                             target="_blank"
@@ -159,12 +159,12 @@ export const Table = (props: any) => {
                     filtering: false,
                     sorting: false,
                     headerStyle: {
-                        minWidth: '135px',
+                        minWidth: "135px",
                     },
                 },
                 {
-                    title: '講義コード',
-                    field: 'numbering',
+                    title: "講義コード",
+                    field: "numbering",
                     align: "left"
                 },
             ]}
@@ -180,8 +180,8 @@ export const Table = (props: any) => {
                             <Link
                                 to="/2021"
                                 style={{
-                                    textDecoration: 'none',
-                                    color: 'inherit'
+                                    textDecoration: "none",
+                                    color: "inherit"
                                 }}
                             >
                                 2021
@@ -191,8 +191,8 @@ export const Table = (props: any) => {
                             <Link
                                 to="/2022"
                                 style={{
-                                    textDecoration: 'none',
-                                    color: 'inherit'
+                                    textDecoration: "none",
+                                    color: "inherit"
                                 }}
                             >
                                 2022
@@ -213,7 +213,7 @@ export const Table = (props: any) => {
                     position: "sticky",
                     border: "none",
                     top: 0,
-                    whiteSpace: 'nowrap',
+                    whiteSpace: "nowrap",
                     zIndex: 1,
                 },
                 filterCellStyle:
@@ -228,7 +228,7 @@ export const Table = (props: any) => {
             icons={icons}
             localization={{
                 body: {
-                    emptyDataSourceMessage: '該当するシラバスはありません',
+                    emptyDataSourceMessage: "該当するシラバスはありません",
                 }
             }}
         />
