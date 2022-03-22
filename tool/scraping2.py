@@ -198,6 +198,9 @@ class SyllabusTool:
                     df_dict["kikan"] == check_df_dict["kikan"] and \
                     df_dict["tantousya"] == check_df_dict["tantousya"] and \
                     df_dict["tani"] == check_df_dict["tani"]:
+                for df_dict_number in self.df_dict_list[i]["numbering"].split(" "):
+                    if df_dict_number == number:
+                        return False
                 self.df_dict_list[i]["numbering"] += " " + number
                 return False
         return True
