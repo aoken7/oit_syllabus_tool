@@ -140,7 +140,8 @@ class SyllabusTool:
         if "教科書" in text:
             kyoukasyo = re.search(r"教科書,(.*)", text).group(1)
             if len(kyoukasyo) > 0:
-                value_list.append(re.search(r"出版社名(.*)", text).group(1))
+                value_list.append(
+                    (re.search(r"出版社名(.*)", text).group(1)).replace("  ", ""))
                 hosei += 1  # 参照のズレを補正
             else:
                 value_list.append("記載なし")
@@ -151,7 +152,8 @@ class SyllabusTool:
         if "参考書" in text:
             sankousyo = re.search(r"参考書,(.*)", text).group(1)
             if len(sankousyo) > 0:
-                value_list.append(re.search(r"出版社名(.*)", text).group(1))
+                value_list.append(
+                    (re.search(r"出版社名(.*)", text).group(1)).replace("  ", ""))
                 hosei += 1
             else:
                 value_list.append("記載なし")
