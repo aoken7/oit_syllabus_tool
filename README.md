@@ -68,7 +68,7 @@ Contributed by
 
 ・extract.py  
 2通りのアプローチをして講義コードを抽出している
-①時間割PDFを画像に変換し、画像から講義コードを抜き出した画像を生成し、その画像をOCRしたものをCSVに保存  
+①時間割PDFを画像に変換し、画像から講義コードを抜き出した画像を生成し、その画像をOCRしたものをcsvに保存  
 OCRにはTesseractを利用しているため別途インストールが必要。学習データは
 [これ](https://github.com/tesseract-ocr/tessdata_best/blob/main/eng.traineddata)
 を利用している  
@@ -76,9 +76,10 @@ OCRにはTesseractを利用しているため別途インストールが必要�
 この2つを組み合わせることで精度を高めている  
 
 ・scraping.py  
-CSVから講義コードを読み込み、公式のシラバスからスクレイピングし、結果をJSONに保存  
+csvから講義コードを読み込み、公式のシラバスからスクレイピングし、結果をjsonに保存  
+
 ・scraping2.py
-pandasを用いたスクレイピング。
+pandasを用いたスクレイピング。これにより掲載されている全要素を取得することができるようになった。
 
 ### Web
 
@@ -92,7 +93,10 @@ Cloudflare Pagesにホスティング
 コンポーネントを格納している
 
 ・202*.json  
-表示しているシラバスの全データが入ったJSONファイル。利用はご自由にどうぞ  
+表示しているシラバスの全データが入ったjson。利用はご自由にどうぞ  
+
+・202*mini.json  
+容量制限回避のため、一部要素のみが入ったjson。利用はご自由にどうぞ  
 
 ### ディレクトリ構造
 
@@ -106,23 +110,29 @@ Cloudflare Pagesにホスティング
 ├── README.md
 ├── tool
 │   ├── .gitignore
+│   ├── convert.py
 │   ├── extract.py
 │   ├── requirements.txt
 │   ├── scraping.py
-│   ├── timetable
-│   │   ├── 2021
-│   │   │   ├── csv
-│   │   │   ├── num
-│   │   │   ├── numbers.csv
-│   │   │   ├── pdf
-│   │   │   └── png
-│   │   ├── 2022
-│   │   │   ├── csv
-│   │   │   ├── num
-│   │   │   ├── numbers.csv
-│   │   │   ├── pdf
-│   │   │   └── png
-│   │   └── poppler
+│   ├── scraping2.py
+│   └── timetable
+│       ├── 2021
+│       │   ├── csv
+│       │   ├── num
+│       │   ├── numbers.csv
+│       │   ├── pdf
+│       │   └── png
+│       ├── 2022
+│       │   ├── csv
+│       │   ├── num
+│       │   ├── numbers.csv
+│       │   ├── omiya-oneline.csv
+│       │   ├── omiya-only.csv
+│       │   ├── omiya-original.csv
+│       │   ├── omiya.csv
+│       │   ├── pdf
+│       │   └── png
+│       └── poppler
 └── web
     ├── .gitignore
     ├── package-lock.json
@@ -140,10 +150,12 @@ Cloudflare Pagesにホスティング
     │   ├── components
     │   │   ├── About.tsx
     │   │   ├── Header.tsx
-    │   │   ├── Table.tsx
+    │   │   └── Table.tsx
     │   ├── data
     │   │   ├── 2021.json
-    │   │   └── 2022.json
+    │   │   ├── 2021mini.json
+    │   │   ├── 2022.json
+    │   │   └── 2022mini.json
     │   ├── index.tsx
     │   ├── react-app-env.d.ts
     │   ├── service-worker.ts
