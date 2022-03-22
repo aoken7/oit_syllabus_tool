@@ -25,29 +25,29 @@ class SyllabusTool:
                     if os.path.isfile(p)]  # csvファイルを全て取得
         self.csv_list.sort()
 
-    # 入力ファイルは一行で','区切りの文字列を想定
+    # 入力ファイルは一行で","区切りの文字列を想定
     def import_syllabus_number(self, filepath: str) -> List[str]:
-        with open(filepath, 'r') as fp:
-            numbers = fp.readline().strip().split(',')  # strip()は改行コード除去用
+        with open(filepath, "r") as fp:
+            numbers = fp.readline().strip().split(",")  # strip()は改行コード除去用
         return numbers
 
     def extract_element(self, html: str) -> Dict[str, str]:
         soup = BeautifulSoup(html, "html.parser")
-        elmes = soup.select('.kougi')
+        elmes = soup.select(".kougi")
 
         element_buff = ""
         for elem in elmes:
             element_buff += elem.get_text()
 
         lines = [line.strip() for line in element_buff.splitlines()]
-        text = ",".join(line for line in lines if line).split(',')
+        text = ",".join(line for line in lines if line).split(",")
 
         try:
             syllabus_dict = dict(
                 kougi=re.sub(
                     "\【.+?\】", "", unicodedata.normalize("NFKD", text[0])),
                 nenji=unicodedata.normalize(
-                    "NFKD", (text[3].replace('年次', ''))),
+                    "NFKD", (text[3].replace("年次", ""))),
                 tani=unicodedata.normalize("NFKD", text[4]),
                 kikan=unicodedata.normalize("NFKD", text[5]),
                 tantousya=re.sub(
@@ -107,25 +107,25 @@ class SyllabusTool:
 
     def main(self, *args):
         duplicate_check = self.make_syllabus_dict_list()
-        with open("../web/src/data/" + self.year + ".json", 'w', encoding='utf-8') as fp:
+        with open("../web/src/data/" + self.year + ".json", "w", encoding="utf-8") as fp:
             json.dump(self.syllabus_dict_list, fp, ensure_ascii=False, indent=4)
-        with open("./timetable/" + self.year + "/numbers.csv", 'w', encoding='utf-8') as fp:
+        with open("./timetable/" + self.year + "/numbers.csv", "w", encoding="utf-8") as fp:
             fp.write(",".join(duplicate_check))
 
         # READMEの書き換え
         date = datetime.datetime.now(datetime.timezone(
             datetime.timedelta(hours=+9))).strftime("%Y/%m/%d")
-        with open("../README.md", 'r', encoding="utf-8") as fp:
+        with open("../README.md", "r", encoding="utf-8") as fp:
             s = re.sub("\d{4}/\d{2}/\d{2}", date, fp.read())  # 更新日の書き換え
             s = re.sub("<!-- エラー数=\d{1,4} -->",
                        "<!-- エラー数=" + str(self.error) + " -->", s)  # エラー数の書き換え
-        with open("../README.md", 'w', encoding="utf-8") as fp:
+        with open("../README.md", "w", encoding="utf-8") as fp:
             fp.write(s)
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    # parser.add_argument('--input', type=str, required=True, help="") # 入力ファイル名
-    # parser.add_argument('--output', type=str, required=True, help="") # 出力ファイル名
+    # parser.add_argument("--input", type=str, required=True, help="") # 入力ファイル名
+    # parser.add_argument("--output", type=str, required=True, help="") # 出力ファイル名
     args = parser.parse_args()
     SyllabusTool().main(**vars(parser.parse_args()))

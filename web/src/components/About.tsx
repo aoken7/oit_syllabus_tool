@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import Markdown from 'markdown-to-jsx';
-import { Box, styled } from '@mui/material';
+import Markdown from "markdown-to-jsx";
+import { Box, styled } from "@mui/material";
 
 const CustomBox = styled(Box)({
     width: "100%",
@@ -22,7 +22,7 @@ const CustomBox = styled(Box)({
 });
 
 const About = () => {
-    const [mdText, setMdText] = useState('');
+    const [mdText, setMdText] = useState("");
     useEffect(() => {
         fetch("https://raw.githubusercontent.com/yashikota/OIT-Tools_syllabus/master/README.md")
             .then((response) => {

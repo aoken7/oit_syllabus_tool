@@ -26,7 +26,7 @@ def rename(element_list: list, path: str):
         elif (element[2] == "T部（共通）"):
             element[2] = "Q"
         else:
-            element[2] = re.match(r'\w', element[2]).group()
+            element[2] = re.match(r"\w", element[2]).group()
     with open(path + ".csv", "w", encoding="utf-8") as f:
         for element in element_list:
             f.write(",".join(element))
@@ -64,12 +64,12 @@ def main():
     # umeda = "./timetable/" + year + "/umeda"
     # hirakata = "./timetable" + year + "/hirakata"
 
-    # for campus in [omiya,umeda,hirakata]:
-    element_list = convert_list(omiya)
-    oneline(element_list, omiya)
-    rename(element_list, omiya)
-    extract(year, element_list)
+    for campus in [omiya]:
+        element_list = convert_list(campus)
+        # oneline(element_list, campus)
+        # rename(element_list, campus)
+        extract(year, element_list)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

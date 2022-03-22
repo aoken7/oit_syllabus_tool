@@ -1,24 +1,24 @@
-import { Routes, Route, Navigate } from 'react-router-dom';
-import About from './components/About';
+import { Routes, Route, Navigate } from "react-router-dom";
+import About from "./components/About";
 import { Table } from "./components/Table";
 import { GlobalStyles } from "@mui/material";
-import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
-import CssBaseline from '@material-ui/core/CssBaseline';
+import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
+import CssBaseline from "@material-ui/core/CssBaseline";
 import Header from "./components/Header";
-import useMediaQuery from '@material-ui/core/useMediaQuery/useMediaQuery';
-import React from 'react';
+import useMediaQuery from "@material-ui/core/useMediaQuery/useMediaQuery";
+import React from "react";
 
 export const ColorModeContext = React.createContext({ toggleColorMode: () => { } });
 
 export const App = () => {
-  const [mode, setMode] = React.useState<'light' | 'dark'>('dark');
-  const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)', { noSsr: true });
+  const [mode, setMode] = React.useState<"light" | "dark">("dark");
+  const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)", { noSsr: true });
 
   // localStorageに保存されているならそれを使い、なければシステムの設定を使う
   React.useEffect(() => {
-    if (localStorage.getItem('colorMode') === "dark") {
+    if (localStorage.getItem("colorMode") === "dark") {
       setMode("dark");
-    } else if (localStorage.getItem('colorMode') === "light") {
+    } else if (localStorage.getItem("colorMode") === "light") {
       setMode("light");
     } else if ((prefersDarkMode) === true) {
       setMode("dark");
@@ -30,7 +30,7 @@ export const App = () => {
   //トグルボタンでテーマを切り替える
   const colorMode = React.useMemo(() => ({
     toggleColorMode: () => {
-      setMode((prevMode: string) => (prevMode === 'light' ? 'dark' : 'light'));
+      setMode((prevMode: string) => (prevMode === "light" ? "dark" : "light"));
     },
   }
   ), []);
