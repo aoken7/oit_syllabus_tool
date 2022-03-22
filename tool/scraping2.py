@@ -50,13 +50,13 @@ class SyllabusTool:
             number + "&value(crclumcd)=10201200"
 
         try:
-            dfs = pd.read_html(requests.get(
-                url, timeout=9.0).text.replace(",", "、"))
+            dfs = pd.read_html((requests.get(
+                url, timeout=9.0).text).replace(",", "、"))
         except (Timeout, ConnectionError):
             print("\nError numbering:" + number)
             sleep(3)
-            dfs = pd.read_html(requests.get(
-                url, timeout=9.0).text.replace(",", "、"))
+            dfs = pd.read_html((requests.get(
+                url, timeout=9.0).text).replace(",", "、"))
 
         if len(dfs) > 2:
             for i in range(1, len(dfs)):
@@ -118,6 +118,20 @@ class SyllabusTool:
         else:
             value_list.append("記載なし")
 
+        # 授業計画
+        for i in range(1, (len(df_list[3+hosei]))):
+            jyugyo_list.append(str(df_list[3+hosei][i]).split(","))  # ","で分割
+        for i in range(len(jyugyo_list)):
+            # テーマ
+            jyugyo_key_list.append("theme"+str(i+1))
+            jyugyo_value_list.append(jyugyo_list[i][1])
+            # 内容・方法等
+            jyugyo_key_list.append("naiyou"+str(i+1))
+            jyugyo_value_list.append(jyugyo_list[i][2])
+            # 予習/復習
+            jyugyo_key_list.append("yosyu"+str(i+1))
+            jyugyo_value_list.append(jyugyo_list[i][3])
+
         # 目標、評価方法、評価基準
         for i in range(3):
             value_list.append(df_list[(4+i)+hosei][0])
@@ -155,20 +169,6 @@ class SyllabusTool:
             value_list.append(df_list[9+hosei][0])
         else:
             value_list.append("記載なし")
-
-        # 授業計画
-        for i in range(1, (len(df_list[3+hosei]))):
-            jyugyo_list.append(str(df_list[3+hosei][i]).split(","))  # ","で分割
-            for j in range(len(jyugyo_list)):
-                # テーマ
-                jyugyo_key_list.append("theme"+str(j+1))
-                jyugyo_value_list.append(jyugyo_list[j][1])
-                # 内容・方法等
-                jyugyo_key_list.append("naiyou"+str(j+1))
-                jyugyo_value_list.append(jyugyo_list[j][2])
-                # 予習/復習
-                jyugyo_key_list.append("yosyu"+str(j+1))
-                jyugyo_value_list.append(jyugyo_list[j][3])
 
         # 正規化
         for i in range(len(value_list)):
