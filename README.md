@@ -10,7 +10,8 @@
 時点での
 [大阪工業大学公式シラバス](https://www.oit.ac.jp/japanese/syllabus/index.html)
 のデータに基づきます  
-各自で必ず公式シラバスも合わせて確認してください  **iOS15.2以下のバージョンでは表示に不具合が出る可能性があります。不具合が発生した場合はiOSのバージョンを15.2以上にした上でご利用ください**  
+各自で必ず公式シラバスも合わせて確認してください  
+**iOS15.2未満のバージョンでは表示に不具合が出る可能性があります。不具合が発生した場合はiOSのバージョンを15.2以上にした上でご利用ください**  
 バグ、データの不備、機能要望、その他問い合わせは
 [Google Forms](https://docs.google.com/forms/d/e/1FAIpQLSc08BgQQiNqXeFjcECLKlfzmoOygvv1gglc_j7xnGdUmBeYLg/viewform?usp=sf_link)
 か
@@ -76,9 +77,8 @@ OCRにはTesseractを利用しているため別途インストールが必要�
 
 ・scraping.py  
 CSVから講義コードを読み込み、公式のシラバスからスクレイピングし、結果をJSONに保存  
-
-・numbers.csv  
-スクレイピングの際にできる副産物のような物。今の所使用する予定はない  
+・scraping2.py
+pandasを用いたスクレイピング。
 
 ### Web
 

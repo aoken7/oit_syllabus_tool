@@ -64,11 +64,11 @@ def main():
     # umeda = "./timetable/" + year + "/umeda"
     # hirakata = "./timetable" + year + "/hirakata"
 
-    # for campus in [omiya,umeda,hirakata]:
-    element_list = convert_list(omiya)
-    oneline(element_list, omiya)
-    rename(element_list, omiya)
-    extract(year, element_list)
+    for campus in [omiya]:
+        element_list = convert_list(campus)
+        # oneline(element_list, campus)
+        # rename(element_list, campus)
+        extract(year, element_list)
 
 
 if __name__ == '__main__':
