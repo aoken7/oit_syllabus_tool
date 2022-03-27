@@ -38,7 +38,7 @@
         "nenji": "2",
         "tani": "3",
         "kikan": "後期",
-        "tantousya": "寺地洋之 本田昌昭 吉田康弘 猪股浩二 片岡政規 岸研一 栗林賢次 吉本剛 石川友博 西田司 宮内靖昌",
+        "tantousya": "寺地洋之 本田昌昭 吉田哲 猪股浩二 片岡政規 岸研一 栗林賢次 吉本剛 石川友博 西田司 宮内靖昌",
         "numbering": "11AA06A0",
         "gakka": "A",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=11AA06A0&value(crclumcd)=10201200"
@@ -49,7 +49,7 @@
         "nenji": "3",
         "tani": "3",
         "kikan": "前期",
-        "tantousya": "藤井伸介 本田昌昭 岡﨑誠 片岡政規 岸下真理 栗林賢次 中西富仁広 宮内靖昌 瀧野敦夫 吉田康弘",
+        "tantousya": "藤井伸介 本田昌昭 岡﨑誠 片岡政規 岸下真理 栗林賢次 中西富仁広 宮内靖昌 瀧野敦夫 吉田哲",
         "numbering": "11AA07A0 11AA07B0",
         "gakka": "A",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=11AA07A0&value(crclumcd)=10201200"
@@ -7482,7 +7482,7 @@
     {
         "kougi": "情報技術者論",
         "kougien": "The Profession of Information Engineering",
-        "nenji": "2",
+        "nenji": "3",
         "tani": "2",
         "kikan": "後期",
         "tantousya": "牧野博之 西口敏司 平山亮 布村泰浩 神田智子 尾崎敦夫 福安直樹 酒澤茂之 佐野睦夫 福澤寧子 山田隆亮 須山敬之",
@@ -8054,7 +8054,7 @@
     {
         "kougi": "情報技術者論",
         "kougien": "The Profession of Information Engineering",
-        "nenji": "2",
+        "nenji": "3",
         "tani": "2",
         "kikan": "後期",
         "tantousya": "牧野博之 西口敏司 平山亮 布村泰浩 神田智子 尾崎敦夫 福安直樹 酒澤茂之 福澤寧子 佐野睦夫 山田隆亮 須山敬之",
@@ -8336,6 +8336,17 @@
         "numbering": "1ECM10A0",
         "gakka": "I",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=1ECM10A0&value(crclumcd)=10201200"
+    },
+    {
+        "kougi": "情報科学実践演習(国内PBL)a",
+        "kougien": "Information Science Project Exercise (Domestic PBL)a",
+        "nenji": "2",
+        "tani": "1",
+        "kikan": "前期集中",
+        "tantousya": "佐野睦夫",
+        "numbering": "1ECM41A0",
+        "gakka": "I",
+        "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=1ECM41A0&value(crclumcd)=10201200"
     },
     {
         "kougi": "情報科学実践演習(国内PBL)b",
@@ -9411,7 +9422,7 @@
         "tani": "2",
         "kikan": "前期",
         "tantousya": "中村英江",
-        "numbering": "B1C003B0 B1C003C0 B1C003E0",
+        "numbering": "B1C003B0 B1C003C0",
         "gakka": "I",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=B1C003B0&value(crclumcd)=10201200"
     },
@@ -9422,9 +9433,9 @@
         "tani": "2",
         "kikan": "前期",
         "tantousya": "川口剛",
-        "numbering": "B1C003F0 B1C003G0 B1C003H0",
+        "numbering": "B1C003E0 B1C003F0 B1C003G0 B1C003H0",
         "gakka": "I",
-        "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=B1C003F0&value(crclumcd)=10201200"
+        "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=B1C003E0&value(crclumcd)=10201200"
     },
     {
         "kougi": "口語英語Ia",
@@ -11407,17 +11418,6 @@
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=A1C010G2&value(crclumcd)=10201200"
     },
     {
-        "kougi": "キャリア・イングリッシュIbD組<K科>",
-        "kougien": "Career English Ib",
-        "nenji": "2",
-        "tani": "1",
-        "kikan": "後期",
-        "tantousya": "西邨沙希",
-        "numbering": "A1C010G3",
-        "gakka": "K",
-        "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=A1C010G3&value(crclumcd)=10201200"
-    },
-    {
         "kougi": "健康体育I<K科>",
         "kougien": "Health-Related Physical Education I",
         "nenji": "1",
@@ -11768,6 +11768,17 @@
         "numbering": "AYC002G0",
         "gakka": "K",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=AYC002G0&value(crclumcd)=10201200"
+    },
+    {
+        "kougi": "キャリア・イングリッシュIbD組<K科>",
+        "kougien": "Career English Ib",
+        "nenji": "2",
+        "tani": "1",
+        "kikan": "後期",
+        "tantousya": "西邨沙希",
+        "numbering": "A1C010G3",
+        "gakka": "K",
+        "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=A1C010G3&value(crclumcd)=10201200"
     },
     {
         "kougi": "機械工作実習aロ組",
@@ -20652,7 +20663,7 @@
         "nenji": "1",
         "tani": "2",
         "kikan": "後期",
-        "tantousya": "妻鳥淳彦",
+        "tantousya": "東海林満",
         "numbering": "E4C005L0",
         "gakka": "R",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=E4C005L0&value(crclumcd)=10201200"
@@ -26196,7 +26207,7 @@
         "nenji": "1",
         "tani": "1",
         "kikan": "後期(前半)",
-        "tantousya": "吉田康弘",
+        "tantousya": "吉田哲",
         "numbering": "50CB1500",
         "gakka": "Y",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=50CB1500&value(crclumcd)=10201200"
@@ -26207,7 +26218,7 @@
         "nenji": "1",
         "tani": "1",
         "kikan": "後期(後半)",
-        "tantousya": "吉田康弘",
+        "tantousya": "吉田哲",
         "numbering": "50CB1600",
         "gakka": "Y",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=50CB1600&value(crclumcd)=10201200"
