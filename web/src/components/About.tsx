@@ -19,6 +19,10 @@ const CustomBox = styled(Box)({
         display: "inline-block",
         textAlign: "left",
     },
+    text: {
+        display: "inline-block",
+        textAlign: "left",
+    },
 });
 
 const About = () => {
