@@ -74,18 +74,18 @@ Contributed by
 
 <text>
 ・extract.py  
-2通りのアプローチをして講義コードを抽出している
+2通りのアプローチをして講義コードを抽出している  
 ①時間割PDFを画像に変換し、画像から講義コードを抜き出した画像を生成し、その画像をOCRしたものをcsvに保存  
 OCRにはTesseractを利用しているため別途インストールが必要。学習データは
 [これ](https://github.com/tesseract-ocr/tessdata_best/blob/main/eng.traineddata)
 を利用している  
-②pdfminer.sixを使いPDFからテキストデータを抽出し、正規表現で英数字8桁のみを保存する処理を行う
+②pdfminer.sixを使いPDFからテキストデータを抽出し、正規表現で英数字8桁のみを保存する処理を行う  
 この2つを組み合わせることで精度を高めている  
 
 ・scraping.py  
 csvから講義コードを読み込み、公式のシラバスからスクレイピングし、結果をjsonに保存  
 
-・scraping2.py
+・scraping2.py  
 pandasを用いたスクレイピング。これにより掲載されている全要素を取得することができるようになった。
 
 ### Web
@@ -100,10 +100,10 @@ Cloudflare Pagesにホスティング
 コンポーネントを格納している
 
 ・202*.json  
-表示しているシラバスの全データが入ったjson。  
+表示しているシラバスの全データが入ったjson  
 
 ・202*mini.json  
-容量制限回避のため、一部要素のみが入ったjson。  
+容量制限回避のため、一部要素のみが入ったjson  
 </text>
 
 ### ディレクトリ構造
