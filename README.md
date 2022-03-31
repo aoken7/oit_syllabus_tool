@@ -7,7 +7,7 @@
 
 <text>
 大阪工業大学**非公式**のシラバスアプリです  
-2022/03/23
+2022/03/28
 時点での
 [大阪工業大学公式シラバス](https://www.oit.ac.jp/japanese/syllabus/index.html)
 のデータに基づきます  
@@ -173,4 +173,4 @@ Cloudflare Pagesにホスティング
     └── tsconfig.json
 </pre>
 
-<!-- エラー数=1101 -->
+<!-- エラー数=1137 -->
