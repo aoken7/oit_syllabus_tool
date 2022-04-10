@@ -1457,7 +1457,7 @@
         "nenji": "2",
         "tani": "1",
         "kikan": "前期",
-        "tantousya": "未定",
+        "tantousya": "松田亜樹",
         "numbering": "A1C007B1",
         "gakka": "A",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=A1C007B1&value(crclumcd)=10201200"
@@ -1501,7 +1501,7 @@
         "nenji": "2",
         "tani": "1",
         "kikan": "後期",
-        "tantousya": "未定",
+        "tantousya": "松田亜樹",
         "numbering": "A1C008B1",
         "gakka": "A",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=A1C008B1&value(crclumcd)=10201200"
@@ -5065,7 +5065,7 @@
         "nenji": "1",
         "tani": "2",
         "kikan": "前期",
-        "tantousya": "松村吉将",
+        "tantousya": "福嶋貴",
         "numbering": "A3C016F1",
         "gakka": "D",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=A3C016F1&value(crclumcd)=10201200"
@@ -5351,7 +5351,7 @@
         "nenji": "2",
         "tani": "3",
         "kikan": "前期",
-        "tantousya": "又吉秀仁 重弘裕二 辻田勝吉 田熊隆史 西村順二 堀川健 髙橋隆 二社谷一樹",
+        "tantousya": "又吉秀仁 重弘裕二 辻田勝吉 田熊隆史 西村順二 堀川健 髙橋隆 二社谷一樹 田中宏明",
         "numbering": "12AB01A0",
         "gakka": "E",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=12AB01A0&value(crclumcd)=10201200"
@@ -7453,20 +7453,9 @@
         "tani": "2",
         "kikan": "後期",
         "tantousya": "河合紀彦 東坂範雄",
-        "numbering": "1CAB05A0",
+        "numbering": "1CAB05A0 1CAB05B0",
         "gakka": "I",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=1CAB05A0&value(crclumcd)=10201200"
-    },
-    {
-        "kougi": "テクニカルライティング",
-        "kougien": "Technical Writing",
-        "nenji": "1",
-        "tani": "2",
-        "kikan": "後期",
-        "tantousya": "東坂範雄",
-        "numbering": "1CAB05B0 1FAB05B0",
-        "gakka": "I",
-        "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=1CAB05B0&value(crclumcd)=10201200"
     },
     {
         "kougi": "計算機アーキテクチャ",
@@ -8391,6 +8380,17 @@
         "numbering": "1FAB05A0",
         "gakka": "I",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=1FAB05A0&value(crclumcd)=10201200"
+    },
+    {
+        "kougi": "テクニカルライティング",
+        "kougien": "Technical Writing",
+        "nenji": "1",
+        "tani": "2",
+        "kikan": "後期",
+        "tantousya": "東坂範雄",
+        "numbering": "1FAB05B0",
+        "gakka": "I",
+        "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=1FAB05B0&value(crclumcd)=10201200"
     },
     {
         "kougi": "計算機アーキテクチャ",
@@ -9575,7 +9575,7 @@
         "nenji": "3",
         "tani": "2",
         "kikan": "前期",
-        "tantousya": "田尾俊輔",
+        "tantousya": "ホータッヒン",
         "numbering": "B1C006C0 B1C006D0",
         "gakka": "I",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=B1C006C0&value(crclumcd)=10201200"
@@ -9586,7 +9586,7 @@
         "nenji": "3",
         "tani": "2",
         "kikan": "後期",
-        "tantousya": "田尾俊輔",
+        "tantousya": "ホータッヒン",
         "numbering": "B1C006F0",
         "gakka": "I",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=B1C006F0&value(crclumcd)=10201200"
@@ -12952,7 +12952,7 @@
         "nenji": "2",
         "tani": "1",
         "kikan": "後期",
-        "tantousya": "未定",
+        "tantousya": "松田亜樹",
         "numbering": "A1C008C1",
         "gakka": "M",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=A1C008C1&value(crclumcd)=10201200"
@@ -16335,6 +16335,17 @@
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=C3C011A0&value(crclumcd)=10201200"
     },
     {
+        "kougi": "中国語と現代中国事情",
+        "kougien": "Chinese Language and Current Affairs",
+        "nenji": "2",
+        "tani": "1",
+        "kikan": "後期",
+        "tantousya": "川田進",
+        "numbering": "C3C012A0 C3C012B0 C3C012C0 C3C012D0",
+        "gakka": "P",
+        "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=C3C012A0&value(crclumcd)=10201200"
+    },
+    {
         "kougi": "知的財産中国語",
         "kougien": "Chinese for Intellectual Property",
         "nenji": "3",
@@ -17026,17 +17037,6 @@
         "numbering": "A0C002H0",
         "gakka": "Q",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=A0C002H0&value(crclumcd)=10201200"
-    },
-    {
-        "kougi": "文章表現基礎<U科>",
-        "kougien": "Basic Writing Skills",
-        "nenji": "1",
-        "tani": "2",
-        "kikan": "後期",
-        "tantousya": "西山由理花",
-        "numbering": "A0C002J0",
-        "gakka": "Q",
-        "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=A0C002J0&value(crclumcd)=10201200"
     },
     {
         "kougi": "哲学",
@@ -18258,17 +18258,6 @@
         "numbering": "A3C022J1",
         "gakka": "Q",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=A3C022J1&value(crclumcd)=10201200"
-    },
-    {
-        "kougi": "基礎情報処理IIA組<V科>",
-        "kougien": "Information Processing II",
-        "nenji": "1",
-        "tani": "1",
-        "kikan": "後期",
-        "tantousya": "越智徹",
-        "numbering": "A3C023H0",
-        "gakka": "Q",
-        "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=A3C023H0&value(crclumcd)=10201200"
     },
     {
         "kougi": "基礎情報処理IIB組<V科>",
@@ -23474,17 +23463,6 @@
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=17CA34A0&value(crclumcd)=10201200"
     },
     {
-        "kougi": "バイオメカニクス",
-        "kougien": "Bio-mechanics",
-        "nenji": "3",
-        "tani": "2",
-        "kikan": "前期",
-        "tantousya": "中村友浩",
-        "numbering": "17CA35A0",
-        "gakka": "U",
-        "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=17CA35A0&value(crclumcd)=10201200"
-    },
-    {
         "kougi": "分析化学",
         "kougien": "Analytical Chemistry",
         "nenji": "3",
@@ -23670,6 +23648,28 @@
         "numbering": "17CC10A0",
         "gakka": "U",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=17CC10A0&value(crclumcd)=10201200"
+    },
+    {
+        "kougi": "バイオメカニクス",
+        "kougien": "Bio-mechanics",
+        "nenji": "3",
+        "tani": "2",
+        "kikan": "前期",
+        "tantousya": "中村友浩",
+        "numbering": "17CA35A0",
+        "gakka": "U",
+        "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=17CA35A0&value(crclumcd)=10201200"
+    },
+    {
+        "kougi": "文章表現基礎<U科>",
+        "kougien": "Basic Writing Skills",
+        "nenji": "1",
+        "tani": "2",
+        "kikan": "後期",
+        "tantousya": "西山由理花",
+        "numbering": "A0C002J0",
+        "gakka": "U",
+        "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=A0C002J0&value(crclumcd)=10201200"
     },
     {
         "kougi": "環境量論基礎",
@@ -24374,6 +24374,17 @@
         "numbering": "16CH07A0",
         "gakka": "V",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=16CH07A0&value(crclumcd)=10201200"
+    },
+    {
+        "kougi": "基礎情報処理IIA組<V科>",
+        "kougien": "Information Processing II",
+        "nenji": "1",
+        "tani": "1",
+        "kikan": "後期",
+        "tantousya": "越智徹",
+        "numbering": "A3C023H0",
+        "gakka": "V",
+        "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=A3C023H0&value(crclumcd)=10201200"
     },
     {
         "kougi": "デザイン思考実践演習<W科>",
@@ -25661,6 +25672,17 @@
         "numbering": "M8CA17A0",
         "gakka": "X",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=M8CA17A0&value(crclumcd)=10201200"
+    },
+    {
+        "kougi": "複雑系解析論",
+        "kougien": "Theoretical and Numerical Analysis of Complex Systems",
+        "nenji": "1",
+        "tani": "1",
+        "kikan": "前期(前半)",
+        "tantousya": "藤井研一",
+        "numbering": "M8CA18A0",
+        "gakka": "X",
+        "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=M8CA18A0&value(crclumcd)=10201200"
     },
     {
         "kougi": "生体情報処理特論B",
