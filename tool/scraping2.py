@@ -1,5 +1,8 @@
 import datetime
 import json
+import csv
+from itertools import islice
+from ntpath import join
 from time import sleep
 import unicodedata
 import pandas as pd
@@ -20,6 +23,8 @@ class SyllabusTool:
         self.df_dict_list = list()
         self.path = "./timetable/" + self.year + "/csv/"
         self.csv_list = self.get_files(self.path)
+        self.out_csv_list = list()
+        self.mini_list = list()
 
     # csvのファイル名一覧を取得
 
@@ -180,16 +185,15 @@ class SyllabusTool:
                 "NFKC", str(jyugyo_value_list[i]))
 
         # 辞書に変換
-        # df_dict = dict(zip(key_list, value_list))
-        # jyugyo_dict = dict(zip(jyugyo_key_list, jyugyo_value_list))
-        # if jyugyo_list != []:
-        #     df_dict.update(jyugyo_dict)
-        # else:
-        #     df_dict.update(
-        #         {"theme1": "記載なし", "naiyou1": "記載なし", "yosyu1": "記載なし"})
+        df_dict = dict(zip(key_list, value_list))
+        jyugyo_dict = dict(zip(jyugyo_key_list, jyugyo_value_list))
+        if jyugyo_list != []:
+            df_dict.update(jyugyo_dict)
+        else:
+            df_dict.update(
+                {"theme1": "記載なし", "naiyou1": "記載なし", "yosyu1": "記載なし"})
 
-        # 辞書に変換
-        df_dict = dict(zip(key_list[0:9], value_list[0:9]))
+        # df_dict = dict(zip(key_list[0:9], value_list[0:9]))
 
         return df_dict
 
@@ -222,6 +226,13 @@ class SyllabusTool:
         with open("../README.md", "w", encoding="utf-8") as fp:
             fp.write(s)
 
+    def dict_to_list(self):
+        for df_dict in self.df_dict_list:
+            self.out_csv_list.append(df_dict.values())
+        with open("../web/src/data/" + self.year + ".csv", "w", encoding="utf-8") as fp:
+            writer = csv.writer(fp)
+            writer.writerows(self.out_csv_list)
+
     def main(self):
         for csv in tqdm(self.csv_list, desc="全体の進捗率"):
             numbers = self.get_numbers(self.path + csv)
@@ -234,8 +245,19 @@ class SyllabusTool:
                 self.add_to_list(df_dict, number)
 
         # jsonとして保存
-        with open("../web/src/data/" + self.year + "mini.json", "w", encoding="utf-8") as fp:
+        with open("../web/src/data/" + self.year + ".json", "w", encoding="utf-8") as fp:
             json.dump(self.df_dict_list, fp, ensure_ascii=False, indent=4)
+
+        # json(mini)として保存
+        # for df_dict in self.df_dict_list:
+        #     it = iter(df_dict)
+        #     chunk = next(islice(it, 0, None))
+        #     self.mini_list.append(chunk)
+        # with open("../web/src/data/" + self.year + "mini.json", "w", encoding="utf-8") as fp:
+        #     json.dump(self.mini_list, fp, ensure_ascii=False, indent=4)
+
+        # csvとして保存
+        self.dict_to_list()
 
         # READMEを書き換える
         self.rewrite_readme()
