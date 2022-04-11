@@ -6,6 +6,7 @@
 [![Scraping](https://github.com/yashikota/OIT-Tools_syllabus/actions/workflows/Scraping.yaml/badge.svg)](https://github.com/yashikota/OIT-Tools_syllabus/actions/workflows/Scraping.yaml)  
 
 <text>
+
 大阪工業大学**非公式**のシラバスアプリです  
 2022/04/11
 時点での
@@ -34,6 +35,7 @@ Contributed by
 このような場合において、記載が不正確であったこと等により生じた、いかなる損害に関しても、一切の責任を負いかねます  
 また、本アプリケーションではアクセス状況の把握やサイト改善に役立てるため、Google Analytics及びCloudflare Web Analyticsを利用しています  
 [知的財産の表記](https://raw.githubusercontent.com/yashikota/OIT-Tools_syllabus/master/web/public/hyouki.txt)
+
 </text>
 
 ## 使い方
@@ -41,6 +43,7 @@ Contributed by
 <img src="https://raw.githubusercontent.com/yashikota/OIT-Tools_syllabus/master/web/src/ss.webp" alt="トップ画面">
 
 <text>
+
 ①OIT-Toolsホームページへのリンクになってます  
 ②使い方やプログラムの説明をしているこのページ  
 ③タップするとライトテーマ・ダークテーマを切り替えます  
@@ -60,6 +63,7 @@ Contributed by
 [iOS・Androidの追加方法](https://support.bccks.jp/faq/pwa_2020/)
 (手順1は飛ばす)  
 [PC(Chrome・Edge)の追加方法](https://support.google.com/chrome/answer/9658361)  
+
 </text>
 
 ## Q&A
@@ -67,12 +71,15 @@ Contributed by
 ## プログラムの説明
 
 <text>
+
 下にあるディレクトリ構造を見ながら読むとわかりやすいかも
+
 </text>
 
 ### Tool
 
 <text>
+
 ・extract.py  
 2通りのアプローチをして講義コードを抽出している  
 ①時間割PDFを画像に変換し、画像から講義コードを抜き出した画像を生成し、その画像をOCRしたものをcsvに保存  
@@ -104,6 +111,7 @@ Cloudflare Pagesにホスティング
 
 ・202*mini.json  
 容量制限回避のため、一部要素のみが入ったjson  
+
 </text>
 
 ### ディレクトリ構造

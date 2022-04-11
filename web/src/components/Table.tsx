@@ -21,6 +21,7 @@ const icons = {
     ArrouwDropDown: forwardRef((props, ref: React.Ref<SVGSVGElement>) => <ArrowDropDownIcon {...props} ref={ref} />),
 };
 
+// テーマの設定
 const useStyles = makeStyles((theme) => ({
     formControl: {
         margin: theme.spacing(1),
@@ -31,6 +32,7 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
+// 年度の切り替え
 export const Table = (props: any) => {
     let data = data2022;
     if (props.year === "2021") {
@@ -74,19 +76,6 @@ export const Table = (props: any) => {
                     field: "kikan",
                     align: "left",
                     defaultSort: "asc",
-                    /*
-                    lookup: {
-                        前期: "前期",
-                        後期: "後期",
-                        前期前半: "前期前半",
-                        前期後半: "前期後半",
-                        後期前半: "後期前半",
-                        後期後半: "後期後半",
-                        前期集中: "前期集中",
-                        後期集中: "後期集中",
-                        集中: "集中"
-                    }
-                    */
                 },
                 {
                     title: "単位",
@@ -169,7 +158,11 @@ export const Table = (props: any) => {
                     align: "left"
                 },
             ]}
-            data={data} //インポートしたjsonファイルを表示
+
+            //jsonファイルの表示
+            data={data}
+
+            // 年度切り替えのボタン
             title={
                 <FormControl className={classes.formControl}>
                     <Select
@@ -177,17 +170,6 @@ export const Table = (props: any) => {
                         value={year}
                         onChange={handleChange}
                     >
-                        <MenuItem value={2021}>
-                            <Link
-                                to="/2021"
-                                style={{
-                                    textDecoration: "none",
-                                    color: "inherit"
-                                }}
-                            >
-                                2021
-                            </Link>
-                        </MenuItem>
                         <MenuItem value={2022}>
                             <Link
                                 to="/2022"
@@ -199,9 +181,23 @@ export const Table = (props: any) => {
                                 2022
                             </Link>
                         </MenuItem>
+                        <MenuItem value={2021}>
+                            <Link
+                                to="/2021"
+                                style={{
+                                    textDecoration: "none",
+                                    color: "inherit"
+                                }}
+                            >
+                                2021
+                            </Link>
+                        </MenuItem>
+
                     </Select>
                 </FormControl>
             }
+
+            // 設定
             options={{
                 paging: true,
                 pageSize: 100,
@@ -226,7 +222,11 @@ export const Table = (props: any) => {
                 },
                 filtering: true,
             }}
+
+            // アイコンの置き換え
             icons={icons}
+
+            // データがないときの表示を日本語に
             localization={{
                 body: {
                     emptyDataSourceMessage: "該当するシラバスはありません",
