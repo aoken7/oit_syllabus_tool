@@ -38,7 +38,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r ./tool/requirements.txt
 
-      - name: Run scraping.py
+      - name: Run scraping2.py
         run: |
           cd ./tool
           python ./scraping2.py

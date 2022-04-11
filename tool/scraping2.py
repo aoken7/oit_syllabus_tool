@@ -1,5 +1,6 @@
 import datetime
 import json
+import csv
 from time import sleep
 import unicodedata
 import pandas as pd
@@ -19,18 +20,17 @@ class SyllabusTool:
         self.error = 0
         self.df_dict_list = list()
         self.path = "./timetable/" + self.year + "/csv/"
-        self.csv_list = self.get_files(self.path)
+        self.file_list = self.get_files(self.path)
+        self.csv_list = list()
 
     # csvのファイル名一覧を取得
-
     def get_files(self, path: str):
-        csv_list = ([os.path.basename(p) for p in glob.glob(path + "*.csv", recursive=True)
-                    if os.path.isfile(p)])
-        csv_list.sort()
-        return csv_list
+        file_list = ([os.path.basename(p) for p in glob.glob(path + "*.csv", recursive=True)
+                      if os.path.isfile(p)])
+        file_list.sort()
+        return file_list
 
     # 入力ファイルは一行で","区切りの文字列を想定
-
     def get_numbers(self, filepath: str):
         numbers_duplicate_check = list()
         with open(filepath, "r") as fp:
@@ -42,7 +42,6 @@ class SyllabusTool:
         return numbers
 
     # スクレイピングし、dataframeをリストに変換
-
     def scraping(self, number: str):
         df_list = list()
         url = "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=" + \
@@ -180,19 +179,17 @@ class SyllabusTool:
                 "NFKC", str(jyugyo_value_list[i]))
 
         # 辞書に変換
-        # df_dict = dict(zip(key_list, value_list))
-        # jyugyo_dict = dict(zip(jyugyo_key_list, jyugyo_value_list))
-        # if jyugyo_list != []:
-        #     df_dict.update(jyugyo_dict)
-        # else:
-        #     df_dict.update(
-        #         {"theme1": "記載なし", "naiyou1": "記載なし", "yosyu1": "記載なし"})
-
-        # 辞書に変換
-        df_dict = dict(zip(key_list[0:9], value_list[0:9]))
+        df_dict = dict(zip(key_list, value_list))
+        jyugyo_dict = dict(zip(jyugyo_key_list, jyugyo_value_list))
+        if jyugyo_list != []:
+            df_dict.update(jyugyo_dict)
+        else:
+            df_dict.update(
+                {"theme1": "記載なし", "naiyou1": "記載なし", "yosyu1": "記載なし"})
 
         return df_dict
 
+    # 講義名、年次、期間、担当者、単位数が全て重複してる場合、ナンバリングに追記ようにする
     def duplicate_check(self, check_df_dict: list, number: str):
         for i in range(len(self.df_dict_list)):
             df_dict = self.df_dict_list[i]
@@ -212,6 +209,25 @@ class SyllabusTool:
         if self.duplicate_check(df_dict, number):
             self.df_dict_list.append(df_dict)  # 辞書をリストに追加
 
+    # 一覧表示用のjsonファイルを作成
+    def save_json_mini(self):
+        dic_list = list()
+        for i in range(len(self.df_dict_list)):
+            # 内包表記で必要な値を抽出
+            dic = {k: v for k, v in self.df_dict_list[i].items()
+                   if k in {"kougi", "nenji", "kikan", "tantousya", "tani", "numbering", "gakka", "link"}}
+            dic_list.append(dic)
+        with open("../web/src/data/" + self.year + "mini.json", "w", encoding="utf-8") as fp:
+            json.dump(dic_list, fp, ensure_ascii=False, indent=4)
+
+    # csvファイルでも出力
+    def save_csv(self):
+        for df_dict in self.df_dict_list:
+            self.csv_list.append(df_dict.values())
+        with open("../web/src/data/" + self.year + ".csv", "w", encoding="utf-8") as fp:
+            writer = csv.writer(fp, lineterminator="\n")
+            writer.writerows(self.csv_list)
+
     def rewrite_readme(self):
         date = datetime.datetime.now(datetime.timezone(
             datetime.timedelta(hours=+9))).strftime("%Y/%m/%d")
@@ -223,21 +239,27 @@ class SyllabusTool:
             fp.write(s)
 
     def main(self):
-        for csv in tqdm(self.csv_list, desc="全体の進捗率"):
-            numbers = self.get_numbers(self.path + csv)
-            for number in tqdm(numbers, desc=csv):
+        for file in tqdm(self.file_list, desc="全体の進捗率"):
+            numbers = self.get_numbers(self.path + file)
+            for number in tqdm(numbers, desc=file):
                 df_list, url = self.scraping(number)
                 if len(df_list) < 6:  # エラー処理
                     self.error += 1
                     continue
-                df_dict = self.convert(df_list, number, csv, url)  # 辞書に変換
+                df_dict = self.convert(df_list, number, file, url)  # 辞書に変換
                 self.add_to_list(df_dict, number)
 
         # jsonとして保存
-        with open("../web/src/data/" + self.year + "mini.json", "w", encoding="utf-8") as fp:
+        with open("../web/src/data/" + self.year + ".json", "w", encoding="utf-8") as fp:
             json.dump(self.df_dict_list, fp, ensure_ascii=False, indent=4)
 
-        # READMEを書き換える
+        # json(mini)として保存
+        self.save_json_mini()
+
+        # csvとして保存
+        self.save_csv()
+
+        # READMEの書き換え
         self.rewrite_readme()
 
 
