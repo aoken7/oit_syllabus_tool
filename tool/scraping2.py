@@ -205,9 +205,15 @@ class SyllabusTool:
                 return False
         return True
 
+    # 辞書をリストに追加
     def add_to_list(self, df_dict, number):
         if self.duplicate_check(df_dict, number):
-            self.df_dict_list.append(df_dict)  # 辞書をリストに追加
+            self.df_dict_list.append(df_dict)
+
+    # jsonファイルで出力
+    def save_json(self):
+        with open("../web/src/data/" + self.year + ".json", "w", encoding="utf-8") as fp:
+            json.dump(self.df_dict_list, fp, ensure_ascii=False, indent=4)
 
     # 一覧表示用のjsonファイルを作成
     def save_json_mini(self):
@@ -247,16 +253,15 @@ class SyllabusTool:
                     self.error += 1
                     continue
                 df_dict = self.convert(df_list, number, file, url)  # 辞書に変換
-                self.add_to_list(df_dict, number)
+                self.add_to_list(df_dict, number)  # 辞書をリストに追加
 
-        # jsonとして保存
-        with open("../web/src/data/" + self.year + ".json", "w", encoding="utf-8") as fp:
-            json.dump(self.df_dict_list, fp, ensure_ascii=False, indent=4)
+        # 全部含みのjsonを保存
+        self.save_json()
 
-        # json(mini)として保存
+        # 一覧表示用のjsonを保存
         self.save_json_mini()
 
-        # csvとして保存
+        # 全部含みのcsvを保存
         self.save_csv()
 
         # READMEの書き換え
