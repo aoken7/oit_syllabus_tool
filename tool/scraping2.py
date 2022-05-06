@@ -121,14 +121,17 @@ class SyllabusTool:
             jyugyo_list.append(str(df_list[3+hosei][i]).split(","))  # ","で分割
         for i in range(len(jyugyo_list)):
             # テーマ
-            jyugyo_key_list.append("theme"+str(i+1))
-            jyugyo_value_list.append(jyugyo_list[i][1])
+            if len(jyugyo_list[i][0]) > 0:
+                jyugyo_key_list.append("theme"+str(i+1))
+                jyugyo_value_list.append(jyugyo_list[i][1])
             # 内容・方法等
-            jyugyo_key_list.append("naiyou"+str(i+1))
-            jyugyo_value_list.append(jyugyo_list[i][2])
+            if len(jyugyo_list[i][2]) > 0:
+                jyugyo_key_list.append("naiyou"+str(i+1))
+                jyugyo_value_list.append(jyugyo_list[i][2])
             # 予習/復習
-            jyugyo_key_list.append("yosyu"+str(i+1))
-            jyugyo_value_list.append(jyugyo_list[i][3])
+            if len(jyugyo_list[i][3]) > 0:
+                jyugyo_key_list.append("yosyu"+str(i+1))
+                jyugyo_value_list.append(jyugyo_list[i][3])
 
         # 目標、評価方法、評価基準
         for i in range(3):
@@ -170,12 +173,14 @@ class SyllabusTool:
         else:
             value_list.append("記載なし")
 
-        # 正規化
+        # 正規化と"の削除
         for i in range(len(value_list)):
-            value_list[i] = unicodedata.normalize("NFKC", str(value_list[i]))
+            value_list[i] = unicodedata.normalize("NFKC", str(
+                value_list[i])) and value_list[i].replace("\"", "")
         for i in range(len(jyugyo_value_list)):
             jyugyo_value_list[i] = unicodedata.normalize(
-                "NFKC", str(jyugyo_value_list[i]))
+                "NFKC", str(jyugyo_value_list[i])) and \
+                jyugyo_value_list[i].replace("\"", "")
 
         # 辞書に変換
         df_dict = dict(zip(key_list, value_list))
