@@ -9,7 +9,6 @@ from requests.exceptions import Timeout
 from requests.exceptions import ConnectionError
 import re
 import os
-import glob
 from tqdm import tqdm
 
 
@@ -25,8 +24,8 @@ class SyllabusTool:
 
     # csvのファイル名一覧を取得
     def get_files(self, path: str):
-        file_list = ([os.path.basename(p) for p in glob.glob(path + "*.csv", recursive=True)
-                      if os.path.isfile(p)])
+        file_list = [file for file in os.listdir(
+            path) if file.endswith(".csv")]
         file_list.sort()
         return file_list
 
