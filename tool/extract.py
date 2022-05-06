@@ -16,9 +16,8 @@ import csv
 
 
 # ファイル一覧を取得
-def get_file_list(year: str, path: str) -> list[str]:
-    file_list = ([os.path.basename(p) for p in glob.glob("./timetable/" + year + path, recursive=True)
-                  if os.path.isfile(p)])
+def get_file_list(year: str, path: str) -> list:
+    file_list = os.listdir("./timetable/" + year + path)
     return file_list
 
 
@@ -137,7 +136,6 @@ def pdf2csv(year: str):
     file_list = get_file_list(year, path)
 
     for file in tqdm(file_list):
-
         # テキストの抽出
         text = extract_text("./timetable/" + year + "/pdf/" + file)
 
