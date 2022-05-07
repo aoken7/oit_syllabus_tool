@@ -15,12 +15,18 @@ from tqdm import tqdm
 class SyllabusTool:
     # イニシャライザ
     def __init__(self) -> None:
+        self.move_to_tool()
         self.year = "2022"
         self.error = 0
         self.df_dict_list = list()
         self.path = "./timetable/" + self.year + "/csv/"
         self.file_list = self.get_files(self.path)
         self.csv_list = list()
+
+    # もしカレントディレクトリが./toolでないなら、./toolディレクトリに移動する
+    def move_to_tool(self):
+        if os.path.basename(os.getcwd()) != "tool":
+            os.chdir("./tool")
 
     # csvのファイル名一覧を取得
     def get_files(self, path: str):
@@ -121,7 +127,7 @@ class SyllabusTool:
             jyugyo_list.append(str(df_list[3+hosei][i]).split(","))  # ","で分割
         for i in range(len(jyugyo_list)):
             # テーマ
-            if len(jyugyo_list[i][0]) > 0:
+            if len(jyugyo_list[i][1]) > 0:
                 jyugyo_key_list.append("theme"+str(i+1))
                 jyugyo_value_list.append(jyugyo_list[i][1])
             # 内容・方法等
@@ -176,11 +182,10 @@ class SyllabusTool:
         # 正規化と"の削除
         for i in range(len(value_list)):
             value_list[i] = unicodedata.normalize("NFKC", str(
-                value_list[i])) and value_list[i].replace("\"", "")
+                value_list[i])).replace("\"", "")
         for i in range(len(jyugyo_value_list)):
             jyugyo_value_list[i] = unicodedata.normalize(
-                "NFKC", str(jyugyo_value_list[i])) and \
-                jyugyo_value_list[i].replace("\"", "")
+                "NFKC", str(jyugyo_value_list[i])).replace("\"", "")
 
         # 辞書に変換
         df_dict = dict(zip(key_list, value_list))
