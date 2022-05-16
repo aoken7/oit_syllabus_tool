@@ -1174,7 +1174,7 @@
         "nenji": "1",
         "tani": "1",
         "kikan": "前期",
-        "tantousya": "尾田知子",
+        "tantousya": "尾田知子 長谷川順子",
         "numbering": "A1C001B2",
         "gakka": "A",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=A1C001B2&value(crclumcd)=10201200"
@@ -2804,7 +2804,7 @@
         "nenji": "1",
         "tani": "1",
         "kikan": "前期",
-        "tantousya": "尾田知子",
+        "tantousya": "尾田知子 中井理惠",
         "numbering": "A1C001A1",
         "gakka": "C",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=A1C001A1&value(crclumcd)=10201200"
@@ -2934,7 +2934,7 @@
         "nenji": "2",
         "tani": "1",
         "kikan": "前期",
-        "tantousya": "尾田知子",
+        "tantousya": "尾田知子 池田直樹",
         "numbering": "A1C007A2",
         "gakka": "C",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=A1C007A2&value(crclumcd)=10201200"
@@ -4094,7 +4094,7 @@
         "nenji": "1",
         "tani": "1",
         "kikan": "前期",
-        "tantousya": "尾田知子",
+        "tantousya": "尾田知子 中井理惠",
         "numbering": "A1C001F1",
         "gakka": "D",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=A1C001F1&value(crclumcd)=10201200"
@@ -5534,7 +5534,7 @@
         "nenji": "2",
         "tani": "1",
         "kikan": "前期",
-        "tantousya": "尾田知子",
+        "tantousya": "尾田知子 池田直樹",
         "numbering": "A1C007D2",
         "gakka": "E",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=A1C007D2&value(crclumcd)=10201200"
@@ -20968,16 +20968,6 @@
         "numbering": "MPCF07A0",
         "gakka": "T",
         "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=MPCF07A0&value(crclumcd)=10201200"
-    },
-    {
-        "kougi": "日本語演習I【MR】",
-        "nenji": "1",
-        "tani": "1",
-        "kikan": "前期",
-        "tantousya": "小谷昌彦",
-        "numbering": "MPDF04M0",
-        "gakka": "T",
-        "link": "https://www.portal.oit.ac.jp/CAMJWEB/slbssbdr.do?value(risyunen)=2022&value(semekikn)=1&value(kougicd)=MPDF04M0&value(crclumcd)=10201200"
     },
     {
         "kougi": "日本語演習II【MR】",
